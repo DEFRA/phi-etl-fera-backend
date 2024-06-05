@@ -1,6 +1,5 @@
 import { createLogger } from '~/src/helpers/logging/logger'
 import { plantDetail } from '../models/plantDetail'
-import { createMongoDBIndexes } from './create-ds-indexes'
 
 const logger = createLogger()
 
@@ -226,20 +225,9 @@ async function loadData(db) {
       plantPestRegList?.forEach((pest) => {
         pl.PEST_LINK?.forEach((x) => {
           if (x?.CSL_REF === pest?.CSL_REF) {
-            if (
-              pest?.QUARANTINE_INDICATOR === 'Q' ||
-              pest?.QUARANTINE_INDICATOR === 'P'
-            ) {
-              x.REGULATION = pest?.REGULATION
-              x.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
-              x.REGULATED_INDICATOR = pest?.REGULATED_INDICATOR
-            } else if (pest?.QUARANTINE_INDICATOR === 'R') {
-              if (pl?.HOST_REF === pest?.HOST_REF) {
-                x.REGULATION = pest?.REGULATION
-                x.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
-                x.REGULATED_INDICATOR = pest?.REGULATED_INDICATOR
-              }
-            }
+            x.REGULATION = pest?.REGULATION
+            x.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
+            x.REGULATED_INDICATOR = pest?.REGULATED_INDICATOR
           }
         })
       })
@@ -302,10 +290,8 @@ async function loadData(db) {
     const result = await collectionNew.insertMany(resultList)
 
     logger.info(`${result.insertedCount} plant documents were inserted...`)
-    await createMongoDBIndexes(collectionNew)
   } catch (err) {
     logger.error(err)
   }
 }
-
 export { updateDbPlant }
