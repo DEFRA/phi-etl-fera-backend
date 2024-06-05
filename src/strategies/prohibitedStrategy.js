@@ -5,7 +5,7 @@ const logger = createLogger()
 let plantInfo = ''
 let pestDetails = ''
 
-class prohibitedStrategy extends workflowEngine {
+class ProhibitedStrategy extends workflowEngine {
   constructor(plantDocument, searchInput) {
     super(plantDocument, searchInput)
     this.type = ['6A1', '6B5']
@@ -15,20 +15,20 @@ class prohibitedStrategy extends workflowEngine {
     logger.info('Checking for Annex6 (Prohibited) rule')
     const plantDocument = this.data
     if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
-        plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
-        if (annex.COUNTRY_NAME.toLowerCase() === this.country.toLowerCase() &&
-             annex.SERVICE_FORMAT.toLowerCase() === this.serviceFormat.toLowerCase()) 
-             {
-
-            this.type.forEach((rule) => {
-                if (rule.toLowerCase() === annex.A6_RULE.toLowerCase())
-                { 
-                    this.outcome = annex.OVERALL_DECISION
-                    this.checkComplete = true
-                    this.annexSixRuleType = annex.A6_RULE
-                    this.annexElevenRuleType = ''                  
-                }
-            })
+      plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
+        if (
+          annex.COUNTRY_NAME.toLowerCase() === this.country.toLowerCase() &&
+          annex.SERVICE_FORMAT.toLowerCase() ===
+            this.serviceFormat.toLowerCase()
+        ) {
+          this.type.forEach((rule) => {
+            if (rule.toLowerCase() === annex.A6_RULE.toLowerCase()) {
+              this.outcome = annex.OVERALL_DECISION
+              this.checkComplete = true
+              this.annexSixRuleType = annex.A6_RULE
+              this.annexElevenRuleType = ''
+            }
+          })
         }
       })
     }
@@ -43,7 +43,7 @@ class prohibitedStrategy extends workflowEngine {
           return item.FORMAT
         })
       }
-      
+
       plantInfo = {
         hostRef: this.hostRef,
         eppoCode: this.data.EPPO_CODE,
@@ -59,4 +59,4 @@ class prohibitedStrategy extends workflowEngine {
     return plantInfo
   }
 }
-export { prohibitedStrategy }
+export { ProhibitedStrategy }

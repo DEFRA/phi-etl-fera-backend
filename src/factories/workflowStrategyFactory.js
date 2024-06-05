@@ -1,6 +1,6 @@
 import { createLogger } from '~/src/helpers/logging/logger'
-import { innsStrategy } from '~/src/strategies/innsStrategy'
-import { prohibitedStrategy } from '~/src/strategies/prohibitedStrategy'
+import { InnsStrategy } from '~/src/strategies/innsStrategy'
+import { ProhibitedStrategy } from '~/src/strategies/prohibitedStrategy'
 
 const logger = createLogger()
 let strategy = ''
@@ -32,20 +32,24 @@ async function kickStart(searchInput, db) {
     )
   } else {
     logger.info('trigger - INNS check')
-    strategy = new innsStrategy(plantDocument, searchInput)
+    strategy = new InnsStrategy(plantDocument, searchInput)
     plantInfo = await strategy.execute()
 
-    if ( plantInfo.outcome && plantInfo.outcome.length > 0) {
-      logger.info(`INNS information available for host_ref , ${plantInfo.hostRef}`)
+    if (plantInfo.outcome && plantInfo.outcome.length > 0) {
+      logger.info(
+        `INNS information available for host_ref , ${plantInfo.hostRef}`
+      )
       return plantInfo
     }
 
     logger.info('trigger - prohibited check')
-    strategy = new prohibitedStrategy(plantDocument, searchInput)
+    strategy = new ProhibitedStrategy(plantDocument, searchInput)
     plantInfo = await strategy.execute()
 
     if (plantInfo.outcome && plantInfo.outcome.length > 0) {
-      logger.info(`Prohibited information available for host_ref, ${plantInfo.hostRef}`)
+      logger.info(
+        `Prohibited information available for host_ref, ${plantInfo.hostRef}`
+      )
       return plantInfo
     }
   }

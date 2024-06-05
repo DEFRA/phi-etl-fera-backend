@@ -21,9 +21,9 @@ async function startServer() {
   server.logger.info(
     `Access your backend on http://localhost:${config.get('port')}`
   )
-  // await server.register(populateDb)
-  // await server.register(updateDbPlant)
-  // await server.register(updateDbPest)
+  await server.register(populateDb)
+  await server.register(updateDbPlant)
+  await server.register(updateDbPest)
 }
 
 startServer().catch((error) => {

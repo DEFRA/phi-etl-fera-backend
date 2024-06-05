@@ -5,7 +5,7 @@ const logger = createLogger()
 let plantInfo = ''
 let pestDetails = ''
 
-class innsStrategy extends workflowEngine {
+class InnsStrategy extends workflowEngine {
   constructor(plantDocument, searchInput) {
     super(plantDocument, searchInput)
     this.type = 'INNS'
@@ -19,12 +19,13 @@ class innsStrategy extends workflowEngine {
         if (
           annex.COUNTRY_NAME.toLowerCase() === this.country.toLowerCase() &&
           annex.SERVICE_FORMAT.toLowerCase() ===
-            this.serviceFormat.toLowerCase() && annex.A6_RULE.toLowerCase() === this.type.toLowerCase()
+            this.serviceFormat.toLowerCase() &&
+          annex.A6_RULE.toLowerCase() === this.type.toLowerCase()
         ) {
-            this.outcome = annex.OVERALL_DECISION
-            this.checkComplete = true
-            this.annexSixRuleType = annex.A6_RULE
-            this.annexElevenRuleType = ''
+          this.outcome = annex.OVERALL_DECISION
+          this.checkComplete = true
+          this.annexSixRuleType = annex.A6_RULE
+          this.annexElevenRuleType = ''
         }
       })
     }
@@ -55,4 +56,4 @@ class innsStrategy extends workflowEngine {
     return plantInfo
   }
 }
-export { innsStrategy }
+export { InnsStrategy }
