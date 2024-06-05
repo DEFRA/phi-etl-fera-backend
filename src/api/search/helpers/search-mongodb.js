@@ -33,15 +33,7 @@ async function searchPlantDetailsDb(searchText) {
     // TODO: Collection name to be read from config file
     const collectionPlant = await connectToMongo('PLANT_DATA')
 
-    // TODO: Query will evolve, it'll have to be fine tuned based on the collection
-    // strucutre to support all the business use cases
     if (searchText) {
-      // QUERY EXAMPLE:
-      // { "PLANT_NAME": { $elemMatch: { $or: [ { "type": "LATIN_NAME", "NAME": searchText },
-      //  { "type": "COMMON_NAME", "NAME": searchText },
-      //  { "type": "SYNONYM_NAME", "NAME": searchText } ] } } }
-      // EXAMPLE
-
       // The structure of the results will be the same for each match, the frontend will
       // use the fields that it needs, and ignore the rest
       // If optimisation is required, the result-set will be fine tuned.
