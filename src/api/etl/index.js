@@ -20,7 +20,7 @@ const etl = {
         {
           method: 'GET',
           path: '/updatePlant',
-          handler: updateDbPlantHandler
+          ...updateDbPlantHandler
         }
       ])
     }
