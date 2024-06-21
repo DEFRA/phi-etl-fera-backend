@@ -14,7 +14,7 @@ const annex6List = [
     BONSAI_INDICATOR: '',
     INVITRO_INDICATOR: '',
     FORMAT_CLARIFICATION: '',
-    HOST_REF: 29,
+    HOST_REF: 381,
     PARENT_HOST_REF: 28
   },
   {

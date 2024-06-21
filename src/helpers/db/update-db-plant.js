@@ -132,7 +132,7 @@ async function clearCollectionIfExists(db, collectionName) {
   const collections = await db
     .listCollections({ name: collectionName })
     .toArray()
-  if (collections.length > 0) {
+  if (collections?.length > 0) {
     await db.collection(collectionName).drop()
     logger.info(`Collection ${collectionName} dropped.`)
   }
@@ -439,5 +439,6 @@ export {
   updateResultListWithPestNames,
   updateResultListWithPestReg,
   updateResultListWithPestCountry,
-  insertResultList
+  insertResultList,
+  createMongoDBIndexes
 }

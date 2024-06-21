@@ -3,20 +3,31 @@
 import {
   updateDbPlantHandler,
   loadCollections,
+  clearCollectionIfExists,
   buildResultList,
   mapAnnex6,
   mapAnnex11,
+  mapPestLink,
   mapAnnex11ParentHost,
   mapAnnex11GrandParent,
+  updateResultListWithAnnex6,
   updateResultListWithAnnex11,
   updateResultListWithAnnex11ParentHost,
-  updateResultListWithAnnex11GrandParent
+  updateResultListWithAnnex11GrandParent,
+  updateResultListWithPestLink,
+  updateResultListWithPestNames,
+  updateResultListWithPestReg,
+  updateResultListWithPestCountry
 } from './update-db-plant'
 import { createLogger } from '~/src/helpers/logging/logger'
 import { plantList } from './mocks/plant_name'
 import { annex6List } from './mocks/plant_annex6'
 import { annex11List } from './mocks/plant_annex11'
+import { plantPestLinkList } from './mocks/pest_link'
 import { plantListWithGrandParent } from './mocks/plant_name_grand_parent'
+import { pestNames } from './mocks/pest_names'
+import { plantPestRegList } from './mocks/plant_pest_reg'
+import { pestDistributionList } from './mocks/pest_distribution'
 jest.mock('~/src/helpers/logging/logger', () => ({
   createLogger: jest.fn()
 }))
@@ -57,14 +68,10 @@ describe('updateDbPlantHandler', () => {
 
   describe('loadData', () => {
     it('should return success response when loadData is successful', async () => {
-      db.collection('PLANT_NAME').find().toArray.mockResolvedValue([])
-      db.collection('PLANT_ANNEX11').find().toArray.mockResolvedValue([])
-      db.collection('PLANT_ANNEX6').find().toArray.mockResolvedValue([])
-      db.collection('PLANT_PEST_LINK').find().toArray.mockResolvedValue([])
-      db.collection('PLANT_PEST_REG').find().toArray.mockResolvedValue([])
-      db.collection('PEST_NAME').find().toArray.mockResolvedValue([])
-      db.collection('PEST_DISTRIBUTION').find().toArray.mockResolvedValue([])
-      db.listCollections().toArray.mockResolvedValue([])
+      db.listCollections().toArray.mockResolvedValue([
+        'PLANT_DATA',
+        'PEST_DATA'
+      ])
 
       const h = { ...mockResponse }
 
@@ -75,6 +82,14 @@ describe('updateDbPlantHandler', () => {
         message: 'Populate Plant Db successful'
       })
       expect(h.code).toHaveBeenCalledWith(200)
+    })
+
+    it('should not drop the collection if it does not exist', async () => {
+      const collectionName = 'nonExistentCollection'
+
+      await clearCollectionIfExists(db, collectionName)
+
+      expect(logger.info).not.toHaveBeenCalled()
     })
 
     it('should build a lit of collections', async () => {
@@ -107,6 +122,26 @@ describe('updateDbPlantHandler', () => {
       const annex6ListMock = annex6List
       const annex6ResultList = mapAnnex6(resultList, annex6ListMock)
       expect(annex6ResultList.length).toEqual(3)
+      updateResultListWithAnnex6(resultList, annex6ResultList)
+      expect(resultList[0].HOST_REGULATION.ANNEX6.length).toEqual(1)
+      expect(resultList[0].HOST_REGULATION.ANNEX6[0]).toEqual({
+        FERA_PLANT: 'Abies',
+        FERA_PLANT_ID: 28,
+        COUNTRY_NAME: 'EUROPE_INDICATOR,FALSE',
+        A6_RULE: '6A1',
+        SERVICE_FORMAT: 'Plants for Planting',
+        OVERALL_DECISION: 'Prohibited',
+        PROHIBITION_CLARIFICATION: '',
+        HYBRID_INDICATOR: '',
+        DORMANT_INDICATOR: '',
+        SEEDS_INDICATOR: 'x',
+        FRUIT_INDICATOR: '',
+        BONSAI_INDICATOR: '',
+        INVITRO_INDICATOR: '',
+        FORMAT_CLARIFICATION: '',
+        HOST_REF: 381,
+        PARENT_HOST_REF: 28
+      })
     })
 
     it('should build a Annex11 plant list - Annex11 Rule_1', async () => {
@@ -197,6 +232,7 @@ describe('updateDbPlantHandler', () => {
         }
       ])
       // Populate - Annex11
+
       const annex11ResultList = mapAnnex11(resultList, annex11List)
       updateResultListWithAnnex11(resultList, annex11ResultList, [{}, {}])
       updateResultListWithAnnex11ParentHost(
@@ -298,6 +334,65 @@ describe('updateDbPlantHandler', () => {
       await updateDbPlantHandler(error, h)
 
       expect(h.code).toHaveBeenCalledWith(500)
+    })
+
+    it('should map pest link list, update pest names and regulations', () => {
+      const resultList = buildResultList(plantList)
+
+      const pestLinkResultList = mapPestLink(resultList, plantPestLinkList)
+      expect(pestLinkResultList[0].PEST_LINK.length).toEqual(1)
+      updateResultListWithPestLink(resultList, pestLinkResultList)
+      expect(resultList[0].PEST_LINK?.length).toEqual(1)
+      updateResultListWithPestNames(resultList, pestNames)
+      expect(resultList[0].PEST_LINK[0]?.PEST_NAME.length).toEqual(3)
+      expect(resultList[0].PEST_LINK[0]?.PEST_NAME).toEqual([
+        { type: 'LATIN_NAME', NAME: 'Beet curly top virus' },
+        {
+          type: 'COMMON_NAME',
+          NAME: [
+            'Beet curly top',
+            'Sugarbeet curly top',
+            'Sugarbeet curly leaf',
+            'Western yellow blight',
+            'Tomato yellows',
+            'Curly top of beet',
+            'Yellows of tomato',
+            'Green dwarf of potato'
+          ]
+        },
+        {
+          type: 'SYNONYM_NAME',
+          NAME: [
+            'BCTV',
+            'Beet curly top curtovirus',
+            'Potato green dwarf virus',
+            'Sugarbeet curly leaf virus',
+            'Sugarbeet virus 1',
+            'Tomato yellows virus',
+            'Western yellow blight virus',
+            'Beet curly top geminivirus',
+            'Beet curly top hybrigeminivirus',
+            'Sugarbeet curly-leaf virus',
+            'Western yellows blight virus'
+          ]
+        }
+      ])
+      updateResultListWithPestReg(resultList, plantPestRegList)
+      expect(resultList[0].PEST_LINK[0].REGULATION_CATEGORY).toEqual(
+        'Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain'
+      )
+      expect(resultList[0].PEST_LINK[0].REGULATION_INDICATOR).toEqual('R')
+      expect(resultList[0].PEST_LINK[0].QUARANTINE_INDICATOR).toEqual('Q')
+
+      updateResultListWithPestCountry(resultList, pestDistributionList)
+      expect(resultList[0].PEST_LINK[0].PEST_COUNTRY.length).toEqual(5)
+      expect(resultList[0].PEST_LINK[0].PEST_COUNTRY).toEqual([
+        { COUNTRY_NAME: 'Türkiye', COUNTRY_CODE: 'TR', STATUS: 'Present' },
+        { COUNTRY_NAME: 'India', COUNTRY_CODE: 'IN', STATUS: 'Present' },
+        { COUNTRY_NAME: 'Bolivia', COUNTRY_CODE: 'BO', STATUS: 'Present' },
+        { COUNTRY_NAME: 'Canada', COUNTRY_CODE: 'CA', STATUS: 'Present' },
+        { COUNTRY_NAME: 'Iran', COUNTRY_CODE: 'IR', STATUS: 'Present' }
+      ])
     })
   })
 })
