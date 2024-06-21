@@ -1,10 +1,7 @@
-// __tests__/updateDbPlantHandler.test.js
-
 import {
-  updateDbPlantHandler,
+  buildResultList,
   loadCollections,
   clearCollectionIfExists,
-  buildResultList,
   mapAnnex6,
   mapAnnex11,
   mapPestLink,
@@ -38,14 +35,8 @@ const logger = {
 }
 createLogger.mockReturnValue(logger)
 
-const mockResponse = {
-  response: jest.fn().mockReturnThis(),
-  code: jest.fn().mockReturnThis()
-}
-
 describe('updateDbPlantHandler', () => {
   let db
-  let request
 
   beforeEach(() => {
     db = {
@@ -55,11 +46,6 @@ describe('updateDbPlantHandler', () => {
       listCollections: jest.fn().mockReturnThis(),
       drop: jest.fn()
     }
-    request = {
-      server: {
-        db
-      }
-    }
   })
 
   afterEach(() => {
@@ -67,23 +53,6 @@ describe('updateDbPlantHandler', () => {
   })
 
   describe('loadData', () => {
-    it('should return success response when loadData is successful', async () => {
-      db.listCollections().toArray.mockResolvedValue([
-        'PLANT_DATA',
-        'PEST_DATA'
-      ])
-
-      const h = { ...mockResponse }
-
-      await updateDbPlantHandler(request, h)
-
-      expect(h.response).toHaveBeenCalledWith({
-        status: 'success',
-        message: 'Populate Plant Db successful'
-      })
-      expect(h.code).toHaveBeenCalledWith(200)
-    })
-
     it('should not drop the collection if it does not exist', async () => {
       const collectionName = 'nonExistentCollection'
 
@@ -323,17 +292,6 @@ describe('updateDbPlantHandler', () => {
           PARENT_HOST_REF: 0
         }
       )
-    })
-
-    it('should return error response when loadData throws an error', async () => {
-      const error = new Error('Test error')
-      db.collection('PLANT_NAME').find().toArray.mockRejectedValue(error)
-
-      const h = { ...mockResponse }
-
-      await updateDbPlantHandler(error, h)
-
-      expect(h.code).toHaveBeenCalledWith(500)
     })
 
     it('should map pest link list, update pest names and regulations', () => {

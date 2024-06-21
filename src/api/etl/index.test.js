@@ -42,7 +42,7 @@ describe('etl plugin', () => {
       {
         method: 'GET',
         path: '/updatePlant',
-        handler: updateDbPlantHandler
+        ...updateDbPlantHandler
       }
     ])
   })

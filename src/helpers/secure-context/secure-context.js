@@ -6,27 +6,34 @@ const secureContext = {
   plugin: {
     name: 'secure-context',
     register: async (server) => {
-      const originalCreateSecureContext = tls.createSecureContext
-
-      tls.createSecureContext = (options = {}) => {
-        const trustStoreCerts = getTrustStoreCerts(process.env)
-
-        if (!trustStoreCerts.length) {
-          server.logger.info('Could not find any TRUSTSTORE_ certificates')
-        }
-
-        const secureContext = originalCreateSecureContext(options)
-
-        trustStoreCerts.forEach((cert) => {
-          secureContext.context.addCACert(cert)
-        })
-
-        return secureContext
-      }
-
-      server.decorate('server', 'secureContext', tls.createSecureContext())
+      server.decorate(
+        'server',
+        'secureContext',
+        createSecureContext(server.logger)
+      )
     }
   }
 }
 
-export { secureContext }
+function createSecureContext(logger) {
+  const originalCreateSecureContext = tls.createSecureContext
+
+  tls.createSecureContext = (options = {}) => {
+    const trustStoreCerts = getTrustStoreCerts(process.env)
+
+    if (!trustStoreCerts.length) {
+      logger.info('Could not find any TRUSTSTORE_ certificates')
+    }
+
+    const secureContext = originalCreateSecureContext(options)
+
+    trustStoreCerts.forEach((cert) => {
+      secureContext.context.addCACert(cert)
+    })
+
+    return secureContext
+  }
+  return tls.createSecureContext()
+}
+
+export { createSecureContext, secureContext }
