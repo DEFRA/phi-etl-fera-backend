@@ -14,7 +14,8 @@ import {
   updateResultListWithPestLink,
   updateResultListWithPestNames,
   updateResultListWithPestReg,
-  updateResultListWithPestCountry
+  updateResultListWithPestCountry,
+  updateDbPlantHandler
 } from './update-db-plant'
 import { createLogger } from '~/src/helpers/logging/logger'
 import { plantList } from './mocks/plant_name'
@@ -25,17 +26,79 @@ import { plantListWithGrandParent } from './mocks/plant_name_grand_parent'
 import { pestNames } from './mocks/pest_names'
 import { plantPestRegList } from './mocks/plant_pest_reg'
 import { pestDistributionList } from './mocks/pest_distribution'
+import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
+
 jest.mock('~/src/helpers/logging/logger', () => ({
   createLogger: jest.fn()
 }))
+jest.mock('~/src/helpers/db/update-db-plant-worker')
 
 const logger = {
   info: jest.fn(),
   error: jest.fn()
 }
+jest.mock('~/src/helpers/logging/logger')
 createLogger.mockReturnValue(logger)
 
-describe('updateDbPlantHandler', () => {
+describe('updateDbPlantHandler - handler', () => {
+  let h
+
+  beforeEach(() => {
+    h = {
+      response: jest.fn().mockReturnThis(),
+      code: jest.fn().mockReturnThis()
+    }
+  })
+
+  // eslint-disable-next-line jest/no-disabled-tests
+
+  it('should return 202 when the worker completes successfully', async () => {
+    const mockWorker = {
+      postMessage: jest.fn(),
+      once: jest.fn((event, callback) => {
+        if (event === 'message') {
+          // eslint-disable-next-line n/no-callback-literal
+          setImmediate(() => callback('some data')) // simulate async message
+        }
+      })
+    }
+
+    createTranspiledWorker.mockReturnValue(mockWorker)
+
+    await updateDbPlantHandler.handler({}, h)
+
+    expect(mockWorker.postMessage).toHaveBeenCalledWith('Load plant db data')
+    expect(h.response).toHaveBeenCalledWith({
+      status: 'success',
+      message: 'Populate Plant Db successful'
+    })
+    expect(h.code).toHaveBeenCalledWith(202)
+  })
+
+  it('should return 500 when the worker encounters an error', async () => {
+    const mockWorker = {
+      postMessage: jest.fn(),
+      once: jest.fn((event, callback) => {
+        if (event === 'error') {
+          setImmediate(() => callback(new Error('Worker error')))
+        }
+      })
+    }
+
+    createTranspiledWorker.mockReturnValue(mockWorker)
+
+    await updateDbPlantHandler.handler({}, h)
+
+    expect(mockWorker.postMessage).toHaveBeenCalledWith('Load plant db data')
+    expect(h.response).toHaveBeenCalledWith({
+      status: 'error',
+      message: 'Worker error'
+    })
+    expect(h.code).toHaveBeenCalledWith(500)
+  })
+})
+
+describe('updateDbPlantHandler loadData', () => {
   let db
 
   beforeEach(() => {

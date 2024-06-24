@@ -20,13 +20,13 @@ const updateDbPlantHandler = {
       await new Promise((resolve, reject) => {
         worker.postMessage('Load plant db data')
         worker.once('message', (data) => {
-          logger.info(
+          logger?.info(
             `worker [${worker.threadId}] completed loading plant data - ${data}`
           )
           resolve()
         })
         worker.once('error', (err) => {
-          logger.error(err)
+          logger?.error(err)
           reject(err)
         })
       })
