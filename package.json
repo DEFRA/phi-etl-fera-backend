@@ -47,7 +47,7 @@
     "mongodb": "6.3.0",
     "node-fetch": "2.7.0",
     "pino": "8.18.0",
-    "undici": "6.19.2"
+    "undici": "6.6.2"
   },
   "devDependencies": {
     "@babel/cli": "7.23.9",
