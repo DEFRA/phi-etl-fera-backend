@@ -20,13 +20,13 @@ const updateDbPlantHandler = {
       await new Promise((resolve, reject) => {
         worker.postMessage('Load plant db data')
         worker.once('message', (data) => {
-          logger.info(
+          logger?.info(
             `worker [${worker.threadId}] completed loading plant data - ${data}`
           )
           resolve()
         })
         worker.once('error', (err) => {
-          logger.error(err)
+          logger?.error(err)
           reject(err)
         })
       })
@@ -156,7 +156,7 @@ async function clearCollectionIfExists(db, collectionName) {
   const collections = await db
     .listCollections({ name: collectionName })
     .toArray()
-  if (collections.length > 0) {
+  if (collections?.length > 0) {
     await db.collection(collectionName).drop()
     logger.info(`Collection ${collectionName} dropped.`)
   }
@@ -463,5 +463,6 @@ export {
   updateResultListWithPestNames,
   updateResultListWithPestReg,
   updateResultListWithPestCountry,
-  insertResultList
+  insertResultList,
+  createMongoDBIndexes
 }
