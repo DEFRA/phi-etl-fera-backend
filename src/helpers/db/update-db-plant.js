@@ -440,7 +440,7 @@ function updateResultListWithPestCountry(resultList, pestDistributionList) {
 async function insertResultList(db, resultList) {
   const collectionNew = db.collection('PLANT_DATA')
   const result = await collectionNew.insertMany(resultList)
-  logger.info(`${result.insertedCount} plant documents were inserted...`)
+  logger?.info(`${result.insertedCount} plant documents were inserted...`)
   await createMongoDBIndexes(collectionNew)
 }
 

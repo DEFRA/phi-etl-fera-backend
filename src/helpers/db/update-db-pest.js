@@ -11,7 +11,7 @@ const updateDbPestHandler = async (request, h) => {
       message: 'Update Pest Db successful'
     })
   } catch (error) {
-    logger.error(error)
+    logger?.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
   }
 }
@@ -59,7 +59,7 @@ async function getPestList(db) {
   const collection = db.collection('PEST_NAME')
   const documents = await collection.find({}).toArray()
   const pestList = documents[0]?.PEST_NAME
-  logger.info(`pestList: ${pestList?.length}`)
+  logger?.info(`pestList: ${pestList?.length}`)
   return pestList
 }
 
@@ -258,4 +258,10 @@ async function insertResultList(db, collectionName, resultList) {
   logger.info(`${result.insertedCount} pest documents were inserted...`)
 }
 
-export { updateDbPestHandler }
+export {
+  updateDbPestHandler,
+  dropCollectionIfExists,
+  loadData,
+  getPestList,
+  preparePestDetails
+}

@@ -15,7 +15,9 @@ import {
   updateResultListWithPestNames,
   updateResultListWithPestReg,
   updateResultListWithPestCountry,
-  updateDbPlantHandler
+  updateDbPlantHandler,
+  insertResultList,
+  createMongoDBIndexes
 } from './update-db-plant'
 import { createLogger } from '~/src/helpers/logging/logger'
 import { plantList } from './mocks/plant_name'
@@ -32,12 +34,16 @@ jest.mock('~/src/helpers/logging/logger', () => ({
   createLogger: jest.fn()
 }))
 jest.mock('~/src/helpers/db/update-db-plant-worker')
+jest.mock('~/src/helpers/db/create-ds-indexes', () => ({
+  createMongoDBIndexes: jest.fn()
+}))
 
 const logger = {
   info: jest.fn(),
   error: jest.fn()
 }
 jest.mock('~/src/helpers/logging/logger')
+
 createLogger.mockReturnValue(logger)
 
 describe('updateDbPlantHandler - handler', () => {
@@ -415,5 +421,49 @@ describe('updateDbPlantHandler loadData', () => {
         { COUNTRY_NAME: 'Iran', COUNTRY_CODE: 'IR', STATUS: 'Present' }
       ])
     })
+  })
+})
+
+describe('insertResultList', () => {
+  let db
+  let collectionNew
+  let resultList
+
+  beforeEach(() => {
+    collectionNew = {
+      insertMany: jest.fn()
+    }
+    db = {
+      collection: jest.fn().mockReturnValue(collectionNew)
+    }
+    resultList = [{ plant: 'data1' }, { plant: 'data2' }]
+
+    jest.clearAllMocks()
+  })
+
+  it('should insert documents and create indexes', async () => {
+    const mockResult = { insertedCount: resultList.length }
+    collectionNew.insertMany.mockResolvedValue(mockResult)
+
+    await insertResultList(db, resultList)
+
+    expect(db.collection).toHaveBeenCalledWith('PLANT_DATA')
+    expect(collectionNew.insertMany).toHaveBeenCalledWith(resultList)
+    // expect(logger?.info).toHaveBeenCalledWith(
+    //   `${mockResult.insertedCount} plant documents were inserted...`
+    // )
+    expect(createMongoDBIndexes).toHaveBeenCalledWith(collectionNew)
+  })
+
+  it('should handle insertMany errors', async () => {
+    const error = new Error('insertMany failed')
+    collectionNew.insertMany.mockRejectedValue(error)
+
+    await expect(insertResultList(db, resultList)).rejects.toThrow(
+      'insertMany failed'
+    )
+    expect(db.collection).toHaveBeenCalledWith('PLANT_DATA')
+    expect(collectionNew.insertMany).toHaveBeenCalledWith(resultList)
+    expect(logger.info).not.toHaveBeenCalled()
   })
 })
