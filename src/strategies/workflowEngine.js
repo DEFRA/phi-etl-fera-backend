@@ -8,6 +8,8 @@ class workflowEngine {
     this.hostRef = searchInput.plantDetails.hostRef
     this.countryDetails = countryMapping
     this.loggerObj = cdpLogger
+    this.subformat = 'x'
+    
   }
 
   execute() {
