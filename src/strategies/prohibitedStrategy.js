@@ -38,7 +38,7 @@ class ProhibitedStrategy extends workflowEngine {
     }
 
     // Start with prohibition checks
-    {prohibitionCheckAtCountryLevel()}
+    prohibitionCheckAtCountryLevel()
     if (prohibitionConditionMet === false) {prohibitionCheckAtRegionLevel()}
     if (prohibitionConditionMet === false) {prohibitionCheckAllLevel()}
 
