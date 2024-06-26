@@ -33,24 +33,29 @@ class ProhibitedStrategy extends workflowEngine {
       pestDetails,
       annex11RulesArr:[],
       isEUSL: false,
-      all: false
+      all: false,
+      subformat: 'x'
     }
 
     // Start with prohibition checks
-    prohibitionCheckAtCountryLevel()
+    {prohibitionCheckAtCountryLevel()}
     if (prohibitionConditionMet === false) {prohibitionCheckAtRegionLevel()}
     if (prohibitionConditionMet === false) {prohibitionCheckAllLevel()}
 
     // move to partially-prohibited checks
-    if (prohibitionConditionMet === false) {partiallyProhibitionCheckAtCountryLevel()}
+    if (prohibitionConditionMet === false) partiallyProhibitionCheckAtCountryLevel()
     if (prohibitionConditionMet === false) {partiallyProhibitionCheckAtRegionLevel()}
     if (prohibitionConditionMet === false) {partiallyProhibitionCheckAtAllLevel()}
 
     // move to un-prohibited checks
     if (prohibitionConditionMet === false) {getUnprohibitedAnnex11RulesAtCountryLevel()}
-     if (prohibitionConditionMet === false) {getUnprohibitedAnnex11RulesAtRegionLevel()}
+    if(prohibitionConditionMet === false) {getUnprohibitedAnnex11RulesAtRegionLevel()}
     if (prohibitionConditionMet === false) {getUnprohibitedAnnex11RulesAtAllLevel()}
 
+    if (prohibitionConditionMet === false) {noAnnex6ItsUnprohibited()}
+    if (prohibitionConditionMet === false) {noAnnex6ItsUnprohibitedGlobally()}
+  
+    
     // finall, get the pests
     getPests()
 
@@ -69,8 +74,6 @@ class ProhibitedStrategy extends workflowEngine {
         if (
           annex.COUNTRY_NAME.toLowerCase() === innsProhibitedObj.country.toLowerCase() &&
           annex.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() 
-          // && innsProhibitedObj.type.map((t) => t.toLowerCase().includes(annex.A6_RULE.toLowerCase()))
-           //&& annex.OVERALL_DECISION.toLowerCase() === this.decision.toLowerCase()
            && ( annex.HYBRID_INDICATOR === '' && annex.DORMANT_INDICATOR === ''
            && annex.SEED_INDICATOR === '' &&  annex.FRUIT_INDICATOR === ''  
            &&  annex.BONSAI_INDICATOR === '' &&  annex.INVINTRO_INDICATOR === '')
@@ -80,8 +83,8 @@ class ProhibitedStrategy extends workflowEngine {
             `Annex6 (PROHIBITED) rule is APPLICABLE at COUNTRY level, ${annex.A6_RULE}`
           )
           plantInfo.annexSixRule = annex.A6_RULE
-          plantInfo.outcome = annex.OVERALL_DECISION
           prohibitionConditionMet = true
+          plantInfo.outcome = annex.OVERALL_DECISION
         }
       })
     }
@@ -98,14 +101,11 @@ function prohibitionCheckAtRegionLevel(){
         if (
           annex.COUNTRY_NAME.toLowerCase() !== innsProhibitedObj.country.toLowerCase()
           && annex.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() 
-          // && annex.OVERALL_DECISION.toLowerCase() === innsProhibitedObj.decision.toLowerCase()
           && ( annex.HYBRID_INDICATOR === '' && annex.DORMANT_INDICATOR === ''
           && annex.SEED_INDICATOR === '' &&  annex.FRUIT_INDICATOR === ''  
           &&  annex.BONSAI_INDICATOR === '' &&  annex.INVINTRO_INDICATOR === '')) {
-         
-          logger.info('Step 1B (match Annex at region level')
 
-          regionValue = annex.COUNTRY_NAME.replace(/[()\s-]+/g, '')
+            regionValue = annex.COUNTRY_NAME.replace(/[()\s-]+/g, '')
           annex6RegionType = regionValue.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
           annex6RegionValue = regionValue.split(',')[1]
 
@@ -116,7 +116,7 @@ function prohibitionCheckAtRegionLevel(){
               plantInfo.isEUSL = reg[1].toLowerCase()
              
               logger.info(
-                `formatted region is: ${reg[0]}, ${reg[1]}`
+                `formatted region is : ${reg[0]}, ${reg[1]}`
               )
 
               if (reg[0].toLowerCase() === annex6RegionType.toLowerCase() &&
@@ -138,7 +138,6 @@ function prohibitionCheckAtRegionLevel(){
 // rule is applicable at 'All' ?
 function prohibitionCheckAllLevel(){
   logger.info('Level 1C: Starting Prohibition check at ALL level')
-  let regionValue = ''
         if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
           plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
         if (
@@ -148,8 +147,6 @@ function prohibitionCheckAllLevel(){
           && ( annex.HYBRID_INDICATOR === '' && annex.DORMANT_INDICATOR === ''
           && annex.SEED_INDICATOR === '' &&  annex.FRUIT_INDICATOR === ''  
           &&  annex.BONSAI_INDICATOR === '' &&  annex.INVINTRO_INDICATOR === '')) {
-         
-          logger.info('Step 1C (match Annex at ALL level')
 
           logger.info(`Annex6 (PROHIBITED) rule is APPLICABLE at ALL level, ${annex.A6_RULE}`)
           plantInfo.annexSixRule = annex.A6_RULE
@@ -170,10 +167,8 @@ function prohibitionCheckAllLevel(){
     
     if ( !plantDocument.outcome && Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
       plantDocument.HOST_REGULATION.ANNEX6.forEach(function (annex) {
-        logger.info(`Step 2A (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
-
         if (
-          // check if atlease 1 exemptio exists
+          // check if atlease 1 exemption exists
             annex.COUNTRY_NAME.toLowerCase() === innsProhibitedObj.country.toLowerCase() && 
             annex.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() &&
             ( annex.HYBRID_INDICATOR === plantInfo.subformat || annex.DORMANT_INDICATOR === plantInfo.subformat
@@ -185,7 +180,10 @@ function prohibitionCheckAllLevel(){
                 plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
                 if (innsProhibitedObj.country.toLowerCase() === annex11.COUNTRY_NAME.toLowerCase()
                     && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
+                      logger.info(`Annex 11 rules found for , ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
+
                       plantInfo.annex11RulesArr.push(annex11)
+                      plantInfo.outcome = annex.OVERALL_DECISION
                   }})}
 
          }
@@ -195,7 +193,6 @@ function prohibitionCheckAllLevel(){
     if (plantInfo.annex11RulesArr.length > 0)
     {
       prohibitionConditionMet = true
-      plantInfo.outcome = annex.OVERALL_DECISION
       logger.info('Level 2A: PARTIALLY PROHIBITED check APPLICABLE at Country level')
     }
 
@@ -211,17 +208,18 @@ function prohibitionCheckAllLevel(){
 
     if ( !plantDocument.outcome && Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
       plantDocument.HOST_REGULATION.ANNEX6.forEach(function (annex) {
-        logger.info(`Step 2B.1 (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
 
         if ( // get rules for the region of the input country
             (annex.COUNTRY_NAME.toLowerCase() !== innsProhibitedObj.country.toLowerCase()
              && annex.COUNTRY_NAME.toLowerCase() !== 'all') &&
-            annex.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() &&
+            annex.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() 
+            &&
             ( annex.HYBRID_INDICATOR === plantInfo.subformat || annex.DORMANT_INDICATOR === plantInfo.subformat
             || annex.SEED_INDICATOR === plantInfo.subformat ||  annex.FRUIT_INDICATOR === plantInfo.subformat  
             ||  annex.BONSAI_INDICATOR === plantInfo.subformat ||  annex.INVINTRO_INDICATOR === plantInfo.subformat)
         ) {
-
+          logger.info('PlantInfo.subformat is ' + plantInfo.subformat)
+          logger.info('Level 2B: Annex 6 initial criterias match')
           annex6Region = annex.COUNTRY_NAME.replace(/[()\s-]+/g, '')
           annex6RegionType = annex6Region.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
           annex6RegionValue = annex6Region.split(',')[1]
@@ -234,24 +232,26 @@ function prohibitionCheckAllLevel(){
             plantInfo.isEUSL = reg[1].toLowerCase()
            
             logger.info(
-              `formatted region is: ${reg[0]}, ${reg[1]}`
+              `formatted region is : ${reg[0]}, ${reg[1]}`
             )
 
             // check if region level entry exists for Annex 6
             if (reg[0].toLowerCase() === annex6RegionType.toLowerCase() &&
                 reg[1].toLowerCase() === annex6RegionValue.toLowerCase()) {
-             
                   // Get Annex11 rules at for the matched 'Region'  
                   plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
                     annex11Region = annex11.COUNTRY_NAME.replace(/[()\s-]+/g, '')
                     annex11RegionType = annex11Region.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
                     annex11RegionValue = annex11Region.split(',')[1]
   
+                    //logger.info(reg[0].toLowerCase() + ',' + reg[1].toLowerCase()  + ',' + annex11RegionType.toLowerCase() + ',' + annex11RegionValue.toLowerCase())
+                  
                   if (reg[0].toLowerCase() === annex11RegionType.toLowerCase()&&
                       reg[1].toLowerCase() === annex11RegionValue.toLowerCase()
                       && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
+                        logger.info(`Annex 11 rules found for , ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
                         plantInfo.annex11RulesArr.push(annex11)
-                     
+                        plantInfo.outcome = annex.OVERALL_DECISION
                     }
               })
             }
@@ -263,7 +263,6 @@ function prohibitionCheckAllLevel(){
 if (plantInfo.annex11RulesArr.length > 0)
 {
   prohibitionConditionMet = true
-  plantInfo.outcome = annex.OVERALL_DECISION
   logger.info('Level 2B: PARTIALLY PROHIBITED check APPLICABLE at REGION level')
 }
 
@@ -277,7 +276,6 @@ return plantInfo
 
     if ( !plantDocument.outcome && Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
       plantDocument.HOST_REGULATION.ANNEX6.forEach(function (annex) {
-        logger.info(`Step 2C.1 (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
 
         if (
             annex.COUNTRY_NAME.toLowerCase() === 'all' && 
@@ -290,7 +288,9 @@ return plantInfo
                   plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
                   if (annex11.COUNTRY_NAME.toLowerCase() === 'all'
                       && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
+                        logger.info(`Annex 11 rules found for , ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
                         plantInfo.annex11RulesArr.push(annex11)
+                        plantInfo.outcome = annex.OVERALL_DECISION
                     }
                 })
               }
@@ -299,9 +299,8 @@ return plantInfo
 
         if (plantInfo.annex11RulesArr.length > 0)
         {
-          plantInfo.all = true
+          //plantInfo.all = true
           prohibitionConditionMet = true
-          plantInfo.outcome = annex.OVERALL_DECISION
           logger.info('Level 2C: PARTIALLY PROHIBITED check APPLICABLE at ALL level')
         }
   
@@ -310,14 +309,16 @@ return plantInfo
 
   function getCountryIndicators(){
     const region = innsProhibitedObj.countryDetails.REGION
+    //logger.info('Country Region is:' + region)
     const rawRegionArray = region.split(';')
     let regionIndicator = ''
-    let formatedRegionArr = ''
-
+    let formatedRegionArr = []
+    //logger.info('Raw Region is:' + rawRegionArray)
     rawRegionArray.forEach(function (reg) {
       regionIndicator = reg.replace(/[()\s-]+/g, '') // replace brackets in region indicator with empty string
-      formatedRegionArr = regionIndicator.split(',')})
+      formatedRegionArr.push(regionIndicator.split(','))})
 
+     // logger.info('Formatted Region is:' + formatedRegionArr)
     return formatedRegionArr
   }
 
@@ -326,8 +327,6 @@ return plantInfo
     logger.info('Level 3A: Starting UN-PROHIBITED checks at COUNTRY level')
     if ( !plantDocument.outcome && Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
       plantDocument.HOST_REGULATION.ANNEX6.forEach(function (annex) {
-        logger.info(`Step 3A (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
-
         if (
             annex.COUNTRY_NAME.toLowerCase() === innsProhibitedObj.country.toLowerCase() && 
             annex.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() &&
@@ -342,8 +341,9 @@ return plantInfo
                 plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
                 if (innsProhibitedObj.country.toLowerCase() === annex11.COUNTRY_NAME.toLowerCase()
                     && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
+                      logger.info(`Annex 11 rules found for , ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
                       plantInfo.annex11RulesArr.push(annex11)
-
+                      plantInfo.outcome = annex.OVERALL_DECISION
                   }})}
    
         }
@@ -353,7 +353,6 @@ return plantInfo
     if (plantInfo.annex11RulesArr.length > 0)
         {
           prohibitionConditionMet = true
-          plantInfo.outcome = annex.OVERALL_DECISION
           logger.info('Level 3A: UN-PROHIBITED check APPLICABLE at Country level')
         }
   }
@@ -389,33 +388,33 @@ return plantInfo
             plantInfo.isEUSL = reg[1].toLowerCase()
            
             logger.info(
-              `formatted region is: ${reg[0]}, ${reg[1]}`
+              `formatted region is : ${reg[0]}, ${reg[1]}`
             )
 
             // check if region level entry exists for Annex 6
             if (reg[0].toLowerCase() === annex6RegionType.toLowerCase() &&
                 reg[1].toLowerCase() === annex6RegionValue.toLowerCase()) {
-
-                  // Get Annex11 rules at for the matched 'Region'  
-                  plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
-                    annex11Region = annex11.COUNTRY_NAME.replace(/[()\s-]+/g, '')
-                    annex11RegionType = annex11Region.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
-                    annex11RegionValue = annex11Region.split(',')[1]
   
               // Fetch applicable Annex11 Rules at country level
               if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)){
 
                 plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
+                  annex11Region = annex11.COUNTRY_NAME.replace(/[()\s-]+/g, '')
+                  annex11RegionType = annex11Region.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
+                  annex11RegionValue = annex11Region.split(',')[1]
+
                   if (reg[0].toLowerCase() === annex11RegionType.toLowerCase()&&
                   reg[1].toLowerCase() === annex11RegionValue.toLowerCase()
                   && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
+                    logger.info(`Annex 11 rules found for , ${annex.A6_RULE}, ${annex.COUNTRY_NAME}`)
                     plantInfo.annex11RulesArr.push(annex11)
+                    plantInfo.outcome = annex.OVERALL_DECISION
                   }
                 
                 })
    
         }
-      })
+      
       }
     })
   }
@@ -424,8 +423,7 @@ return plantInfo
     if (plantInfo.annex11RulesArr.length > 0)
         {
           prohibitionConditionMet = true
-          plantInfo.outcome = annex.OVERALL_DECISION
-          logger.info('Level 3b: UN-PROHIBITED check APPLICABLE at REGION level')
+          logger.info('Level 3B: UN-PROHIBITED check APPLICABLE at REGION level')
         }
   
   return plantInfo
@@ -453,6 +451,7 @@ return plantInfo
                   if (annex11.COUNTRY_NAME.toLowerCase() === 'all'
                       && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
                         plantInfo.annex11RulesArr.push(annex11)
+                        plantInfo.outcome = annex.OVERALL_DECISION
                     }
                 })
               }
@@ -463,13 +462,102 @@ return plantInfo
         {
           plantInfo.all = true
           prohibitionConditionMet = true
-          plantInfo.outcome = annex.OVERALL_DECISION
           logger.info('Level 3C: UN-PROHIBITED check APPLICABLE at All level')
         }
   
         return plantInfo
   }
 
+        // Level 4 check: if there's no entry in Annex6, it's un-prohibited
+  function noAnnex6ItsUnprohibited(){ 
+    logger.info('Level 4A: Starting UN-PROHIBITED check for Country with NO Annex6 entries')
+    let annex11Region = ''
+
+    if ( !plantDocument.outcome && Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
+      plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
+
+          // get the region from countries collection
+          let regionArr = getCountryIndicators() 
+  
+          regionArr.forEach(function (reg) {
+            if (reg[0] === 'EUSL_INDICATOR')
+            plantInfo.isEUSL = reg[1].toLowerCase()
+           
+                    annex11Region = annex11.COUNTRY_NAME.replace(/[()\s-]+/g, '')
+                    annex11RegionType = annex11Region.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
+                    annex11RegionValue = annex11Region.split(',')[1]
+  
+                    //logger.info(reg[0].toLowerCase() + ',' + reg[1].toLowerCase()  + ',' + annex11RegionType.toLowerCase() + ',' + annex11RegionValue.toLowerCase())
+ 
+                  if (reg[0].toLowerCase() === annex11RegionType.toLowerCase()&&
+                      reg[1].toLowerCase() === annex11RegionValue.toLowerCase()
+                      && annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
+                        logger.info('Level 4A: Annex 11 region match')
+                        plantInfo.annex11RulesArr.push(annex11)
+                        plantInfo.outcome = 'not prohibited'
+                    }
+            })
+          })
+          }
+
+          if (plantInfo.annex11RulesArr.length > 0)
+          {
+            prohibitionConditionMet = true
+            logger.info('Level 4: UN-PROHIBITED check APPLICABLE for Country with NO Annex6 Entries')
+          }
+    
+          return plantInfo
+      }
+
+        // Level 4 check: if there's no entry in Annex6, it's un-prohibited
+  function noAnnex6ItsUnprohibitedGlobally(){ 
+    logger.info('Level 4B: Starting UN-PROHIBITED check for Country with NO Annex6 entries')
+    let annex11Region = ''
+
+    if ( !plantDocument.outcome && Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
+      plantDocument.HOST_REGULATION.ANNEX11.forEach(function (annex11) {
+
+          // get the region from countries collection
+          let regionArr = getCountryIndicators() 
+  
+          regionArr.forEach(function (reg) {
+            if (reg[0] === 'EUSL_INDICATOR')
+            plantInfo.isEUSL = reg[1].toLowerCase()
+           
+            // logger.info(
+            //   `formatted region is : ${reg[0]}, ${reg[1]}`
+            // )
+                    annex11Region = annex11.COUNTRY_NAME.replace(/[()\s-]+/g, '')
+                    annex11RegionType = annex11Region.split(',')[0]  // Example in Mongo: COUNTRY_NAME:"EUROPE_INDICATOR, FALSE"
+                    annex11RegionValue = annex11Region.split(',')[1]
+  
+                    //logger.info(reg[0].toLowerCase() + ',' + reg[1].toLowerCase()  + ',' + annex11RegionType.toLowerCase() + ',' + annex11RegionValue.toLowerCase())
+ 
+                  if (reg[0].toLowerCase() === annex11RegionType.toLowerCase()&&
+                      reg[1].toLowerCase() === annex11RegionValue.toLowerCase()
+                      && annex11.SERVICE_FORMAT.toLowerCase() === 'all'){
+                        logger.info('Level 4B: Annex 11 region match')
+                        plantInfo.annex11RulesArr.push(annex11)
+                        plantInfo.outcome = 'not prohibited'
+                    }
+            })
+          })
+          }
+
+          if (plantInfo.annex11RulesArr.length > 0)
+          {
+            prohibitionConditionMet = true
+            logger.info('Level 4: UN-PROHIBITED check APPLICABLE for Country with NO Annex6 Entries')
+          }
+    
+          return plantInfo
+      }
+      
+
+  function validateAnnex6AndAnnex11RegionIndicators(annex6, annex11)
+  {
+
+  }
 
   function getPests(){
     const importCountry = innsProhibitedObj.country.toLowerCase()
@@ -523,6 +611,5 @@ return plantInfo
   }
   }
 }
-
 
 export { ProhibitedStrategy }
