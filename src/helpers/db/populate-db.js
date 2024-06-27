@@ -32,6 +32,12 @@ const filePathPestFCPD = path.join(__dirname, 'data', 'pest_fcpd.json')
 
 const filePathPestPras = path.join(__dirname, 'data', 'pest_pras.json')
 
+const filePathPestPlantLink = path.join(
+  __dirname,
+  'data',
+  'pest_plant_link.json'
+)
+
 const mongoUri = config.get('mongoUri') // Get MongoDB URI from the config
 
 const collectionNamePlant = 'PLANT_DETAIL'
@@ -47,7 +53,7 @@ const collectionNamePlantPestReg = 'PLANT_PEST_REG'
 const collectionPestDistribution = 'PEST_DISTRIBUTION'
 const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
 const collectionPestPras = 'PEST_PRA_DATA'
-
+const collectionPestPlantLink = 'PEST_PLANT_LINK'
 const populateDbHandler = async (request, h) => {
   try {
     await loadData(
@@ -135,6 +141,13 @@ const populateDbHandler = async (request, h) => {
       mongoUri,
       request.server.db,
       collectionPestPras,
+      1
+    )
+    await loadData(
+      filePathPestPlantLink,
+      mongoUri,
+      request.server.db,
+      collectionPestPlantLink,
       1
     )
 

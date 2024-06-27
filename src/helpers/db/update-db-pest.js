@@ -64,7 +64,7 @@ async function getPestList(db) {
 }
 
 async function getPlantPestLinkList(db) {
-  const collection = db.collection('PLANT_PEST_LINK')
+  const collection = db.collection('PEST_PLANT_LINK')
   return await collection.find({}).toArray()
 }
 
