@@ -142,7 +142,7 @@ class ProhibitedStrategy extends workflowEngine {
               regulated_indicator:
                 plantDocument.PEST_LINK[i].REGULATION_INDICATOR,
               regulation_category:
-                plantDocument.PEST_LINK[i].REGUALTION_CATEGORY,
+                plantDocument.PEST_LINK[i].REGULATION_CATEGORY,
               pest_country: plantDocument.PEST_LINK[i].PEST_COUNTRY[j]
             })
           }
