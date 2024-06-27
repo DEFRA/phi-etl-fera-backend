@@ -110,7 +110,7 @@ async function loadData(db) {
     updateResultListWithPestLink(resultList, pestLinkResultList)
 
     updateResultListWithPestNames(resultList, pestNamesList)
-    updateResultListWithPestReg(resultList, plantPestRegList)
+    updateResultListWithPestReg(resultList, plantPestRegList, plantList)
     updateResultListWithPestCountry(resultList, pestDistributionList)
 
     await insertResultList(db, resultList)
@@ -248,7 +248,6 @@ function mapAnnex11GrandParent(resultList, plantList, annex11List) {
       }
     })
     .filter((element) => element !== undefined)
-
   return resultListParent.map((rl) => {
     const nx11ListParent = annex11List
       .filter((nx11) => +rl.PARENT_HOST_REF === +nx11.HOST_REF)
@@ -364,31 +363,82 @@ function updateResultListWithPestNames(resultList, pestNamesList) {
   })
 }
 
-function updateResultListWithPestReg(resultList, plantPestRegList) {
-  resultList.forEach((pl) => {
+function updateResultListWithPestReg(resultList, plantPestRegList, plantList) {
+  const pestRegResultListGrandParent = pestRegParentListresultList(
+    resultList,
+    plantList,
+    plantPestRegList
+  )
+  resultList.forEach((rl) => {
     plantPestRegList.forEach((pest) => {
-      pl.PEST_LINK?.forEach((x) => {
-        if (x?.CSL_REF === pest?.CSL_REF) {
+      rl.PEST_LINK?.forEach((rlPestLink) => {
+        if (rlPestLink?.CSL_REF === pest?.CSL_REF) {
           if (['Q', 'P'].includes(pest?.QUARANTINE_INDICATOR)) {
-            x.REGULATION = pest?.REGULATION
-            x.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
-            x.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
-            x.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
+            rlPestLink.REGULATION = pest?.REGULATION
+            rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
+            rlPestLink.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
+            rlPestLink.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
           } else if (
             pest?.QUARANTINE_INDICATOR === 'R' &&
-            pl?.HOST_REF === pest?.HOST_REF
+            rl?.HOST_REF === pest?.HOST_REF
           ) {
-            x.REGULATION = pest?.REGULATION
-            x.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
-            x.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
-            x.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
+            rlPestLink.REGULATION = pest?.REGULATION
+            rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
+            rlPestLink.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
+            rlPestLink.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
+          } else if (
+            pest?.QUARANTINE_INDICATOR === 'R' &&
+            rl?.PARENT_HOST_REF === pest?.HOST_REF
+          ) {
+            rlPestLink.REGULATION = pest?.REGULATION
+            rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
+            rlPestLink.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
+            rlPestLink.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
+          } else {
+            /** ** Match GrandParent ****/
+            pestRegResultListGrandParent.forEach((gp) => {
+              if (gp.HOST_REF === pest?.HOST_REF) {
+                rlPestLink.REGULATION = gp?.pestRegList?.REGULATION
+                rlPestLink.QUARANTINE_INDICATOR =
+                  gp?.pestRegList?.QUARANTINE_INDICATOR
+                rlPestLink.REGULATION_INDICATOR =
+                  gp?.pestRegList?.REGULATION_INDICATOR
+                rlPestLink.REGULATION_CATEGORY =
+                  gp?.pestRegList?.REGULATION_CATEGORY
+              }
+            })
           }
         }
       })
     })
   })
 }
-
+// Build a Pest regulation list by finding the grandparent host_ref
+function pestRegParentListresultList(resultList, plantList, plantPestRegList) {
+  const resultListParent = resultList
+    // eslint-disable-next-line array-callback-return
+    .map((rl) => {
+      const matchingElement = plantList.find(
+        (pl) => +pl.HOST_REF === +rl.PARENT_HOST_REF
+      )
+      if (matchingElement) {
+        return {
+          ...matchingElement,
+          HOST_CHILD_REF: rl.HOST_REF
+        }
+      }
+    })
+    .filter((element) => element !== undefined)
+  return resultListParent.map((rl) => {
+    const pestRegListParent = plantPestRegList
+      .filter((pest) => +rl.PARENT_HOST_REF === +pest.HOST_REF)
+      .filter((pest) => pest.HOST_REF !== null)
+    return {
+      HOST_REF: rl.HOST_CHILD_REF,
+      pestRegList: pestRegListParent
+    }
+  })
+}
 function updateResultListWithPestCountry(resultList, pestDistributionList) {
   const cslRefMap = {}
 

@@ -404,7 +404,7 @@ describe('updateDbPlantHandler loadData', () => {
           ]
         }
       ])
-      updateResultListWithPestReg(resultList, plantPestRegList)
+      updateResultListWithPestReg(resultList, plantPestRegList, plantList)
       expect(resultList[0].PEST_LINK[0].REGULATION_CATEGORY).toEqual(
         'Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain'
       )
