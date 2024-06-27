@@ -21,7 +21,7 @@ class WorkflowStrategyFactory {
 }
 
 async function doCountryRegionCheck(db, searchInput) {
-  logger.info(`get the country grouping , ${searchInput.plantDetails.country}`)
+  logger.info(`Get the country grouping , ${searchInput.plantDetails.country}`)
 
   const query = {
     'COUNTRY_GROUPING.COUNTRY_GROUPING': {
@@ -58,7 +58,7 @@ async function kickStart(searchInput, db) {
 
     if (!plantDocument) {
       logger.info(
-        `plant document not found for host_ref:, ${searchInput.plantDetails.hostRef}`
+        `Plant document not found for host_ref:, ${searchInput.plantDetails.hostRef}`
       )
     } else {
       const countryMapping = await doCountryRegionCheck(db, searchInput)
@@ -73,7 +73,7 @@ async function kickStart(searchInput, db) {
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
         logger.info(
-          `INNS rules available for host_ref, country , ${plantInfo.hostRef}, ${plantInfo.country}`
+          `INNS rules Applicable for host_ref, country , ${plantInfo.hostRef}, ${plantInfo.country}`
         )
         return plantInfo
       }
@@ -89,7 +89,7 @@ async function kickStart(searchInput, db) {
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
         logger.info(
-          `Prohibited rule available for host_ref, country ${plantInfo.hostRef}, ${plantInfo.country}`
+          `PROHIBITED rule Applicable for host_ref, country ${plantInfo.hostRef}, ${plantInfo.country}`
         )
         return plantInfo
       }
