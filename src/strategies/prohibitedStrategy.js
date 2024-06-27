@@ -39,21 +39,21 @@ class ProhibitedStrategy extends workflowEngine {
 
     // Start with prohibition checks
     prohibitionCheckAtCountryLevel()
-    if (prohibitionConditionMet === false) { prohibitionCheckAtRegionLevel() }
-    if (prohibitionConditionMet === false) { prohibitionCheckAllLevel() }
-
+    if (prohibitionConditionMet === false) prohibitionCheckAtRegionLevel()
+    if (prohibitionConditionMet === false) prohibitionCheckAllLevel()
+    
     // move to partially-prohibited checks
     if (prohibitionConditionMet === false) partiallyProhibitionCheckAtCountryLevel()
-    if (prohibitionConditionMet === false) { partiallyProhibitionCheckAtRegionLevel() }
-    if (prohibitionConditionMet === false) { partiallyProhibitionCheckAtAllLevel() }
+    if (prohibitionConditionMet === false) partiallyProhibitionCheckAtRegionLevel() 
+    if (prohibitionConditionMet === false) partiallyProhibitionCheckAtAllLevel()
 
     // move to un-prohibited checks
-    if (prohibitionConditionMet === false) { getUnprohibitedAnnex11RulesAtCountryLevel() }
-    if (prohibitionConditionMet === false) { getUnprohibitedAnnex11RulesAtRegionLevel() }
-    if (prohibitionConditionMet === false) { getUnprohibitedAnnex11RulesAtAllLevel() }
+    if (prohibitionConditionMet === false) getUnprohibitedAnnex11RulesAtCountryLevel()
+    if (prohibitionConditionMet === false) getUnprohibitedAnnex11RulesAtRegionLevel()
+    if (prohibitionConditionMet === false) getUnprohibitedAnnex11RulesAtAllLevel()
 
-    if (prohibitionConditionMet === false) { noAnnex6ItsUnprohibited() }
-    if (prohibitionConditionMet === false) { noAnnex6ItsUnprohibitedGlobally() }
+    if (prohibitionConditionMet === false) noAnnex6ItsUnprohibited()
+    if (prohibitionConditionMet === false) noAnnex6ItsUnprohibitedGlobally()
 
 
     // finall, get the pests
