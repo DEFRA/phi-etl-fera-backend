@@ -148,7 +148,7 @@ const populateDbHandler = async (request, h) => {
       mongoUri,
       request.server.db,
       collectionPestPlantLink,
-      1
+      2
     )
 
     return h
