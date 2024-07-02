@@ -1,5 +1,4 @@
-{
-  "PEST_PLANT_LINK": [
+[
     {
       "HOST_REF": 2867,
       "CSL_REF": 13
@@ -60816,5 +60815,4 @@
       "HOST_REF": 15283,
       "CSL_REF": 32950
     }
-  ]
-}
+]
