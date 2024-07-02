@@ -47,9 +47,6 @@ class ProhibitedStrategy extends workflowEngine {
 
     // Start with prohibition checks
     plantInfo = await prohibitionCheckAtCountryLevel()
-    console.log('outcome: ')
-    console.log(plantInfo)
-    console.log (!(plantInfo?.outcome === undefined))
 
     if (!(plantInfo?.outcome === undefined)  ) 
     {
@@ -96,11 +93,9 @@ class ProhibitedStrategy extends workflowEngine {
     }
 
     // finally, get the pests
-     await getPests()
+    await getPests()
 
     logger.info('Annex6 (PROHIBITED) checks performed')
-
-    return plantInfo
 
     async function prohibitionCheckAtCountryLevel() {
       logger.info('Level 1A: Starting Prohibited check at COUNTRY level')
@@ -224,7 +219,7 @@ class ProhibitedStrategy extends workflowEngine {
       )
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
-        plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
+        plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
           if (
             // check if atlease 1 exemption exists
             annex.COUNTRY_NAME.toLowerCase() ===
@@ -244,7 +239,7 @@ class ProhibitedStrategy extends workflowEngine {
 
             setPlantAttributes(annex)
 
-            getAnnex11Rules()
+            await getAnnex11Rules()
           }
         })
       }
@@ -281,7 +276,7 @@ class ProhibitedStrategy extends workflowEngine {
 
             // get the region from countries collection
             const regionArr = await getCountryIndicators()
-            regionArr.forEach(function (reg) {
+            regionArr.forEach(async function (reg) {
               if (reg[0] === 'EUSL_INDICATOR')
                 plantInfo.isEUSL = reg[1].toLowerCase()
 
@@ -296,7 +291,7 @@ class ProhibitedStrategy extends workflowEngine {
 
                 setPlantAttributes(annex)
 
-                getAnnex11Rules()
+                await getAnnex11Rules()
 
               }
             })
@@ -318,7 +313,7 @@ class ProhibitedStrategy extends workflowEngine {
       logger.info('Level 2C: Starting PARTIALLY PROHIBITED check at ALL level')
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
-        plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
+        plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
           if (
             annex.COUNTRY_NAME.toLowerCase() === 'all' &&
             annex.SERVICE_FORMAT.toLowerCase() ===
@@ -336,7 +331,7 @@ class ProhibitedStrategy extends workflowEngine {
 
             setPlantAttributes(annex)
 
-            getAnnex11Rules()
+            await getAnnex11Rules()
           }
         })
       }
@@ -356,7 +351,7 @@ class ProhibitedStrategy extends workflowEngine {
       let annex11PlantRule = ''
       // Get annex11 rules for Hostref/Country/Service format/Species 
 
-      if (innsProhibitedObj.hostRef === annex11.HOST_REF){
+      if (innsProhibitedObj.hostRef.toString() === annex11.HOST_REF.toString()){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( innsProhibitedObj.country.toLowerCase() === annex11.COUNTRY_NAME.toLowerCase()) {
             logger.info(
@@ -377,7 +372,7 @@ class ProhibitedStrategy extends workflowEngine {
 
       // Get annex11 rules for Hostref/Region/Service format/Species
 
-      if (innsProhibitedObj.hostRef === annex11.HOST_REF){
+      if (innsProhibitedObj.hostRef.toString() === annex11.HOST_REF.toString()){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( innsProhibitedObj.country.toLowerCase() !== annex11.COUNTRY_NAME.toLowerCase()
               && annex11.COUNTRY_NAME.toLowerCase() !== 'all') {
@@ -405,16 +400,16 @@ class ProhibitedStrategy extends workflowEngine {
       return annex11PlantRule
     }
 
-    async function getAnnex11For_HR_Country_SvcFmt_Family(annex11) {
-      logger.info('Invoked : getAnnex11For_HR_Country_SvcFmt_Family')
+    async function getAnnex11For_HR_All_SvcFmt_Family(annex11) {
+      logger.info('Invoked : getAnnex11For_HR_All_SvcFmt_Family')
       let annex11PlantRule = ''
-      // Get annex11 rules for Hostref/Region/Service format/Family 
+      // Get annex11 rules for Hostref/All/Service format/Family 
 
-      if (innsProhibitedObj.hostRef === annex11.HOST_REF){
+      if (innsProhibitedObj.hostRef.toString() === annex11.HOST_REF.toString()){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( annex11.COUNTRY_NAME.toLowerCase() === 'all') {
             logger.info(
-              `Annex 11 rules found for Hostref/Region/Service format/Family , ${annex11.HOST_REF}, ${annex11.COUNTRY_NAME}`
+              `Annex 11 rules found for Hostref/All/Service format/Family , ${annex11.HOST_REF}, ${annex11.COUNTRY_NAME}`
             )
             annex11PlantRule = annex11
         }
@@ -428,7 +423,7 @@ class ProhibitedStrategy extends workflowEngine {
       let annex11PlantRule = ''
       // Get annex11 rules at Country/Service format/Genus 
 
-      if (innsProhibitedObj.hostRef !== annex11.HOST_REF && annex11.HOST_REF !== 99999 ){
+      if (innsProhibitedObj.hostRef.toString() !== annex11.HOST_REF.toString() && annex11.HOST_REF.toString() !== "99999" ){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( innsProhibitedObj.country.toLowerCase() === annex11.COUNTRY_NAME.toLowerCase()) {
             logger.info(
@@ -449,7 +444,7 @@ class ProhibitedStrategy extends workflowEngine {
 
       // Get annex11 rules at Region/Service format/Genus 
 
-      if (innsProhibitedObj.hostRef !== annex11.HOST_REF && annex11.HOST_REF !== 99999){
+      if (innsProhibitedObj.hostRef.toString() !== annex11.HOST_REF.toString() && annex11.HOST_REF.toString() !== "99999"){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( innsProhibitedObj.country.toLowerCase() !== annex11.COUNTRY_NAME.toLowerCase()
               && innsProhibitedObj.country.toLowerCase() !== 'all') {
@@ -481,16 +476,13 @@ class ProhibitedStrategy extends workflowEngine {
 
       let annex11PlantRule = ''
 
-
       // Get annex11 rules at All/Service format/Genus 
-
-      if (innsProhibitedObj.hostRef !== annex11.HOST_REF && annex11.HOST_REF !== 99999){
+      if (innsProhibitedObj.hostRef.toString() !== annex11.HOST_REF.toString() && annex11.HOST_REF.toString() !== "99999"){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
-          if (innsProhibitedObj.country.toLowerCase() !== 'all') {
+          if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
 
               logger.info(`Annex 11 rules found for All/Service format/Genus , ${annex11.HOST_REF}, ${annex11.COUNTRY_NAME}`)
             annex11PlantRule = annex11
-
           }
       }
     }
@@ -502,7 +494,7 @@ class ProhibitedStrategy extends workflowEngine {
       let annex11PlantRule = ''
       // Get annex11 rules at All/Service format/Country 
 
-      if (annex11.HOST_REF === 99999 ){
+      if (annex11.HOST_REF.toString() === "99999" ){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( innsProhibitedObj.country.toLowerCase() === annex11.COUNTRY_NAME.toLowerCase()) {
             logger.info(
@@ -523,7 +515,7 @@ class ProhibitedStrategy extends workflowEngine {
 
       // Get annex11 rules at All/Service format/Region 
 
-      if (annex11.HOST_REF === 99999){
+      if (annex11.HOST_REF.toString() === "99999"){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
           if ( innsProhibitedObj.country.toLowerCase() !== annex11.COUNTRY_NAME.toLowerCase()
               && innsProhibitedObj.country.toLowerCase() !== 'all') {
@@ -546,7 +538,9 @@ class ProhibitedStrategy extends workflowEngine {
                 })
         }
       }
+     
     }
+
       return annex11PlantRule
     }
 
@@ -557,9 +551,9 @@ class ProhibitedStrategy extends workflowEngine {
 
       // Get annex11 rules at All/Service format 
 
-      if (annex11.HOST_REF !== 99999){
+      if (annex11.HOST_REF.toString() === "99999"){
         if ( annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase()){
-          if (innsProhibitedObj.country.toLowerCase() === 'all') {
+          if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
 
               logger.info(`Annex 11 rules found for All/Service format  , ${annex11.HOST_REF}, ${annex11.COUNTRY_NAME}`)
             annex11PlantRule = annex11
@@ -570,143 +564,299 @@ class ProhibitedStrategy extends workflowEngine {
       return annex11PlantRule
     }
 
-    async function getAnnex11Rules() {
-      let annex11CountrySpecies = ''
-      let annex11RegionSpecies = ''
-      let annex11AllSpecies = ''
-      let annex11CountrySpeciesArr = []
-      let annex11RegionSpeciesArr = []
-      let annex11AllSpeciesArr = []
+    // async function getAnnex11Rules() {
+    //   let annex11CountrySpecies = ''
+    //   let annex11RegionSpecies = ''
+    //   let annex11AllSpecies = ''
+    //   let annex11CountrySpeciesArr = []
+    //   let annex11RegionSpeciesArr = []
+    //   let annex11AllSpeciesArr = []
 
-      let annex11CountryGenus = ''
-      let annex11RegionGenus = ''
-      let annex11AllGenus = ''
-      let annex11CountryGenusArr = []
-      let annex11RegionGenusArr = []
-      let annex11AllGenusArr = []
+    //   let annex11CountryGenus = ''
+    //   let annex11RegionGenus = ''
+    //   let annex11AllGenus = ''
+    //   let annex11CountryGenusArr = []
+    //   let annex11RegionGenusArr = []
+    //   let annex11AllGenusArr = []
 
-      let annex11CountryFamily = ''
-      let annex11RegionFamily = ''
-      let annex11AllFamily = ''
-      let annex11CountryFamilyArr = []
-      let annex11RegionFamilyArr = []
-      let annex11AllFamilyArr = []
+    //   let annex11CountryFamily = ''
+    //   let annex11RegionFamily = ''
+    //   let annex11AllFamily = ''
+    //   let annex11CountryFamilyArr = []
+    //   let annex11RegionFamilyArr = []
+    //   let annex11AllFamilyArr = []
 
-      let a11RulesFetchedForCountry = false
+    //   let a11RulesFetchedForCountry = false
 
-      if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
-        plantDocument.HOST_REGULATION.ANNEX11.forEach(async (annex11) => {
+    //   if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
+    //     plantDocument.HOST_REGULATION.ANNEX11.forEach(async (annex11) => {
 
-          // SPECIES
-          annex11CountrySpecies = await getAnnex11For_HR_Country_SvcFmt_Species(annex11)
-          if (typeof annex11CountrySpecies === 'object' && annex11CountrySpecies !== null) {
-            annex11CountrySpeciesArr.push(annex11CountrySpecies)
-          }
-          annex11RegionSpecies = await getAnnex11For_HR_Region_SvcFmt_Species(annex11)
-          if (typeof annex11RegionSpecies === 'object' && annex11RegionSpecies !== null) {
-            annex11RegionSpeciesArr.push(annex11RegionSpecies)
-          }
-          annex11AllSpecies = await getAnnex11For_HR_Country_SvcFmt_Family(annex11)
-          if (typeof annex11AllSpecies === 'object' && annex11AllSpecies !== null) {
-            annex11AllSpeciesArr.push(annex11AllSpecies)
-          }
+    //       // SPECIES
+    //       annex11CountrySpecies = await getAnnex11For_HR_Country_SvcFmt_Species(annex11)
+    //       if (typeof annex11CountrySpecies === 'object' && annex11CountrySpecies !== null) {
+    //         annex11CountrySpeciesArr.push(annex11CountrySpecies)
+    //       }
 
-          // GENUS
-          annex11CountryGenus = await getAnnex11For_Country_SvcFmt_Genus(annex11)
-          if (typeof annex11CountryGenus === 'object' && annex11CountryGenus !== null) {
-            annex11CountryGenusArr.push(annex11CountryGenus)
-          }
-          annex11RegionGenus = await getAnnex11For_Region_SvcFmt_Genus(annex11)
-          if (typeof annex11RegionGenus === 'object' && annex11RegionGenus !== null) {
-            annex11RegionGenusArr.push(annex11RegionGenus)
-          }
-          annex11AllGenus = await getAnnex11For_All_SvcFmt_Genus(annex11)
-          if (typeof annex11AllGenus === 'object' && annex11AllGenus !== null) {
-            annex11AllGenusArr.push(annex11AllGenus)
-          }
+    //       annex11RegionSpecies = await getAnnex11For_HR_Region_SvcFmt_Species(annex11)
+    //       if (typeof annex11RegionSpecies === 'object' && annex11RegionSpecies !== null) {
+    //         annex11RegionSpeciesArr.push(annex11RegionSpecies)
+    //       }
+
+    //       annex11AllSpecies = await getAnnex11For_HR_All_SvcFmt_Family(annex11)
+    //       if (typeof annex11AllSpecies === 'object' && annex11AllSpecies !== null) {
+    //         annex11AllSpeciesArr.push(annex11AllSpecies)
+    //       }
+
+    //       // GENUS
+    //       annex11CountryGenus = await getAnnex11For_Country_SvcFmt_Genus(annex11)
+    //       if (typeof annex11CountryGenus === 'object' && annex11CountryGenus !== null) {
+    //         annex11CountryGenusArr.push(annex11CountryGenus)
+    //       }
+
+    //       annex11RegionGenus = await getAnnex11For_Region_SvcFmt_Genus(annex11)
+    //       if (typeof annex11RegionGenus === 'object' && annex11RegionGenus !== null) {
+    //         annex11RegionGenusArr.push(annex11RegionGenus)
+    //       }
+
+    //       annex11AllGenus = await getAnnex11For_All_SvcFmt_Genus(annex11)
+    //       if (typeof annex11AllGenus === 'object' && annex11AllGenus !== null) {
+    //         annex11AllGenusArr.push(annex11AllGenus)
+    //       }
          
-          // ALL
-          annex11CountryFamily = await getAnnex11For_All_SvcFmt_Country(annex11)
-          if (typeof annex11CountryFamily === 'object' && annex11CountryFamily !== null) {
-            annex11CountryFamilyArr.push(annex11CountryFamily)
-          }
-          annex11RegionFamily = await getAnnex11For_All_SvcFmt_Region(annex11)
-          if (typeof annex11RegionFamily === 'object' && annex11RegionFamily !== null) {
-            annex11RegionFamilyArr.push(annex11RegionFamily)
-          }
-          annex11AllFamily = await getAnnex11For_All_SvcFmt(annex11)
-          if (typeof annex11AllFamily === 'object' && annex11AllFamily !== null) {
-            annex11AllFamilyArr.push(annex11AllFamily)
-          }
-        })
-      }
+    //       // ALL
+    //       annex11CountryFamily = await getAnnex11For_All_SvcFmt_Country(annex11)
+    //       if (typeof annex11CountryFamily === 'object' && annex11CountryFamily !== null) {
+    //         annex11CountryFamilyArr.push(annex11CountryFamily)
+    //       }
 
-      console.log(a11RulesFetchedForCountry)
+    //       annex11RegionFamily = await getAnnex11For_All_SvcFmt_Region(annex11)
+    //       if (typeof annex11RegionFamily === 'object' && annex11RegionFamily !== null) {
+    //         annex11RegionFamilyArr.push(annex11RegionFamily)
+    //       }
+
+    //       annex11AllFamily = await getAnnex11For_All_SvcFmt(annex11)
+    //       if (typeof annex11AllFamily === 'object' && annex11AllFamily !== null) {
+    //         console.log('got annex11AllFamily and pushing to array')
+    //         annex11AllFamilyArr.push(annex11AllFamily)
+    //       }
+    //     })
+    //   }
+
+    //   // SPECIES ARRAY
+    //   if (a11RulesFetchedForCountry === false && Array.isArray (annex11CountrySpeciesArr) && annex11CountrySpeciesArr.length > 0 ) {
+    //     logger.info('annex11CountrySpeciesArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11CountrySpeciesArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11RegionSpeciesArr) && annex11RegionSpeciesArr.length > 0) {
+    //     logger.info('annex11RegionSpeciesArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11RegionSpeciesArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   console.log('found rules annex11AllSpeciesArr')
+    //   console.log(annex11AllSpeciesArr)
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11AllSpeciesArr) && annex11AllSpeciesArr.length > 0) {
+    //     logger.info('annex11AllSpeciesArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11AllSpeciesArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   // GENUS ARRAY
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11CountryGenusArr) && annex11CountryGenusArr.length > 0 ) {
+    //     logger.info('annex11CountryGenusArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11CountryGenusArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11RegionGenusArr) && annex11RegionGenusArr.length > 0) {
+    //     logger.info('annex11RegionGenusArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11RegionGenusArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11AllGenusArr) && annex11AllGenusArr.length > 0) {
+    //     logger.info('annex11AllGenusArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11AllGenusArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   // ALL ARRAY
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11CountryFamilyArr) && annex11CountryFamilyArr.length > 0) {
+    //     logger.info('annex11CountryFamilyArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11CountryFamilyArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11RegionFamilyArr) && annex11RegionFamilyArr.length > 0) {
+    //     logger.info('annex11RegionFamilyArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11RegionFamilyArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   console.log('found rules annex11AllFamilyArr')
+    //   console.log(annex11AllFamilyArr)
+    //   if (a11RulesFetchedForCountry === false && Array.isArray(annex11AllFamilyArr) && annex11AllFamilyArr.length > 0) {
+    //     logger.info('annex11AllFamilyArr.length > 0')
+    //     plantInfo.annex11RulesArr = annex11AllFamilyArr
+    //     a11RulesFetchedForCountry = true
+    //   }
+
+    //   console.log('rules fetched')
+    //   console.log(a11RulesFetchedForCountry)
+
+    //   return plantInfo
+    // }
+
+    async function getAnnex11Rules() {
+      let annex11CountrySpecies = '';
+      let annex11RegionSpecies = '';
+      let annex11AllSpecies = '';
+      let annex11CountrySpeciesArr = [];
+      let annex11RegionSpeciesArr = [];
+      let annex11AllSpeciesArr = [];
+  
+      let annex11CountryGenus = '';
+      let annex11RegionGenus = '';
+      let annex11AllGenus = '';
+      let annex11CountryGenusArr = [];
+      let annex11RegionGenusArr = [];
+      let annex11AllGenusArr = [];
+  
+      let annex11CountryFamily = '';
+      let annex11RegionFamily = '';
+      let annex11AllFamily = '';
+      let annex11CountryFamilyArr = [];
+      let annex11RegionFamilyArr = [];
+      let annex11AllFamilyArr = [];
+  
+      let a11RulesFetchedForCountry = false;
+  
+      if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
+          for (const annex11 of plantDocument.HOST_REGULATION.ANNEX11) {
+              // SPECIES
+              annex11CountrySpecies = await getAnnex11For_HR_Country_SvcFmt_Species(annex11);
+              if (typeof annex11CountrySpecies === 'object' && annex11CountrySpecies !== null) {
+                  annex11CountrySpeciesArr.push(annex11CountrySpecies);
+              }
+  
+              annex11RegionSpecies = await getAnnex11For_HR_Region_SvcFmt_Species(annex11);
+              if (typeof annex11RegionSpecies === 'object' && annex11RegionSpecies !== null) {
+                  annex11RegionSpeciesArr.push(annex11RegionSpecies);
+              }
+  
+              annex11AllSpecies = await getAnnex11For_HR_All_SvcFmt_Family(annex11);
+              if (typeof annex11AllSpecies === 'object' && annex11AllSpecies !== null) {
+                  annex11AllSpeciesArr.push(annex11AllSpecies);
+              }
+  
+              // GENUS
+              annex11CountryGenus = await getAnnex11For_Country_SvcFmt_Genus(annex11);
+              if (typeof annex11CountryGenus === 'object' && annex11CountryGenus !== null) {
+                  annex11CountryGenusArr.push(annex11CountryGenus);
+              }
+  
+              annex11RegionGenus = await getAnnex11For_Region_SvcFmt_Genus(annex11);
+              if (typeof annex11RegionGenus === 'object' && annex11RegionGenus !== null) {
+                  annex11RegionGenusArr.push(annex11RegionGenus);
+              }
+  
+              annex11AllGenus = await getAnnex11For_All_SvcFmt_Genus(annex11);
+              if (typeof annex11AllGenus === 'object' && annex11AllGenus !== null) {
+                  annex11AllGenusArr.push(annex11AllGenus);
+              }
+  
+              // ALL
+              annex11CountryFamily = await getAnnex11For_All_SvcFmt_Country(annex11);
+              if (typeof annex11CountryFamily === 'object' && annex11CountryFamily !== null) {
+                  annex11CountryFamilyArr.push(annex11CountryFamily);
+              }
+  
+              annex11RegionFamily = await getAnnex11For_All_SvcFmt_Region(annex11);
+              if (typeof annex11RegionFamily === 'object' && annex11RegionFamily !== null) {
+                  annex11RegionFamilyArr.push(annex11RegionFamily);
+              }
+  
+              annex11AllFamily = await getAnnex11For_All_SvcFmt(annex11);
+              if (typeof annex11AllFamily === 'object' && annex11AllFamily !== null) {
+                  console.log('got annex11AllFamily and pushing to array');
+                  annex11AllFamilyArr.push(annex11AllFamily);
+              }
+          }
+      }
+  
       // SPECIES ARRAY
-      if (Array.isArray(annex11CountrySpeciesArr) && annex11CountrySpeciesArr.length > 0) {
-        logger.info('annex11CountrySpeciesArr.length > 0')
-        plantInfo.annex11RulesArr = annex11CountrySpeciesArr
-        a11RulesFetchedForCountry = true
+      if (a11RulesFetchedForCountry === false && Array.isArray(annex11CountrySpeciesArr) && annex11CountrySpeciesArr.length > 0) {
+          logger.info('annex11CountrySpeciesArr.length > 0');
+          plantInfo.annex11RulesArr = annex11CountrySpeciesArr;
+          a11RulesFetchedForCountry = true;
       }
-
+  
       if (a11RulesFetchedForCountry === false && Array.isArray(annex11RegionSpeciesArr) && annex11RegionSpeciesArr.length > 0) {
-        logger.info('annex11RegionSpeciesArr.length > 0')
-        plantInfo.annex11RulesArr = annex11RegionSpeciesArr
-        a11RulesFetchedForCountry = true
+          logger.info('annex11RegionSpeciesArr.length > 0');
+          plantInfo.annex11RulesArr = annex11RegionSpeciesArr;
+          a11RulesFetchedForCountry = true;
       }
-
-      if (a11RulesFetchedForCountry === false && Array.isArray(annex11AllSpeciesArr) && annex11AllSpeciesArr.length > 0) {
-        logger.info('annex11AllSpeciesArr.length > 0')
-        plantInfo.annex11RulesArr = annex11AllSpeciesArr
-        a11RulesFetchedForCountry = true
+  
+      console.log('found rules annex11AllSpeciesArr');
+      console.log(annex11AllSpeciesArr.length > 0);
+      console.log(a11RulesFetchedForCountry)
+      console.log(Array.isArray(annex11AllSpeciesArr))
+      if (a11RulesFetchedForCountry === false && annex11AllSpeciesArr.length > 0) {
+          logger.info('annex11AllSpeciesArr.length > 0');
+          plantInfo.annex11RulesArr = annex11AllSpeciesArr;
+          a11RulesFetchedForCountry = true;
       }
-
+  
       // GENUS ARRAY
       if (a11RulesFetchedForCountry === false && Array.isArray(annex11CountryGenusArr) && annex11CountryGenusArr.length > 0) {
-        logger.info('annex11CountryGenusArr.length > 0')
-        plantInfo.annex11RulesArr = annex11CountryGenusArr
-        a11RulesFetchedForCountry = true
+          logger.info('annex11CountryGenusArr.length > 0');
+          plantInfo.annex11RulesArr = annex11CountryGenusArr;
+          a11RulesFetchedForCountry = true;
       }
-
+  
       if (a11RulesFetchedForCountry === false && Array.isArray(annex11RegionGenusArr) && annex11RegionGenusArr.length > 0) {
-        logger.info('annex11RegionGenusArr.length > 0')
-        plantInfo.annex11RulesArr = annex11RegionGenusArr
-        a11RulesFetchedForCountry = true
+          logger.info('annex11RegionGenusArr.length > 0');
+          plantInfo.annex11RulesArr = annex11RegionGenusArr;
+          a11RulesFetchedForCountry = true;
       }
-      console.log(annex11RegionGenusArr)
+  
       if (a11RulesFetchedForCountry === false && Array.isArray(annex11AllGenusArr) && annex11AllGenusArr.length > 0) {
-        logger.info('annex11AllGenusArr.length > 0')
-        plantInfo.annex11RulesArr = annex11AllGenusArr
-        a11RulesFetchedForCountry = true
+          logger.info('annex11AllGenusArr.length > 0');
+          plantInfo.annex11RulesArr = annex11AllGenusArr;
+          a11RulesFetchedForCountry = true;
       }
-
-      console.log('fetching rules')
-      console.log(annex11AllGenusArr)
-
+  
       // ALL ARRAY
       if (a11RulesFetchedForCountry === false && Array.isArray(annex11CountryFamilyArr) && annex11CountryFamilyArr.length > 0) {
-        logger.info('annex11CountryFamilyArr.length > 0')
-        plantInfo.annex11RulesArr = annex11CountryFamilyArr
-        a11RulesFetchedForCountry = true
+          logger.info('annex11CountryFamilyArr.length > 0');
+          plantInfo.annex11RulesArr = annex11CountryFamilyArr;
+          a11RulesFetchedForCountry = true;
       }
-
+  
       if (a11RulesFetchedForCountry === false && Array.isArray(annex11RegionFamilyArr) && annex11RegionFamilyArr.length > 0) {
-        logger.info('annex11RegionFamilyArr.length > 0')
-        plantInfo.annex11RulesArr = annex11RegionFamilyArr
-        a11RulesFetchedForCountry = true
+          logger.info('annex11RegionFamilyArr.length > 0');
+          plantInfo.annex11RulesArr = annex11RegionFamilyArr;
+          a11RulesFetchedForCountry = true;
       }
-
-      if (a11RulesFetchedForCountry === false && Array.isArray(annex11AllFamilyArr) && annex11AllFamilyArr.length > 0) {
-        logger.info('annex11AllFamilyArr.length > 0')
-        plantInfo.annex11RulesArr = annex11AllFamilyArr
-        a11RulesFetchedForCountry = true
-      }
-
-      console.log('rules fetched')
+  
+      console.log('found rules annex11AllFamilyArr');
+      console.log(annex11AllFamilyArr.length > 0);
       console.log(a11RulesFetchedForCountry)
-
-    }
-
+      console.log(Array.isArray(annex11AllFamilyArr))
+      if (a11RulesFetchedForCountry === false  && annex11AllFamilyArr.length > 0) {
+          logger.info('annex11AllFamilyArr.length > 0');
+          plantInfo.annex11RulesArr = annex11AllFamilyArr;
+          a11RulesFetchedForCountry = true;
+      }
+  
+      console.log('rules fetched');
+      console.log(a11RulesFetchedForCountry);
+      console.log(plantInfo.annex11RulesArr)
+     // return plantInfo;
+  }
+  
     async function getCountryIndicators() {
       const region = innsProhibitedObj.countryDetails.REGION
       // logger.info('Country Region is:' + region)
@@ -726,7 +876,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function getUnprohibitedAnnex11RulesAtCountryLevel() {
       logger.info('Level 3A: Starting UN-PROHIBITED checks at COUNTRY level')
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
-        plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
+        plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
           if (
             annex.COUNTRY_NAME.toLowerCase() ===
             innsProhibitedObj.country.toLowerCase() &&
@@ -737,7 +887,7 @@ class ProhibitedStrategy extends workflowEngine {
             setPlantAttributes(annex)
 
             // Fetch applicable Annex11 Rules at country level
-            getAnnex11Rules()
+            await getAnnex11Rules()
           }
         })
       }
@@ -770,7 +920,7 @@ class ProhibitedStrategy extends workflowEngine {
 
             // get the region from countries collection
             const regionArr = await getCountryIndicators()
-            regionArr.forEach(function (reg) {
+            regionArr.forEach(async function (reg) {
               if (reg[0] === 'EUSL_INDICATOR')
                 plantInfo.isEUSL = reg[1].toLowerCase()
 
@@ -784,7 +934,7 @@ class ProhibitedStrategy extends workflowEngine {
                 setPlantAttributes(annex)
 
                 // Get Annex11 rules at for the matched 'Region'
-                getAnnex11Rules()
+                await getAnnex11Rules()
               }
             })
           }
@@ -821,7 +971,7 @@ class ProhibitedStrategy extends workflowEngine {
               if (
                 annex11.COUNTRY_NAME.toLowerCase() === 'all' &&
                 annex11.SERVICE_FORMAT.toLowerCase() === innsProhibitedObj.serviceFormat.toLowerCase() &&
-                annex11.HOST_REF === 99999) {
+                annex11.HOST_REF.toString() === "99999") {
                 logger.info(`Annex 11 rules found for , ${annex11.HOST_REF}, ${annex11.COUNTRY_NAME}`)
                 plantInfo.annex11RulesArr.push(annex11)
               }
@@ -844,9 +994,9 @@ class ProhibitedStrategy extends workflowEngine {
       )
 
       // Get Annex11 rules at for the matched 'Region'
-      getAnnex11Rules()
+      await getAnnex11Rules()
 
-      if (plantInfo.annex11RulesArr.length > 0) {
+      if (plantInfo.annex11RulesArr.length > 0 && !(plantInfo.outcome)) {
         plantInfo.outcome = 'not prohibited'
         prohibitionConditionMet = true
         logger.info(
@@ -906,6 +1056,9 @@ class ProhibitedStrategy extends workflowEngine {
       plantInfo.pestDetails = pestNames(plantDocument)
       return plantInfo
     }
+
+    return plantInfo
+
   }
 }
 
