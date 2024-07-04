@@ -41,8 +41,7 @@ class InnsStrategy extends workflowEngine {
         if (
           annex.SERVICE_FORMAT.toLowerCase() ===
             innsStrategyObj.serviceFormat.toLowerCase() &&
-          annex.OVERALL_DECISION.toLowerCase() ===
-            innsStrategyObj.decision.toLowerCase() &&
+          annex.A6_RULE.toLowerCase() === innsStrategyObj.type.toLowerCase() &&
           annex.COUNTRY_NAME.toLowerCase() === 'all'
         ) {
           logger.info('inside level 1 INNS check - step 2 ')
