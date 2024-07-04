@@ -366,29 +366,43 @@ function updateResultListWithPestNames(resultList, pestNamesList) {
 function updateResultListWithPestReg(resultList, plantPestRegList, plantList) {
   const pestRegResultListGrandParent = pestRegParentListresultList(
     resultList,
-    plantList,
-    plantPestRegList
+    plantPestRegList,
+    plantList
   )
+  //* ******************for each plant data record - rl */
   resultList.forEach((rl) => {
-    plantPestRegList.forEach((pest) => {
-      rl.PEST_LINK?.forEach((rlPestLink) => {
+    //* ******************for the plant data record picking up each pest link data */
+    rl.PEST_LINK?.forEach((rlPestLink) => {
+      //* ******************picking up each pest regulation data */
+      plantPestRegList.forEach((pest) => {
+        //* ******************matching CSL_REF from plant data -> pest link with pest regulation CSL_REF   */
         if (rlPestLink?.CSL_REF === pest?.CSL_REF) {
-          if (['Q', 'P'].includes(pest?.QUARANTINE_INDICATOR)) {
-            rlPestLink.REGULATION = pest?.REGULATION
-            rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
-            rlPestLink.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
-            rlPestLink.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
-          } else if (
-            pest?.QUARANTINE_INDICATOR === 'R' &&
-            rl?.HOST_REF === pest?.HOST_REF
+          //* ****************** for the matching pest in pest regulation if quarantine indicator is in Q and P update the regulation values  */
+          if (
+            ['Q', 'P'].includes(pest?.QUARANTINE_INDICATOR) &&
+            rlPestLink.QUARANTINE_INDICATOR === ''
           ) {
             rlPestLink.REGULATION = pest?.REGULATION
             rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
             rlPestLink.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
             rlPestLink.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
+            //* ****************** if not Q & P then check the host_ref of plant data with pest regulation data and qurantine indicator as R  */
           } else if (
             pest?.QUARANTINE_INDICATOR === 'R' &&
-            rl?.PARENT_HOST_REF === pest?.HOST_REF
+            (rl?.HOST_REF === pest?.HOST_REF ||
+              rl?.PARENT_HOST_REF === pest?.HOST_REF)
+          ) {
+            //* ******************If matches update the Regulation information  */
+            rlPestLink.REGULATION = pest?.REGULATION
+            rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
+            rlPestLink.REGULATION_INDICATOR = pest?.REGULATION_INDICATOR
+            rlPestLink.REGULATION_CATEGORY = pest?.REGULATION_CATEGORY
+
+            //* ******************if quarantine indicator is R and plant data -> parent_host_ref matches with pest regulation host ref then update the regulation information  */
+          } else if (
+            pest?.QUARANTINE_INDICATOR === 'R' &&
+            rl?.PARENT_HOST_REF === pest?.HOST_REF &&
+            rlPestLink.QUARANTINE_INDICATOR === ''
           ) {
             rlPestLink.REGULATION = pest?.REGULATION
             rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
@@ -397,7 +411,10 @@ function updateResultListWithPestReg(resultList, plantPestRegList, plantList) {
           } else {
             /** ** Match GrandParent ****/
             pestRegResultListGrandParent.forEach((gp) => {
-              if (gp.HOST_REF === pest?.HOST_REF) {
+              if (
+                gp.HOST_REF === pest?.HOST_REF &&
+                rlPestLink.QUARANTINE_INDICATOR === ''
+              ) {
                 rlPestLink.REGULATION = gp?.pestRegList?.REGULATION
                 rlPestLink.QUARANTINE_INDICATOR =
                   gp?.pestRegList?.QUARANTINE_INDICATOR

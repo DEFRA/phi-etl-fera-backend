@@ -3638,7 +3638,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 431,
@@ -3648,7 +3648,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 464,
@@ -3848,7 +3848,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 556,
@@ -3858,7 +3858,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 556,
@@ -4108,7 +4108,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 732,
@@ -4118,7 +4118,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 732,
@@ -4338,7 +4338,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 1061,
@@ -4348,7 +4348,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 1061,
@@ -4358,7 +4358,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 1061,
@@ -4368,7 +4368,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 1061,
@@ -4378,7 +4378,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 1093,
@@ -6178,7 +6178,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 11751,
@@ -6188,7 +6188,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\n\nVegetable seed"
     },
     {
       "CSL_REF": 11792,
@@ -6238,7 +6238,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11792,
@@ -6248,7 +6248,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11792,
@@ -6268,7 +6268,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11792,
@@ -6278,7 +6278,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11792,
@@ -6308,7 +6308,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11792,
@@ -6318,7 +6318,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11792,
@@ -6418,7 +6418,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6428,7 +6428,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6438,7 +6438,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6448,7 +6448,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6478,7 +6478,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6488,7 +6488,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6518,7 +6518,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6528,7 +6528,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6558,7 +6558,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6568,7 +6568,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6658,7 +6658,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6668,7 +6668,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6678,7 +6678,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6688,7 +6688,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Fruit propagating material and fruit plants intended for fruit production"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nFruit propagating material and fruit plants intended for fruit production"
     },
     {
       "CSL_REF": 11966,
@@ -6768,7 +6768,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 11980,
@@ -6778,7 +6778,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 11980,
@@ -6788,7 +6788,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 11980,
@@ -6798,7 +6798,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 11980,
@@ -6808,7 +6808,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 11980,
@@ -6818,7 +6818,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4F (Seed potatoes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Seeds of Solanum tuberosum:Seed potatoes"
+      "REGULATION_INDICATOR": "Seeds of Solanum tuberosum;\nSeed potatoes"
     },
     {
       "CSL_REF": 11980,
@@ -6828,7 +6828,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4J (Seeds of Solanum tuberosum)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Seeds of Solanum tuberosum:Seed potatoes"
+      "REGULATION_INDICATOR": "Seeds of Solanum tuberosum;\nSeed potatoes"
     },
     {
       "CSL_REF": 12011,
@@ -7548,7 +7548,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Seed of oil and fibre plants"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nSeed of oil and fibre plants"
     },
     {
       "CSL_REF": 12748,
@@ -7558,7 +7558,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4G (Seed of oil and fibre plants)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Seed of oil and fibre plants"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nSeed of oil and fibre plants"
     },
     {
       "CSL_REF": 13500,
@@ -7608,7 +7608,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 14949,
@@ -7618,7 +7618,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 14949,
@@ -8548,7 +8548,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 26045,
@@ -8558,7 +8558,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 26269,
@@ -8568,7 +8568,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 26269,
@@ -8578,7 +8578,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 26297,
@@ -8658,7 +8658,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Vegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 26791,
@@ -8668,7 +8668,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Vegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 26791,
@@ -8708,7 +8708,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 26904,
@@ -8718,7 +8718,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 26904,
@@ -8728,7 +8728,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 26904,
@@ -8738,7 +8738,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 26904,
@@ -8748,7 +8748,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 27047,
@@ -8828,7 +8828,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Forest reproductive material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nForest reproductive material, other than seeds"
     },
     {
       "CSL_REF": 27262,
@@ -8838,7 +8838,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4D (Forest reproductive material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Forest reproductive material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nForest reproductive material, other than seeds"
     },
     {
       "CSL_REF": 27391,
@@ -8858,7 +8858,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 27399,
@@ -8868,7 +8868,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 27399,
@@ -8878,7 +8878,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 27399,
@@ -8888,7 +8888,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 27399,
@@ -8898,7 +8898,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 27400,
@@ -8908,7 +8908,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 27400,
@@ -8918,7 +8918,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 27400,
@@ -8928,7 +8928,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes:Vegetable seed:Vegetable propagating and planting material, other than seeds"
+      "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes;\nVegetable seed;\nVegetable propagating and planting material, other than seeds"
     },
     {
       "CSL_REF": 27400,
@@ -8938,7 +8938,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4E (Vegetable seed)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 27400,
@@ -8948,7 +8948,7 @@
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4H (Vegetable propagating and planting material, other than seeds)",
       "QUARANTINE_INDICATOR": "R",
-      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds:Vegetable seed"
+      "REGULATION_INDICATOR": "Vegetable propagating and planting material, other than seeds;\nVegetable seed"
     },
     {
       "CSL_REF": 27436,
@@ -9322,36 +9322,6 @@
     },
     {
       "CSL_REF": 28781,
-      "HOST_REF": null,
-      "HOST_FORMAT_ID": null,
-      "HOST_FORMAT": "",
-      "REGULATION": "GB",
-      "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-      "QUARANTINE_INDICATOR": "Q",
-      "REGULATION_INDICATOR": ""
-    },
-    {
-      "CSL_REF": 14220,
-      "HOST_REF": null,
-      "HOST_FORMAT_ID": null,
-      "HOST_FORMAT": "",
-      "REGULATION": "GB",
-      "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-      "QUARANTINE_INDICATOR": "Q",
-      "REGULATION_INDICATOR": ""
-    },
-    {
-      "CSL_REF": 27337,
-      "HOST_REF": null,
-      "HOST_FORMAT_ID": null,
-      "HOST_FORMAT": "",
-      "REGULATION": "GB",
-      "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-      "QUARANTINE_INDICATOR": "Q",
-      "REGULATION_INDICATOR": ""
-    },
-    {
-      "CSL_REF": 26873,
       "HOST_REF": null,
       "HOST_FORMAT_ID": null,
       "HOST_FORMAT": "",
@@ -10737,6 +10707,66 @@
       "HOST_FORMAT": "",
       "REGULATION": "GB",
       "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+      "QUARANTINE_INDICATOR": "Q",
+      "REGULATION_INDICATOR": ""
+    },
+    {
+      "CSL_REF": 26191,
+      "HOST_REF": null,
+      "HOST_FORMAT_ID": null,
+      "HOST_FORMAT": "",
+      "REGULATION": "GB",
+      "REGULATION_CATEGORY": "Statutory action designated",
+      "QUARANTINE_INDICATOR": "Q",
+      "REGULATION_INDICATOR": ""
+    },
+    {
+      "CSL_REF": 23236,
+      "HOST_REF": null,
+      "HOST_FORMAT_ID": null,
+      "HOST_FORMAT": "",
+      "REGULATION": "GB",
+      "REGULATION_CATEGORY": "Statutory action designated",
+      "QUARANTINE_INDICATOR": "Q",
+      "REGULATION_INDICATOR": ""
+    },
+    {
+      "CSL_REF": 26873,
+      "HOST_REF": null,
+      "HOST_FORMAT_ID": null,
+      "HOST_FORMAT": "",
+      "REGULATION": "GB",
+      "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+      "QUARANTINE_INDICATOR": "Q",
+      "REGULATION_INDICATOR": ""
+    },
+    {
+      "CSL_REF": 27337,
+      "HOST_REF": null,
+      "HOST_FORMAT_ID": null,
+      "HOST_FORMAT": "",
+      "REGULATION": "GB",
+      "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+      "QUARANTINE_INDICATOR": "Q",
+      "REGULATION_INDICATOR": ""
+    },
+    {
+      "CSL_REF": 2711,
+      "HOST_REF": null,
+      "HOST_FORMAT_ID": null,
+      "HOST_FORMAT": "",
+      "REGULATION": "GB",
+      "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+      "QUARANTINE_INDICATOR": "Q",
+      "REGULATION_INDICATOR": ""
+    },
+    {
+      "CSL_REF": 14220,
+      "HOST_REF": null,
+      "HOST_FORMAT_ID": null,
+      "HOST_FORMAT": "",
+      "REGULATION": "GB",
+      "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
       "QUARANTINE_INDICATOR": "Q",
       "REGULATION_INDICATOR": ""
     }
