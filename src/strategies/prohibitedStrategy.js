@@ -11,7 +11,6 @@ let unprohibitedMatch = false
 class ProhibitedStrategy extends workflowEngine {
   constructor(plantDocument, searchInput, countryMapping, cdpLogger) {
     super(plantDocument, searchInput, countryMapping, cdpLogger)
-    // this.type = ['6A1', '6B5']
     this.decision = 'prohibited'
     logger = this.loggerObj
     innsProhibitedObj = this
@@ -849,7 +848,6 @@ class ProhibitedStrategy extends workflowEngine {
       }
 
       logger.info('getAnnex11Rules: ' + counter)
-      logger.info(plantInfo.annex11RulesArr)
       return plantInfo
     }
 
