@@ -12,7 +12,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Eswatini"
+        "FCDO": "Eswatini",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Afghanistan",
@@ -25,7 +26,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Afghanistan"
+        "FCDO": "Afghanistan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Albania",
@@ -38,7 +40,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Albania"
+        "FCDO": "Albania",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Algeria",
@@ -51,33 +54,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Algeria"
-      },
-      {
-        "COUNTRY_NAME": "Andorra",
-        "FERA_COUNTRY_NAME": "Andorra",
-        "COUNTRY_CODE": "AD",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Andorra"
-      },
-      {
-        "COUNTRY_NAME": "Angola",
-        "FERA_COUNTRY_NAME": "Angola",
-        "COUNTRY_CODE": "AO",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Angola"
+        "FCDO": "Algeria",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Antigua and Barbuda",
@@ -90,7 +68,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Antigua and Barbuda"
+        "FCDO": "Antigua and Barbuda",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Argentina",
@@ -103,7 +82,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Argentina"
+        "FCDO": "Argentina",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Armenia",
@@ -116,20 +96,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Armenia"
-      },
-      {
-        "COUNTRY_NAME": "Aruba",
-        "FERA_COUNTRY_NAME": "Aruba",
-        "COUNTRY_CODE": "AW",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "Armenia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Australia",
@@ -142,7 +110,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Australia"
+        "FCDO": "Australia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Austria",
@@ -155,7 +124,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Austria"
+        "FCDO": "Austria",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Azerbaijan",
@@ -168,7 +138,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Azerbaijan"
+        "FCDO": "Azerbaijan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bahamas",
@@ -181,7 +152,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "The Bahamas"
+        "FCDO": "The Bahamas",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bahrain",
@@ -194,7 +166,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Bahrain"
+        "FCDO": "Bahrain",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bangladesh",
@@ -207,7 +180,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Bangladesh"
+        "FCDO": "Bangladesh",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Barbados",
@@ -220,7 +194,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Barbados"
+        "FCDO": "Barbados",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Belarus",
@@ -233,7 +208,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Belarus"
+        "FCDO": "Belarus",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Belgium",
@@ -246,7 +222,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Belgium"
+        "FCDO": "Belgium",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Belize",
@@ -259,7 +236,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Belize"
+        "FCDO": "Belize",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Benin",
@@ -272,20 +250,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Benin"
-      },
-      {
-        "COUNTRY_NAME": "Bermuda",
-        "FERA_COUNTRY_NAME": "Bermuda",
-        "COUNTRY_CODE": "BM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Bermuda"
+        "FCDO": "Benin",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bhutan",
@@ -298,7 +264,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Bhutan"
+        "FCDO": "Bhutan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bolivia",
@@ -311,7 +278,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Bolivia"
+        "FCDO": "Bolivia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bosnia-Herzegovina",
@@ -324,7 +292,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Bosnia and Herzegovina"
+        "FCDO": "Bosnia and Herzegovina",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Botswana",
@@ -337,7 +306,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Botswana"
+        "FCDO": "Botswana",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Brazil",
@@ -350,33 +320,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Brazil"
-      },
-      {
-        "COUNTRY_NAME": "British Virgin Islands",
-        "FERA_COUNTRY_NAME": "British Virgin Islands",
-        "COUNTRY_CODE": "VG",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "British Virgin Islands"
-      },
-      {
-        "COUNTRY_NAME": "Brunei",
-        "FERA_COUNTRY_NAME": "Brunei",
-        "COUNTRY_CODE": "BN",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Brunei"
+        "FCDO": "Brazil",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Bulgaria",
@@ -389,7 +334,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Bulgaria"
+        "FCDO": "Bulgaria",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Burkina Faso",
@@ -402,7 +348,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Burkina Faso"
+        "FCDO": "Burkina Faso",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Burundi",
@@ -415,7 +362,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Burundi"
+        "FCDO": "Burundi",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Cabo Verde",
@@ -428,7 +376,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Cape Verde"
+        "FCDO": "Cape Verde",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Cambodia",
@@ -441,7 +390,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Cambodia"
+        "FCDO": "Cambodia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Cameroon",
@@ -454,7 +404,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Cameroon"
+        "FCDO": "Cameroon",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Canada",
@@ -467,20 +418,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Canada"
-      },
-      {
-        "COUNTRY_NAME": "Cayman Islands",
-        "FERA_COUNTRY_NAME": "Cayman Islands",
-        "COUNTRY_CODE": "KY",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Cayman Islands"
+        "FCDO": "Canada",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Central African Republic",
@@ -493,7 +432,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Central African Republic"
+        "FCDO": "Central African Republic",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Chad",
@@ -506,7 +446,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Chad"
+        "FCDO": "Chad",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Chile",
@@ -519,7 +460,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Chile"
+        "FCDO": "Chile",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "China",
@@ -532,7 +474,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "China"
+        "FCDO": "China",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Colombia",
@@ -545,7 +488,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Colombia"
+        "FCDO": "Colombia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Comoros",
@@ -558,7 +502,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Comoros"
+        "FCDO": "Comoros",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Congo (Brazzaville)",
@@ -571,7 +516,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Congo"
+        "FCDO": "Congo",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Congo (Democratic Rep.)",
@@ -584,7 +530,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Congo (Democratic Republic)"
+        "FCDO": "Congo (Democratic Republic)",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Costa Rica",
@@ -597,7 +544,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Costa Rica"
+        "FCDO": "Costa Rica",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Cote d'Ivoire",
@@ -610,7 +558,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Ivory Coast"
+        "FCDO": "Ivory Coast",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Croatia",
@@ -623,7 +572,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Croatia"
+        "FCDO": "Croatia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Cuba",
@@ -636,7 +586,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Cuba"
+        "FCDO": "Cuba",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Cyprus",
@@ -649,7 +600,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Cyprus"
+        "FCDO": "Cyprus",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Czech Republic",
@@ -662,7 +614,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Czechia"
+        "FCDO": "Czechia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Denmark",
@@ -675,7 +628,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Denmark"
+        "FCDO": "Denmark",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Djibouti",
@@ -688,7 +642,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Djibouti"
+        "FCDO": "Djibouti",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Dominica",
@@ -701,7 +656,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Dominica"
+        "FCDO": "Dominica",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Dominican Republic",
@@ -714,7 +670,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Dominican Republic"
+        "FCDO": "Dominican Republic",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Ecuador",
@@ -727,7 +684,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Ecuador"
+        "FCDO": "Ecuador",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Egypt",
@@ -740,7 +698,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Egypt"
+        "FCDO": "Egypt",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "El Salvador",
@@ -753,7 +712,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "El Salvador"
+        "FCDO": "El Salvador",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Equatorial Guinea",
@@ -766,7 +726,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Equatorial Guinea"
+        "FCDO": "Equatorial Guinea",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Eritrea",
@@ -779,7 +740,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Eritrea"
+        "FCDO": "Eritrea",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Estonia",
@@ -792,7 +754,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Estonia"
+        "FCDO": "Estonia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Ethiopia",
@@ -805,33 +768,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Ethiopia"
-      },
-      {
-        "COUNTRY_NAME": "Falkland Islands",
-        "FERA_COUNTRY_NAME": "Falkland Islands",
-        "COUNTRY_CODE": "FK",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Falkland Islands"
-      },
-      {
-        "COUNTRY_NAME": "Faroe Islands",
-        "FERA_COUNTRY_NAME": "Faroe Islands",
-        "COUNTRY_CODE": "FO",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "Ethiopia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Fiji",
@@ -844,7 +782,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Fiji"
+        "FCDO": "Fiji",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Finland",
@@ -857,7 +796,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Finland"
+        "FCDO": "Finland",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "France",
@@ -870,33 +810,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "France"
-      },
-      {
-        "COUNTRY_NAME": "French Guiana",
-        "FERA_COUNTRY_NAME": "French Guiana",
-        "COUNTRY_CODE": "GF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
-      },
-      {
-        "COUNTRY_NAME": "French Polynesia",
-        "FERA_COUNTRY_NAME": "French Polynesia",
-        "COUNTRY_CODE": "PF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "France",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Gabon",
@@ -909,7 +824,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Gabon"
+        "FCDO": "Gabon",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Gambia",
@@ -922,7 +838,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "The Gambia"
+        "FCDO": "The Gambia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Georgia",
@@ -935,7 +852,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Georgia"
+        "FCDO": "Georgia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Germany",
@@ -948,7 +866,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Germany"
+        "FCDO": "Germany",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Ghana",
@@ -961,20 +880,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Ghana"
-      },
-      {
-        "COUNTRY_NAME": "Gibraltar",
-        "FERA_COUNTRY_NAME": "Gibraltar",
-        "COUNTRY_CODE": "GI",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Gibraltar"
+        "FCDO": "Ghana",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Greece",
@@ -987,20 +894,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Greece"
-      },
-      {
-        "COUNTRY_NAME": "Greenland",
-        "FERA_COUNTRY_NAME": "Greenland",
-        "COUNTRY_CODE": "GL",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "Greece",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Grenada",
@@ -1013,20 +908,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Grenada"
-      },
-      {
-        "COUNTRY_NAME": "Guadeloupe",
-        "FERA_COUNTRY_NAME": "Guadeloupe",
-        "COUNTRY_CODE": "GP",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Grenada",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Guatemala",
@@ -1039,7 +922,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Guatemala"
+        "FCDO": "Guatemala",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Guernsey",
@@ -1051,8 +935,9 @@
         "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Guernsey, Alderney, Sark"
+        "IPPC_SIG": "Y",
+        "FCDO": "Guernsey, Alderney, Sark",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Guinea",
@@ -1065,7 +950,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Guinea"
+        "FCDO": "Guinea",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Guinea-Bissau",
@@ -1078,7 +964,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Guinea-Bissau"
+        "FCDO": "Guinea-Bissau",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Guyana",
@@ -1091,7 +978,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Guyana"
+        "FCDO": "Guyana",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Haiti",
@@ -1104,7 +992,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Haiti"
+        "FCDO": "Haiti",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Honduras",
@@ -1117,7 +1006,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Honduras"
+        "FCDO": "Honduras",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Hong Kong",
@@ -1130,7 +1020,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "#N/A",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Hungary",
@@ -1143,7 +1034,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Hungary"
+        "FCDO": "Hungary",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Iceland",
@@ -1156,7 +1048,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Iceland"
+        "FCDO": "Iceland",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "India",
@@ -1169,7 +1062,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "India"
+        "FCDO": "India",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Indonesia",
@@ -1182,7 +1076,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Indonesia"
+        "FCDO": "Indonesia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Iran",
@@ -1195,7 +1090,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Iran"
+        "FCDO": "Iran",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Iraq",
@@ -1208,7 +1104,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Iraq"
+        "FCDO": "Iraq",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Ireland",
@@ -1221,7 +1118,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Ireland"
+        "FCDO": "Ireland",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Isle of Man",
@@ -1233,8 +1131,9 @@
         "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Isle of Man"
+        "IPPC_SIG": "Y",
+        "FCDO": "Isle of Man",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Israel",
@@ -1247,7 +1146,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Israel"
+        "FCDO": "Israel",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Italy",
@@ -1260,7 +1160,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Italy"
+        "FCDO": "Italy",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Jamaica",
@@ -1273,7 +1174,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Jamaica"
+        "FCDO": "Jamaica",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Japan",
@@ -1286,7 +1188,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Japan"
+        "FCDO": "Japan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Jersey",
@@ -1298,8 +1201,9 @@
         "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Jersey"
+        "IPPC_SIG": "Y",
+        "FCDO": "Jersey",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Jordan",
@@ -1312,7 +1216,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Jordan"
+        "FCDO": "Jordan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Kazakhstan",
@@ -1325,7 +1230,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Kazakhstan"
+        "FCDO": "Kazakhstan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Kenya",
@@ -1338,20 +1244,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Kenya"
-      },
-      {
-        "COUNTRY_NAME": "Kiribati",
-        "FERA_COUNTRY_NAME": "Kiribati",
-        "COUNTRY_CODE": "KI",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Kiribati"
+        "FCDO": "Kenya",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Kosovo",
@@ -1364,7 +1258,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "#N/A",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Kuwait",
@@ -1377,7 +1272,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Kuwait"
+        "FCDO": "Kuwait",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Kyrgyzstan",
@@ -1390,7 +1286,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Kyrgyzstan"
+        "FCDO": "Kyrgyzstan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Laos",
@@ -1403,7 +1300,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Laos"
+        "FCDO": "Laos",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Latvia",
@@ -1416,7 +1314,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Latvia"
+        "FCDO": "Latvia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Lebanon",
@@ -1429,7 +1328,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Lebanon"
+        "FCDO": "Lebanon",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Lesotho",
@@ -1442,7 +1342,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Lesotho"
+        "FCDO": "Lesotho",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Liberia",
@@ -1455,7 +1356,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Liberia"
+        "FCDO": "Liberia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Libya",
@@ -1468,7 +1370,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Libya"
+        "FCDO": "Libya",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Liechtenstein",
@@ -1480,8 +1383,9 @@
         "EUSL_INDICATOR": "(EUSL_INDICATOR, TRUE)",
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Liechtenstein"
+        "IPPC_SIG": "Y",
+        "FCDO": "Liechtenstein",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Lithuania",
@@ -1494,7 +1398,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Lithuania"
+        "FCDO": "Lithuania",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Luxembourg",
@@ -1507,7 +1412,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Luxembourg"
+        "FCDO": "Luxembourg",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Madagascar",
@@ -1520,7 +1426,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Madagascar"
+        "FCDO": "Madagascar",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Malawi",
@@ -1533,7 +1440,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Malawi"
+        "FCDO": "Malawi",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Malaysia",
@@ -1546,7 +1454,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Malaysia"
+        "FCDO": "Malaysia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Maldives",
@@ -1559,7 +1468,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Maldives"
+        "FCDO": "Maldives",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Mali",
@@ -1572,7 +1482,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Mali"
+        "FCDO": "Mali",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Malta",
@@ -1585,33 +1496,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Malta"
-      },
-      {
-        "COUNTRY_NAME": "Marshall Islands",
-        "FERA_COUNTRY_NAME": "Marshall Islands",
-        "COUNTRY_CODE": "MH",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Marshall Islands"
-      },
-      {
-        "COUNTRY_NAME": "Martinique",
-        "FERA_COUNTRY_NAME": "Martinique",
-        "COUNTRY_CODE": "MQ",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Malta",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Mauritania",
@@ -1624,7 +1510,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Mauritania"
+        "FCDO": "Mauritania",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Mauritius",
@@ -1637,20 +1524,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Mauritius"
-      },
-      {
-        "COUNTRY_NAME": "Mayotte",
-        "FERA_COUNTRY_NAME": "Mayotte",
-        "COUNTRY_CODE": "YT",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Mauritius",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Mexico",
@@ -1663,7 +1538,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Mexico"
+        "FCDO": "Mexico",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Micronesia",
@@ -1676,7 +1552,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Federated States of Micronesia"
+        "FCDO": "Federated States of Micronesia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Moldova",
@@ -1689,20 +1566,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Moldova"
-      },
-      {
-        "COUNTRY_NAME": "Monaco",
-        "FERA_COUNTRY_NAME": "Monaco",
-        "COUNTRY_CODE": "MC",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Monaco"
+        "FCDO": "Moldova",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Mongolia",
@@ -1715,7 +1580,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "N",
-        "FCDO": "Mongolia"
+        "FCDO": "Mongolia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Montenegro",
@@ -1728,7 +1594,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "N",
-        "FCDO": "Montenegro"
+        "FCDO": "Montenegro",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Morocco",
@@ -1741,7 +1608,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Morocco"
+        "FCDO": "Morocco",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Mozambique",
@@ -1754,7 +1622,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Mozambique"
+        "FCDO": "Mozambique",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Myanmar",
@@ -1767,7 +1636,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Myanmar (Burma)"
+        "FCDO": "Myanmar (Burma)",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Namibia",
@@ -1780,20 +1650,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Namibia"
-      },
-      {
-        "COUNTRY_NAME": "Nauru",
-        "FERA_COUNTRY_NAME": "Nauru",
-        "COUNTRY_CODE": "NR",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Nauru"
+        "FCDO": "Namibia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Nepal",
@@ -1806,7 +1664,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Nepal"
+        "FCDO": "Nepal",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Netherlands",
@@ -1819,20 +1678,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Netherlands"
-      },
-      {
-        "COUNTRY_NAME": "New Caledonia",
-        "FERA_COUNTRY_NAME": "New Caledonia",
-        "COUNTRY_CODE": "NC",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Netherlands",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "New Zealand",
@@ -1845,7 +1692,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "New Zealand"
+        "FCDO": "New Zealand",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Nicaragua",
@@ -1858,7 +1706,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Nicaragua"
+        "FCDO": "Nicaragua",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Niger",
@@ -1871,7 +1720,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Niger"
+        "FCDO": "Niger",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Nigeria",
@@ -1884,7 +1734,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Nigeria"
+        "FCDO": "Nigeria",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "North Korea",
@@ -1897,7 +1748,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "North Korea"
+        "FCDO": "North Korea",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Norway",
@@ -1910,7 +1762,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Norway"
+        "FCDO": "Norway",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Oman",
@@ -1923,7 +1776,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Oman"
+        "FCDO": "Oman",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Pakistan",
@@ -1936,7 +1790,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Pakistan"
+        "FCDO": "Pakistan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Palau",
@@ -1949,20 +1804,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Palau"
-      },
-      {
-        "COUNTRY_NAME": "Palestine, State of",
-        "FERA_COUNTRY_NAME": "Palestine, State of",
-        "COUNTRY_CODE": "PS",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "Palau",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Panama",
@@ -1975,7 +1818,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Panama"
+        "FCDO": "Panama",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Papua New Guinea",
@@ -1988,7 +1832,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Papua New Guinea"
+        "FCDO": "Papua New Guinea",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Paraguay",
@@ -2001,7 +1846,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Paraguay"
+        "FCDO": "Paraguay",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Peru",
@@ -2014,7 +1860,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Peru"
+        "FCDO": "Peru",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Philippines",
@@ -2027,7 +1874,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Philippines"
+        "FCDO": "Philippines",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Poland",
@@ -2040,7 +1888,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Poland"
+        "FCDO": "Poland",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Portugal",
@@ -2053,20 +1902,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Portugal"
-      },
-      {
-        "COUNTRY_NAME": "Puerto Rico",
-        "FERA_COUNTRY_NAME": "Puerto Rico",
-        "COUNTRY_CODE": "PR",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Portugal",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Qatar",
@@ -2079,33 +1916,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Qatar"
-      },
-      {
-        "COUNTRY_NAME": "Republic of North Macedonia",
-        "FERA_COUNTRY_NAME": "Republic of North Macedonia",
-        "COUNTRY_CODE": "MK",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "North Macedonia"
-      },
-      {
-        "COUNTRY_NAME": "Reunion",
-        "FERA_COUNTRY_NAME": "Reunion",
-        "COUNTRY_CODE": "RE",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Qatar",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Romania",
@@ -2118,7 +1930,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Romania"
+        "FCDO": "Romania",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Russia",
@@ -2131,7 +1944,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Russia"
+        "FCDO": "Russia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Rwanda",
@@ -2144,20 +1958,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Rwanda"
-      },
-      {
-        "COUNTRY_NAME": "Saint Barthelemy",
-        "FERA_COUNTRY_NAME": "Saint Barthelemy",
-        "COUNTRY_CODE": "BL",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "Rwanda",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Saint Kitts and Nevis",
@@ -2170,7 +1972,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "St Kitts and Nevis"
+        "FCDO": "St Kitts and Nevis",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Saint Lucia",
@@ -2183,20 +1986,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "St Lucia"
-      },
-      {
-        "COUNTRY_NAME": "Saint Martin",
-        "FERA_COUNTRY_NAME": "Saint Martin",
-        "COUNTRY_CODE": "MF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "St Lucia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Saint Vincent and the Grenadines",
@@ -2209,7 +2000,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "St Vincent"
+        "FCDO": "St Vincent",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Samoa",
@@ -2222,7 +2014,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Samoa"
+        "FCDO": "Samoa",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Sao Tome and Principe",
@@ -2235,7 +2028,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Sao Tome and Principe"
+        "FCDO": "Sao Tome and Principe",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Saudi Arabia",
@@ -2248,7 +2042,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Saudi Arabia"
+        "FCDO": "Saudi Arabia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Senegal",
@@ -2261,7 +2056,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Senegal"
+        "FCDO": "Senegal",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Serbia",
@@ -2274,7 +2070,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Serbia"
+        "FCDO": "Serbia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Seychelles",
@@ -2287,7 +2084,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Seychelles"
+        "FCDO": "Seychelles",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Sierra Leone",
@@ -2300,7 +2098,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Sierra Leone"
+        "FCDO": "Sierra Leone",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Singapore",
@@ -2313,7 +2112,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Singapore"
+        "FCDO": "Singapore",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Slovakia",
@@ -2326,7 +2126,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Slovakia"
+        "FCDO": "Slovakia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Slovenia",
@@ -2339,7 +2140,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Slovenia"
+        "FCDO": "Slovenia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Solomon Islands",
@@ -2352,7 +2154,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Solomon Islands"
+        "FCDO": "Solomon Islands",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Somalia",
@@ -2365,7 +2168,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Somalia"
+        "FCDO": "Somalia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "South Africa",
@@ -2378,7 +2182,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "South Africa"
+        "FCDO": "South Africa",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "South Korea",
@@ -2391,7 +2196,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "South Korea"
+        "FCDO": "South Korea",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "South Sudan",
@@ -2404,7 +2210,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "South Sudan"
+        "FCDO": "South Sudan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Spain",
@@ -2417,7 +2224,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Spain"
+        "FCDO": "Spain",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Sri Lanka",
@@ -2430,7 +2238,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Sri Lanka"
+        "FCDO": "Sri Lanka",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Sudan",
@@ -2443,7 +2252,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Sudan"
+        "FCDO": "Sudan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Suriname",
@@ -2456,7 +2266,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Suriname"
+        "FCDO": "Suriname",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Sweden",
@@ -2469,7 +2280,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, TRUE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Sweden"
+        "FCDO": "Sweden",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Switzerland",
@@ -2482,7 +2294,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, TRUE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Switzerland"
+        "FCDO": "Switzerland",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Syria",
@@ -2495,7 +2308,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Syria"
+        "FCDO": "Syria",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Taiwan",
@@ -2508,7 +2322,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "#N/A",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Tajikistan",
@@ -2521,7 +2336,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Tajikistan"
+        "FCDO": "Tajikistan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Tanzania",
@@ -2534,7 +2350,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Tanzania"
+        "FCDO": "Tanzania",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Thailand",
@@ -2547,20 +2364,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Thailand"
-      },
-      {
-        "COUNTRY_NAME": "Timor-Leste",
-        "FERA_COUNTRY_NAME": "Timor-Leste",
-        "COUNTRY_CODE": "TL",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "East Timor"
+        "FCDO": "Thailand",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Togo",
@@ -2573,7 +2378,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Togo"
+        "FCDO": "Togo",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Tonga",
@@ -2586,7 +2392,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Tonga"
+        "FCDO": "Tonga",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Trinidad and Tobago",
@@ -2599,7 +2406,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Trinidad and Tobago"
+        "FCDO": "Trinidad and Tobago",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Tunisia",
@@ -2612,7 +2420,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Tunisia"
+        "FCDO": "Tunisia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Türkiye",
@@ -2625,33 +2434,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Turkey"
-      },
-      {
-        "COUNTRY_NAME": "Turkmenistan",
-        "FERA_COUNTRY_NAME": "Turkmenistan",
-        "COUNTRY_CODE": "TM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Turkmenistan"
-      },
-      {
-        "COUNTRY_NAME": "Turks and Caicos",
-        "FERA_COUNTRY_NAME": "Turks and Caicos",
-        "COUNTRY_CODE": "TC",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Turks and Caicos Islands"
+        "FCDO": "Turkey",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Tuvalu",
@@ -2664,7 +2448,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Tuvalu"
+        "FCDO": "Tuvalu",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Uganda",
@@ -2677,7 +2462,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Uganda"
+        "FCDO": "Uganda",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Ukraine",
@@ -2690,7 +2476,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Ukraine"
+        "FCDO": "Ukraine",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "United Arab Emirates",
@@ -2703,7 +2490,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "United Arab Emirates"
+        "FCDO": "United Arab Emirates",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "United States",
@@ -2716,7 +2504,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "United States"
+        "FCDO": "United States",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Uruguay",
@@ -2729,7 +2518,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Uruguay"
+        "FCDO": "Uruguay",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Uzbekistan",
@@ -2742,7 +2532,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Uzbekistan"
+        "FCDO": "Uzbekistan",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Vanuatu",
@@ -2755,7 +2546,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Vanuatu"
+        "FCDO": "Vanuatu",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Venezuela",
@@ -2768,7 +2560,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Venezuela"
+        "FCDO": "Venezuela",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Vietnam",
@@ -2781,20 +2574,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Vietnam"
-      },
-      {
-        "COUNTRY_NAME": "Wallis et Futuna",
-        "FERA_COUNTRY_NAME": "Wallis et Futuna",
-        "COUNTRY_CODE": "WF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": ""
+        "FCDO": "Vietnam",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Yemen",
@@ -2807,7 +2588,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Yemen"
+        "FCDO": "Yemen",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Zambia",
@@ -2820,7 +2602,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Zambia"
+        "FCDO": "Zambia",
+        "PHI_ID": true
       },
       {
         "COUNTRY_NAME": "Zimbabwe",
@@ -2833,85 +2616,8 @@
         "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
         "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
-        "FCDO": "Zimbabwe"
-      },
-      {
-        "COUNTRY_NAME": "San Marino",
-        "FERA_COUNTRY_NAME": "San Marino",
-        "COUNTRY_CODE": "SM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "San Marino"
-      },
-      {
-        "COUNTRY_NAME": "Svalbard",
-        "FERA_COUNTRY_NAME": "Svalbard",
-        "COUNTRY_CODE": "SJ",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
-      },
-      {
-        "COUNTRY_NAME": "Western Sahara",
-        "FERA_COUNTRY_NAME": "Western Sahara",
-        "COUNTRY_CODE": "EH",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
-      },
-      {
-        "COUNTRY_NAME": "Vatican City State",
-        "FERA_COUNTRY_NAME": "Vatican City State",
-        "COUNTRY_CODE": "VA",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Vatican City"
-      },
-      {
-        "COUNTRY_NAME": "Macau",
-        "FERA_COUNTRY_NAME": "Macau",
-        "COUNTRY_CODE": "MO",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
-      },
-      {
-        "COUNTRY_NAME": "Saint Pierre and Miquelon",
-        "FERA_COUNTRY_NAME": "Saint Pierre and Miquelon",
-        "COUNTRY_CODE": "PM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": ""
+        "FCDO": "Zimbabwe",
+        "PHI_ID": true
       }
     ]
   }
