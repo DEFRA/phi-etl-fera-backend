@@ -13,12 +13,13 @@ const search = {
           method: 'GET',
           path: '/search/countries',
           ...countryController
-        },{
+        },
+        {
           method: 'POST',
           path: '/search/pests',
           ...pestController
         },
-       
+
         {
           method: 'POST',
           path: '/search/pestdetails',

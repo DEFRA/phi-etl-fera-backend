@@ -131,7 +131,6 @@ async function getCountries(cdpLogger) {
   }
 }
 async function searchPestDetailsDb(searchText, cdpLogger) {
-  console.log("Comes into searchpest");
   logger = cdpLogger
   // const searchText = searchInput
   const results = []
@@ -148,9 +147,8 @@ async function searchPestDetailsDb(searchText, cdpLogger) {
         }
       }
 
-      
       const latinNameResults = await collectionPest.find(query).toArray()
-     // logger.info(latinNameResults)
+      // logger.info(latinNameResults)
       if (latinNameResults) {
         const latinArr = []
         // filter latinNameResults and get rid of uncesseary fields
@@ -164,7 +162,7 @@ async function searchPestDetailsDb(searchText, cdpLogger) {
         })
         results.push({ id: 'latin-name', results: latinArr })
       }
-      //logger.info('latinarra',latinArr)
+      // logger.info('latinarra',latinArr)
       query = {
         PEST_NAME: {
           $elemMatch: {
@@ -212,7 +210,7 @@ async function searchPestDetailsDb(searchText, cdpLogger) {
         results.push({ id: 'synonym-name', results: synonymArr })
       }
     }
-   
+
     return results
   } catch (error) {
     logger.info(`Search query failed ${error}`)
@@ -220,21 +218,27 @@ async function searchPestDetailsDb(searchText, cdpLogger) {
     return error.message
   }
 }
-async function getpestDetails(cslref,cdpLogger) {
+async function getpestDetails(cslref, cdpLogger) {
   try {
-    console.log("getpestDetails");
     logger = cdpLogger
-    const results = []
+
     const collectionPestDetails = await connectToMongo('PEST_DATA')
-    let query = {}
+
     // Find the document containing the COUNTRY_GROUPING array
- const result = await collectionPestDetails.find({CSL_REF:cslref}).toArray()
-   
-  return result
+    const result = await collectionPestDetails
+      .find({ CSL_REF: cslref })
+      .toArray()
+
+    return result
   } catch (error) {
     logger.info(`Countries could not be fetched ${error}`)
     // TODO: Acutal message to be picked from the resource file
     return error.message
   }
 }
-module.exports = { searchPlantDetailsDb, getCountries,searchPestDetailsDb,getpestDetails }
+module.exports = {
+  searchPlantDetailsDb,
+  getCountries,
+  searchPestDetailsDb,
+  getpestDetails
+}
