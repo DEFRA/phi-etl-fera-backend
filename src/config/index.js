@@ -94,7 +94,7 @@ const config = convict({
     format: String,
     default: '10000',
     env: 'READ_TIMEOUT'
-  },
+  }
 })
 
 config.validate({ allowed: 'strict' })

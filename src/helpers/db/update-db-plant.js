@@ -14,10 +14,14 @@ const updateDbPlantHandler = {
     }
   },
   handler: async (request, h) => {
-    
-    if (isLocked)
-    {
-      return h.response({ status: 'Info', message: '/updatePlan load in progress, please try again later if required.' }).code(429)
+    if (isLocked) {
+      return h
+        .response({
+          status: 'Info',
+          message:
+            '/updatePlan load in progress, please try again later if required.'
+        })
+        .code(429)
     }
     isLocked = true
 
@@ -47,8 +51,7 @@ const updateDbPlantHandler = {
     } catch (error) {
       logger?.error(error)
       return h.response({ status: 'error', message: error.message }).code(500)
-    }
-    finally{
+    } finally {
       isLocked = false
     }
   }

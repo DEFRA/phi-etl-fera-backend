@@ -11,7 +11,9 @@ const searchController = {
       return h.response({ plant_detail: result }).code(200)
     } catch (error) {
       logger.info(`Plant search did not yeild results: ${error.message}`)
-      return h.response({ error: 'Plant search did not yeild results' }).code(500)
+      return h
+        .response({ error: 'Plant search did not yeild results' })
+        .code(500)
     }
   }
 }

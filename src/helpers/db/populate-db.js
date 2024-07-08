@@ -4,7 +4,6 @@ import path from 'path'
 import { config } from '~/src/config'
 import { MongoClient } from 'mongodb'
 import fs from 'fs/promises'
-import { log } from 'console'
 
 const logger = createLogger()
 const filePathPlant = path.join(__dirname, 'data', 'plantsv1.json')
@@ -58,10 +57,14 @@ const collectionPestPlantLink = 'PEST_PLANT_LINK'
 let isLocked = false
 
 const populateDbHandler = async (request, h) => {
-
-  if (isLocked)
-  {
-    return h.response({ status: 'Info', message: '/PopulateDb load in progress, please try again later if required.' }).code(429)
+  if (isLocked) {
+    return h
+      .response({
+        status: 'Info',
+        message:
+          '/PopulateDb load in progress, please try again later if required.'
+      })
+      .code(429)
   }
   isLocked = true
 
@@ -170,8 +173,7 @@ const populateDbHandler = async (request, h) => {
   } catch (error) {
     logger.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
-  }
-  finally{
+  } finally {
     isLocked = false
   }
 }
@@ -244,25 +246,24 @@ async function loadCombinedDataForPestLink(mongoUri, db, collectionName) {
   }
 }
 
-
 async function readJsonFile(filePath) {
   const timeout = 10000 // await config.get('readTimeout')
   logger.info('Timeout value is: ', timeout)
 
   return new Promise((resolve, reject) => {
-      const timer = setTimeout(() => {
-          reject(new Error('Read file operation timed out'))
-      }, timeout)
+    const timer = setTimeout(() => {
+      reject(new Error('Read file operation timed out'))
+    }, timeout)
 
-      fs.readFile(filePath, 'utf8')
-          .then(data => {
-            clearTimeout(timer)
-            resolve(JSON.parse(data))
-          })
-          .catch(err => {
-              clearTimeout(timer)
-              reject(err)
-          })
+    fs.readFile(filePath, 'utf8')
+      .then((data) => {
+        clearTimeout(timer)
+        resolve(JSON.parse(data))
+      })
+      .catch((err) => {
+        clearTimeout(timer)
+        reject(err)
+      })
   })
 }
 
