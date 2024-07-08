@@ -1,5 +1,4 @@
 import { createLogger } from '~/src/helpers/logging/logger'
-
 import path from 'path'
 import { config } from '~/src/config'
 import { MongoClient } from 'mongodb'
@@ -171,7 +170,7 @@ const populateDbHandler = async (request, h) => {
       })
       .code(200)
   } catch (error) {
-    logger.error(error)
+    // logger.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
   } finally {
     isLocked = false
@@ -248,7 +247,7 @@ async function loadCombinedDataForPestLink(mongoUri, db, collectionName) {
 
 async function readJsonFile(filePath) {
   const timeout = 10000 // await config.get('readTimeout')
-  logger.info('Timeout value is: ', timeout)
+  // logger.info('Timeout value is: ', timeout)
 
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {

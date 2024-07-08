@@ -22,7 +22,7 @@ const updateDbPestHandler = async (request, h) => {
       message: 'Update Pest Db successful'
     })
   } catch (error) {
-    logger.error(error)
+    logger?.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
   }
 }
