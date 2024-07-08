@@ -8,20 +8,20 @@ import {
 import { pestNames } from './mocks/pest_names'
 
 // Mock dependencies
-jest.mock('~/src/helpers/logging/logger', () => ({
-  createLogger: jest.fn()
-}))
+// jest.mock('~/src/helpers/logging/logger', () => ({
+//   createLogger: jest.fn()
+// }))
+jest.mock('~/src/helpers/logging/logger')
+
 jest.mock('~/src/helpers/db/create-ds-indexes', () => ({
   createMongoDBIndexes: jest.fn()
 }))
 
-const logger = {
-  info: jest.fn(),
-  error: jest.fn()
-}
-jest.mock('~/src/helpers/logging/logger')
-
-createLogger.mockReturnValue(logger)
+// const logger = {
+//   info: jest.fn(),
+//   error: jest.fn()
+// }
+// createLogger.mockReturnValue(logger)
 
 describe('updateDbPestHandler', () => {
   let mockLogger, mockResponse
@@ -32,6 +32,7 @@ describe('updateDbPestHandler', () => {
       info: jest.fn(),
       error: jest.fn()
     }
+    createLogger.mockReturnValue(mockLogger)
 
     db = {
       collection: jest.fn().mockReturnThis(),
@@ -40,7 +41,6 @@ describe('updateDbPestHandler', () => {
       listCollections: jest.fn().mockReturnThis(),
       drop: jest.fn()
     }
-    createLogger.mockReturnValue(mockLogger)
   })
 
   beforeEach(() => {

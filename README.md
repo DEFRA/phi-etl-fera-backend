@@ -69,11 +69,16 @@ npm run
 
 ## API endpoints
 
-| Endpoint                       | Description  |
-| :----------------------------- | :----------- |
-| `GET: /health`                 | Health       |
-| `GET: /v1/entities`            | Entities     |
-| `GET: /v1/entities/<entityId>` | Entity by ID |
+| Endpoint            | Description                       |
+| :------------------ | :-------------------------------- |
+| `GET: /populateDb`  | creates collections in mongodb    |
+| `GET: /updatePest`  | writes pest data into collection  |
+| `GET: /updatePlant` | writes plant data into collection |
+
+| `POST: /search/plants` | get plant info for seach input from user |
+| `GET: /search/countries` | writes plant data into collection |
+
+| `POST: /workflow` | initiates workflow to get annex6 and annex11 rules for plant |
 
 ## Calling API endpoints
 

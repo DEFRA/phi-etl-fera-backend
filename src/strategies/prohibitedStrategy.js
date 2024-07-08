@@ -117,6 +117,10 @@ class ProhibitedStrategy extends workflowEngine {
               annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
             ) {
               logger.info(
+                annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
+              )
+              logger.info(annex.OVERALL_DECISION.toLowerCase())
+              logger.info(
                 `Annex6 (PROHIBITED) rule is APPLICABLE at COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${innsProhibitedObj.country},  ${annex.SERVICE_FORMAT}`
               )
@@ -731,81 +735,87 @@ class ProhibitedStrategy extends workflowEngine {
       let a11RulesFetched = false
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
-        for (const annex11 of plantDocument.HOST_REGULATION.ANNEX11) {
-          // SPECIES
-          annex11CountrySpecies =
-            await getAnnex11ForHRCountrySvcFmtSpecies(annex11)
-          if (
-            typeof annex11CountrySpecies === 'object' &&
-            annex11CountrySpecies !== null
-          ) {
-            annex11CountrySpeciesArr.push(annex11CountrySpecies)
-          }
+        const promises = plantDocument.HOST_REGULATION.ANNEX11.map(
+          async (annex11) => {
+            // SPECIES
+            annex11CountrySpecies =
+              await getAnnex11ForHRCountrySvcFmtSpecies(annex11)
+            if (
+              typeof annex11CountrySpecies === 'object' &&
+              annex11CountrySpecies !== null
+            ) {
+              annex11CountrySpeciesArr.push(annex11CountrySpecies)
+            }
 
-          annex11RegionSpecies =
-            await getAnnex11ForHRRegionSvcFmtSpecies(annex11)
-          if (
-            typeof annex11RegionSpecies === 'object' &&
-            annex11RegionSpecies !== null
-          ) {
-            annex11RegionSpeciesArr.push(annex11RegionSpecies)
-          }
+            annex11RegionSpecies =
+              await getAnnex11ForHRRegionSvcFmtSpecies(annex11)
+            if (
+              typeof annex11RegionSpecies === 'object' &&
+              annex11RegionSpecies !== null
+            ) {
+              annex11RegionSpeciesArr.push(annex11RegionSpecies)
+            }
 
-          annex11AllSpecies = await getAnnex11ForHRAllSvcFmtFamily(annex11)
-          if (
-            typeof annex11AllSpecies === 'object' &&
-            annex11AllSpecies !== null
-          ) {
-            annex11AllSpeciesArr.push(annex11AllSpecies)
-          }
+            annex11AllSpecies = await getAnnex11ForHRAllSvcFmtFamily(annex11)
+            if (
+              typeof annex11AllSpecies === 'object' &&
+              annex11AllSpecies !== null
+            ) {
+              annex11AllSpeciesArr.push(annex11AllSpecies)
+            }
 
-          // GENUS
-          annex11CountryGenus = await getAnnex11ForCountrySvcFmtGenus(annex11)
-          if (
-            typeof annex11CountryGenus === 'object' &&
-            annex11CountryGenus !== null
-          ) {
-            annex11CountryGenusArr.push(annex11CountryGenus)
-          }
+            // GENUS
+            annex11CountryGenus = await getAnnex11ForCountrySvcFmtGenus(annex11)
+            if (
+              typeof annex11CountryGenus === 'object' &&
+              annex11CountryGenus !== null
+            ) {
+              annex11CountryGenusArr.push(annex11CountryGenus)
+            }
 
-          annex11RegionGenus = await getAnnex11ForRegionSvcFmtGenus(annex11)
-          if (
-            typeof annex11RegionGenus === 'object' &&
-            annex11RegionGenus !== null
-          ) {
-            annex11RegionGenusArr.push(annex11RegionGenus)
-          }
+            annex11RegionGenus = await getAnnex11ForRegionSvcFmtGenus(annex11)
+            if (
+              typeof annex11RegionGenus === 'object' &&
+              annex11RegionGenus !== null
+            ) {
+              annex11RegionGenusArr.push(annex11RegionGenus)
+            }
 
-          annex11AllGenus = await getAnnex11ForAllSvcFmtGenus(annex11)
-          if (typeof annex11AllGenus === 'object' && annex11AllGenus !== null) {
-            annex11AllGenusArr.push(annex11AllGenus)
-          }
+            annex11AllGenus = await getAnnex11ForAllSvcFmtGenus(annex11)
+            if (
+              typeof annex11AllGenus === 'object' &&
+              annex11AllGenus !== null
+            ) {
+              annex11AllGenusArr.push(annex11AllGenus)
+            }
 
-          // ALL
-          annex11CountryFamily = await getAnnex11ForAllSvcFmtCountry(annex11)
-          if (
-            typeof annex11CountryFamily === 'object' &&
-            annex11CountryFamily !== null
-          ) {
-            annex11CountryFamilyArr.push(annex11CountryFamily)
-          }
+            // ALL
+            annex11CountryFamily = await getAnnex11ForAllSvcFmtCountry(annex11)
+            if (
+              typeof annex11CountryFamily === 'object' &&
+              annex11CountryFamily !== null
+            ) {
+              annex11CountryFamilyArr.push(annex11CountryFamily)
+            }
 
-          annex11RegionFamily = await getAnnex11ForAllSvcFmtRegion(annex11)
-          if (
-            typeof annex11RegionFamily === 'object' &&
-            annex11RegionFamily !== null
-          ) {
-            annex11RegionFamilyArr.push(annex11RegionFamily)
-          }
+            annex11RegionFamily = await getAnnex11ForAllSvcFmtRegion(annex11)
+            if (
+              typeof annex11RegionFamily === 'object' &&
+              annex11RegionFamily !== null
+            ) {
+              annex11RegionFamilyArr.push(annex11RegionFamily)
+            }
 
-          annex11AllFamily = await getAnnex11ForAllSvcFmt(annex11)
-          if (
-            typeof annex11AllFamily === 'object' &&
-            annex11AllFamily !== null
-          ) {
-            annex11AllFamilyArr.push(annex11AllFamily)
+            annex11AllFamily = await getAnnex11ForAllSvcFmt(annex11)
+            if (
+              typeof annex11AllFamily === 'object' &&
+              annex11AllFamily !== null
+            ) {
+              annex11AllFamilyArr.push(annex11AllFamily)
+            }
           }
-        }
+        )
+        await Promise.all(promises)
       }
 
       // SPECIES ARRAY

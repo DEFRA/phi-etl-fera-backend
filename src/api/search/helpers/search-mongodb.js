@@ -1,7 +1,8 @@
 import { config } from '~/src/config'
 import { MongoClient } from 'mongodb'
 
-let logger = ''
+import { createLogger } from '~/src/helpers/logging/logger'
+const logger = createLogger()
 
 async function connectToMongo(collectionName) {
   // initate mongodb connection to query it
@@ -24,8 +25,7 @@ async function connectToMongo(collectionName) {
     return error.message
   }
 }
-async function searchPlantDetailsDb(searchText, cdpLogger) {
-  logger = cdpLogger
+async function searchPlantDetailsDb(searchText) {
   // const searchText = searchInput
   const results = []
   try {
@@ -116,9 +116,8 @@ async function searchPlantDetailsDb(searchText, cdpLogger) {
   }
 }
 
-async function getCountries(cdpLogger) {
+async function getCountries() {
   try {
-    logger = cdpLogger
     const collectionCountries = await connectToMongo('COUNTRIES')
 
     // Find the document containing the COUNTRY_GROUPING array
