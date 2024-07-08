@@ -4,6 +4,7 @@ import path from 'path'
 import { config } from '~/src/config'
 import { MongoClient } from 'mongodb'
 import fs from 'fs/promises'
+import { log } from 'console'
 
 const logger = createLogger()
 const filePathPlant = path.join(__dirname, 'data', 'plantsv1.json')
@@ -54,7 +55,16 @@ const collectionPestDistribution = 'PEST_DISTRIBUTION'
 const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
 const collectionPestPras = 'PEST_PRA_DATA'
 const collectionPestPlantLink = 'PEST_PLANT_LINK'
+let isLocked = false
+
 const populateDbHandler = async (request, h) => {
+
+  if (isLocked)
+  {
+    return h.response({ status: 'Info', message: '/PopulateDb load in progress, please try again later if required.' }).code(429)
+  }
+  isLocked = true
+
   try {
     await loadData(
       filePathPlant,
@@ -161,6 +171,9 @@ const populateDbHandler = async (request, h) => {
     logger.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
   }
+  finally{
+    isLocked = false
+  }
 }
 
 async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
@@ -174,6 +187,7 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
     'data',
     'plant_name_rest.json'
   )
+
   const data1 = await readJsonFile(filePathServicePlantName)
   const data2 = await readJsonFile(filePathServicePlantNameRest)
 
@@ -230,9 +244,26 @@ async function loadCombinedDataForPestLink(mongoUri, db, collectionName) {
   }
 }
 
+
 async function readJsonFile(filePath) {
-  const data = await fs.readFile(filePath, 'utf8')
-  return JSON.parse(data)
+  const timeout = 10000 // await config.get('readTimeout')
+  logger.info('Timeout value is: ', timeout)
+
+  return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => {
+          reject(new Error('Read file operation timed out'))
+      }, timeout)
+
+      fs.readFile(filePath, 'utf8')
+          .then(data => {
+            clearTimeout(timer)
+            resolve(JSON.parse(data))
+          })
+          .catch(err => {
+              clearTimeout(timer)
+              reject(err)
+          })
+  })
 }
 
 async function loadData(filePath, mongoUri, db, collectionName, indicator) {
@@ -256,7 +287,7 @@ async function dropCollections(db, collection) {
     await db.dropCollection(collection, function (err, result) {
       if (err) {
         // eslint-disable-next-line no-console
-        console.error('Error occurred while dropping the collection', err)
+        logger.error('Error occurred while dropping the collection', err)
         return
       }
       // eslint-disable-next-line no-console

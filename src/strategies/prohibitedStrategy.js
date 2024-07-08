@@ -116,6 +116,8 @@ class ProhibitedStrategy extends workflowEngine {
               annex.FORMAT_CLARIFICATION === '' &&
               annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
             ) {
+              logger.info( annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited')
+              logger.info(annex.OVERALL_DECISION.toLowerCase())
               logger.info(
                 `Annex6 (PROHIBITED) rule is APPLICABLE at COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${innsProhibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -731,7 +733,7 @@ class ProhibitedStrategy extends workflowEngine {
       let a11RulesFetched = false
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX11)) {
-        for (const annex11 of plantDocument.HOST_REGULATION.ANNEX11) {
+        const promises = plantDocument.HOST_REGULATION.ANNEX11.map(async (annex11) => {
           // SPECIES
           annex11CountrySpecies =
             await getAnnex11ForHRCountrySvcFmtSpecies(annex11)
@@ -805,7 +807,8 @@ class ProhibitedStrategy extends workflowEngine {
           ) {
             annex11AllFamilyArr.push(annex11AllFamily)
           }
-        }
+        })
+        await Promise.all(promises)
       }
 
       // SPECIES ARRAY

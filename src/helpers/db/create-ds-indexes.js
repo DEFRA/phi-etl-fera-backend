@@ -12,7 +12,7 @@ async function createMongoDBIndexes(collection) {
     logger.info(`Index created: ${indexHostRef}`)
     logger.info(`Index created: ${indexPlantName}`)
   } catch (error) {
-    logger?.error('Could not create MongoDB indexes', error)
+    logger.error('Could not create MongoDB indexes', error)
   }
 }
 

@@ -5,6 +5,7 @@ import { join } from 'node:path'
 import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
 
 const logger = createLogger()
+let isLocked = false
 
 const updateDbPlantHandler = {
   options: {
@@ -13,6 +14,13 @@ const updateDbPlantHandler = {
     }
   },
   handler: async (request, h) => {
+    
+    if (isLocked)
+    {
+      return h.response({ status: 'Info', message: '/updatePlan load in progress, please try again later if required.' }).code(429)
+    }
+    isLocked = true
+
     try {
       const worker = createTranspiledWorker(
         join(__dirname, `/update-db-plant-worker`)
@@ -39,6 +47,9 @@ const updateDbPlantHandler = {
     } catch (error) {
       logger?.error(error)
       return h.response({ status: 'error', message: error.message }).code(500)
+    }
+    finally{
+      isLocked = false
     }
   }
 }

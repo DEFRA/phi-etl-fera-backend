@@ -2,8 +2,15 @@ import { createLogger } from '~/src/helpers/logging/logger'
 import { pestDetail } from '../models/pestDetail'
 
 const logger = createLogger()
-
+let isLocked = false
 const updateDbPestHandler = async (request, h) => {
+ 
+  if (isLocked)
+  {
+    return h.response({ status: 'Info', message: '/udpatePest load in progress, please try again later if required.' }).code(429)
+  }
+  isLocked = true
+
   try {
     await loadData(request.server.db)
     return h.response({
@@ -11,7 +18,7 @@ const updateDbPestHandler = async (request, h) => {
       message: 'Update Pest Db successful'
     })
   } catch (error) {
-    logger?.error(error)
+    logger.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
   }
 }
@@ -44,6 +51,9 @@ async function loadData(db) {
     await insertResultList(db, 'PEST_DATA', resultList)
   } catch (err) {
     logger.error(err)
+  }
+  finally{
+    isLocked = false
   }
 }
 

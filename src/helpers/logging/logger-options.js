@@ -1,5 +1,4 @@
 import ecsFormat from '@elastic/ecs-pino-format'
-
 import { config } from '~/src/config'
 
 const loggerOptions = {

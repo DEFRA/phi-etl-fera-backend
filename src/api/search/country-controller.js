@@ -9,8 +9,8 @@ const countryController = {
       const result = await getCountries(logger)
       return h.response({ countries: result }).code(200)
     } catch (error) {
-      // logger.error(`Failed to fetch countries' ${error}`)
-      return h.response({ error: error.message }).code(500)
+      logger.info(`Failed to fetch countries: ${error.message}`)
+      return h.response({ error: 'Failed to fetch countries' }).code(500)
     }
   }
 }

@@ -88,7 +88,13 @@ const config = convict({
     nullable: true,
     default: null,
     env: 'CDP_HTTPS_PROXY'
-  }
+  },
+  readTimeout: {
+    doc: 'Read timeout value in milliseconds for I/O operations',
+    format: String,
+    default: '10000',
+    env: 'READ_TIMEOUT'
+  },
 })
 
 config.validate({ allowed: 'strict' })
