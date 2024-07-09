@@ -1,6 +1,5 @@
 import { searchPestDetailsDb } from '~/src/api/search/helpers/search-mongodb'
 
-
 const pestController = {
   handler: async (request, h) => {
     try {
