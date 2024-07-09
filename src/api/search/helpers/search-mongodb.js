@@ -130,7 +130,6 @@ async function getCountries() {
   }
 }
 async function searchPestDetailsDb(searchText) {
-  
   // const searchText = searchInput
   const results = []
   try {
@@ -147,7 +146,7 @@ async function searchPestDetailsDb(searchText) {
       }
 
       const latinNameResults = await collectionPest.find(query).toArray()
-      
+
       if (latinNameResults) {
         const latinArr = []
         // filter latinNameResults and get rid of uncesseary fields
@@ -161,7 +160,7 @@ async function searchPestDetailsDb(searchText) {
         })
         results.push({ id: 'latin-name', results: latinArr })
       }
-    
+
       query = {
         PEST_NAME: {
           $elemMatch: {
@@ -218,7 +217,7 @@ async function searchPestDetailsDb(searchText) {
   }
 }
 async function getpestDetails(cslref) {
-  try {   
+  try {
     const collectionPestDetails = await connectToMongo('PEST_DATA')
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionPestDetails
@@ -226,7 +225,6 @@ async function getpestDetails(cslref) {
       .toArray()
     return result
   } catch (error) {
-    
     // TODO: Acutal message to be picked from the resource file
     return error.message
   }
