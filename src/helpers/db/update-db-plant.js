@@ -393,8 +393,9 @@ function updateResultListWithPestReg(resultList, plantPestRegList, plantList) {
         if (rlPestLink?.CSL_REF === pest?.CSL_REF) {
           //* ****************** for the matching pest in pest regulation if quarantine indicator is in Q and P update the regulation values  */
           if (
-            ['Q', 'P'].includes(pest?.QUARANTINE_INDICATOR) &&
-            rlPestLink.QUARANTINE_INDICATOR === ''
+            ['Q', 'P'].includes(pest?.QUARANTINE_INDICATOR)
+            //* *************** commneted 2 lines ****************&&
+            // rlPestLink.QUARANTINE_INDICATOR === ''
           ) {
             rlPestLink.REGULATION = pest?.REGULATION
             rlPestLink.QUARANTINE_INDICATOR = pest?.QUARANTINE_INDICATOR
