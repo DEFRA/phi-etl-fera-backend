@@ -1,6 +1,7 @@
 import { config } from '~/src/config'
 import { MongoClient } from 'mongodb'
 
+
 let logger = ''
 
 async function connectToMongo(collectionName) {
@@ -236,9 +237,62 @@ async function getpestDetails(cslref, cdpLogger) {
     return error.message
   }
 }
+async function getpestplantLink(hostref, cdpLogger) {
+  try {
+    logger = cdpLogger
+// const objids=hostref.map(id => ObjectId(id) )
+//     const collectionPlantDetails = await connectToMongo('PLANT_DATA')
+// console.log("comes i nside plantlink",objids)
+
+
+//     // Find the document containing the COUNTRY_GROUPING array
+//     const result = await collectionPlantDetails
+//       .find({ HOST_REF: { $in: [ objids ] } })
+     
+//       .toArray()
+      console.log("result of plantlink",result);
+
+    return result
+  } catch (error) {
+    logger.info(`Countries could not be fetched ${error}`)
+    // TODO: Acutal message to be picked from the resource file
+    return error.message
+  }
+
+}
+
+
+
+// const express = require('express'); const bodyParser = require('body-parser'); const axios = require('axios'); const app = express(); const PORT = 3000;
+// // Middleware to parse JSON bodiesapp.use(bodyParser.json());
+// // API endpoint to receive data 
+// app.post('/api/endpoint', (req, res) => {
+//   const dataArray = req.body.data;
+//   console.log('Received data:', dataArray);
+//   // Process the data as needed // ... 
+//   res.json({ message: 'Data received successfully!' });
+// });
+// // Start the server 
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+//   // Example data array 
+//   constdataArray = [{ id: 1, value: 'A' }, { id: 2, value: 'B' }, { id: 3, value: 'C' }];
+//   // Function to send an array of data in a single API call 
+//   async function sendArrayData(dataArray) {
+//     try {
+//       const response = awaitaxios.post('http://localhost:3000/api/endpoint',
+//         { data: dataArray }); console.log('Response:', response.data);
+//     }
+//     catch (error) { console.error('Error:', error); }
+//   }
+//   // Call the function with the example data array 
+//   sendArrayData(dataArray);
+// });
+
 module.exports = {
   searchPlantDetailsDb,
   getCountries,
   searchPestDetailsDb,
-  getpestDetails
+  getpestDetails,
+  getpestplantLink
 }
