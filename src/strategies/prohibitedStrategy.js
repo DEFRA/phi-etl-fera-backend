@@ -1220,6 +1220,7 @@ class ProhibitedStrategy extends workflowEngine {
               plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR !== ''
             ) {
               pestArray.push({
+                csl_ref: plantDocument.PEST_LINK[i].CSL_REF,
                 name: plantDocument.PEST_LINK[i].PEST_NAME,
                 format: plantDocument.PEST_LINK[i].FORMAT,
                 quarantine_indicator:
