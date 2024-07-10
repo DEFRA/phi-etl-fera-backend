@@ -30,8 +30,9 @@ async function doCountryRegionCheck(db, searchInput) {
   }
 
   const countryDetails = await db.collection('COUNTRIES').findOne(query)
+
   let filteredCountry = ''
-  countryDetails.COUNTRY_GROUPING.COUNTRY_GROUPING.filter((c) => {
+  countryDetails?.COUNTRY_GROUPING.COUNTRY_GROUPING.filter((c) => {
     if (
       c.COUNTRY_NAME.toLowerCase() ===
       searchInput.plantDetails.country.toLowerCase()
@@ -56,10 +57,11 @@ async function kickStart(searchInput, db) {
       HOST_REF: searchInput.plantDetails.hostRef
     })
 
-    if (!plantDocument) {
+    if (plantDocument === undefined && !plantDocument) {
       logger.info(
         `Plant document not found for host_ref:, ${searchInput.plantDetails.hostRef}`
       )
+      return plantInfo
     } else {
       const countryMapping = await doCountryRegionCheck(db, searchInput)
       logger.info('trigger - INNS check')
