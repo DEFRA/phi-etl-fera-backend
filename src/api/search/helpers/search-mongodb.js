@@ -230,9 +230,26 @@ async function getpestDetails(cslref) {
   }
 }
 
+async function getpestplantLink(hostref) {
+  try {
+    hostref = hostref.map(Number)
+    const collectionPestDetails = await connectToMongo('PLANT_DATA')
+    // Find the document containing the COUNTRY_GROUPING array
+    const result = await collectionPestDetails
+
+      .find({ HOST_REF: { $in: hostref } })
+      .toArray()
+    return result
+  } catch (error) {
+    // TODO: Acutal message to be picked from the resource file
+    return error.message
+  }
+}
+
 module.exports = {
   searchPlantDetailsDb,
   getCountries,
   searchPestDetailsDb,
-  getpestDetails
+  getpestDetails,
+  getpestplantLink
 }
