@@ -1761,18 +1761,39 @@ class ProhibitedStrategy extends workflowEngine {
               ].COUNTRY_NAME.toLowerCase() === importCountry &&
               plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR !== ''
             ) {
-              pestArray.push({
-                csl_ref: plantDocument.PEST_LINK[i].CSL_REF,
-                name: plantDocument.PEST_LINK[i].PEST_NAME,
-                format: plantDocument.PEST_LINK[i].FORMAT,
-                quarantine_indicator:
-                  plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR,
-                regulated_indicator:
-                  plantDocument.PEST_LINK[i].REGULATION_INDICATOR,
-                regulation_category:
-                  plantDocument.PEST_LINK[i].REGULATION_CATEGORY,
-                pest_country: plantDocument.PEST_LINK[i].PEST_COUNTRY[j]
-              })
+              if (
+                plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR === 'R' &&
+                prohibitedObj.serviceFormat.toLowerCase() ===
+                  'plants for planting'
+              ) {
+                pestArray.push({
+                  csl_ref: plantDocument.PEST_LINK[i].CSL_REF,
+                  name: plantDocument.PEST_LINK[i].PEST_NAME,
+                  format: plantDocument.PEST_LINK[i].FORMAT,
+                  quarantine_indicator:
+                    plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR,
+                  regulated_indicator:
+                    plantDocument.PEST_LINK[i].REGULATION_INDICATOR,
+                  regulation_category:
+                    plantDocument.PEST_LINK[i].REGULATION_CATEGORY,
+                  pest_country: plantDocument.PEST_LINK[i].PEST_COUNTRY[j]
+                })
+              } else {
+                if (plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR !== 'R') {
+                  pestArray.push({
+                    csl_ref: plantDocument.PEST_LINK[i].CSL_REF,
+                    name: plantDocument.PEST_LINK[i].PEST_NAME,
+                    format: plantDocument.PEST_LINK[i].FORMAT,
+                    quarantine_indicator:
+                      plantDocument.PEST_LINK[i].QUARANTINE_INDICATOR,
+                    regulated_indicator:
+                      plantDocument.PEST_LINK[i].REGULATION_INDICATOR,
+                    regulation_category:
+                      plantDocument.PEST_LINK[i].REGULATION_CATEGORY,
+                    pest_country: plantDocument.PEST_LINK[i].PEST_COUNTRY[j]
+                  })
+                }
+              }
             }
           }
         }
