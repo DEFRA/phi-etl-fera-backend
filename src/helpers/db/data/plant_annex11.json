@@ -1,4 +1,5 @@
-[
+{
+  "PLANT_ANNEX11": [
  {
    "PLANT_LATIN_NAME": "Secale L",
    "PLANT_CHILDREN_HOST_REF": "23144;23145;23146;23147;23148",
@@ -14904,3 +14905,4 @@
    "BTOM_NON_EUSL": "11B"
  }
 ]
+}
