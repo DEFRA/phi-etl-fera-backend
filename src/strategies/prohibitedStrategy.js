@@ -1736,17 +1736,7 @@ class ProhibitedStrategy extends workflowEngine {
 
       const importCountry = prohibitedObj.country.toLowerCase()
       // Get the pests corresponding to the country
-      let pestArray = []
-
-      function compareQuarantineIndicator(a, b) {
-        if (a.quarantine_indicator < b.quarantine_indicator) {
-          return -1
-        }
-        if (a.quarantine_indicator > b.quarantine_indicator) {
-          return 1
-        }
-        return 0
-      }
+      const pestArray = []
 
       function pestNames(plantDocument) {
         for (let i = 0; i < plantDocument.PEST_LINK.length; i++) {
@@ -1798,7 +1788,6 @@ class ProhibitedStrategy extends workflowEngine {
           }
         }
 
-        pestArray = pestArray.sort(compareQuarantineIndicator)
         return pestArray
       }
 

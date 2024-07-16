@@ -82,17 +82,7 @@ class InnsStrategy extends workflowEngine {
 
     // Get the pests corresponding to the country
     const importCountry = innsStrategyObj.country.toLowerCase()
-    let pestArray = []
-
-    function compareQuarantineIndicator(a, b) {
-      if (a.quarantine_indicator < b.quarantine_indicator) {
-        return -1
-      }
-      if (a.quarantine_indicator > b.quarantine_indicator) {
-        return 1
-      }
-      return 0
-    }
+    const pestArray = []
 
     function pestNames(plantDocument) {
       for (let i = 0; i < plantDocument.PEST_LINK.length; i++) {
@@ -143,8 +133,6 @@ class InnsStrategy extends workflowEngine {
           }
         }
       }
-
-      pestArray = pestArray.sort(compareQuarantineIndicator)
       return pestArray
     }
 
