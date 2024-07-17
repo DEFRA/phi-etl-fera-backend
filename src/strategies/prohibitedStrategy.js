@@ -135,10 +135,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 1A (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef
@@ -182,10 +178,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 1B (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef
@@ -232,11 +224,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 2A (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef
@@ -295,11 +282,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 2B (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef
@@ -358,11 +340,6 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
-          logger.info(
-            `Step 3A (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-          )
-
           if (
             annex.HOST_REF === prohibitedObj.hostRef &&
             annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef
@@ -402,11 +379,6 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
-          logger.info(
-            `Step 3B (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-          )
-
           if (
             annex.HOST_REF === prohibitedObj.hostRef &&
             annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef
@@ -454,11 +426,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 1D (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef
@@ -516,11 +483,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 2C (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-                ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef
@@ -595,11 +557,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 3C (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef
@@ -654,11 +611,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 1D (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef
@@ -716,11 +668,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 2D (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-                ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef
@@ -795,11 +742,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step 3D (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-              ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef
@@ -1383,11 +1325,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step A (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-            ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef &&
@@ -1437,11 +1374,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step B (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-            ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef &&
@@ -1503,11 +1435,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step C (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-            ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 === prohibitedObj.hostRef &&
@@ -1553,11 +1480,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step D (loop through each annex), ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-            ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef &&
@@ -1605,11 +1527,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step E (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-            ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef &&
@@ -1671,11 +1588,6 @@ class ProhibitedStrategy extends workflowEngine {
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
           async (annex) => {
-            logger.info(
-              `Step F (loop through each annex),  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
-            ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
-            )
-
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.HOST_REF_ANNEX6 !== prohibitedObj.hostRef &&
