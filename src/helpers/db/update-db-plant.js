@@ -370,7 +370,7 @@ function updateResultListWithPestNames(resultList, pestNamesList) {
               )
             }
           ]
-          x.EPPO_CODE = pest.EPPO_CODE
+          x.EPPO_CODE = pest?.EPPO_CODE
         }
       })
     })

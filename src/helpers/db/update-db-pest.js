@@ -247,7 +247,7 @@ function updatePlantLinksWithNames(resultList, plantList) {
           { type: 'SYNONYM_NAME', NAME: snameList }
         ]
         link.HOST_REF = plant.HOST_REF
-        link.EPPO_CODE = plant.EPPO_CODE
+        link.EPPO_CODE = plant?.EPPO_CODE
         link.LATIN_NAME = plant.LATIN_NAME
         link.PARENT_HOST_REF = plant.PARENT_HOST_REF
       }
