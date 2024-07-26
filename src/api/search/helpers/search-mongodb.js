@@ -1,5 +1,4 @@
-import { config } from '~/src/config'
-import { MongoClient } from 'mongodb'
+import { createServer } from '~/src/api/server'
 
 import { createLogger } from '~/src/helpers/logging/logger'
 const logger = createLogger()
@@ -7,14 +6,10 @@ const logger = createLogger()
 async function connectToMongo(collectionName) {
   // initate mongodb connection to query it
   logger.info(`Initiate mongodb connection for: ${collectionName}`)
-  const mongoUri = config.get('mongoUri')
-  const databaseName = config.get('mongoDatabase')
-  const client = new MongoClient(mongoUri.toString(), {})
-
   // Connect to MongoDB
   try {
-    await client.connect()
-    const db = client.db(databaseName)
+    const server = await createServer()
+    const db = await server.db
     logger.info(`Connected to mongodb, fetching : ${collectionName}`)
 
     const collection = await db.collection(collectionName)
