@@ -617,8 +617,8 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Türkiye",
-        "FERA_COUNTRY_NAME": "Türkiye",
+        "COUNTRY_NAME": "Turkey",
+        "FERA_COUNTRY_NAME": "Turkey",
         "COUNTRY_CODE": "TR",
         "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
         "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
@@ -628,7 +628,7 @@
         "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
         "IPPC_SIG": "Y",
         "FCDO": "Turkey",
-        "FIELD12": "NO",
+        "FIELD12": "YES",
         "PHI_ID": true
       },
       {
@@ -1964,7 +1964,7 @@
         "IPPC_SIG": "Y",
         "FCDO": "Guernsey, Alderney, Sark",
         "FIELD12": "NO",
-        "PHI_ID": true
+        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Guinea",
@@ -2084,7 +2084,7 @@
         "IPPC_SIG": "Y",
         "FCDO": "Isle of Man",
         "FIELD12": "YES",
-        "PHI_ID": true
+        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Israel",
@@ -2129,7 +2129,7 @@
         "IPPC_SIG": "Y",
         "FCDO": "Jersey",
         "FIELD12": "YES",
-        "PHI_ID": true
+        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Jordan",
