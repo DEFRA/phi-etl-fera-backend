@@ -1,32 +1,13 @@
-import { createServer } from '~/src/api/server'
-
 import { createLogger } from '~/src/helpers/logging/logger'
 const logger = createLogger()
 
-async function connectToMongo(collectionName) {
-  // initate mongodb connection to query it
-  logger.info(`Initiate mongodb connection for: ${collectionName}`)
-  // Connect to MongoDB
-  try {
-    const server = await createServer()
-    const db = await server.db
-    logger.info(`Connected to mongodb, fetching : ${collectionName}`)
-
-    const collection = await db.collection(collectionName)
-    return collection
-  } catch (error) {
-    logger.info(`Collection could not be fetched ${error}`)
-    // TODO: Acutal message to be picked from the resource file
-    return error.message
-  }
-}
-async function searchPlantDetailsDb(searchText) {
+async function searchPlantDetailsDb(db, searchText) {
   // const searchText = searchInput
   const results = []
   try {
     let query = {}
     // TODO: Collection name to be read from config file
-    const collectionPlant = await connectToMongo('PLANT_DATA')
+    const collectionPlant = db.collection('PLANT_DATA')
 
     if (searchText) {
       logger.info(`input text is ${searchText}`)
@@ -111,9 +92,9 @@ async function searchPlantDetailsDb(searchText) {
   }
 }
 
-async function getCountries() {
+async function getCountries(db) {
   try {
-    const collectionCountries = await connectToMongo('COUNTRIES')
+    const collectionCountries = db.collection('COUNTRIES')
 
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionCountries.find({}).toArray()
@@ -124,13 +105,13 @@ async function getCountries() {
     return error.message
   }
 }
-async function searchPestDetailsDb(searchText) {
+async function searchPestDetailsDb(db, searchText) {
   // const searchText = searchInput
   const results = []
   try {
     let query = {}
     // TODO: Collection name to be read from config file
-    const collectionPest = await connectToMongo('PEST_DATA')
+    const collectionPest = await db.collection('PEST_DATA')
 
     if (searchText) {
       logger.info(`input text is ${searchText}`)
@@ -211,9 +192,9 @@ async function searchPestDetailsDb(searchText) {
     return error.message
   }
 }
-async function getpestDetails(cslref) {
+async function getpestDetails(db, cslref) {
   try {
-    const collectionPestDetails = await connectToMongo('PEST_DATA')
+    const collectionPestDetails = await db.collection('PEST_DATA')
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionPestDetails
       .find({ CSL_REF: cslref })
@@ -225,10 +206,10 @@ async function getpestDetails(cslref) {
   }
 }
 
-async function getpestplantLink(hostref) {
+async function getpestplantLink(db, hostref) {
   try {
     hostref = hostref.map(Number)
-    const collectionPestDetails = await connectToMongo('PLANT_DATA')
+    const collectionPestDetails = await db.collection('PLANT_DATA')
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionPestDetails
 
