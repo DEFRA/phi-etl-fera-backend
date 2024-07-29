@@ -37,7 +37,7 @@ describe('countryController handler', () => {
 
     await countryController.handler({}, h)
 
-    //expect(getCountries).not.toHaveBeenCalled(null)
+    // expect(getCountries).not.toHaveBeenCalled(null)
     expect(h.response).toHaveBeenCalledWith({ error: mockError.message })
   })
 })
