@@ -7,7 +7,7 @@ const searchController = {
     try {
       const searchInput = request.payload // POST
       const extractedText = searchInput.search
-      const result = await searchPlantDetailsDb(extractedText)
+      const result = await searchPlantDetailsDb(request.db, extractedText)
       return h.response({ plant_detail: result }).code(200)
     } catch (error) {
       logger.error(`Plant search did not yeild results: ${error.message}`)

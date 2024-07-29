@@ -9,7 +9,7 @@ const pestplantlinkController = {
       const array2 = []
       array1.forEach((element) => array2.push(element))
 
-      const result = await getpestplantLink(array2)
+      const result = await getpestplantLink(request.db, array2)
 
       return h.response({ pest_link: result }).code(200)
     } catch (error) {
