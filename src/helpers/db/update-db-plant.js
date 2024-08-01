@@ -67,7 +67,7 @@ async function loadData(db) {
 
     const annex6List = collections.annex6Documents
 
-    //const annex6List = collections.annex6Documents[0]?.PLANT_ANNEX6 || []
+    // const annex6List = collections.annex6Documents[0]?.PLANT_ANNEX6 || []
 
     const plantPestLinkList = collections.plantPestLinkDocuments
     const plantPestRegList =
