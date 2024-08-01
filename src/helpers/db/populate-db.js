@@ -94,7 +94,7 @@ const populateDbHandler = async (request, h) => {
       mongoUri,
       request.server.db,
       collectionNamePlantAnnex6,
-      1
+      2
     )
     await loadData(
       filePathServiceAnnex11,
