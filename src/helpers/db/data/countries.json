@@ -422,21 +422,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Andorra",
-        "FERA_COUNTRY_NAME": "Andorra",
-        "COUNTRY_CODE": "AD",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Andorra",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Armenia",
         "FERA_COUNTRY_NAME": "Armenia",
         "COUNTRY_CODE": "AM",
@@ -497,21 +482,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Faroe Islands",
-        "FERA_COUNTRY_NAME": "Faroe Islands",
-        "COUNTRY_CODE": "FO",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Georgia",
         "FERA_COUNTRY_NAME": "Georgia",
         "COUNTRY_CODE": "GE",
@@ -555,21 +525,6 @@
         "FCDO": "Moldova",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Monaco",
-        "FERA_COUNTRY_NAME": "Monaco",
-        "COUNTRY_CODE": "MC",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Monaco",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Montenegro",
@@ -647,51 +602,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "San Marino",
-        "FERA_COUNTRY_NAME": "San Marino",
-        "COUNTRY_CODE": "SM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "San Marino",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Svalbard",
-        "FERA_COUNTRY_NAME": "Svalbard",
-        "COUNTRY_CODE": "SJ",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Vatican City State",
-        "FERA_COUNTRY_NAME": "Vatican City State",
-        "COUNTRY_CODE": "VA",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, TRUE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, TRUE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, TRUE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, TRUE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Vatican City",
-        "FIELD12": "NO",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Liechtenstein",
         "FERA_COUNTRY_NAME": "Liechtenstein",
         "COUNTRY_CODE": "LI",
@@ -752,21 +662,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Aruba",
-        "FERA_COUNTRY_NAME": "Aruba",
-        "COUNTRY_CODE": "AW",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Bahamas",
         "FERA_COUNTRY_NAME": "Bahamas",
         "COUNTRY_CODE": "BS",
@@ -812,21 +707,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Bermuda",
-        "FERA_COUNTRY_NAME": "Bermuda",
-        "COUNTRY_CODE": "BM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Bermuda",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Bolivia",
         "FERA_COUNTRY_NAME": "Bolivia",
         "COUNTRY_CODE": "BO",
@@ -857,21 +737,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "British Virgin Islands",
-        "FERA_COUNTRY_NAME": "British Virgin Islands",
-        "COUNTRY_CODE": "VG",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "British Virgin Islands",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Canada",
         "FERA_COUNTRY_NAME": "Canada",
         "COUNTRY_CODE": "CA",
@@ -885,21 +750,6 @@
         "FCDO": "Canada",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Cayman Islands",
-        "FERA_COUNTRY_NAME": "Cayman Islands",
-        "COUNTRY_CODE": "KY",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Cayman Islands",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Chile",
@@ -1022,51 +872,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Falkland Islands",
-        "FERA_COUNTRY_NAME": "Falkland Islands",
-        "COUNTRY_CODE": "FK",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Falkland Islands",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "French Guiana",
-        "FERA_COUNTRY_NAME": "French Guiana",
-        "COUNTRY_CODE": "GF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Greenland",
-        "FERA_COUNTRY_NAME": "Greenland",
-        "COUNTRY_CODE": "GL",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Grenada",
         "FERA_COUNTRY_NAME": "Grenada",
         "COUNTRY_CODE": "GD",
@@ -1080,21 +885,6 @@
         "FCDO": "Grenada",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Guadeloupe",
-        "FERA_COUNTRY_NAME": "Guadeloupe",
-        "COUNTRY_CODE": "GP",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Guatemala",
@@ -1247,36 +1037,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Puerto Rico",
-        "FERA_COUNTRY_NAME": "Puerto Rico",
-        "COUNTRY_CODE": "PR",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Saint Barthelemy",
-        "FERA_COUNTRY_NAME": "Saint Barthelemy",
-        "COUNTRY_CODE": "BL",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Saint Kitts and Nevis",
         "FERA_COUNTRY_NAME": "Saint Kitts and Nevis",
         "COUNTRY_CODE": "KN",
@@ -1305,21 +1065,6 @@
         "FCDO": "St Lucia",
         "FIELD12": "NO",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Saint Martin",
-        "FERA_COUNTRY_NAME": "Saint Martin",
-        "COUNTRY_CODE": "MF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Saint Vincent and the Grenadines",
@@ -1367,21 +1112,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Turks and Caicos",
-        "FERA_COUNTRY_NAME": "Turks and Caicos",
-        "COUNTRY_CODE": "TC",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Turks and Caicos Islands",
-        "FIELD12": "NO",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "United States",
         "FERA_COUNTRY_NAME": "United States",
         "COUNTRY_CODE": "US",
@@ -1427,21 +1157,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Saint Pierre and Miquelon",
-        "FERA_COUNTRY_NAME": "Saint Pierre and Miquelon",
-        "COUNTRY_CODE": "PM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, TRUE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, TRUE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "[Kingdom of] eSwatini",
         "FERA_COUNTRY_NAME": "[Kingdom of] eSwatini",
         "COUNTRY_CODE": "SZ",
@@ -1485,21 +1200,6 @@
         "FCDO": "Algeria",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Angola",
-        "FERA_COUNTRY_NAME": "Angola",
-        "COUNTRY_CODE": "AO",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Angola",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Australia",
@@ -1590,21 +1290,6 @@
         "FCDO": "Botswana",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Brunei",
-        "FERA_COUNTRY_NAME": "Brunei",
-        "COUNTRY_CODE": "BN",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Brunei",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Burkina Faso",
@@ -1877,21 +1562,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "French Polynesia",
-        "FERA_COUNTRY_NAME": "French Polynesia",
-        "COUNTRY_CODE": "PF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Gabon",
         "FERA_COUNTRY_NAME": "Gabon",
         "COUNTRY_CODE": "GA",
@@ -1935,36 +1605,6 @@
         "FCDO": "Ghana",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Gibraltar",
-        "FERA_COUNTRY_NAME": "Gibraltar",
-        "COUNTRY_CODE": "GI",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Gibraltar",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Guernsey",
-        "FERA_COUNTRY_NAME": "Guernsey",
-        "COUNTRY_CODE": "GG",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Guernsey, Alderney, Sark",
-        "FIELD12": "NO",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Guinea",
@@ -2072,21 +1712,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Isle of Man",
-        "FERA_COUNTRY_NAME": "Isle of Man",
-        "COUNTRY_CODE": "IM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Isle of Man",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Israel",
         "FERA_COUNTRY_NAME": "Israel",
         "COUNTRY_CODE": "IL",
@@ -2115,21 +1740,6 @@
         "FCDO": "Japan",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Jersey",
-        "FERA_COUNTRY_NAME": "Jersey",
-        "COUNTRY_CODE": "JE",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "Jersey",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Jordan",
@@ -2175,21 +1785,6 @@
         "FCDO": "Kenya",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Kiribati",
-        "FERA_COUNTRY_NAME": "Kiribati",
-        "COUNTRY_CODE": "KI",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Kiribati",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Kosovo",
@@ -2387,36 +1982,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Marshall Islands",
-        "FERA_COUNTRY_NAME": "Marshall Islands",
-        "COUNTRY_CODE": "MH",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Marshall Islands",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Martinique",
-        "FERA_COUNTRY_NAME": "Martinique",
-        "COUNTRY_CODE": "MQ",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Mauritania",
         "FERA_COUNTRY_NAME": "Mauritania",
         "COUNTRY_CODE": "MR",
@@ -2445,21 +2010,6 @@
         "FCDO": "Mauritius",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Mayotte",
-        "FERA_COUNTRY_NAME": "Mayotte",
-        "COUNTRY_CODE": "YT",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Micronesia",
@@ -2552,21 +2102,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Nauru",
-        "FERA_COUNTRY_NAME": "Nauru",
-        "COUNTRY_CODE": "NR",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Nauru",
-        "FIELD12": "YES",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Nepal",
         "FERA_COUNTRY_NAME": "Nepal",
         "COUNTRY_CODE": "NP",
@@ -2580,21 +2115,6 @@
         "FCDO": "Nepal",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "New Caledonia",
-        "FERA_COUNTRY_NAME": "New Caledonia",
-        "COUNTRY_CODE": "NC",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "New Zealand",
@@ -2702,21 +2222,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Palestine, State of",
-        "FERA_COUNTRY_NAME": "Palestine, State of",
-        "COUNTRY_CODE": "PS",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Papua New Guinea",
         "FERA_COUNTRY_NAME": "Papua New Guinea",
         "COUNTRY_CODE": "PG",
@@ -2760,36 +2265,6 @@
         "FCDO": "Qatar",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Republic of North Macedonia",
-        "FERA_COUNTRY_NAME": "Republic of North Macedonia",
-        "COUNTRY_CODE": "MK",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "North Macedonia",
-        "FIELD12": "NO",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Reunion",
-        "FERA_COUNTRY_NAME": "Reunion",
-        "COUNTRY_CODE": "RE",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Russia",
@@ -3107,21 +2582,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Timor-Leste",
-        "FERA_COUNTRY_NAME": "Timor-Leste",
-        "COUNTRY_CODE": "TL",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "East Timor",
-        "FIELD12": "NO",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Togo",
         "FERA_COUNTRY_NAME": "Togo",
         "COUNTRY_CODE": "TG",
@@ -3165,21 +2625,6 @@
         "FCDO": "Tunisia",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Turkmenistan",
-        "FERA_COUNTRY_NAME": "Turkmenistan",
-        "COUNTRY_CODE": "TM",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "Turkmenistan",
-        "FIELD12": "YES",
-        "PHI_ID": false
       },
       {
         "COUNTRY_NAME": "Tuvalu",
@@ -3272,21 +2717,6 @@
         "PHI_ID": true
       },
       {
-        "COUNTRY_NAME": "Wallis et Futuna",
-        "FERA_COUNTRY_NAME": "Wallis et Futuna",
-        "COUNTRY_CODE": "WF",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "Y",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
         "COUNTRY_NAME": "Yemen",
         "FERA_COUNTRY_NAME": "Yemen",
         "COUNTRY_CODE": "YE",
@@ -3330,36 +2760,6 @@
         "FCDO": "Zimbabwe",
         "FIELD12": "YES",
         "PHI_ID": true
-      },
-      {
-        "COUNTRY_NAME": "Western Sahara",
-        "FERA_COUNTRY_NAME": "Western Sahara",
-        "COUNTRY_CODE": "EH",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
-      },
-      {
-        "COUNTRY_NAME": "Macau",
-        "FERA_COUNTRY_NAME": "Macau",
-        "COUNTRY_CODE": "MO",
-        "EUROPE_INDICATOR": "(EUROPE_INDICATOR, FALSE)",
-        "EU_INDICATOR": "(EU_INDICATOR, FALSE)",
-        "EUROPE_NOT_EUSL_INDICATOR": "(EUROPE_NOT_EUSL_INDICATOR, FALSE)",
-        "EUSL_INDICATOR": "(EUSL_INDICATOR, FALSE)",
-        "AMERICAS_INDICATOR": "(AMERICAS_INDICATOR, FALSE)",
-        "REGION": "(EUROPE_INDICATOR, FALSE); (EU_INDICATOR, FALSE); (EUROPE_NOT_EUSL_INDICATOR, FALSE); (EUSL_INDICATOR, FALSE); (AMERICAS_INDICATOR, FALSE)",
-        "IPPC_SIG": "N",
-        "FCDO": "#N/A",
-        "FIELD12": "#N/A",
-        "PHI_ID": false
       }
     ]
   }
