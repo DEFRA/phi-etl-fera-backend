@@ -1084,6 +1084,22 @@ class ProhibitedStrategy extends workflowEngine {
       return annex11PlantRule
     }
 
+    function sortAnnex11(a, b) {
+      if (a.BTOM_EUSL > b.BTOM_EUSL) {
+        return 1
+      }
+      if (a.BTOM_EUSL < b.BTOM_EUSL) {
+        return -1
+      }
+      if (a.BTOM_NON_EUSL > b.BTOM_NON_EUSL) {
+        return 1
+      }
+      if (a.BTOM_NON_EUSL < b.BTOM_NON_EUSL) {
+        return -1
+      }
+      return 0
+    }
+
     async function getAnnex11Rules() {
       counter += 1
       let annex11CountrySpecies = ''
@@ -1201,7 +1217,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11CountrySpeciesArr.length > 0')
-        plantInfo.annex11RulesArr = annex11CountrySpeciesArr
+        plantInfo.annex11RulesArr = annex11CountrySpeciesArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1212,7 +1228,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11RegionSpeciesArr.length > 0')
-        plantInfo.annex11RulesArr = annex11RegionSpeciesArr
+        plantInfo.annex11RulesArr = annex11RegionSpeciesArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1223,7 +1239,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11AllSpeciesArr.length > 0')
-        plantInfo.annex11RulesArr = annex11AllSpeciesArr
+        plantInfo.annex11RulesArr = annex11AllSpeciesArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1235,7 +1251,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11CountryGenusArr.length > 0')
-        plantInfo.annex11RulesArr = annex11CountryGenusArr
+        plantInfo.annex11RulesArr = annex11CountryGenusArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1246,7 +1262,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11RegionGenusArr.length > 0')
-        plantInfo.annex11RulesArr = annex11RegionGenusArr
+        plantInfo.annex11RulesArr = annex11RegionGenusArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1257,7 +1273,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11AllGenusArr.length > 0')
-        plantInfo.annex11RulesArr = annex11AllGenusArr
+        plantInfo.annex11RulesArr = annex11AllGenusArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1269,7 +1285,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11CountryFamilyArr.length > 0')
-        plantInfo.annex11RulesArr = annex11CountryFamilyArr
+        plantInfo.annex11RulesArr = annex11CountryFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1280,7 +1296,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11RegionFamilyArr.length > 0')
-        plantInfo.annex11RulesArr = annex11RegionFamilyArr
+        plantInfo.annex11RulesArr = annex11RegionFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
@@ -1291,7 +1307,7 @@ class ProhibitedStrategy extends workflowEngine {
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
         logger.info('annex11AllFamilyArr.length > 0')
-        plantInfo.annex11RulesArr = annex11AllFamilyArr
+        plantInfo.annex11RulesArr = annex11AllFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
