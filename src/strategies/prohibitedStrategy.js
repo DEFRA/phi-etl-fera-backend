@@ -1019,7 +1019,7 @@ class ProhibitedStrategy extends workflowEngine {
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.PHI_HOST_REF !== prohibitedObj.hostRef &&
-              annex.PHI_HOST_REF === annex.PARENT_HOST_REF
+              annex.PHI_HOST_REF === annex.GRAND_PARENT_HOST_REF
             ) {
               if (
                 // get Annex6 entries which has regions, match it with the region of the input country
@@ -1092,7 +1092,7 @@ class ProhibitedStrategy extends workflowEngine {
             if (
               annex.HOST_REF === prohibitedObj.hostRef &&
               annex.PHI_HOST_REF !== prohibitedObj.hostRef &&
-              annex.PHI_HOST_REF === annex.PARENT_HOST_REF
+              annex.PHI_HOST_REF === annex.GRAND_PARENT_HOST_REF
             ) {
               if (
                 plantInfo.outcome === '' &&
