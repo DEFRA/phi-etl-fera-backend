@@ -98,6 +98,15 @@ async function loadData(db) {
       annex11List
     )
 
+    // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
+    // ANNEX 11 - For Rule 4 - Find GREAT GRANDPARENT
+    const annex11ResultListGreatGrandParent = mapAnnex11GreatGrandParent(
+      resultList,
+      plantList,
+      annex11List
+    )
+    // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
+
     const annex11ResultListDefault = annex11List.filter(
       (n11) => +n11.HOST_REF === 99999
     )
@@ -118,6 +127,13 @@ async function loadData(db) {
       resultList,
       annex11ResultListGrandParent
     )
+    // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
+    // Map Rule 4
+    updateResultListWithAnnex11GreatGrandParent(
+      resultList,
+      annex11ResultListGreatGrandParent
+    )
+    // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
 
     updateResultListWithAnnex6(resultList, annex6ResultList)
 
@@ -305,6 +321,48 @@ function updateResultListWithAnnex11GrandParent(
     })
   })
 }
+
+// ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
+// MAP ANNEX11 Rule 4
+function mapAnnex11GreatGrandParent(resultList, plantNameCol, annex11List) {
+  const resultListParent = resultList
+    // eslint-disable-next-line array-callback-return
+    .map((plantDetail) => {
+      const matchingElement = plantNameCol.find(
+        (pl) => +pl.HOST_REF === +plantDetail.PARENT_HOST_REF
+      )
+      if (matchingElement) {
+        return {
+          ...matchingElement,
+          HOST_CHILD_REF: plantDetail.HOST_REF
+        }
+      }
+    })
+    .filter((element) => element !== undefined)
+  return resultListParent.map((rl) => {
+    const nx11ListParent = annex11List
+      .filter((nx11) => +rl.PARENT_HOST_REF === +nx11.HOST_REF)
+      .filter((x) => x.HOST_REF !== null)
+    return { HOST_REF: rl.HOST_CHILD_REF, ANNEX11: nx11ListParent }
+  })
+}
+
+function updateResultListWithAnnex11GreatGrandParent(
+  resultList,
+  annex11ResultListGreatGrandParent
+) {
+  resultList.forEach((plantDetail) => {
+    annex11ResultListGreatGrandParent.forEach((annex11) => {
+      if (plantDetail.HOST_REF === annex11.HOST_REF) {
+        plantDetail.HOST_REGULATION.ANNEX11 = [
+          ...plantDetail.HOST_REGULATION.ANNEX11,
+          ...annex11.ANNEX11
+        ]
+      }
+    })
+  })
+}
+// ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
 
 function updateResultListWithAnnex6(resultList, annex6ResultList) {
   resultList.forEach((x) => {
