@@ -1,9 +1,5 @@
-import { createLogger } from '~/src/helpers/logging/logger'
-
-const logger = createLogger()
-
 // create index on the mongodb collections, if exists
-async function createMongoDBIndexes(collection) {
+async function createMongoDBIndexes(collection, logger) {
   try {
     const indexHostRef = await collection.createIndex({ HOST_REF: 1 })
     const indexPlantName = await collection.createIndex({

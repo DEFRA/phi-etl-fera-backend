@@ -5,7 +5,7 @@ const pestdetailsController = {
     try {
       const Input = request.payload // POST
       const cslref = Input.pestDetails.cslRef
-      const result = await getpestDetails(request.db, cslref)
+      const result = await getpestDetails(request.db, cslref, request.logger)
       return h.response({ pest_detail: result }).code(200)
     } catch (error) {
       return h.response({ error: error.message }).code(500)
