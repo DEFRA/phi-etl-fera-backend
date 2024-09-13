@@ -1,4 +1,3 @@
-
 async function searchPlantDetailsDb(db, searchText, logger) {
   // const searchText = searchInput
   const results = []
@@ -204,7 +203,7 @@ async function getpestDetails(db, cslref, logger) {
   }
 }
 
-async function getpestplantLink(db, hostref,logger) {
+async function getpestplantLink(db, hostref, logger) {
   try {
     hostref = hostref.map(Number)
     const collectionPestDetails = await db.collection('PLANT_DATA')

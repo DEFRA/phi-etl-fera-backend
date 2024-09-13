@@ -8,7 +8,9 @@ const searchController = {
       const result = await searchPlantDetailsDb(request.db, extractedText)
       return h.response({ plant_detail: result }).code(200)
     } catch (error) {
-      request.logger.error(`Plant search did not yeild results: ${error.message}`)
+      request.logger.error(
+        `Plant search did not yeild results: ${error.message}`
+      )
       return h
         .response({ error: 'Plant search did not yeild results' })
         .code(500)
