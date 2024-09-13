@@ -24,5 +24,11 @@
     "prettier/prettier": "error",
     "no-console": "error"
   },
-  "ignorePatterns": [".server", ".public", "src/__fixtures__", "coverage"]
+  "ignorePatterns": [
+    ".server",
+    ".public",
+    "src/__fixtures__",
+    "coverage",
+    "src/helpers/db/data"
+  ]
 }
