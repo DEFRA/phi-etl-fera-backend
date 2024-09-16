@@ -15,7 +15,6 @@ async function searchPlantDetailsDb(db, searchText, logger) {
         LEVEL_OF_TAXONOMY: 'S'
       }
 
-      logger.info(query)
       const latinNameResults = await collectionPlant.find(query).toArray()
 
       if (latinNameResults) {
@@ -81,6 +80,7 @@ async function searchPlantDetailsDb(db, searchText, logger) {
         results.push({ id: 'synonym-name', results: synonymArr })
       }
     }
+
     return results
   } catch (error) {
     logger.info(`Search query failed ${error}`)
