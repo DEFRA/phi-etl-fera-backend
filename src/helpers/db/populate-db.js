@@ -291,7 +291,7 @@ async function dropCollections(db, collection) {
         return
       }
       // eslint-disable-next-line no-console
-      console.log('Collection dropped successfully')
+      logger.info('Collection dropped successfully')
     })
   }
 }

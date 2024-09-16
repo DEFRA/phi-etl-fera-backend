@@ -5,7 +5,11 @@ const searchController = {
     try {
       const searchInput = request.payload // POST
       const extractedText = searchInput.search
-      const result = await searchPlantDetailsDb(request.db, extractedText)
+      const result = await searchPlantDetailsDb(
+        request.db,
+        extractedText,
+        request.logger
+      )
       return h.response({ plant_detail: result }).code(200)
     } catch (error) {
       request.logger.error(
