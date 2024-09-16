@@ -1,7 +1,4 @@
-import { createLogger } from '~/src/helpers/logging/logger'
-const logger = createLogger()
-
-async function searchPlantDetailsDb(db, searchText) {
+async function searchPlantDetailsDb(db, searchText, logger) {
   // const searchText = searchInput
   const results = []
   try {
@@ -92,7 +89,7 @@ async function searchPlantDetailsDb(db, searchText) {
   }
 }
 
-async function getCountries(db) {
+async function getCountries(db, logger) {
   try {
     const collectionCountries = db.collection('COUNTRIES')
 
@@ -105,7 +102,7 @@ async function getCountries(db) {
     return error.message
   }
 }
-async function searchPestDetailsDb(db, searchText) {
+async function searchPestDetailsDb(db, searchText, logger) {
   // const searchText = searchInput
   const results = []
   try {
@@ -192,7 +189,7 @@ async function searchPestDetailsDb(db, searchText) {
     return error.message
   }
 }
-async function getpestDetails(db, cslref) {
+async function getpestDetails(db, cslref, logger) {
   try {
     const collectionPestDetails = await db.collection('PEST_DATA')
     // Find the document containing the COUNTRY_GROUPING array
@@ -206,7 +203,7 @@ async function getpestDetails(db, cslref) {
   }
 }
 
-async function getpestplantLink(db, hostref) {
+async function getpestplantLink(db, hostref, logger) {
   try {
     hostref = hostref.map(Number)
     const collectionPestDetails = await db.collection('PLANT_DATA')
@@ -222,7 +219,7 @@ async function getpestplantLink(db, hostref) {
   }
 }
 
-module.exports = {
+export {
   searchPlantDetailsDb,
   getCountries,
   searchPestDetailsDb,

@@ -1,6 +1,4 @@
 import { searchPlantDetailsDb } from '~/src/api/search/helpers/search-mongodb'
-import { createLogger } from '~/src/helpers/logging/logger'
-const logger = createLogger()
 
 const searchController = {
   handler: async (request, h) => {
@@ -10,7 +8,9 @@ const searchController = {
       const result = await searchPlantDetailsDb(request.db, extractedText)
       return h.response({ plant_detail: result }).code(200)
     } catch (error) {
-      logger.error(`Plant search did not yeild results: ${error.message}`)
+      request.logger.error(
+        `Plant search did not yeild results: ${error.message}`
+      )
       return h
         .response({ error: 'Plant search did not yeild results' })
         .code(500)
