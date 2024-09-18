@@ -89,12 +89,11 @@ const populateDbHandler = async (request, h) => {
       collectionNameCountry,
       1
     )
-    await loadData(
+    await loadDataForAnnex6(
       filePathServiceAnnex6,
       mongoUri,
       request.server.db,
-      collectionNamePlantAnnex6,
-      2
+      collectionNamePlantAnnex6
     )
     await loadData(
       filePathServiceAnnex11,
@@ -119,14 +118,14 @@ const populateDbHandler = async (request, h) => {
     )
     // Load PLANT DATA - Combined - END
 
-    // Load PEST_LINK DATA - START
-    await loadCombinedDataForPestLink(
-      mongoUri,
-      request.server.db,
-      collectionNamePlantPestLink,
-      1
-    )
-    // Load PEST_LINK DATA - END
+    // // Load PEST_LINK DATA - START
+    // await loadCombinedDataForPestLink(
+    //   mongoUri,
+    //   request.server.db,
+    //   collectionNamePlantPestLink,
+    //   1
+    // )
+    // // Load PEST_LINK DATA - END
     await loadData(
       filePathServicePlantPestReg,
       mongoUri,
@@ -162,6 +161,7 @@ const populateDbHandler = async (request, h) => {
       collectionPestPlantLink,
       2
     )
+    await buildPlantPestLinkCollection(mongoUri, request.server.db)
 
     return h
       .response({
@@ -174,6 +174,115 @@ const populateDbHandler = async (request, h) => {
     return h.response({ status: 'error', message: error.message }).code(500)
   } finally {
     isLocked = false
+  }
+}
+
+async function buildPlantPestLinkCollection(mongoUri, db) {
+  const client = new MongoClient(mongoUri)
+  try {
+    await client.connect()
+    const plantNameCollection = db.collection(collectionNamePlantName)
+    const plantPestLinkCollection = db.collection(collectionNamePlantPestLink)
+    const pestPlantLinkCollection = db.collection(collectionPestPlantLink) 
+ 
+    await dropCollections(db, collectionNamePlantPestLink, client) // Corrected variable name
+ 
+    const plants = await plantNameCollection.find().toArray()
+
+    for (let plant of plants) {
+      let refs = [
+        plant.HOST_REF,
+        plant.PARENT_HOST_REF,
+        plant.GRAND_PARENT_HOST_REF,
+        plant.GREAT_GRAND_PARENT_HOST_REF
+      ]
+
+      let uniqueHRandCSLRefComb = new Set()
+ 
+      for (let ref of refs) {
+        if (!ref) continue // Skip null references
+ 
+        let pestLinks = await pestPlantLinkCollection.find({ HOST_REF: ref }).toArray()
+
+        for (let pestLink of pestLinks) {
+          const combinationKey = `${pestLink.HOST_REF}-${pestLink.CSL_REF}`
+
+          if (!uniqueHRandCSLRefComb.has(combinationKey)) {
+            uniqueHRandCSLRefComb.add(combinationKey)
+ 
+            // Create a new entry for plant_pest_link
+            let plantPestLink = {
+              HOST_REF: pestLink.HOST_REF,
+              CSL_REF: pestLink.CSL_REF
+            }
+ 
+            await plantPestLinkCollection.insertOne(plantPestLink)
+          }
+        }
+      }
+    }
+
+      //remove duplicates
+      // const cursor = plantPestLinkCollection.find()
+      // const uniqueCombinations = new Set()
+   
+      // while (await cursor.hasNext()) {
+      //   const doc = await cursor.next()
+      //   const combinationKey = `${doc.HOST_REF}-${doc.CSL_REF}`
+   
+      //   // If the combination already exists, delete the document
+      //   if (uniqueCombinations.has(combinationKey)) {
+      //     await plantPestLinkCollection.deleteOne({ HOST_REF: doc.HOST_REF , CSL_REF: doc.CSL_REF})
+      //     //console.log(`Deleted duplicate: ${combinationKey}`)
+      //   } else {
+      //     uniqueCombinations.add(combinationKey)
+      //   }
+      // }
+        //await plantPestLinkCollection.deleteMany({ _id: { $in: idsToDelete } })
+ 
+    logger.info('Plant-Pest links processed successfully')
+  } catch (error) {
+    console.error('Error processing plant-pest links:', error) // More detailed error logging
+  } finally {
+    await client.close()
+  }
+}
+
+async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
+  const fileContents = await fs.readFile(filePath, 'utf-8')
+  const jsonData = await JSON.parse(fileContents)
+
+  // BUILD THE GRAND PARENT AND GREAT GRAND PARENT HIERARCHY
+
+    // Create a mapping of HOST_REF to annex6 objects
+    const annex6Map = new Map()
+    jsonData.forEach(annex6 => {
+      annex6Map.set(annex6.HOST_REF, { ...annex6 })
+    })
+   
+    // Build the hierarchy
+    jsonData.forEach(annex6 => {
+      const parentRef = annex6.PARENT_HOST_REF
+      if (parentRef && annex6Map.has(parentRef)) {
+        const parentAnnex6 = annex6Map.get(parentRef)
+        annex6.GRAND_PARENT_HOST_REF = parentAnnex6.PARENT_HOST_REF || null
+        if (annex6.GRAND_PARENT_HOST_REF && annex6Map.has(annex6.GRAND_PARENT_HOST_REF)) {
+          const grandParentAnnex6 = annex6Map.get(annex6.GRAND_PARENT_HOST_REF)
+          annex6.GREAT_GRAND_PARENT_HOST_REF = grandParentAnnex6.PARENT_HOST_REF || null
+        }
+      }
+    })
+   //--------------------------------------------------------
+
+  const client = new MongoClient(mongoUri)
+  try {
+    await client.connect()
+    const collection = db.collection(collectionName)
+    await dropCollections(db, collectionName, client)
+    await collection.insertMany(jsonData)
+  } catch (error) {
+  } finally {
+    await client.close()
   }
 }
 
@@ -193,6 +302,28 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
   const data2 = await readJsonFile(filePathServicePlantNameRest)
 
   const combinedData = [...data1?.PLANT_NAME, ...data2?.PLANT_NAME]
+
+  // BUILD THE GRAND PARENT AND GREAT GRAND PARENT HIERARCHY
+
+    // Create a mapping of HOST_REF to plant objects
+    const plantMap = new Map()
+    combinedData.forEach(plant => {
+      plantMap.set(plant.HOST_REF, { ...plant })
+    })
+   
+    // Build the hierarchy
+    combinedData.forEach(plant => {
+      const parentRef = plant.PARENT_HOST_REF
+      if (parentRef && plantMap.has(parentRef)) {
+        const parentPlant = plantMap.get(parentRef)
+        plant.GRAND_PARENT_HOST_REF = parentPlant.PARENT_HOST_REF || null
+        if (plant.GRAND_PARENT_HOST_REF && plantMap.has(plant.GRAND_PARENT_HOST_REF)) {
+          const grandParentPlant = plantMap.get(plant.GRAND_PARENT_HOST_REF)
+          plant.GREAT_GRAND_PARENT_HOST_REF = grandParentPlant.PARENT_HOST_REF || null
+        }
+      }
+    })
+   //--------------------------------------------------------
 
   const client = new MongoClient(mongoUri)
   try {

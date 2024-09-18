@@ -102,6 +102,7 @@ async function getCountries(db, logger) {
     return error.message
   }
 }
+
 async function searchPestDetailsDb(db, searchText, logger) {
   // const searchText = searchInput
   const results = []
