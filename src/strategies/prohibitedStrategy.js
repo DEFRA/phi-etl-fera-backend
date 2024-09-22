@@ -5,19 +5,23 @@ let plantInfo = ''
 let plantDocument = ''
 let prohibitedObj = ''
 let counter = 0
-let plantParentHostRef= ''
-let plantGrandParentHostRef= ''
+let plantGrandParentHostRef = ''
 let plantGreatGrandParentHostRef = ''
 
 class ProhibitedStrategy extends workflowEngine {
-  constructor(plantDocument, plantNameDoc, searchInput, countryMapping, cdpLogger) {
+  constructor(
+    plantDocument,
+    plantNameDoc,
+    searchInput,
+    countryMapping,
+    cdpLogger
+  ) {
     super(plantDocument, plantNameDoc, searchInput, countryMapping, cdpLogger)
     this.decision = ''
     logger = this.loggerObj
     prohibitedObj = this // has reference of an object of this class
 
     // introduced to handle subfamily conditions, PHIDP-462
-    plantParentHostRef = this.plantNameDoc.PARENT_HOST_REF
     plantGrandParentHostRef = this.plantNameDoc.GRAND_PARENT_HOST_REF
     plantGreatGrandParentHostRef = this.plantNameDoc.GREAT_GRAND_PARENT_HOST_REF
   }
@@ -27,7 +31,7 @@ class ProhibitedStrategy extends workflowEngine {
 
     // holds the plant details returned from MongoDB for matching host_ref from PLANT_DATA
     // it has annex6 and annex11 array
-    plantDocument = this.data 
+    plantDocument = this.data
 
     // this will be the Return object, passed as response to the frontend service
     plantInfo = {
@@ -1731,7 +1735,8 @@ class ProhibitedStrategy extends workflowEngine {
       // Get annex11 rules at Country/Service format/Sub-Family
 
       if (
-        plantGrandParentHostRef !== null &&  annex11.HOST_REF.toString() === plantGrandParentHostRef.toString()
+        plantGrandParentHostRef !== null &&
+        annex11.HOST_REF.toString() === plantGrandParentHostRef.toString()
       ) {
         if (
           annex11.SERVICE_FORMAT.toLowerCase() ===
@@ -1758,7 +1763,8 @@ class ProhibitedStrategy extends workflowEngine {
       // Get annex11 rules at Region/Service format/Sub-Family
 
       if (
-          plantGrandParentHostRef!== null &&  annex11.HOST_REF.toString() === plantGrandParentHostRef.toString()
+        plantGrandParentHostRef !== null &&
+        annex11.HOST_REF.toString() === plantGrandParentHostRef.toString()
       ) {
         if (
           annex11.SERVICE_FORMAT.toLowerCase() ===
@@ -1799,7 +1805,8 @@ class ProhibitedStrategy extends workflowEngine {
 
       // Get annex11 rules at All/Service format/Sub-Family
       if (
-          plantGrandParentHostRef !== null &&  annex11.HOST_REF.toString() === plantGrandParentHostRef.toString()
+        plantGrandParentHostRef !== null &&
+        annex11.HOST_REF.toString() === plantGrandParentHostRef.toString()
       ) {
         if (
           annex11.SERVICE_FORMAT.toLowerCase() ===
@@ -1822,7 +1829,8 @@ class ProhibitedStrategy extends workflowEngine {
       // Get annex11 rules at Country/Service format/Family
 
       if (
-        plantGreatGrandParentHostRef!== null &&  annex11.HOST_REF.toString() === plantGreatGrandParentHostRef.toString()
+        plantGreatGrandParentHostRef !== null &&
+        annex11.HOST_REF.toString() === plantGreatGrandParentHostRef.toString()
       ) {
         if (
           annex11.SERVICE_FORMAT.toLowerCase() ===
@@ -1849,7 +1857,8 @@ class ProhibitedStrategy extends workflowEngine {
       // Get annex11 rules at Region/Service format/Family
 
       if (
-        plantGreatGrandParentHostRef!== null &&  annex11.HOST_REF.toString() === plantGreatGrandParentHostRef.toString()
+        plantGreatGrandParentHostRef !== null &&
+        annex11.HOST_REF.toString() === plantGreatGrandParentHostRef.toString()
       ) {
         if (
           annex11.SERVICE_FORMAT.toLowerCase() ===
@@ -1890,7 +1899,8 @@ class ProhibitedStrategy extends workflowEngine {
 
       // Get annex11 rules at All/Service format/Family
       if (
-        plantGreatGrandParentHostRef!== null &&  annex11.HOST_REF.toString() === plantGreatGrandParentHostRef.toString()
+        plantGreatGrandParentHostRef !== null &&
+        annex11.HOST_REF.toString() === plantGreatGrandParentHostRef.toString()
       ) {
         if (
           annex11.SERVICE_FORMAT.toLowerCase() ===
@@ -2265,41 +2275,42 @@ class ProhibitedStrategy extends workflowEngine {
         a11RulesFetched = true
       }
       // PHIDP-462
-// SUB-FAMILY ARRAY
-if (
-  a11RulesFetched === false &&
-  Array.isArray(annex11CountrySubFamilyArr) &&
-  annex11CountrySubFamilyArr.length > 0 &&
-  plantInfo.outcome.toLowerCase() !== 'prohibited'
-) {
-  logger.info('annex11CountrySubFamilyArr.length > 0')
-  plantInfo.annex11RulesArr = annex11CountrySubFamilyArr?.sort(sortAnnex11)
-  a11RulesFetched = true
-}
+      // SUB-FAMILY ARRAY
+      if (
+        a11RulesFetched === false &&
+        Array.isArray(annex11CountrySubFamilyArr) &&
+        annex11CountrySubFamilyArr.length > 0 &&
+        plantInfo.outcome.toLowerCase() !== 'prohibited'
+      ) {
+        logger.info('annex11CountrySubFamilyArr.length > 0')
+        plantInfo.annex11RulesArr =
+          annex11CountrySubFamilyArr?.sort(sortAnnex11)
+        a11RulesFetched = true
+      }
 
-if (
-  a11RulesFetched === false &&
-  Array.isArray(annex11RegionSubFamilyArr) &&
-  annex11RegionSubFamilyArr.length > 0 &&
-  plantInfo.outcome.toLowerCase() !== 'prohibited'
-) {
-  logger.info('annex11RegionSubFamilyArr.length > 0')
-  plantInfo.annex11RulesArr = annex11RegionSubFamilyArr?.sort(sortAnnex11)
-  a11RulesFetched = true
-}
+      if (
+        a11RulesFetched === false &&
+        Array.isArray(annex11RegionSubFamilyArr) &&
+        annex11RegionSubFamilyArr.length > 0 &&
+        plantInfo.outcome.toLowerCase() !== 'prohibited'
+      ) {
+        logger.info('annex11RegionSubFamilyArr.length > 0')
+        plantInfo.annex11RulesArr = annex11RegionSubFamilyArr?.sort(sortAnnex11)
+        a11RulesFetched = true
+      }
 
-if (
-  a11RulesFetched === false &&
-  Array.isArray(annex11AllSubFamilyArr) &&
-  annex11AllSubFamilyArr.length > 0 &&
-  plantInfo.outcome.toLowerCase() !== 'prohibited'
-) {
-  logger.info('annex11AllSubFamilyArr.length > 0')
-  plantInfo.annex11RulesArr = annex11AllSubFamilyArr?.sort(sortAnnex11)
-  a11RulesFetched = true
-}
+      if (
+        a11RulesFetched === false &&
+        Array.isArray(annex11AllSubFamilyArr) &&
+        annex11AllSubFamilyArr.length > 0 &&
+        plantInfo.outcome.toLowerCase() !== 'prohibited'
+      ) {
+        logger.info('annex11AllSubFamilyArr.length > 0')
+        plantInfo.annex11RulesArr = annex11AllSubFamilyArr?.sort(sortAnnex11)
+        a11RulesFetched = true
+      }
 
-      //PHIDP-462
+      // PHIDP-462
 
       // FAMILY ARRAY
       if (

@@ -5,7 +5,13 @@ let plantInfo = ''
 const pestDetails = []
 
 class InnsStrategy extends workflowEngine {
-  constructor(plantDocument, plantNameDoc, searchInput, countryMapping, cdpLogger) {
+  constructor(
+    plantDocument,
+    plantNameDoc,
+    searchInput,
+    countryMapping,
+    cdpLogger
+  ) {
     super(plantDocument, plantNameDoc, searchInput, countryMapping, cdpLogger)
     this.type = 'INNS'
     this.decision = 'prohibited'
