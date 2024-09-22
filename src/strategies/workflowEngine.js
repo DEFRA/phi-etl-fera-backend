@@ -1,5 +1,11 @@
 class workflowEngine {
-  constructor(plantDocument, searchInput, countryMapping, cdpLogger) {
+  constructor(
+    plantDocument,
+    plantNameDoc,
+    searchInput,
+    countryMapping,
+    cdpLogger
+  ) {
     this.data = plantDocument
     this.type = ''
     this.decision = ''
@@ -8,6 +14,7 @@ class workflowEngine {
     this.hostRef = searchInput.plantDetails.hostRef
     this.countryDetails = countryMapping
     this.loggerObj = cdpLogger
+    this.plantNameDoc = plantNameDoc
   }
 
   execute() {
