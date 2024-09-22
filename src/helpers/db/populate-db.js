@@ -116,16 +116,9 @@ const populateDbHandler = async (request, h) => {
       collectionNamePlantName,
       1
     )
-    // Load PLANT DATA - Combined - END
 
-    // // Load PEST_LINK DATA - START
-    // await loadCombinedDataForPestLink(
-    //   mongoUri,
-    //   request.server.db,
-    //   collectionNamePlantPestLink,
-    //   1
-    // )
-    // // Load PEST_LINK DATA - END
+    // await loadCombinedDataForPestLink() - DEPRECATED
+    
     await loadData(
       filePathServicePlantPestReg,
       mongoUri,
@@ -161,7 +154,7 @@ const populateDbHandler = async (request, h) => {
       collectionPestPlantLink,
       2
     )
-    await buildPlantPestLinkCollection(mongoUri, request.server.db)
+    await buildPlantPestLinkCollection(mongoUri, request.server.db) // PHIDP-462
 
     return h
       .response({
@@ -177,7 +170,14 @@ const populateDbHandler = async (request, h) => {
   }
 }
 
+/*
+NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hierachy (HOST_REF, PARENT_HOST_REF,
+  GRAND_PARENT_HOST_REF) were being generated manually. Introduction of the 4th level, GREAT_GRAND_PARENT_HOST_REF
+  made generation of relation upto 4 level quite complex. To tackle that, this process has been automated and instead
+  of reading the JSON files manually using loadCombinedDataForPestLink(), buildPlantPestLinkCollection() has been introduce.
+*/
 async function buildPlantPestLinkCollection(mongoUri, db) {
+  logger.info("Start the processing of Plant-Pest links")
   const client = new MongoClient(mongoUri)
   try {
     await client.connect()
@@ -185,60 +185,72 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
     const plantPestLinkCollection = db.collection(collectionNamePlantPestLink)
     const pestPlantLinkCollection = db.collection(collectionPestPlantLink)
  
-    // Clear existing entries (optional)
-    await dropCollections(db, collectionNamePlantPestLink, client)
+    // Fetch all documents from PLANT_NAME collection
+    const plantDocuments = await plantNameCollection.find({}).toArray()
  
-    const plants = await plantNameCollection.find().toArray()
-    const uniqueHRandCSLRefComb = new Set()
-    const uniqueEntries = []
+    // Fetch all PEST_PLANT_LINK docs upfront to avoid multiple queries
+    const pestPlantLinkDocs = await pestPlantLinkCollection.find({}).toArray()
  
-    for (const plant of plants) {
-      const refs = [
+    // Create a map for pestPlantLinkDocs based on HOST_REF for fast lookups
+    const pestLinkMap = new Map()
+    pestPlantLinkDocs.forEach(doc => {
+      if (!pestLinkMap.has(doc.HOST_REF)) {
+        pestLinkMap.set(doc.HOST_REF, [])
+      }
+      pestLinkMap.get(doc.HOST_REF).push(doc.CSL_REF)
+    })
+ 
+    // Prepare an array for batch insertion
+    const batchInsertArray = []
+ 
+    // Iterate over plant documents
+    for (const plant of plantDocuments) {
+      const hierarchy = [
         plant.HOST_REF,
         plant.PARENT_HOST_REF,
         plant.GRAND_PARENT_HOST_REF,
-        plant.GREAT_GRAND_PARENT_HOST_REF
+        plant.GREAT_GRAND_PARENT_HOST_REF,
       ]
  
-      for (const ref of refs) {
-        if (!ref) continue // Skip null references
+      const plantHostRef = hierarchy[0]
  
-        const pestLinks = await pestPlantLinkCollection.find({ HOST_REF: ref }).toArray()
+      // Use a Set to avoid duplicate entries
+      const uniqueHostCslSet = new Set()
  
-        for (const pestLink of pestLinks) {
-          const combinationKey = `${pestLink.HOST_REF}-${pestLink.CSL_REF}`
+      // Process each level of the hierarchy
+      for (const hostRef of hierarchy) {
+        if (!hostRef) continue // Skip if hostRef is undefined or null
  
-          if (!uniqueHRandCSLRefComb.has(combinationKey)) {
-            uniqueHRandCSLRefComb.add(combinationKey)
-            uniqueEntries.push({
-              HOST_REF: pestLink.HOST_REF,
-              CSL_REF: pestLink.CSL_REF
-            })
-          }
+        const cslRefs = pestLinkMap.get(hostRef)
+        if (cslRefs) {
+          // Add each unique CSL_REF for the current host_ref
+          cslRefs.forEach(cslRef => {
+            const key = `${plantHostRef}-${cslRef}`
+            if (!uniqueHostCslSet.has(key)) {
+              uniqueHostCslSet.add(key)
+              batchInsertArray.push({ HOST_REF: plantHostRef, CSL_REF: cslRef })
+            }
+          })
         }
+      }
+ 
+      // Batch insert the unique pairs for this plant document
+      if (batchInsertArray.length > 0) {
+        await plantPestLinkCollection.insertMany(batchInsertArray)
+        batchInsertArray.length = 0 // Clear the array after inserting
       }
     }
  
-    // Insert all unique entries at once
-    if (uniqueEntries.length > 0) {
-      await plantPestLinkCollection.insertMany(uniqueEntries)
-    }
- 
-    // Optional: Create a unique index for future reference
-    await plantPestLinkCollection.createIndex(
-      { HOST_REF: 1, CSL_REF: 1 },
-      { unique: true }
-    )
- 
-    logger.info('Plant-Pest links processed successfully')
+    logger.info("Plant-Pest links processed successfully, inserted: ",batchInsertArray.length )
   } catch (error) {
-    logger.info('Error processing plant-pest links:', error)
+    logger.info("Error processing plant-pest links:", error)
   } finally {
     await client.close()
   }
 }
 
 async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
+  logger.info("loading Annex6")
   const fileContents = await fs.readFile(filePath, 'utf-8')
   const jsonData = await JSON.parse(fileContents)
 
@@ -274,6 +286,7 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName, client)
     await collection.insertMany(jsonData)
+    logger.info("Annex6 loading completed")
   } catch (error) {
   } finally {
     await client.close()
@@ -281,6 +294,7 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
 }
 
 async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
+  logger.info("loading Plant_Name data")
   const filePathServicePlantName = path.join(
     __dirname,
     'data',
@@ -329,50 +343,13 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName, client)
     await collection.insertMany(combinedData)
+    logger.info("loading of Plant_Name completed")
   } catch (error) {
   } finally {
     await client.close()
   }
 }
 
-// async function loadCombinedDataForPestLink(mongoUri, db, collectionName) {
-//   const filePathServicePlantPestLink1 = path.join(
-//     __dirname,
-//     'data',
-//     'plant_pest_link1.json'
-//   )
-//   const filePathServicePlantPestLink2 = path.join(
-//     __dirname,
-//     'data',
-//     'plant_pest_link2.json'
-//   )
-//   const filePathServicePlantPestLink3 = path.join(
-//     __dirname,
-//     'data',
-//     'plant_pest_link3.json'
-//   )
-
-//   const data1 = await readJsonFile(filePathServicePlantPestLink1)
-//   const data2 = await readJsonFile(filePathServicePlantPestLink2)
-//   const data3 = await readJsonFile(filePathServicePlantPestLink3)
-
-//   const combinedData = [
-//     ...data1?.PLANT_PEST_LINK,
-//     ...data2?.PLANT_PEST_LINK,
-//     ...data3?.PLANT_PEST_LINK
-//   ]
-
-//   const client = new MongoClient(mongoUri)
-//   try {
-//     await client.connect()
-//     const collection = db.collection(collectionName)
-//     await dropCollections(db, collectionName, client)
-//     await collection.insertMany(combinedData)
-//   } catch (error) {
-//   } finally {
-//     await client.close()
-//   }
-// }
 
 async function readJsonFile(filePath) {
   const timeout = 10000 // await config.get('readTimeout')
