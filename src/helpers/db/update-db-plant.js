@@ -120,16 +120,6 @@ async function loadData(db) {
       plantDocsFromPlantNameCol,
       annex11List
     )
-
-    const plantWithHostRef18923 = annex11ResultListGreatGrandParent.find(
-      (plant) => plant.HOST_REF === 18923
-    )
-    if (plantWithHostRef18923) {
-      logger.info(
-        'Found plant with HOST_REF in mapAnnex11GreatGrandParent = 18923'
-      )
-    }
-
     // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
     logger.info('mapAnnex11GreatGrandParent completed')
 
