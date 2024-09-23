@@ -15,7 +15,7 @@ const mongoPlugin = {
     server.decorate('server', 'db', db)
     server.decorate('request', 'db', db)
 
-    await createMongoDBIndexes(db, server.logger)
+    // await createMongoDBIndexes(db, server.logger)
   }
 }
 

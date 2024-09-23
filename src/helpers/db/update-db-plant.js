@@ -1,6 +1,6 @@
 import { createLogger } from '~/src/helpers/logging/logger'
 import { plantDetail } from '~/src/helpers/models/plantDetail'
-import { createMongoDBIndexes } from '~/src/helpers/db/create-ds-indexes'
+import { createMongoDBIndexes, runIndexManagement } from '~/src/helpers/db/create-ds-indexes'
 import { join } from 'node:path'
 import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
 // import { writeFileSync } from 'fs'
@@ -385,16 +385,7 @@ function updateResultListWithAnnex11GrandParent(
       }
     })
   })
-  // After all ANNEX11 updates, check if any plant has HOST_REF = 18923
-  const plantWithHostRef18923 = plantDocuments.find(
-    (plant) => plant.HOST_REF === 18923
-  )
-  if (plantWithHostRef18923) {
-    logger.info(
-      'Found plant with HOST_REF in updateResultListWithAnnex11GrandParent = 18923'
-    )
-  }
-  // logger.info(plantWithHostRef18923)
+
 }
 
 // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
@@ -478,16 +469,6 @@ function updateResultListWithAnnex11GreatGrandParent(
       }
     })
   })
-  // After all ANNEX11 updates, check if any plant has HOST_REF = 18923
-  const plantWithHostRef18923 = plantDocuments.find(
-    (plant) => plant.HOST_REF === 18923
-  )
-  if (plantWithHostRef18923) {
-    logger.info(
-      'Found plant with HOST_REF in updateResultListWithAnnex11GreatGrandParent = 18923'
-    )
-  }
-  // logger.info(plantWithHostRef18923)
 }
 // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
 
@@ -726,7 +707,7 @@ async function insertResultList(db, plantDocuments) {
   const collectionNew = db.collection('PLANT_DATA')
   const result = await collectionNew.insertMany(plantDocuments)
   logger?.info(`${result.insertedCount} plant documents were inserted...`)
-  await createMongoDBIndexes(collectionNew)
+  await runIndexManagement(db, logger)
 }
 
 export {
