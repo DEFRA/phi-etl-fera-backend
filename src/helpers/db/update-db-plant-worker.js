@@ -18,12 +18,12 @@ parentPort?.on('message', async (value) => {
 })
 
 function createTranspiledWorker(filename) {
-const resourceLimits = {
-  maxOldGenerationSizeMb : 8192, // 8GB limit for the main heap
-}
+  const resourceLimits = {
+    maxOldGenerationSizeMb: 8192 // 8GB limit for the main heap
+  }
 
   if (isProduction) {
-    return new Worker(filename, {resourceLimits})
+    return new Worker(filename, { resourceLimits })
   } else {
     // babel-node doesn't transpile worker_threads so this is to work around it
     const transpile = `
