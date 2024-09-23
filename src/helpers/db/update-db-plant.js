@@ -1,6 +1,9 @@
 import { createLogger } from '~/src/helpers/logging/logger'
 import { plantDetail } from '~/src/helpers/models/plantDetail'
-import { createMongoDBIndexes, runIndexManagement } from '~/src/helpers/db/create-ds-indexes'
+import {
+  createMongoDBIndexes,
+  runIndexManagement
+} from '~/src/helpers/db/create-ds-indexes'
 import { join } from 'node:path'
 import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
 // import { writeFileSync } from 'fs'
@@ -385,7 +388,6 @@ function updateResultListWithAnnex11GrandParent(
       }
     })
   })
-
 }
 
 // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------

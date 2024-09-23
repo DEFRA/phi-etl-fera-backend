@@ -1,6 +1,5 @@
 import { MongoClient } from 'mongodb'
 import { config } from '~/src/config'
-import { createMongoDBIndexes } from '~/src/helpers/db/create-ds-indexes'
 
 const mongoPlugin = {
   name: 'mongodb',

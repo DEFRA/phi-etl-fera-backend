@@ -1,5 +1,4 @@
 import { createLogger } from '~/src/helpers/logging/logger'
-import { runIndexManagement } from '~/src/helpers/db/create-ds-indexes'
 import path from 'path'
 import { config } from '~/src/config'
 import { MongoClient } from 'mongodb'
@@ -70,11 +69,10 @@ const populateDbHandler = async (request, h) => {
   isLocked = true
 
   try {
-
     client = new MongoClient(mongoUri)
     await client.connect()
     // clear collections before population
-    dropAllCollections( request.server.db)
+    dropAllCollections(request.server.db)
 
     await loadData(
       filePathPlant,
@@ -179,14 +177,12 @@ const populateDbHandler = async (request, h) => {
   }
 }
 
-async function dropAllCollections(db)
-{
+async function dropAllCollections(db) {
   logger.info('clear the collections')
 
   try {
-
     const collections = await db.collections()
- 
+
     if (collections.length === 0) {
       logger.info('No collections to drop')
     } else {
@@ -198,7 +194,7 @@ async function dropAllCollections(db)
     }
   } catch (error) {
     logger.error('Error while dropping collections:', error)
-}
+  }
 }
 
 /*
@@ -210,7 +206,6 @@ NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hi
 async function buildPlantPestLinkCollection(mongoUri, db) {
   logger.info('Start the processing of Plant-Pest links')
   try {
-
     const plantNameCollection = db.collection(collectionNamePlantName)
     const plantPestLinkCollection = db.collection(collectionNamePlantPestLink)
     const pestPlantLinkCollection = db.collection(collectionPestPlantLink)
@@ -266,17 +261,17 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
 
       // Batch insert the unique pairs for this plant document
       if (batchInsertArray.length > 0) {
-        await plantPestLinkCollection.insertMany(batchInsertArray, {ordered: false})
+        await plantPestLinkCollection.insertMany(batchInsertArray, {
+          ordered: false
+        })
         batchInsertArray.length = 0
       }
     }
 
-       logger.info(`Plant-Pest links processed successfully`)
-      //batchInsertArray.length = 0 // Clear the array after inserting
+    logger.info(`Plant-Pest links processed successfully`)
   } catch (error) {
     logger.info(`Error processing plant-pest links: ${error}`)
-    
-}
+  }
 }
 
 async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
@@ -310,7 +305,6 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
   })
   // --------------------------------------------------------
 
-
   try {
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName, client)
@@ -318,7 +312,7 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
     logger.info('Annex6 loading completed')
   } catch (error) {
     logger.info('Annex6 loading failed:', error)
-  } 
+  }
 }
 
 async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
@@ -372,7 +366,7 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
     logger.info('loading of Plant_Name completed')
   } catch (error) {
     logger.info('loading of Plant_Name failed: ', error)
-}
+  }
 }
 
 async function readJsonFile(filePath) {
@@ -428,4 +422,10 @@ async function dropCollections(db, collection) {
     })
   }
 }
-export { populateDbHandler, loadData, loadCombinedDataForPlant, loadDataForAnnex6, readJsonFile }
+export {
+  populateDbHandler,
+  loadData,
+  loadCombinedDataForPlant,
+  loadDataForAnnex6,
+  readJsonFile
+}
