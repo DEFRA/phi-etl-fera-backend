@@ -1614,7 +1614,6 @@ class ProhibitedStrategy extends workflowEngine {
 
     async function getAnnex11ForHRAllSvcFmt(annex11) {
       let annex11PlantRule = ''
-      // Get annex11 rules for Hostref/All/Service format
 
       if (prohibitedObj.hostRef === annex11.HOST_REF) {
         if (
