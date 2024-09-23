@@ -11,7 +11,7 @@ class workflowEngine {
     this.decision = ''
     this.country = searchInput.plantDetails.country
     this.serviceFormat = searchInput.plantDetails.serviceFormat
-    this.hostRef = searchInput.plantDetails.hostRef
+    this.hostRef = searchInput.plantDetails.hostRef.toString()
     this.countryDetails = countryMapping
     this.loggerObj = cdpLogger
     this.plantNameDoc = plantNameDoc
