@@ -54,6 +54,7 @@ const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
 const collectionPestPras = 'PEST_PRA_DATA'
 const collectionPestPlantLink = 'PEST_PLANT_LINK'
 let isLocked = false
+let client = ''
 
 const populateDbHandler = async (request, h) => {
   if (isLocked) {
@@ -68,6 +69,11 @@ const populateDbHandler = async (request, h) => {
   isLocked = true
 
   try {
+    client = new MongoClient(mongoUri)
+    await client.connect()
+    // clear collections before population
+    dropAllCollections(request.server.db)
+
     await loadData(
       filePathPlant,
       mongoUri,
@@ -167,6 +173,27 @@ const populateDbHandler = async (request, h) => {
     return h.response({ status: 'error', message: error.message }).code(500)
   } finally {
     isLocked = false
+    await client.close()
+  }
+}
+
+async function dropAllCollections(db) {
+  logger.info('clear the collections')
+
+  try {
+    const collections = await db.collections()
+
+    if (collections.length === 0) {
+      logger.info('No collections to drop')
+    } else {
+      for (const collection of collections) {
+        await collection.drop()
+        logger.info(`Dropped collection: ${collection.collectionName}`)
+      }
+      logger.info('All collections dropped')
+    }
+  } catch (error) {
+    logger.error('Error while dropping collections:', error)
   }
 }
 
@@ -178,9 +205,7 @@ NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hi
 */
 async function buildPlantPestLinkCollection(mongoUri, db) {
   logger.info('Start the processing of Plant-Pest links')
-  const client = new MongoClient(mongoUri)
   try {
-    await client.connect()
     const plantNameCollection = db.collection(collectionNamePlantName)
     const plantPestLinkCollection = db.collection(collectionNamePlantPestLink)
     const pestPlantLinkCollection = db.collection(collectionPestPlantLink)
@@ -236,19 +261,16 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
 
       // Batch insert the unique pairs for this plant document
       if (batchInsertArray.length > 0) {
-        await plantPestLinkCollection.insertMany(batchInsertArray)
-        batchInsertArray.length = 0 // Clear the array after inserting
+        await plantPestLinkCollection.insertMany(batchInsertArray, {
+          ordered: false
+        })
+        batchInsertArray.length = 0
       }
     }
 
-    logger.info(
-      'Plant-Pest links processed successfully, inserted: ',
-      batchInsertArray.length
-    )
+    logger.info(`Plant-Pest links processed successfully`)
   } catch (error) {
-    logger.info('Error processing plant-pest links:', error)
-  } finally {
-    await client.close()
+    logger.info(`Error processing plant-pest links: ${error}`)
   }
 }
 
@@ -283,16 +305,13 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
   })
   // --------------------------------------------------------
 
-  const client = new MongoClient(mongoUri)
   try {
-    await client.connect()
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName, client)
     await collection.insertMany(jsonData)
     logger.info('Annex6 loading completed')
   } catch (error) {
-  } finally {
-    await client.close()
+    logger.info('Annex6 loading failed:', error)
   }
 }
 
@@ -340,16 +359,13 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
   })
   // --------------------------------------------------------
 
-  const client = new MongoClient(mongoUri)
   try {
-    await client.connect()
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName, client)
     await collection.insertMany(combinedData)
     logger.info('loading of Plant_Name completed')
   } catch (error) {
-  } finally {
-    await client.close()
+    logger.info('loading of Plant_Name failed: ', error)
   }
 }
 
@@ -379,6 +395,7 @@ async function loadData(filePath, mongoUri, db, collectionName, indicator) {
   const jsonData = await JSON.parse(fileContents)
 
   try {
+    logger.info(`loading the data from JSON for collection: ${collectionName}`)
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName)
     if (indicator === 1) {
@@ -386,7 +403,9 @@ async function loadData(filePath, mongoUri, db, collectionName, indicator) {
     } else if (indicator === 2) {
       await collection.insertMany(jsonData)
     }
-  } catch (error) {}
+  } catch (error) {
+    logger.info('loading the data from JSON for collection failed: ', error)
+  }
 }
 
 async function dropCollections(db, collection) {
@@ -403,4 +422,10 @@ async function dropCollections(db, collection) {
     })
   }
 }
-export { populateDbHandler, loadData, loadCombinedDataForPlant, readJsonFile }
+export {
+  populateDbHandler,
+  loadData,
+  loadCombinedDataForPlant,
+  loadDataForAnnex6,
+  readJsonFile
+}
