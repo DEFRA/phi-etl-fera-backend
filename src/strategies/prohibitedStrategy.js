@@ -272,7 +272,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF)
             ) {
               if (
@@ -316,8 +317,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF)
             ) {
               if (
                 annex.COUNTRY_NAME.toLowerCase() ===
@@ -361,8 +364,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF)
             ) {
               if (
                 annex.COUNTRY_NAME.toLowerCase() ===
@@ -464,7 +469,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF)
             ) {
               if (
@@ -524,8 +530,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF)
             ) {
               if (
                 annex.COUNTRY_NAME.toLowerCase() !==
@@ -584,8 +592,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF)
             ) {
               if (
                 annex.COUNTRY_NAME.toLowerCase() !==
@@ -682,7 +692,8 @@ class ProhibitedStrategy extends workflowEngine {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
           if (
             annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-            annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+            annex.PHI_HOST_REF.toString() !==
+              prohibitedObj.hostRef.toString() &&
             annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF)
           ) {
             if (
@@ -723,8 +734,10 @@ class ProhibitedStrategy extends workflowEngine {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
           if (
             annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-            annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-            annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF)
+            annex.PHI_HOST_REF.toString() !==
+              prohibitedObj.hostRef.toString() &&
+            annex.PHI_HOST_REF.toString() ===
+              String(annex.GRAND_PARENT_HOST_REF)
           ) {
             if (
               annex.COUNTRY_NAME.toLowerCase() === 'all' &&
@@ -764,8 +777,10 @@ class ProhibitedStrategy extends workflowEngine {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
           if (
             annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-            annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-            annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF)
+            annex.PHI_HOST_REF.toString() !==
+              prohibitedObj.hostRef.toString() &&
+            annex.PHI_HOST_REF.toString() ===
+              String(annex.GREAT_GRAND_PARENT_HOST_REF)
           ) {
             if (
               annex.COUNTRY_NAME.toLowerCase() === 'all' &&
@@ -987,7 +1002,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF)
             ) {
               if (
@@ -1040,7 +1056,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF)
             ) {
               if (
@@ -1113,7 +1130,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF)
             ) {
               if (
@@ -1167,8 +1185,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF)
             ) {
               if (
                 // check if atlease 1 exemption exists
@@ -1221,8 +1241,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF)
             ) {
               if (
                 // get Annex6 entries which has regions, match it with the region of the input country
@@ -1296,8 +1318,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF)
             ) {
               if (
                 plantInfo.outcome === '' &&
@@ -1352,8 +1376,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF)
             ) {
               if (
                 // check if atlease 1 exemption exists
@@ -1404,8 +1430,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF)
             ) {
               if (
                 // get Annex6 entries which has regions, match it with the region of the input country
@@ -1477,8 +1505,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF)
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF)
             ) {
               if (
                 plantInfo.outcome === '' &&
@@ -2409,7 +2439,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                prohibitedObj.hostRef.toString() &&
               annex.COUNTRY_NAME.toLowerCase() ===
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2454,7 +2485,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                prohibitedObj.hostRef.toString() &&
               annex.COUNTRY_NAME.toLowerCase() !==
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2514,7 +2546,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                prohibitedObj.hostRef.toString() &&
               annex.COUNTRY_NAME.toLowerCase() === 'all' &&
               annex.SERVICE_FORMAT.toLowerCase() ===
                 prohibitedObj.serviceFormat.toLowerCase() &&
@@ -2556,7 +2589,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() ===
                 prohibitedObj.country.toLowerCase() &&
@@ -2600,7 +2634,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() !==
                 prohibitedObj.country.toLowerCase() &&
@@ -2661,7 +2696,8 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() === String(annex.PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() === 'all' &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2705,8 +2741,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF) &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() ===
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2753,8 +2791,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF) &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() !==
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2818,8 +2858,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF) &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() === 'all' &&
               annex.SERVICE_FORMAT.toLowerCase() ===
                 prohibitedObj.serviceFormat.toLowerCase() &&
@@ -2862,8 +2904,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GRAND_PARENT_HOST_REF) &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() ===
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2906,8 +2950,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF) &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() !==
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
@@ -2967,8 +3013,10 @@ class ProhibitedStrategy extends workflowEngine {
           async (annex) => {
             if (
               annex.HOST_REF.toString() === prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() !== prohibitedObj.hostRef.toString() &&
-              annex.PHI_HOST_REF.toString() === String(annex.GREAT_GRAND_PARENT_HOST_REF) &&
+              annex.PHI_HOST_REF.toString() !==
+                prohibitedObj.hostRef.toString() &&
+              annex.PHI_HOST_REF.toString() ===
+                String(annex.GREAT_GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() === 'all' &&
               annex.SERVICE_FORMAT.toLowerCase() ===
                 prohibitedObj.serviceFormat.toLowerCase() &&

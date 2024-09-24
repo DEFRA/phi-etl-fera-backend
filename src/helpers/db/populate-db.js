@@ -250,7 +250,7 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
         if (cslRefs) {
           // Add each unique CSL_REF for the current host_ref
           cslRefs.forEach((cslRef) => {
-            const key = `${plantHostRef}-${String(cslRef)}`
+            const key = `${plantHostRef}-${cslRef}`
             if (!uniqueHostCslSet.has(key)) {
               uniqueHostCslSet.add(key)
               batchInsertArray.push({ HOST_REF: plantHostRef, CSL_REF: cslRef })
@@ -292,14 +292,15 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
     const parentRef = String(annex6.PARENT_HOST_REF)
     if (parentRef && annex6Map.has(parentRef)) {
       const parentAnnex6 = annex6Map.get(parentRef)
-      annex6.GRAND_PARENT_HOST_REF = String(parentAnnex6.PARENT_HOST_REF) || null
+      annex6.GRAND_PARENT_HOST_REF =
+        String(parentAnnex6.PARENT_HOST_REF) || null
       if (
         annex6.GRAND_PARENT_HOST_REF &&
         annex6Map.has(String(annex6.GRAND_PARENT_HOST_REF))
       ) {
         const grandParentAnnex6 = annex6Map.get(annex6.GRAND_PARENT_HOST_REF)
         annex6.GREAT_GRAND_PARENT_HOST_REF =
-        String(grandParentAnnex6.PARENT_HOST_REF) || null
+          String(grandParentAnnex6.PARENT_HOST_REF) || null
       }
     }
   })
@@ -351,7 +352,9 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
         plant.GRAND_PARENT_HOST_REF &&
         plantMap.has(plant.GRAND_PARENT_HOST_REF)
       ) {
-        const grandParentPlant = plantMap.get(String(plant.GRAND_PARENT_HOST_REF))
+        const grandParentPlant = plantMap.get(
+          String(plant.GRAND_PARENT_HOST_REF)
+        )
         plant.GREAT_GRAND_PARENT_HOST_REF =
           grandParentPlant.PARENT_HOST_REF || null
       }
