@@ -2919,7 +2919,7 @@ class ProhibitedStrategy extends workflowEngine {
               annex.PHI_HOST_REF.toString() !==
                 prohibitedObj.hostRef.toString() &&
               annex.PHI_HOST_REF.toString() ===
-                String(annex.GRAND_PARENT_HOST_REF) &&
+                String(annex.GREAT_GRAND_PARENT_HOST_REF) &&
               annex.COUNTRY_NAME.toLowerCase() ===
                 prohibitedObj.country.toLowerCase() &&
               annex.SERVICE_FORMAT.toLowerCase() ===
