@@ -57,6 +57,11 @@ async function kickStart(searchInput, db) {
       HOST_REF: searchInput.plantDetails.hostRef
     })
 
+    // To handle sub-family related conditions, PHIDP-462
+    const plantNameDoc = await db.collection('PLANT_NAME').findOne({
+      HOST_REF: searchInput.plantDetails.hostRef
+    })
+
     if (plantDocument === undefined && !plantDocument) {
       logger.info(
         `Plant document not found for host_ref:, ${searchInput.plantDetails.hostRef}`
@@ -67,6 +72,7 @@ async function kickStart(searchInput, db) {
       logger.info('trigger - INNS check')
       strategy = new InnsStrategy(
         plantDocument,
+        plantNameDoc,
         searchInput,
         countryMapping,
         logger
@@ -83,6 +89,7 @@ async function kickStart(searchInput, db) {
       logger.info('trigger - prohibited check')
       strategy = new ProhibitedStrategy(
         plantDocument,
+        plantNameDoc,
         searchInput,
         countryMapping,
         logger
@@ -91,7 +98,7 @@ async function kickStart(searchInput, db) {
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
         logger.info(
-          `PROHIBITED rule Applicable for host_ref, country ${plantInfo.hostRef}, ${plantInfo.country}`
+          `Un-Prohibited, Partially-Prohibited or Prohibited rule Applicable for host_ref, country ${plantInfo.hostRef}, ${plantInfo.country}`
         )
         return plantInfo
       }
