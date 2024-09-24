@@ -18,7 +18,16 @@ jest.mock('hapi-pino')
 jest.mock('../../src')
 jest.mock('@elastic/ecs-pino-format')
 jest.mock('hapi-pino')
-jest.mock('~/src/helpers/logging/logger-options')
+jest.mock('~/src/helpers/logging/logger-options', () => ({
+  customLevels: {
+    default: 'info',
+    levels: {
+      info: 30,
+      warn: 40,
+      error: 50
+    }
+  }
+}))
 
 describe('createServer', () => {
   let server
