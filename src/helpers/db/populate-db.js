@@ -237,7 +237,7 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
         plant.GREAT_GRAND_PARENT_HOST_REF
       ]
 
-      const plantHostRef = hierarchy[0]
+      const plantHostRef = +hierarchy[0]
 
       // Use a Set to avoid duplicate entries
       const uniqueHostCslSet = new Set()
@@ -246,7 +246,7 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
       for (const hostRef of hierarchy) {
         if (!hostRef) continue // Skip if hostRef is undefined or null
 
-        const cslRefs = pestLinkMap.get(hostRef)
+        const cslRefs = pestLinkMap.get(+hostRef)
         if (cslRefs) {
           // Add each unique CSL_REF for the current host_ref
           cslRefs.forEach((cslRef) => {
@@ -289,17 +289,18 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
 
   // Build the hierarchy
   jsonData.forEach((annex6) => {
-    const parentRef = annex6.PARENT_HOST_REF
+    const parentRef = String(annex6.PARENT_HOST_REF)
     if (parentRef && annex6Map.has(parentRef)) {
       const parentAnnex6 = annex6Map.get(parentRef)
-      annex6.GRAND_PARENT_HOST_REF = parentAnnex6.PARENT_HOST_REF || null
+      annex6.GRAND_PARENT_HOST_REF =
+        String(parentAnnex6.PARENT_HOST_REF) || null
       if (
         annex6.GRAND_PARENT_HOST_REF &&
-        annex6Map.has(annex6.GRAND_PARENT_HOST_REF)
+        annex6Map.has(String(annex6.GRAND_PARENT_HOST_REF))
       ) {
         const grandParentAnnex6 = annex6Map.get(annex6.GRAND_PARENT_HOST_REF)
         annex6.GREAT_GRAND_PARENT_HOST_REF =
-          grandParentAnnex6.PARENT_HOST_REF || null
+          String(grandParentAnnex6.PARENT_HOST_REF) || null
       }
     }
   })
@@ -343,15 +344,17 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
 
   // Build the hierarchy
   combinedData.forEach((plant) => {
-    const parentRef = plant.PARENT_HOST_REF
+    const parentRef = String(plant.PARENT_HOST_REF)
     if (parentRef && plantMap.has(parentRef)) {
       const parentPlant = plantMap.get(parentRef)
-      plant.GRAND_PARENT_HOST_REF = parentPlant.PARENT_HOST_REF || null
+      plant.GRAND_PARENT_HOST_REF = String(parentPlant.PARENT_HOST_REF) || null
       if (
         plant.GRAND_PARENT_HOST_REF &&
         plantMap.has(plant.GRAND_PARENT_HOST_REF)
       ) {
-        const grandParentPlant = plantMap.get(plant.GRAND_PARENT_HOST_REF)
+        const grandParentPlant = plantMap.get(
+          String(plant.GRAND_PARENT_HOST_REF)
+        )
         plant.GREAT_GRAND_PARENT_HOST_REF =
           grandParentPlant.PARENT_HOST_REF || null
       }
