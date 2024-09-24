@@ -1574,6 +1574,18 @@ class ProhibitedStrategy extends workflowEngine {
       plantInfo.fruitIndicator = annex.FRUIT_INDICATOR
       plantInfo.bonsaiIndicator = annex.BONSAI_INDICATOR
       plantInfo.invintroIndicator = annex.INVINTRO_INDICATOR
+      if (
+        plantInfo.hybridIndicator !== '' &&
+        plantInfo.dormantIndicator === '' &&
+        plantInfo.seedIndicator === '' &&
+        plantInfo.fruitIndicator === '' &&
+        plantInfo.bonsaiIndicator === '' &&
+        plantInfo.invintroIndicator === '' &&
+        plantInfo.FormatClarification === '' &&
+        plantInfo.ProhibitionClarification === ''
+      ) {
+        plantInfo.outcome = 'prohibited'
+      }
     }
 
     // #region ANNEX11 CHECKS-------------------------------------------------------------
