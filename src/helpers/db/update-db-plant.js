@@ -411,7 +411,7 @@ function mapAnnex11GreatGrandParent(
         const matchingElement = docsMappedWithPlantNameData.find(
           (mappedPlantName) =>
             mappedPlantName.HOST_REF.toString() ===
-            plantName.GRAND_PARENT_HOST_REF.toString()
+            plantName.GRAND_PARENT_HOST_REF?.toString()
         )
         // If a matching element is found, return the combined object
         if (matchingElement) {
@@ -428,7 +428,7 @@ function mapAnnex11GreatGrandParent(
   const resultWithAnnex11 = resultListGreatGrandParent.map((rl) => {
     const nx11ListParent = annex11List
       .filter(
-        (nx11) => rl.PARENT_HOST_REF.toString() === nx11.HOST_REF.toString()
+        (nx11) => rl.PARENT_HOST_REF?.toString() === nx11.HOST_REF?.toString()
       ) // Filter by PARENT_HOST_REF
       .filter((x) => x.HOST_REF !== null) // Ensure valid HOST_REF
     // Return the ANNEX11 rules associated with the HOST_REF of the child
