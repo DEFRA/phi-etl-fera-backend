@@ -80,6 +80,24 @@ npm run
 
 | `POST: /workflow` | initiates workflow to get annex6 and annex11 rules for plant |
 
+Master JSON files
+countries.json
+serviceFormat.json
+plant_annex6.json (Will be provided by DEFRA)
+plant_annex11.json (Will be provided by DEFRA)
+
+The following transactional files are integral to the application, and currently being generated from the
+dump received from FERA. Post Inegration with FERA through the API's exposed by them, the
+following files will be generated automatically from the response from the APIs.
+
+plant_name.json
+pest_name.json
+pest_plant_link.json
+pest_distribution.json
+pest_fcpd
+pest_pras
+plant_pest_reg
+
 ## Calling API endpoints
 
 ### Postman
