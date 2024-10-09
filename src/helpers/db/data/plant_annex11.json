@@ -1957,7 +1957,7 @@
     "INFERRED_INDICATOR": "y",
     "SERVICE_FORMAT": "Produce",
     "SERVICE_SUBFORMAT": "",
-    "SERVICE_SUBFORMAT_EXCLUDED": "seeds not intended for planting, fruit",
+    "SERVICE_SUBFORMAT_EXCLUDED": "seeds not intended for planting or fruit",
     "BTOM_CLARIFICATION": "",
     "BTOM_EUSL": "11A",
     "BTOM_NON_EUSL": "11A"
@@ -2011,7 +2011,7 @@
     "INFERRED_INDICATOR": "y",
     "SERVICE_FORMAT": "Produce",
     "SERVICE_SUBFORMAT": "",
-    "SERVICE_SUBFORMAT_EXCLUDED": "seeds not intended for planting, fruit",
+    "SERVICE_SUBFORMAT_EXCLUDED": "seeds not intended for planting or fruit",
     "BTOM_CLARIFICATION": "",
     "BTOM_EUSL": "11A",
     "BTOM_NON_EUSL": "11A"
