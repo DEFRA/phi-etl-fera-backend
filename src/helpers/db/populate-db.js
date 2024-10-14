@@ -379,10 +379,22 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
 //   }
 // }
 
-async function loadCombinedDataForPlantAndBuildParents(mongoUri, db, collectionName) {
+async function loadCombinedDataForPlantAndBuildParents(
+  mongoUri,
+  db,
+  collectionName
+) {
   logger.info('loading Plant_Name_Temp data')
-  const filePathServicePlantName = path.join(__dirname, 'data', 'PlantDataJson1V0.36Base.json')
-  const filePathServicePlantNameRest = path.join(__dirname, 'data', 'PlantDataJson2V0.36Base.json')
+  const filePathServicePlantName = path.join(
+    __dirname,
+    'data',
+    'PlantDataJson1V0.36Base.json'
+  )
+  const filePathServicePlantNameRest = path.join(
+    __dirname,
+    'data',
+    'PlantDataJson2V0.36Base.json'
+  )
 
   const data1 = await readJsonFile(filePathServicePlantName)
   const data2 = await readJsonFile(filePathServicePlantNameRest)
@@ -391,7 +403,7 @@ async function loadCombinedDataForPlantAndBuildParents(mongoUri, db, collectionN
   // Create a mapping of HOST_REF to plant objects
   const plantMap = new Map()
   combinedData.forEach((plant) => {
-      plantMap.set(plant.HOST_REF, { ...plant })
+    plantMap.set(plant.HOST_REF, { ...plant })
   })
 
   const collection = db.collection(collectionName)
@@ -402,47 +414,55 @@ async function loadCombinedDataForPlantAndBuildParents(mongoUri, db, collectionN
   const bulkOps = []
 
   for (const h1 of combinedData) {
-      const h1HostRef = h1.HOST_REF
-      const parentHostRef = h1.PARENT_HOST_REF
+    const h1HostRef = h1.HOST_REF
+    const parentHostRef = h1.PARENT_HOST_REF
 
-      // Use plantMap to find parentDoc
-      const parentDoc = plantMap.get(parentHostRef)
+    // Use plantMap to find parentDoc
+    const parentDoc = plantMap.get(parentHostRef)
 
-      if (parentDoc) {
-          const grandParentHostRef = parentDoc.PARENT_HOST_REF
+    if (parentDoc) {
+      const grandParentHostRef = parentDoc.PARENT_HOST_REF
 
-          // Prepare update for GRAND_PARENT_HOST_REF
-          bulkOps.push({
-              updateOne: {
-                  filter: { HOST_REF: h1HostRef },
-                  update: { $set: { GRAND_PARENT_HOST_REF: grandParentHostRef || '' } },
-              },
-          })
+      // Prepare update for GRAND_PARENT_HOST_REF
+      bulkOps.push({
+        updateOne: {
+          filter: { HOST_REF: h1HostRef },
+          update: { $set: { GRAND_PARENT_HOST_REF: grandParentHostRef || '' } }
+        }
+      })
 
-          // Use plantMap to find grandParentDoc
-          const grandParentDoc = plantMap.get(grandParentHostRef)
+      // Use plantMap to find grandParentDoc
+      const grandParentDoc = plantMap.get(grandParentHostRef)
 
-          // Prepare update for GREAT_GRAND_PARENT_HOST_REF
-          bulkOps.push({
-              updateOne: {
-                  filter: { HOST_REF: h1HostRef },
-                  update: { $set: { GREAT_GRAND_PARENT_HOST_REF: grandParentDoc ? grandParentDoc.PARENT_HOST_REF || '' : '' } },
-              },
-          })
-      } else {
-          // Prepare updates if parentDoc not found
-          bulkOps.push({
-              updateOne: {
-                  filter: { HOST_REF: h1HostRef },
-                  update: { $set: { GRAND_PARENT_HOST_REF: '', GREAT_GRAND_PARENT_HOST_REF: '' } },
-              },
-          })
-      }
+      // Prepare update for GREAT_GRAND_PARENT_HOST_REF
+      bulkOps.push({
+        updateOne: {
+          filter: { HOST_REF: h1HostRef },
+          update: {
+            $set: {
+              GREAT_GRAND_PARENT_HOST_REF: grandParentDoc
+                ? grandParentDoc.PARENT_HOST_REF || ''
+                : ''
+            }
+          }
+        }
+      })
+    } else {
+      // Prepare updates if parentDoc not found
+      bulkOps.push({
+        updateOne: {
+          filter: { HOST_REF: h1HostRef },
+          update: {
+            $set: { GRAND_PARENT_HOST_REF: '', GREAT_GRAND_PARENT_HOST_REF: '' }
+          }
+        }
+      })
+    }
   }
 
   // Execute all bulk operations at once
   if (bulkOps.length > 0) {
-      await collection.bulkWrite(bulkOps)
+    await collection.bulkWrite(bulkOps)
   }
 
   logger.info('loading of Plant_Name_Temp completed')
