@@ -116,7 +116,14 @@ const populateDbHandler = async (request, h) => {
       1
     )
     // Load PLANT DATA - COMBINED - START
-    await loadCombinedDataForPlant(
+    // await loadCombinedDataForPlant(
+    //   mongoUri,
+    //   request.server.db,
+    //   collectionNamePlantName,
+    //   1
+    // )
+
+    await loadCombinedDataForPlantAndBuildParents(
       mongoUri,
       request.server.db,
       collectionNamePlantName,
@@ -287,7 +294,7 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
     annex6Map.set(annex6.HOST_REF, { ...annex6 })
   })
 
-  // Build the hierarchy
+  // // Build the hierarchy
   jsonData.forEach((annex6) => {
     const parentRef = String(annex6.PARENT_HOST_REF)
     if (parentRef && annex6Map.has(parentRef)) {
@@ -316,25 +323,82 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
   }
 }
 
-async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
-  logger.info('loading Plant_Name data')
+// async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
+//   logger.info('loading Plant_Name data')
+//   const filePathServicePlantName = path.join(
+//     __dirname,
+//     'data',
+//     'plant_name.json'
+//   )
+//   const filePathServicePlantNameRest = path.join(
+//     __dirname,
+//     'data',
+//     'plant_name_rest.json'
+//   )
+
+//   const data1 = await readJsonFile(filePathServicePlantName)
+//   const data2 = await readJsonFile(filePathServicePlantNameRest)
+
+//   const combinedData = [...data1?.PLANT_NAME, ...data2?.PLANT_NAME]
+
+//   // BUILD THE GRAND PARENT AND GREAT GRAND PARENT HIERARCHY
+
+//   // Create a mapping of HOST_REF to plant objects
+//   const plantMap = new Map()
+//   combinedData.forEach((plant) => {
+//     plantMap.set(plant.HOST_REF, { ...plant })
+//   })
+
+//   // Build the hierarchy
+//   combinedData.forEach((plant) => {
+//     const parentRef = String(plant.PARENT_HOST_REF)
+//     if (parentRef && plantMap.has(parentRef)) {
+//       const parentPlant = plantMap.get(parentRef)
+//       plant.GRAND_PARENT_HOST_REF = String(parentPlant.PARENT_HOST_REF) || null
+//       if (
+//         plant.GRAND_PARENT_HOST_REF &&
+//         plantMap.has(plant.GRAND_PARENT_HOST_REF)
+//       ) {
+//         const grandParentPlant = plantMap.get(
+//           String(plant.GRAND_PARENT_HOST_REF)
+//         )
+//         plant.GREAT_GRAND_PARENT_HOST_REF =
+//           grandParentPlant.PARENT_HOST_REF || null
+//       }
+//     }
+//   })
+//   // --------------------------------------------------------
+
+//   try {
+//     const collection = db.collection(collectionName)
+//     await dropCollections(db, collectionName, client)
+//     await collection.insertMany(combinedData)
+//     logger.info('loading of Plant_Name completed')
+//   } catch (error) {
+//     logger.info('loading of Plant_Name failed: ', error)
+//   }
+// }
+
+async function loadCombinedDataForPlantAndBuildParents(
+  mongoUri,
+  db,
+  collectionName
+) {
+  logger.info('loading Plant_Name_Temp data')
   const filePathServicePlantName = path.join(
     __dirname,
     'data',
-    'plant_name.json'
+    'PlantDataJson1V0.36Base.json'
   )
   const filePathServicePlantNameRest = path.join(
     __dirname,
     'data',
-    'plant_name_rest.json'
+    'PlantDataJson2V0.36Base.json'
   )
 
   const data1 = await readJsonFile(filePathServicePlantName)
   const data2 = await readJsonFile(filePathServicePlantNameRest)
-
-  const combinedData = [...data1?.PLANT_NAME, ...data2?.PLANT_NAME]
-
-  // BUILD THE GRAND PARENT AND GREAT GRAND PARENT HIERARCHY
+  const combinedData = [...data1, ...data2]
 
   // Create a mapping of HOST_REF to plant objects
   const plantMap = new Map()
@@ -342,34 +406,66 @@ async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
     plantMap.set(plant.HOST_REF, { ...plant })
   })
 
-  // Build the hierarchy
-  combinedData.forEach((plant) => {
-    const parentRef = String(plant.PARENT_HOST_REF)
-    if (parentRef && plantMap.has(parentRef)) {
-      const parentPlant = plantMap.get(parentRef)
-      plant.GRAND_PARENT_HOST_REF = String(parentPlant.PARENT_HOST_REF) || null
-      if (
-        plant.GRAND_PARENT_HOST_REF &&
-        plantMap.has(plant.GRAND_PARENT_HOST_REF)
-      ) {
-        const grandParentPlant = plantMap.get(
-          String(plant.GRAND_PARENT_HOST_REF)
-        )
-        plant.GREAT_GRAND_PARENT_HOST_REF =
-          grandParentPlant.PARENT_HOST_REF || null
-      }
-    }
-  })
-  // --------------------------------------------------------
+  const collection = db.collection(collectionName)
+  await dropCollections(db, collectionName, client)
+  await collection.insertMany(combinedData)
 
-  try {
-    const collection = db.collection(collectionName)
-    await dropCollections(db, collectionName, client)
-    await collection.insertMany(combinedData)
-    logger.info('loading of Plant_Name completed')
-  } catch (error) {
-    logger.info('loading of Plant_Name failed: ', error)
+  // Prepare bulk update operations
+  const bulkOps = []
+
+  for (const h1 of combinedData) {
+    const h1HostRef = h1.HOST_REF
+    const parentHostRef = h1.PARENT_HOST_REF
+
+    // Use plantMap to find parentDoc
+    const parentDoc = plantMap.get(parentHostRef)
+
+    if (parentDoc) {
+      const grandParentHostRef = parentDoc.PARENT_HOST_REF
+
+      // Prepare update for GRAND_PARENT_HOST_REF
+      bulkOps.push({
+        updateOne: {
+          filter: { HOST_REF: h1HostRef },
+          update: { $set: { GRAND_PARENT_HOST_REF: grandParentHostRef || '' } }
+        }
+      })
+
+      // Use plantMap to find grandParentDoc
+      const grandParentDoc = plantMap.get(grandParentHostRef)
+
+      // Prepare update for GREAT_GRAND_PARENT_HOST_REF
+      bulkOps.push({
+        updateOne: {
+          filter: { HOST_REF: h1HostRef },
+          update: {
+            $set: {
+              GREAT_GRAND_PARENT_HOST_REF: grandParentDoc
+                ? grandParentDoc.PARENT_HOST_REF || ''
+                : ''
+            }
+          }
+        }
+      })
+    } else {
+      // Prepare updates if parentDoc not found
+      bulkOps.push({
+        updateOne: {
+          filter: { HOST_REF: h1HostRef },
+          update: {
+            $set: { GRAND_PARENT_HOST_REF: '', GREAT_GRAND_PARENT_HOST_REF: '' }
+          }
+        }
+      })
+    }
   }
+
+  // Execute all bulk operations at once
+  if (bulkOps.length > 0) {
+    await collection.bulkWrite(bulkOps)
+  }
+
+  logger.info('loading of Plant_Name_Temp completed')
 }
 
 async function readJsonFile(filePath) {
@@ -428,7 +524,7 @@ async function dropCollections(db, collection) {
 export {
   populateDbHandler,
   loadData,
-  loadCombinedDataForPlant,
+  loadCombinedDataForPlantAndBuildParents,
   loadDataForAnnex6,
   readJsonFile
 }
