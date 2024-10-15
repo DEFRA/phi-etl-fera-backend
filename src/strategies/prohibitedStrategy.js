@@ -27,7 +27,7 @@ class ProhibitedStrategy extends workflowEngine {
   }
 
   async execute() {
-    logger.info('Check if Annex6 (PROHIBITED) rule applies?')
+    logger?.info('Check if Annex6 (PROHIBITED) rule applies?')
 
     // holds the plant details returned from MongoDB for matching host_ref from PLANT_DATA
     // it has annex6 and annex11 array
@@ -210,16 +210,16 @@ class ProhibitedStrategy extends workflowEngine {
     plantInfo = await getPests()
 
     counter += 1
-    logger.info('execute: ' + counter)
+    logger?.info('execute: ' + counter)
 
-    logger.info('Annex6 (PROHIBITED) checks performed')
+    logger?.info('Annex6 (PROHIBITED) checks performed')
     return plantInfo
 
     // #region PROHIBITION CHECKS---------------------------------------------------------
 
     // HOST_REF, COUNTRY
     async function prohibitionCheckAtHostRefCountryLevel() {
-      logger.info('Starting Prohibited check at HOST_REF, COUNTRY level')
+      logger?.info('Starting Prohibited check at HOST_REF, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -244,7 +244,7 @@ class ProhibitedStrategy extends workflowEngine {
                 annex.FORMAT_CLARIFICATION === '' &&
                 annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
               ) {
-                logger.info(
+                logger?.info(
                   `Annex6 (PROHIBITED) rule is APPLICABLE at HOST_REF, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                 )
@@ -257,12 +257,12 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtHostRefCountryLevel: ' + counter)
+      logger?.info('prohibitionCheckAtHostRefCountryLevel: ' + counter)
       return plantInfo
     }
     // GENUS, COUNTRY
     async function prohibitionCheckAtGenusCountryLevel() {
-      logger.info('Starting Prohibited check at GENUS, COUNTRY level')
+      logger?.info('Starting Prohibited check at GENUS, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -289,7 +289,7 @@ class ProhibitedStrategy extends workflowEngine {
                 annex.FORMAT_CLARIFICATION === '' &&
                 annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
               ) {
-                logger.info(
+                logger?.info(
                   `Annex6 (PROHIBITED) rule is APPLICABLE at GENUS, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                 )
@@ -302,12 +302,12 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtGenusCountryLevel: ' + counter)
+      logger?.info('prohibitionCheckAtGenusCountryLevel: ' + counter)
       return plantInfo
     }
     // SUB-FAMILY, COUNTRY (PHIDP-462)
     async function prohibitionCheckAtSubFamilyCountryLevel() {
-      logger.info('Starting Prohibited check at SUB-FAMILY, COUNTRY level')
+      logger?.info('Starting Prohibited check at SUB-FAMILY, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -335,7 +335,7 @@ class ProhibitedStrategy extends workflowEngine {
                 annex.FORMAT_CLARIFICATION === '' &&
                 annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
               ) {
-                logger.info(
+                logger?.info(
                   `Annex6 (PROHIBITED) rule is APPLICABLE at SUB-FAMILY, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                     ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                 )
@@ -348,13 +348,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtSubFamilyCountryLevel: ' + counter)
+      logger?.info('prohibitionCheckAtSubFamilyCountryLevel: ' + counter)
       return plantInfo
     }
 
     // FAMILY, COUNTRY
     async function prohibitionCheckAtFamilyCountryLevel() {
-      logger.info('Starting Prohibited check at FAMILY, COUNTRY level')
+      logger?.info('Starting Prohibited check at FAMILY, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -382,7 +382,7 @@ class ProhibitedStrategy extends workflowEngine {
                 annex.FORMAT_CLARIFICATION === '' &&
                 annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
               ) {
-                logger.info(
+                logger?.info(
                   `Annex6 (PROHIBITED) rule is APPLICABLE at FAMILY, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                     ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                 )
@@ -395,13 +395,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtFamilyCountryLevel: ' + counter)
+      logger?.info('prohibitionCheckAtFamilyCountryLevel: ' + counter)
       return plantInfo
     }
 
     // HOST_REF, REGION
     async function prohibitionCheckAtHostRefRegionLevel() {
-      logger.info('Starting Prohibition check at HOST_REF, REGION level')
+      logger?.info('Starting Prohibition check at HOST_REF, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -439,7 +439,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Annex6 (PROHIBITED) rule is APPLICABLE at HOST_REF, REGION level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                     ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                     )
@@ -454,12 +454,12 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtHostRefRegionLevel: ' + counter)
+      logger?.info('prohibitionCheckAtHostRefRegionLevel: ' + counter)
       return plantInfo
     }
     // GENUS, REGION
     async function prohibitionCheckAtGenusRegionLevel() {
-      logger.info('Starting Prohibition check at GENUS, REGION level')
+      logger?.info('Starting Prohibition check at GENUS, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -499,7 +499,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Annex6 (PROHIBITED) rule is APPLICABLE at GENUS, REGION level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                     ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                     )
@@ -514,13 +514,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtGenusRegionLevel: ' + counter)
+      logger?.info('prohibitionCheckAtGenusRegionLevel: ' + counter)
       return plantInfo
     }
 
     // SUB-FAMILY, REGION
     async function prohibitionCheckAtSubFamilyRegionLevel() {
-      logger.info('Starting Prohibition check at SUB-FAMILY, REGION level')
+      logger?.info('Starting Prohibition check at SUB-FAMILY, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -561,7 +561,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Annex6 (PROHIBITED) rule is APPLICABLE at SUB-FAMILY, REGION level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                         ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                     )
@@ -576,13 +576,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtSubFamilyRegionLevel: ' + counter)
+      logger?.info('prohibitionCheckAtSubFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     // FAMILY, REGION
     async function prohibitionCheckAtFamilyRegionLevel() {
-      logger.info('Starting Prohibition check at FAMILY, REGION level')
+      logger?.info('Starting Prohibition check at FAMILY, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -623,7 +623,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Annex6 (PROHIBITED) rule is APPLICABLE at FAMILY, REGION level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                         ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
                     )
@@ -638,13 +638,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtFamilysRegionLevel: ' + counter)
+      logger?.info('prohibitionCheckAtFamilysRegionLevel: ' + counter)
       return plantInfo
     }
 
     // HOST_REF, ALL
     async function prohibitionCheckHostRefAllLevel() {
-      logger.info('Starting Prohibition check at HOST_REF, ALL level')
+      logger?.info('Starting Prohibition check at HOST_REF, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -667,7 +667,7 @@ class ProhibitedStrategy extends workflowEngine {
               annex.FORMAT_CLARIFICATION === '' &&
               annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
             ) {
-              logger.info(
+              logger?.info(
                 `Annex6 (PROHIBITED) rule is APPLICABLE at HOST_REF, ALL level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
               )
@@ -678,12 +678,12 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckHostRefAllLevel: ' + counter)
+      logger?.info('prohibitionCheckHostRefAllLevel: ' + counter)
       return plantInfo
     }
     // GENUS, ALL
     async function prohibitionCheckGenusAllLevel() {
-      logger.info('Starting Prohibition check at GENUS, ALL level')
+      logger?.info('Starting Prohibition check at GENUS, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -708,7 +708,7 @@ class ProhibitedStrategy extends workflowEngine {
               annex.FORMAT_CLARIFICATION === '' &&
               annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
             ) {
-              logger.info(
+              logger?.info(
                 `Annex6 (PROHIBITED) rule is APPLICABLE at GENUS, ALL level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
               )
@@ -719,13 +719,13 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckGenusAllLevel: ' + counter)
+      logger?.info('prohibitionCheckGenusAllLevel: ' + counter)
       return plantInfo
     }
 
     // SUB-FAMILY, ALL
     async function prohibitionCheckSubFamilyAllLevel() {
-      logger.info('Starting Prohibition check at SUB-FAMILY, ALL level')
+      logger?.info('Starting Prohibition check at SUB-FAMILY, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -751,7 +751,7 @@ class ProhibitedStrategy extends workflowEngine {
               annex.FORMAT_CLARIFICATION === '' &&
               annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
             ) {
-              logger.info(
+              logger?.info(
                 `Annex6 (PROHIBITED) rule is APPLICABLE at SUB-FAMILY, ALL level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
               )
@@ -762,13 +762,13 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckSubFamilyAllLevel: ' + counter)
+      logger?.info('prohibitionCheckSubFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
     // FAMILY, ALL
     async function prohibitionCheckFamilyAllLevel() {
-      logger.info('Starting Prohibition check at FAMILY, ALL level')
+      logger?.info('Starting Prohibition check at FAMILY, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -794,7 +794,7 @@ class ProhibitedStrategy extends workflowEngine {
               annex.FORMAT_CLARIFICATION === '' &&
               annex.OVERALL_DECISION.toLowerCase() !== 'not prohibited'
             ) {
-              logger.info(
+              logger?.info(
                 `Annex6 (PROHIBITED) rule is APPLICABLE at FAMILY, ALL level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
               )
@@ -805,7 +805,7 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckFamilyAllLevel: ' + counter)
+      logger?.info('prohibitionCheckFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -815,7 +815,9 @@ class ProhibitedStrategy extends workflowEngine {
 
     async function partiallyProhibitedCheckAtHostRefCountryLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at GENUS, Country level')
+      logger?.info(
+        'Starting PARTIALLY PROHIBITED check at GENUS, Country level'
+      )
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -840,7 +842,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at GENUS, COUNTRY level, SERVICE_FORMAT matched', 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -857,16 +859,16 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitionCheckAtGenusCountryLevel: ' + counter)
+      logger?.info('partiallyProhibitionCheckAtGenusCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('PARTIALLY PROHIBITED check APPLICABLE at Country level')
+        logger?.info('PARTIALLY PROHIBITED check APPLICABLE at Country level')
       }
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtHostRefRegionLevel() {
       let annexMatched = false
-      logger.info(
+      logger?.info(
         'Starting PARTIALLY PROHIBITED check at HOST_REF, REGION level'
       )
       counter += 1
@@ -909,7 +911,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Partially Prohibited check applicable at HOST_REF, REGION level, SERVICE_FORMAT matched, 
                       ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                       ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -929,18 +931,18 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at HOST_REF, REGION level'
         )
       }
 
-      logger.info('partiallyProhibitionCheckAtHostRefRegionLevel: ' + counter)
+      logger?.info('partiallyProhibitionCheckAtHostRefRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtHostRefAllLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at HOST_REF, ALL level')
+      logger?.info('Starting PARTIALLY PROHIBITED check at HOST_REF, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -964,7 +966,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at HOST_REF, ALL level, SERVICE_FORMAT matched, 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -981,18 +983,20 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at HOST_REF, ALL level'
         )
       }
 
-      logger.info('partiallyProhibitionCheckAtHostRefAllLevel: ' + counter)
+      logger?.info('partiallyProhibitionCheckAtHostRefAllLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtGenusCountryLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at GENUS, Country level')
+      logger?.info(
+        'Starting PARTIALLY PROHIBITED check at GENUS, Country level'
+      )
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -1019,7 +1023,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at GENUS, COUNTRY level, SERVICE_FORMAT matched', 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1036,9 +1040,9 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitionCheckAtGenusCountryLevel: ' + counter)
+      logger?.info('partiallyProhibitionCheckAtGenusCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('PARTIALLY PROHIBITED check APPLICABLE at Country level')
+        logger?.info('PARTIALLY PROHIBITED check APPLICABLE at Country level')
       }
 
       return plantInfo
@@ -1046,7 +1050,7 @@ class ProhibitedStrategy extends workflowEngine {
 
     async function partiallyProhibitedCheckAtGenusRegionLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at GENUS, REGION level')
+      logger?.info('Starting PARTIALLY PROHIBITED check at GENUS, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -1089,7 +1093,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Partially Prohibited check applicable at GENUS, REGION level, SERVICE_FORMAT matched, 
                       ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                       ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1109,18 +1113,18 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at GENUS, REGION level'
         )
       }
 
-      logger.info('partiallyProhibitionCheckAtGenusRegionLevel: ' + counter)
+      logger?.info('partiallyProhibitionCheckAtGenusRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtGenusAllLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at GENUS, ALL level')
+      logger?.info('Starting PARTIALLY PROHIBITED check at GENUS, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -1146,7 +1150,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Level 3D: Partially Prohibited check applicable at GENUS, ALL level, SERVICE_FORMAT matched, 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1163,17 +1167,19 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('PARTIALLY PROHIBITED check APPLICABLE at GENUS, ALL level')
+        logger?.info(
+          'PARTIALLY PROHIBITED check APPLICABLE at GENUS, ALL level'
+        )
       }
 
-      logger.info('partiallyProhibitionCheckAtAllLevel: ' + counter)
+      logger?.info('partiallyProhibitionCheckAtAllLevel: ' + counter)
       return plantInfo
     }
 
     // PHIDP-462
     async function partiallyProhibitedCheckAtSubFamilyCountryLevel() {
       let annexMatched = false
-      logger.info(
+      logger?.info(
         'Starting PARTIALLY PROHIBITED check at SUB-FAMILY, Country level'
       )
       counter += 1
@@ -1203,7 +1209,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at SUB-FAMILY, COUNTRY level, SERVICE_FORMAT matched', 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1220,16 +1226,20 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitedCheckAtSubFamilyCountryLevel: ' + counter)
+      logger?.info(
+        'partiallyProhibitedCheckAtSubFamilyCountryLevel: ' + counter
+      )
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('PARTIALLY PROHIBITED check APPLICABLE at SUB-Family level')
+        logger?.info(
+          'PARTIALLY PROHIBITED check APPLICABLE at SUB-Family level'
+        )
       }
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtSubFamilyRegionLevel() {
       let annexMatched = false
-      logger.info(
+      logger?.info(
         'Starting PARTIALLY PROHIBITED check at SUB-FAMILY, REGION level'
       )
       counter += 1
@@ -1275,7 +1285,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Partially Prohibited check applicable at SUB-FAMILY, REGION level, SERVICE_FORMAT matched, 
                       ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                       ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1295,18 +1305,18 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at SUB-FAMILY, REGION level'
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtSubFamilyRegionLevel: ' + counter)
+      logger?.info('partiallyProhibitedCheckAtSubFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtSubFamilyAllLevel() {
       let annexMatched = false
-      logger.info(
+      logger?.info(
         'Starting PARTIALLY PROHIBITED check at SUB-FAMILY, ALL level'
       )
       counter += 1
@@ -1335,7 +1345,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at SUB-FAMILY, ALL level, SERVICE_FORMAT matched, 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1352,19 +1362,19 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at SUB-FAMILY, ALL level'
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtSubFamilyAllLevel: ' + counter)
+      logger?.info('partiallyProhibitedCheckAtSubFamilyAllLevel: ' + counter)
       return plantInfo
     }
     // PHIDP-462
 
     async function partiallyProhibitedCheckAtFamilyCountryLevel() {
       let annexMatched = false
-      logger.info(
+      logger?.info(
         'Starting PARTIALLY PROHIBITED check at FAMILY, Country level'
       )
       counter += 1
@@ -1394,7 +1404,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at FAMILY, COUNTRY level, SERVICE_FORMAT matched', 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1411,16 +1421,18 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitedCheckAtFamilyCountryLevel: ' + counter)
+      logger?.info('partiallyProhibitedCheckAtFamilyCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('PARTIALLY PROHIBITED check APPLICABLE at Family level')
+        logger?.info('PARTIALLY PROHIBITED check APPLICABLE at Family level')
       }
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtFamilyRegionLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at FAMILY, REGION level')
+      logger?.info(
+        'Starting PARTIALLY PROHIBITED check at FAMILY, REGION level'
+      )
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -1464,7 +1476,7 @@ class ProhibitedStrategy extends workflowEngine {
                     reg[0]?.toLowerCase() === annex6RegionType?.toLowerCase() &&
                     reg[1]?.toLowerCase() === annex6RegionValue?.toLowerCase()
                   ) {
-                    logger.info(
+                    logger?.info(
                       `Partially Prohibited check applicable at FAMILY, REGION level, SERVICE_FORMAT matched, 
                       ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                       ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1484,18 +1496,18 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at FAMILY, REGION level'
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtFamilyRegionLevel: ' + counter)
+      logger?.info('partiallyProhibitedCheckAtFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtFamilyAllLevel() {
       let annexMatched = false
-      logger.info('Starting PARTIALLY PROHIBITED check at FAMILY, ALL level')
+      logger?.info('Starting PARTIALLY PROHIBITED check at FAMILY, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -1522,7 +1534,7 @@ class ProhibitedStrategy extends workflowEngine {
                   annex.PROHIBITION_CLARIFICATION !== '' ||
                   annex.FORMAT_CLARIFICATION !== '')
               ) {
-                logger.info(
+                logger?.info(
                   `Partially Prohibited check applicable at FAMILY, ALL level, SERVICE_FORMAT matched, 
                 ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`
@@ -1539,12 +1551,12 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'PARTIALLY PROHIBITED check APPLICABLE at FAMILY, ALL level'
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtFamilyAllLevel: ' + counter)
+      logger?.info('partiallyProhibitedCheckAtFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -1553,15 +1565,15 @@ class ProhibitedStrategy extends workflowEngine {
     async function setPlantAttributes(annex, indicator) {
       plantInfo.annexSixRule = annex.A6_RULE
 
-      logger.info(indicator)
+      logger?.info(indicator)
       if (indicator === 'pp')
         plantInfo.outcome = 'partially-prohibited' // annex.OVERALL_DECISION
       else if (indicator === 'p')
         plantInfo.outcome = 'prohibited' // annex.OVERALL_DECISION
       else if (indicator === 'up') plantInfo.outcome = 'un-prohibited' // annex.OVERALL_DECISION
 
-      logger.info('OUTCOME SET: ')
-      logger.info(plantInfo.outcome)
+      logger?.info('OUTCOME SET: ')
+      logger?.info(plantInfo.outcome)
 
       plantInfo.ProhibitionClarification = annex.PROHIBITION_CLARIFICATION
       plantInfo.FormatClarification = annex.FORMAT_CLARIFICATION
@@ -1600,7 +1612,7 @@ class ProhibitedStrategy extends workflowEngine {
             prohibitedObj.country.toLowerCase() ===
             annex11.COUNTRY_NAME.toLowerCase()
           ) {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for Hostref/Country/Service format/Species , ${annex11.HOST_REF.toString()},
                ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1639,7 +1651,7 @@ class ProhibitedStrategy extends workflowEngine {
                 reg[0]?.toLowerCase() === annex11RegionType?.toLowerCase() &&
                 reg[1]?.toLowerCase() === annex11RegionValue?.toLowerCase()
               ) {
-                logger.info(
+                logger?.info(
                   `Annex 11 rules found for Hostref/Region/Service format/Species , ${annex11.HOST_REF.toString()},
                    ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
                 )
@@ -1661,7 +1673,7 @@ class ProhibitedStrategy extends workflowEngine {
           prohibitedObj.serviceFormat.toLowerCase()
         ) {
           if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for Hostref/All/Service format , ${annex11.HOST_REF.toString()}, ${annex11.COUNTRY_NAME}, 
               ${prohibitedObj.country}`
             )
@@ -1689,7 +1701,7 @@ class ProhibitedStrategy extends workflowEngine {
             prohibitedObj.country.toLowerCase() ===
             annex11.COUNTRY_NAME.toLowerCase()
           ) {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for Country/Service format/Genus , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1731,7 +1743,7 @@ class ProhibitedStrategy extends workflowEngine {
                 reg[0]?.toLowerCase() === annex11RegionType.toLowerCase() &&
                 reg[1]?.toLowerCase() === annex11RegionValue.toLowerCase()
               ) {
-                logger.info(
+                logger?.info(
                   `Annex 11 rules found for Region/Service format/Genus , ${annex11.HOST_REF.toString()}, 
                   ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
                 )
@@ -1758,7 +1770,7 @@ class ProhibitedStrategy extends workflowEngine {
           prohibitedObj.serviceFormat.toLowerCase()
         ) {
           if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for All/Service format/Genus , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1785,7 +1797,7 @@ class ProhibitedStrategy extends workflowEngine {
             prohibitedObj.country.toLowerCase() ===
             annex11.COUNTRY_NAME.toLowerCase()
           ) {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for Country/Service format/Sub-Family , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1826,7 +1838,7 @@ class ProhibitedStrategy extends workflowEngine {
                 reg[0]?.toLowerCase() === annex11RegionType.toLowerCase() &&
                 reg[1]?.toLowerCase() === annex11RegionValue.toLowerCase()
               ) {
-                logger.info(
+                logger?.info(
                   `Annex 11 rules found for Region/Service format/Sub-Family , ${annex11.HOST_REF.toString()}, 
                   ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
                 )
@@ -1852,7 +1864,7 @@ class ProhibitedStrategy extends workflowEngine {
           prohibitedObj.serviceFormat.toLowerCase()
         ) {
           if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for All/Service format/Sub-Family , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1879,7 +1891,7 @@ class ProhibitedStrategy extends workflowEngine {
             prohibitedObj.country.toLowerCase() ===
             annex11.COUNTRY_NAME.toLowerCase()
           ) {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for Country/Service format/Family , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1920,7 +1932,7 @@ class ProhibitedStrategy extends workflowEngine {
                 reg[0]?.toLowerCase() === annex11RegionType.toLowerCase() &&
                 reg[1]?.toLowerCase() === annex11RegionValue.toLowerCase()
               ) {
-                logger.info(
+                logger?.info(
                   `Annex 11 rules found for Region/Service format/Family , ${annex11.HOST_REF.toString()}, 
                   ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
                 )
@@ -1946,7 +1958,7 @@ class ProhibitedStrategy extends workflowEngine {
           prohibitedObj.serviceFormat.toLowerCase()
         ) {
           if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for All/Service format/Family , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -1972,7 +1984,7 @@ class ProhibitedStrategy extends workflowEngine {
             prohibitedObj.country.toLowerCase() ===
             annex11.COUNTRY_NAME.toLowerCase()
           ) {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for All/Service format/Country , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -2012,7 +2024,7 @@ class ProhibitedStrategy extends workflowEngine {
                 reg[0]?.toLowerCase() === annex11RegionType?.toLowerCase() &&
                 reg[1]?.toLowerCase() === annex11RegionValue?.toLowerCase()
               ) {
-                logger.info(
+                logger?.info(
                   `Annex 11 rules found for All/Service format/Region , ${annex11.HOST_REF.toString()}, 
                   ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
                 )
@@ -2039,7 +2051,7 @@ class ProhibitedStrategy extends workflowEngine {
           prohibitedObj.serviceFormat.toLowerCase()
         ) {
           if (annex11.COUNTRY_NAME.toLowerCase() === 'all') {
-            logger.info(
+            logger?.info(
               `Annex 11 rules found for All/Service format  , ${annex11.HOST_REF.toString()}, 
               ${annex11.COUNTRY_NAME}, ${prohibitedObj.country}`
             )
@@ -2253,7 +2265,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11CountrySpeciesArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11CountrySpeciesArr.length > 0')
+        logger?.info('annex11CountrySpeciesArr.length > 0')
         plantInfo.annex11RulesArr = annex11CountrySpeciesArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2264,7 +2276,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11RegionSpeciesArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11RegionSpeciesArr.length > 0')
+        logger?.info('annex11RegionSpeciesArr.length > 0')
         plantInfo.annex11RulesArr = annex11RegionSpeciesArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2275,7 +2287,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11AllSpeciesArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11AllSpeciesArr.length > 0')
+        logger?.info('annex11AllSpeciesArr.length > 0')
         plantInfo.annex11RulesArr = annex11AllSpeciesArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2287,7 +2299,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11CountryGenusArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11CountryGenusArr.length > 0')
+        logger?.info('annex11CountryGenusArr.length > 0')
         plantInfo.annex11RulesArr = annex11CountryGenusArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2298,7 +2310,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11RegionGenusArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11RegionGenusArr.length > 0')
+        logger?.info('annex11RegionGenusArr.length > 0')
         plantInfo.annex11RulesArr = annex11RegionGenusArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2309,7 +2321,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11AllGenusArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11AllGenusArr.length > 0')
+        logger?.info('annex11AllGenusArr.length > 0')
         plantInfo.annex11RulesArr = annex11AllGenusArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2321,7 +2333,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11CountrySubFamilyArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11CountrySubFamilyArr.length > 0')
+        logger?.info('annex11CountrySubFamilyArr.length > 0')
         plantInfo.annex11RulesArr =
           annex11CountrySubFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
@@ -2333,7 +2345,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11RegionSubFamilyArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11RegionSubFamilyArr.length > 0')
+        logger?.info('annex11RegionSubFamilyArr.length > 0')
         plantInfo.annex11RulesArr = annex11RegionSubFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2344,7 +2356,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11AllSubFamilyArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11AllSubFamilyArr.length > 0')
+        logger?.info('annex11AllSubFamilyArr.length > 0')
         plantInfo.annex11RulesArr = annex11AllSubFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2358,7 +2370,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11CountryFamilyArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11CountryFamilyArr.length > 0')
+        logger?.info('annex11CountryFamilyArr.length > 0')
         plantInfo.annex11RulesArr = annex11CountryFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2369,7 +2381,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11RegionFamilyArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11RegionFamilyArr.length > 0')
+        logger?.info('annex11RegionFamilyArr.length > 0')
         plantInfo.annex11RulesArr = annex11RegionFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2380,7 +2392,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11AllFamilyArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11AllFamilyArr.length > 0')
+        logger?.info('annex11AllFamilyArr.length > 0')
         plantInfo.annex11RulesArr = annex11AllFamilyArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2392,7 +2404,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11CountryDefaultArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11CountryDefaultArr.length > 0')
+        logger?.info('annex11CountryDefaultArr.length > 0')
         plantInfo.annex11RulesArr = annex11CountryDefaultArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2403,7 +2415,7 @@ class ProhibitedStrategy extends workflowEngine {
         annex11RegionDefaultArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11RegionDefaultArr.length > 0')
+        logger?.info('annex11RegionDefaultArr.length > 0')
         plantInfo.annex11RulesArr = annex11RegionDefaultArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
@@ -2414,12 +2426,12 @@ class ProhibitedStrategy extends workflowEngine {
         annex11AllDefaultArr.length > 0 &&
         plantInfo.outcome.toLowerCase() !== 'prohibited'
       ) {
-        logger.info('annex11AllDefaultArr.length > 0')
+        logger?.info('annex11AllDefaultArr.length > 0')
         plantInfo.annex11RulesArr = annex11AllDefaultArr?.sort(sortAnnex11)
         a11RulesFetched = true
       }
 
-      logger.info('getAnnex11Rules: ' + counter)
+      logger?.info('getAnnex11Rules: ' + counter)
       return plantInfo
     }
 
@@ -2441,7 +2453,7 @@ class ProhibitedStrategy extends workflowEngine {
     // #region UN-PROHIBITED CHECKS-------------------------------------------------------
     async function unprohibitedCheckAtHostRefCountryLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at HOST_REF, COUNTRY level')
+      logger?.info('Starting UN-PROHIBITED checks at HOST_REF, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2465,7 +2477,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(` Un-Prohibited check APPLICABLE at HOST_REF, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(` Un-Prohibited check APPLICABLE at HOST_REF, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2476,16 +2488,20 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at HOST_REF, Country level')
+        logger?.info(
+          'UN-PROHIBITED check APPLICABLE at HOST_REF, Country level'
+        )
       }
 
-      logger.info('unprohibitedCheckAtHostRefCountryLevel: ' + counter)
+      logger?.info(
+        'getUnprohibitedAnnex11RulesAtHostRefCountryLevel: ' + counter
+      )
       return plantInfo
     }
 
     async function unprohibitedCheckAtHostRefRegionLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at HOST_REF, REGION level')
+      logger?.info('Starting UN-PROHIBITED checks at HOST_REF, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2524,7 +2540,7 @@ class ProhibitedStrategy extends workflowEngine {
                 ) {
                   await setPlantAttributes(annex, 'up')
                   annexMatched = true
-                  logger.info(`Un-Prohibited check APPLICABLE at HOST_REF, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+                  logger?.info(`Un-Prohibited check APPLICABLE at HOST_REF, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
                 }
               })
@@ -2537,16 +2553,18 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at HOST_REF, REGION level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at HOST_REF, REGION level')
       }
 
-      logger.info('unprohibitedCheckAtHostRefRegionLevel: ' + counter)
+      logger?.info(
+        'getUnprohibitedAnnex11RulesAtHostRefRegionLevel: ' + counter
+      )
       return plantInfo
     }
 
     async function unprohibitedCheckAtHostRefAllLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED check at ALL level')
+      logger?.info('Starting UN-PROHIBITED check at ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2569,7 +2587,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at HOST_REF, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at HOST_REF, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
             ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2580,16 +2598,16 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at HOST_REF, All level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at HOST_REF, All level')
       }
 
-      logger.info('unprohibitedCheckAtHostRefAllLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtHostRefAllLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtGenusCountryLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at GENUS, COUNTRY level')
+      logger?.info('Starting UN-PROHIBITED checks at GENUS, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2614,7 +2632,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at GENUS, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at GENUS, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2625,16 +2643,16 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at GENUS, COUNTRY level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at GENUS, COUNTRY level')
       }
 
-      logger.info('unprohibitedCheckAtGenusCountryLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtGenusCountryLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtGenusRegionLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at GENUS, REGION level')
+      logger?.info('Starting UN-PROHIBITED checks at GENUS, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2674,7 +2692,7 @@ class ProhibitedStrategy extends workflowEngine {
                 ) {
                   await setPlantAttributes(annex, 'up')
                   annexMatched = true
-                  logger.info(`Un-Prohibited check APPLICABLE at GENUS, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+                  logger?.info(`Un-Prohibited check APPLICABLE at GENUS, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
                 }
               })
@@ -2687,16 +2705,16 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at GENUS, REGION level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at GENUS, REGION level')
       }
 
-      logger.info('unprohibitedCheckAtGenusRegionLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtGenusRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckkAtGenusAllLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED check at GENUS, ALL level')
+      logger?.info('Starting UN-PROHIBITED check at GENUS, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2720,7 +2738,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at GENUS, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at GENUS, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
             ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2731,17 +2749,17 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at GENUS, All level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at GENUS, All level')
       }
 
-      logger.info('unprohibitedCheckkAtGenusAllLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtGenusAllLevel: ' + counter)
       return plantInfo
     }
 
     // PHIDP-462
     async function unprohibitedCheckAtSubFamilyCountryLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at SUB-FAMILY, COUNTRY level')
+      logger?.info('Starting UN-PROHIBITED checks at SUB-FAMILY, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2767,7 +2785,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at SUB-FAMILY, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at SUB-FAMILY, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2778,18 +2796,20 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'UN-PROHIBITED check APPLICABLE at SUB-FAMILY, COUNTRY level'
         )
       }
 
-      logger.info('unprohibitedCheckAtSubFamilyCountryLevel: ' + counter)
+      logger?.info(
+        'getUnprohibitedAnnex11RulesAtSubFamilyCountryLevel: ' + counter
+      )
       return plantInfo
     }
 
     async function unprohibitedCheckAtSubFamilyRegionLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at SUB-FAMILY, REGION level')
+      logger?.info('Starting UN-PROHIBITED checks at SUB-FAMILY, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2830,7 +2850,7 @@ class ProhibitedStrategy extends workflowEngine {
                 ) {
                   await setPlantAttributes(annex, 'up')
                   annexMatched = true
-                  logger.info(`Un-Prohibited check APPLICABLE at SUB-FAMILY, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+                  logger?.info(`Un-Prohibited check APPLICABLE at SUB-FAMILY, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
                 }
               })
@@ -2843,18 +2863,20 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info(
+        logger?.info(
           'UN-PROHIBITED check APPLICABLE at SUB-FAMILY, REGION level'
         )
       }
 
-      logger.info('unprohibitedCheckAtSubFamilyRegionLevel: ' + counter)
+      logger?.info(
+        'getUnprohibitedAnnex11RulesAtSubFamilyRegionLevel: ' + counter
+      )
       return plantInfo
     }
 
     async function unprohibitedCheckAtSubFamilyAllLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED check at SUB-FAMILY, ALL level')
+      logger?.info('Starting UN-PROHIBITED check at SUB-FAMILY, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2879,7 +2901,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at SUB-FAMILY, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at SUB-FAMILY, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
             ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2890,17 +2912,17 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at SUB-FAMILY, All level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at SUB-FAMILY, All level')
       }
 
-      logger.info('unprohibitedCheckAtSubFamilyAllLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtSubFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
     // PHIDP-462
     async function unprohibitedCheckAtFamilyCountryLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at FAMILY, COUNTRY level')
+      logger?.info('Starting UN-PROHIBITED checks at FAMILY, COUNTRY level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2926,7 +2948,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at FAMILY, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at FAMILY, COUNTRY level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
               ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -2937,16 +2959,18 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at FAMILY, COUNTRY level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at FAMILY, COUNTRY level')
       }
 
-      logger.info('unprohibitedCheckAtFamilyCountryLevel: ' + counter)
+      logger?.info(
+        'getUnprohibitedAnnex11RulesAtFamilyCountryLevel: ' + counter
+      )
       return plantInfo
     }
 
     async function unprohibitedCheckAtFamilyRegionLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED checks at FAMILY, REGION level')
+      logger?.info('Starting UN-PROHIBITED checks at FAMILY, REGION level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -2987,7 +3011,7 @@ class ProhibitedStrategy extends workflowEngine {
                 ) {
                   await setPlantAttributes(annex, 'up')
                   annexMatched = true
-                  logger.info(`Un-Prohibited check APPLICABLE at FAMILY, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+                  logger?.info(`Un-Prohibited check APPLICABLE at FAMILY, REGION level, ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
                 ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
                 }
               })
@@ -3000,16 +3024,16 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at FAMILY, REGION level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at FAMILY, REGION level')
       }
 
-      logger.info('unprohibitedCheckAtFamilyRegionLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtFamilyAllLevel() {
       let annexMatched = false
-      logger.info('Starting UN-PROHIBITED check at FAMILY, ALL level')
+      logger?.info('Starting UN-PROHIBITED check at FAMILY, ALL level')
       counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
@@ -3034,7 +3058,7 @@ class ProhibitedStrategy extends workflowEngine {
             ) {
               await setPlantAttributes(annex, 'up')
               annexMatched = true
-              logger.info(`Un-Prohibited check APPLICABLE at FAMILY, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
+              logger?.info(`Un-Prohibited check APPLICABLE at FAMILY, ALL level,  ${annex.A6_RULE}, ${annex.COUNTRY_NAME}, 
             ${prohibitedObj.country},  ${annex.SERVICE_FORMAT}`)
             }
           }
@@ -3045,15 +3069,15 @@ class ProhibitedStrategy extends workflowEngine {
       if (annexMatched === true) await getAnnex11Rules()
 
       if (plantInfo.annex11RulesArr.length > 0) {
-        logger.info('UN-PROHIBITED check APPLICABLE at FAMILY, All level')
+        logger?.info('UN-PROHIBITED check APPLICABLE at FAMILY, All level')
       }
 
-      logger.info('unprohibitedCheckAtFamilyAllLevel: ' + counter)
+      logger?.info('getUnprohibitedAnnex11RulesAtFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
     async function noAnnex6ItsUnprohibited() {
-      logger.info(
+      logger?.info(
         'Starting UN-PROHIBITED check for Region/All with NO Annex6 entries'
       )
 
@@ -3061,12 +3085,12 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (plantInfo.annex11RulesArr.length > 0) {
         plantInfo.outcome = 'un-prohibited'
-        logger.info(
+        logger?.info(
           `UN-PROHIBITED check APPLICABLE country: ', ${prohibitedObj.country}}`
         )
       }
 
-      logger.info('noAnnex6ItsUnprohibited: ' + counter)
+      logger?.info('noAnnex6ItsUnprohibited: ' + counter)
       return plantInfo
     }
 
@@ -3134,7 +3158,7 @@ class ProhibitedStrategy extends workflowEngine {
       }
 
       plantInfo.pestDetails = pestNames(plantDocument)
-      logger.info('getPests: ' + counter)
+      logger?.info('getPests: ' + counter)
       return plantInfo
     }
   }

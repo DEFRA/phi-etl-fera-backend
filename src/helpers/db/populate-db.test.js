@@ -4,7 +4,6 @@ import {
   readJsonFile,
   loadCombinedDataForPlant
 } from './populate-db'
-import { createLogger } from '~/src/helpers/logging/logger'
 import { MongoClient } from 'mongodb'
 import fs from 'fs/promises'
 import path from 'path'
@@ -16,8 +15,12 @@ jest.mock('path', () => ({
   join: jest.fn()
 }))
 
+jest.mock('~/src/helpers/logging/logger', () => ({
+  createLogger: jest.fn()
+}))
+
 describe('populateDbHandler', () => {
-  let mockClient, logger
+  let mockClient
 
   beforeEach(() => {
     mockClient = {
@@ -26,12 +29,6 @@ describe('populateDbHandler', () => {
     }
 
     MongoClient.mockReturnValue(mockClient)
-
-    logger = {
-      error: jest.fn(),
-      info: jest.fn()
-    }
-    createLogger.mockReturnValue(logger)
 
     fs.readFile.mockResolvedValue(
       JSON.stringify({ PLANT_NAME: [], PLANT_PEST_LINK: [] })

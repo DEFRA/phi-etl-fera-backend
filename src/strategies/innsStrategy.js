@@ -19,7 +19,7 @@ class InnsStrategy extends workflowEngine {
   }
 
   async execute() {
-    logger.info('Check if Annex6 (INNS) rule applies?')
+    logger?.info('Check if Annex6 (INNS) rule applies?')
 
     const plantDocument = this.data
     plantInfo = {
@@ -36,12 +36,12 @@ class InnsStrategy extends workflowEngine {
     const innsStrategyObj = this
     // Level 1 check: Go through host regulations to check if ANNEX6 (INNS) rule is applicable
     // at All country level?
-    logger.info('Level 1: Starting INNS check at Region & All level')
+    logger?.info('Level 1: Starting INNS check at Region & All level')
     if (
       !plantDocument.outcome &&
       Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)
     ) {
-      logger.info('Inside level 1 INNS check - step 1 ')
+      logger?.info('Inside level 1 INNS check - step 1 ')
 
       plantDocument.HOST_REGULATION.ANNEX6.forEach(function (annex) {
         if (
@@ -50,9 +50,9 @@ class InnsStrategy extends workflowEngine {
           annex.A6_RULE.toLowerCase() === innsStrategyObj.type.toLowerCase() &&
           annex.COUNTRY_NAME.toLowerCase() === 'all'
         ) {
-          logger.info('inside level 1 INNS check - step 2 ')
+          logger?.info('inside level 1 INNS check - step 2 ')
 
-          logger.info(
+          logger?.info(
             `Annex6 (INNS) rule applicable for 'all' countries, ${annex.A6_RULE}`
           )
           plantInfo.annexSixRule = annex.A6_RULE
@@ -66,7 +66,7 @@ class InnsStrategy extends workflowEngine {
 
     // Level 2 check: Go through host regulations to check if ANNEX6 (INNS) rule is applicable
     // at the country level?
-    logger.info('Level 2: Starting INNS check at country level')
+    logger?.info('Level 2: Starting INNS check at country level')
     if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
       plantDocument.HOST_REGULATION.ANNEX6.forEach((annex) => {
         if (
@@ -76,8 +76,8 @@ class InnsStrategy extends workflowEngine {
             innsStrategyObj.serviceFormat.toLowerCase() &&
           annex.A6_RULE.toLowerCase() === innsStrategyObj.type.toLowerCase()
         ) {
-          logger.info('inside level 2 check block ')
-          logger.info(
+          logger?.info('inside level 2 check block ')
+          logger?.info(
             `Annex6 (INNS) applicable at country level, ${annex.A6_RULE}`
           )
           plantInfo.annexSixRule = annex.A6_RULE
@@ -145,7 +145,7 @@ class InnsStrategy extends workflowEngine {
 
     plantInfo.pestDetails = pestNames(plantDocument)
 
-    logger.info('Annex6 (INNS) check performed')
+    logger?.info('Annex6 (INNS) check performed')
     return plantInfo
   }
 }

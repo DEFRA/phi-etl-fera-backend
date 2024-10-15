@@ -11,7 +11,7 @@ async function createMongoDBIndexes(db, collectionName, logger, indexes) {
       if (index.name !== '_id_') {
         // Don't drop the default `_id` index
         await collection.dropIndex(index.name)
-        logger.info(
+        logger?.info(
           `Dropped index: ${index.name} on collection: ${collectionName}`
         )
       }
@@ -20,12 +20,12 @@ async function createMongoDBIndexes(db, collectionName, logger, indexes) {
     // Create new indexes
     for (const index of indexes) {
       await collection.createIndex(index.key, { name: index.name })
-      logger.info(
+      logger?.info(
         `Created index: ${index.name} on collection: ${collectionName}`
       )
     }
   } catch (error) {
-    logger.error(
+    logger?.error(
       `Error while managing indexes on collection ${collectionName}:`,
       error
     )
@@ -33,7 +33,7 @@ async function createMongoDBIndexes(db, collectionName, logger, indexes) {
 }
 
 async function runIndexManagement(db, logger) {
-  logger.info('Index management started')
+  logger?.info('Index management started')
   try {
     // Define collections and their respective indexes
     const collectionsWithIndexes = [
@@ -148,10 +148,10 @@ async function runIndexManagement(db, logger) {
       await createMongoDBIndexes(db, name, logger, indexes)
     }
 
-    logger.info('Index management completed successfully')
+    logger?.info('Index management completed successfully')
   } catch (error) {
-    logger.error('Error during the index management process:', error)
+    logger?.error('Error during the index management process:', error)
   }
 }
 
-export { runIndexManagement }
+export { runIndexManagement, createMongoDBIndexes }
