@@ -21,7 +21,7 @@ class WorkflowStrategyFactory {
 }
 
 async function doCountryRegionCheck(db, searchInput) {
-  logger.info(`Get the country grouping , ${searchInput.plantDetails.country}`)
+  logger?.info(`Get the country grouping , ${searchInput.plantDetails.country}`)
 
   const query = {
     'COUNTRY_GROUPING.COUNTRY_GROUPING': {
@@ -37,7 +37,7 @@ async function doCountryRegionCheck(db, searchInput) {
       c.COUNTRY_NAME.toLowerCase() ===
       searchInput.plantDetails.country.toLowerCase()
     ) {
-      logger.info(`country item, ${c.COUNTRY_NAME.toLowerCase()}`)
+      logger?.info(`country item, ${c.COUNTRY_NAME.toLowerCase()}`)
       filteredCountry = c
       return c
     }
@@ -49,7 +49,7 @@ async function doCountryRegionCheck(db, searchInput) {
 
 async function kickStart(searchInput, db) {
   try {
-    logger.info(searchInput)
+    logger?.info(searchInput)
     // Check if there's an INNS rule for the plant, country and serivce format selected
     // by the user on the frontend. This can be identified by HOST_REF feild in the collection
     // as the data is normalised, we dont have to look into multiple collections
@@ -63,13 +63,13 @@ async function kickStart(searchInput, db) {
     })
 
     if (plantDocument === undefined && !plantDocument) {
-      logger.info(
+      logger?.info(
         `Plant document not found for host_ref:, ${searchInput.plantDetails.hostRef}`
       )
       return plantInfo
     } else {
       const countryMapping = await doCountryRegionCheck(db, searchInput)
-      logger.info('trigger - INNS check')
+      logger?.info('trigger - INNS check')
       strategy = new InnsStrategy(
         plantDocument,
         plantNameDoc,
@@ -80,13 +80,13 @@ async function kickStart(searchInput, db) {
       plantInfo = await strategy.execute()
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
-        logger.info(
+        logger?.info(
           `INNS rules Applicable for host_ref, country , ${plantInfo.hostRef}, ${plantInfo.country}`
         )
         return plantInfo
       }
 
-      logger.info('trigger - prohibited check')
+      logger?.info('trigger - prohibited check')
       strategy = new ProhibitedStrategy(
         plantDocument,
         plantNameDoc,
@@ -97,7 +97,7 @@ async function kickStart(searchInput, db) {
       plantInfo = await strategy.execute()
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
-        logger.info(
+        logger?.info(
           `Un-Prohibited, Partially-Prohibited or Prohibited rule Applicable for host_ref, country ${plantInfo.hostRef}, ${plantInfo.country}`
         )
         return plantInfo
@@ -106,7 +106,7 @@ async function kickStart(searchInput, db) {
       return plantInfo
     }
   } catch (error) {
-    logger.error(error)
+    logger?.error(error)
     throw error
   }
 }

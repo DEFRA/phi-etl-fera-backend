@@ -41,7 +41,7 @@ describe('searchController', () => {
 
     await searchController.handler(request, h)
 
-    expect(request.logger.error).toHaveBeenCalledWith(
+    expect(request.logger?.error).toHaveBeenCalledWith(
       'Plant search did not yeild results: Database error'
     )
     expect(h.response).toHaveBeenCalledWith({

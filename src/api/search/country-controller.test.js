@@ -1,6 +1,5 @@
 import { countryController } from './country-controller'
 import { getCountries } from '~/src/api/search/helpers/search-mongodb'
-import { createLogger } from '~/src/helpers/logging/logger'
 
 // Mock the dependencies
 jest.mock('~/src/api/search/helpers/search-mongodb')
@@ -16,9 +15,6 @@ describe('countryController handler', () => {
     h = {
       response: mockResponse
     }
-    createLogger.mockReturnValue({
-      error: jest.fn()
-    })
   })
 
   it('should return 200 and countries list on successful getCountries call', async () => {

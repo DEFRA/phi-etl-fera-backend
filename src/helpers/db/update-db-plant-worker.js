@@ -10,7 +10,7 @@ const isProduction = config.get('isProduction')
 const secureContext = isProduction ? createSecureContext(logger) : undefined
 
 parentPort?.on('message', async (value) => {
-  logger.info(`Update db plant worker starting: ${value}`)
+  logger?.info(`Update db plant worker starting: ${value}`)
   const { db } = await createMongoClient(secureContext, logger)
   await loadData(db)
   parentPort?.postMessage('completed')

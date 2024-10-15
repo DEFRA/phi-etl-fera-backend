@@ -7,7 +7,7 @@ async function searchPlantDetailsDb(db, searchText, logger) {
     const collectionPlant = db.collection('PLANT_DATA')
 
     if (searchText) {
-      logger.info(`input text is ${searchText}`)
+      logger?.info(`input text is ${searchText}`)
       query = {
         PLANT_NAME: {
           $elemMatch: { type: 'LATIN_NAME', NAME: new RegExp(searchText, 'i') }
@@ -83,7 +83,7 @@ async function searchPlantDetailsDb(db, searchText, logger) {
 
     return results
   } catch (error) {
-    logger.info(`Search query failed ${error}`)
+    logger?.info(`Search query failed ${error}`)
     // TODO: Acutal message to be picked from the resource file
     return error.message
   }
@@ -97,7 +97,7 @@ async function getCountries(db, logger) {
     const result = await collectionCountries.find({}).toArray()
     return result
   } catch (error) {
-    logger.info(`Countries could not be fetched ${error}`)
+    logger?.info(`Countries could not be fetched ${error}`)
     // TODO: Acutal message to be picked from the resource file
     return error.message
   }
@@ -112,7 +112,7 @@ async function searchPestDetailsDb(db, searchText, logger) {
     const collectionPest = await db.collection('PEST_DATA')
 
     if (searchText) {
-      logger.info(`input text is ${searchText}`)
+      logger?.info(`input text is ${searchText}`)
       query = {
         PEST_NAME: {
           $elemMatch: { type: 'LATIN_NAME', NAME: new RegExp(searchText, 'i') }
@@ -185,7 +185,7 @@ async function searchPestDetailsDb(db, searchText, logger) {
 
     return results
   } catch (error) {
-    logger.info(`Search query failed ${error}`)
+    logger?.info(`Search query failed ${error}`)
     // TODO: Acutal message to be picked from the resource file
     return error.message
   }
