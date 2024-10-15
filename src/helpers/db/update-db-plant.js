@@ -402,13 +402,6 @@ function mapAnnex11GreatGrandParent(
   // Logic: When compared to mapAnnex11GrandParent, this function reverses the mapping, the comparison
   // is done agains the PLANT_NAME collection, as docsMappedWithPlantNameData does not have GRAND_PARENT_HOST_REF
 
-  /*
-    // The sub-family introduction is recent, retain the below for testing, once stable delete
-    writeFileSync('docsMappedWithPlantNameData.json', JSON.stringify(docsMappedWithPlantNameData, null, 2))
-    writeFileSync('docsFromPlantNameCol.json', JSON.stringify(docsFromPlantNameCol, null, 2))
-    writeFileSync('annex11List.json', JSON.stringify(annex11List, null, 2))
-  */
-
   // Filter for valid entries and map the result
   const resultListGreatGrandParent = docsFromPlantNameCol
     .map((plantName) => {
@@ -418,7 +411,7 @@ function mapAnnex11GreatGrandParent(
         const matchingElement = docsMappedWithPlantNameData.find(
           (mappedPlantName) =>
             mappedPlantName.HOST_REF.toString() ===
-            plantName.GRAND_PARENT_HOST_REF.toString()
+            plantName.GRAND_PARENT_HOST_REF?.toString()
         )
         // If a matching element is found, return the combined object
         if (matchingElement) {
@@ -431,28 +424,16 @@ function mapAnnex11GreatGrandParent(
       return null // Return null if no match or GRAND_PARENT_HOST_REF is invalid
     })
     .filter((element) => element !== null) // Filter out null entries
-
-  // The sub-family introduction is recent, retain the below for testing, once stable delete
-  // Write the resultListGreatGrandParent to a JSON file
-  // writeFileSync('greatgrandplantcol.json', JSON.stringify(resultListGreatGrandParent, null, 2))
-  // logger.info('resultListGreatGrandParent list written to greatgrandplantcol.json')
-
   // Now map the filtered results and associate with ANNEX11 data
   const resultWithAnnex11 = resultListGreatGrandParent.map((rl) => {
     const nx11ListParent = annex11List
       .filter(
-        (nx11) => rl.PARENT_HOST_REF.toString() === nx11.HOST_REF.toString()
+        (nx11) => rl.PARENT_HOST_REF?.toString() === nx11.HOST_REF?.toString()
       ) // Filter by PARENT_HOST_REF
       .filter((x) => x.HOST_REF !== null) // Ensure valid HOST_REF
     // Return the ANNEX11 rules associated with the HOST_REF of the child
     return { HOST_REF: rl.HOST_CHILD_REF, ANNEX11: nx11ListParent }
   })
-
-  // The sub-family introduction is recent, retain the below for testing, once stable delete
-  // Write the resultWithAnnex11 to a JSON file
-  // writeFileSync('greatgrandparentList.json', JSON.stringify(resultWithAnnex11, null, 2))
-  // logger.info('Great Grandparent list written to greatgrandparentList.json')
-
   return resultWithAnnex11
 }
 
@@ -472,7 +453,6 @@ function updateResultListWithAnnex11GreatGrandParent(
     })
   })
 }
-// ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
 
 function updateResultListWithAnnex6(plantDocuments, annex6ResultList) {
   logger.info('updateResultListWithAnnex6 started...')
@@ -562,6 +542,12 @@ function updateResultListWithPestReg(
     plantPestRegList,
     plantDocsFromDB
   )
+
+  const pestRegResultListGreatGrandParent = mapPestRegGreatGrandParent(
+    plantDocuments,
+    plantPestRegList,
+    plantDocsFromDB
+  )
   //* ******************for each plant data record - rl */
   plantDocuments.forEach((rl) => {
     //* ******************for the plant data record picking up each pest link data */
@@ -583,8 +569,8 @@ function updateResultListWithPestReg(
             //* ****************** if not Q & P then check the host_ref of plant data with pest regulation data and qurantine indicator as R  */
           } else if (
             pest?.QUARANTINE_INDICATOR === 'R' &&
-            (rl?.HOST_REF === pest?.HOST_REF ||
-              rl?.PARENT_HOST_REF === pest?.HOST_REF)
+            (rl?.HOST_REF?.toString() === pest?.HOST_REF?.toString() ||
+              rl?.PARENT_HOST_REF?.toString() === pest?.HOST_REF?.toString())
           ) {
             //* ******************If matches update the Regulation information  */
             rlPestLink.REGULATION = pest?.REGULATION
@@ -595,7 +581,7 @@ function updateResultListWithPestReg(
             //* ******************if quarantine indicator is R and plant data -> parent_host_ref matches with pest regulation host ref then update the regulation information  */
           } else if (
             pest?.QUARANTINE_INDICATOR === 'R' &&
-            rl?.PARENT_HOST_REF === pest?.HOST_REF &&
+            rl?.PARENT_HOST_REF?.toString() === pest?.HOST_REF?.toString() &&
             rlPestLink.QUARANTINE_INDICATOR === ''
           ) {
             rlPestLink.REGULATION = pest?.REGULATION
@@ -606,7 +592,8 @@ function updateResultListWithPestReg(
             /** ** Match GrandParent ****/
             pestRegResultListGrandParent.forEach((gp) => {
               if (
-                gp.HOST_REF === pest?.HOST_REF &&
+                pest?.QUARANTINE_INDICATOR === 'R' &&
+                gp?.HOST_REF?.toString() === pest?.HOST_REF?.toString() &&
                 rlPestLink.QUARANTINE_INDICATOR === ''
               ) {
                 rlPestLink.REGULATION = gp?.pestRegList?.REGULATION
@@ -616,6 +603,23 @@ function updateResultListWithPestReg(
                   gp?.pestRegList?.REGULATION_INDICATOR
                 rlPestLink.REGULATION_CATEGORY =
                   gp?.pestRegList?.REGULATION_CATEGORY
+              }
+            })
+
+            /** ** Match GreatGrandParent ****/
+            pestRegResultListGreatGrandParent.forEach((ggp) => {
+              if (
+                pest?.QUARANTINE_INDICATOR === 'R' &&
+                ggp?.HOST_REF?.toString() === pest?.HOST_REF?.toString() &&
+                rlPestLink.QUARANTINE_INDICATOR === ''
+              ) {
+                rlPestLink.REGULATION = ggp?.pestRegList?.REGULATION
+                rlPestLink.QUARANTINE_INDICATOR =
+                  ggp?.pestRegList?.QUARANTINE_INDICATOR
+                rlPestLink.REGULATION_INDICATOR =
+                  ggp?.pestRegList?.REGULATION_INDICATOR
+                rlPestLink.REGULATION_CATEGORY =
+                  ggp?.pestRegList?.REGULATION_CATEGORY
               }
             })
           }
@@ -655,6 +659,52 @@ function pestRegParentListresultList(
     }
   })
 }
+
+// Build a Pest regulation list by finding the great grandparent host_ref
+
+function mapPestRegGreatGrandParent(
+  docsMappedWithPlantNameData,
+  plantPestRegList,
+  docsFromPlantNameCol
+) {
+  logger.info('mapPestRegulationGreatGrandParent started new changes...')
+
+  // writeFileSync('annex11List.json', JSON.stringify(plantPestRegList, null, 2))
+  const resultListGreatGrandParent = docsFromPlantNameCol
+    .map((plantName) => {
+      // Only process records where GRAND_PARENT_HOST_REF is not null or undefined
+      if (plantName.GRAND_PARENT_HOST_REF) {
+        // Find the matching element in PLANT_NAME collection
+        const matchingElement = docsMappedWithPlantNameData.find(
+          (mappedPlantName) =>
+            mappedPlantName.HOST_REF.toString() ===
+            plantName.GRAND_PARENT_HOST_REF.toString()
+        )
+        // If a matching element is found, return the combined object
+        if (matchingElement) {
+          return {
+            ...matchingElement,
+            HOST_CHILD_REF: plantName.HOST_REF // Track child HOST_REF
+          }
+        }
+      }
+      return null // Return null if no match or GRAND_PARENT_HOST_REF is invalid
+    })
+    .filter((element) => element !== null) // Filter out null entries
+
+  const finalPestReg = resultListGreatGrandParent.map((rl) => {
+    const pestRegListParent = plantPestRegList.filter(
+      (pest) => rl?.PARENT_HOST_REF?.toString() === pest?.HOST_REF?.toString()
+    )
+
+    return { HOST_REF: rl.HOST_CHILD_REF, pestRegList: pestRegListParent }
+  })
+
+  logger.info('Great Grandparent list written to greatgrandparentList.json')
+
+  return finalPestReg
+}
+
 function updateResultListWithPestCountry(plantDocuments, pestDistributionList) {
   logger.info('updateResultListWithPestCountry started...')
   const cslRefMap = {}
