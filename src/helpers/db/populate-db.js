@@ -384,16 +384,16 @@ async function loadCombinedDataForPlantAndBuildParents(
   db,
   collectionName
 ) {
-  logger.info('loading Plant_Name_Temp data')
+  logger.info('loading Plant_Name data')
   const filePathServicePlantName = path.join(
     __dirname,
     'data',
-    'PlantDataJson1V0.36Base.json'
+    'plant_name.json'
   )
   const filePathServicePlantNameRest = path.join(
     __dirname,
     'data',
-    'PlantDataJson2V0.36Base.json'
+    'plant_name_rest.json'
   )
 
   const data1 = await readJsonFile(filePathServicePlantName)
@@ -465,7 +465,7 @@ async function loadCombinedDataForPlantAndBuildParents(
     await collection.bulkWrite(bulkOps)
   }
 
-  logger.info('loading of Plant_Name_Temp completed')
+  logger.info('loading of Plant_Name completed')
 }
 
 async function readJsonFile(filePath) {
