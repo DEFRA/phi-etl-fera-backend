@@ -30,6 +30,10 @@ async function doCountryRegionCheck(db, searchInput) {
   }
 
   const countryDetails = await db.collection('COUNTRIES').findOne(query)
+  if (!countryDetails || !countryDetails.COUNTRY_GROUPING) {
+    logger?.info(`No country details found for ${searchInput.plantDetails.country}`);
+    return null;
+  }
 
   let filteredCountry = ''
   countryDetails?.COUNTRY_GROUPING.COUNTRY_GROUPING.filter((c) => {
@@ -56,6 +60,7 @@ async function kickStart(searchInput, db) {
     const plantDocument = await db.collection('PLANT_DATA').findOne({
       HOST_REF: searchInput.plantDetails.hostRef
     })
+    console.log('plantDOOOOOO', plantDocument)
 
     // To handle sub-family related conditions, PHIDP-462
     const plantNameDoc = await db.collection('PLANT_NAME').findOne({
@@ -95,6 +100,7 @@ async function kickStart(searchInput, db) {
         logger
       )
       plantInfo = await strategy.execute()
+      console.log('plantInfo', plantInfo)
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
         logger?.info(

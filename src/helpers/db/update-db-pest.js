@@ -3,7 +3,7 @@ import { pestDetail } from '../models/pestDetail'
 
 const logger = createLogger()
 let isLocked = false
-const updateDbPestHandler = async (request, h) => {
+const updateDbPestHandler = async (request, h, isLocked) => {
   if (isLocked) {
     return h
       .response({
@@ -55,6 +55,7 @@ async function loadData(db) {
     await insertResultList(db, 'PEST_DATA', resultList)
   } catch (err) {
     logger?.error(err)
+    throw err
   } finally {
     isLocked = false
   }

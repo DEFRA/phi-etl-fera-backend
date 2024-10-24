@@ -16,17 +16,19 @@ class ProhibitedStrategy extends workflowEngine {
     countryMapping,
     cdpLogger
   ) {
+    logger = cdpLogger
     super(plantDocument, plantNameDoc, searchInput, countryMapping, cdpLogger)
     this.decision = ''
-    logger = this.loggerObj
+   
     prohibitedObj = this // has reference of an object of this class
 
     // introduced to handle subfamily conditions, PHIDP-462
-    plantGrandParentHostRef = this.plantNameDoc.GRAND_PARENT_HOST_REF
-    plantGreatGrandParentHostRef = this.plantNameDoc.GREAT_GRAND_PARENT_HOST_REF
+    plantGrandParentHostRef = plantNameDoc.GRAND_PARENT_HOST_REF
+    plantGreatGrandParentHostRef = plantNameDoc.GREAT_GRAND_PARENT_HOST_REF
   }
 
   async execute() {
+    console.log('sldlskd', logger)
     logger?.info('Check if Annex6 (PROHIBITED) rule applies?')
 
     // holds the plant details returned from MongoDB for matching host_ref from PLANT_DATA

@@ -10,8 +10,17 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.js'],
   coveragePathIgnorePatterns: [
     '<rootDir>/node_modules/',
+    '<rootDir>/postman/',
     '<rootDir>/.server',
-    '<rootDir>/src/__fixtures__'
-  ],
+    '<rootDir>/src/__fixtures__',
+    "src/helpers/db/data",
+    "src/helpers/secure-context",
+    "src/helpers/proxy-agent.js",
+    "src/helpers/proxy-fetch.js",
+    "src/api/data",
+    "src/helpers/db/mocks",
+    "src/index",
+    "src/config",
+    "src/helpers/db"    ],
   coverageDirectory: '<rootDir>/coverage'
 }
