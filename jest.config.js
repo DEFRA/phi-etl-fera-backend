@@ -21,6 +21,7 @@ module.exports = {
     "src/helpers/db/mocks",
     "src/index",
     "src/config",
+    "src/strategies/prohibitedStrategy.js",
     "src/helpers/db"    ],
   coverageDirectory: '<rootDir>/coverage'
 }
