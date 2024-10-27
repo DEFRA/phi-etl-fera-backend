@@ -29,9 +29,10 @@ async function createMongoClient(secureContext, logger) {
   const databaseName = config.get('mongoDatabase')
   logger.info('Setting up mongodb')
   const client = await MongoClient.connect(mongoUrl.toString(), mongoOptions)
+
   const db = client.db(databaseName)
-  logger.info(`mongodb connected to ${databaseName}`)
   return { client, db }
 }
+
 
 export { createMongoClient, mongoPlugin }

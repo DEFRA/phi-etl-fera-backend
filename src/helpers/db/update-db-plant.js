@@ -11,6 +11,10 @@ import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
 const logger = createLogger()
 let isLocked = false
 
+const collectionNames = ['COUNTRIES', 'SERVICE_FORMAT', 'PLANT_ANNEX6', 'PLANT_ANNEX11', 'PEST_NAME', 'PEST_DATA', 'PLANT_NAME',
+'PLANT_PEST_LINK', 'PLANT_PEST_REG', 'PEST_DISTRIBUTION', 'PEST_DOCUMENT_FCPD', 'PEST_PRA_DATA', 'PEST_PLANT_LINK']
+const viewNames = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
+
 const updateDbPlantHandler = {
   options: {
     timeout: {
@@ -79,7 +83,7 @@ async function loadData(db) {
     const pestDistributionList =
       collections.pestDistributionDocuments[0]?.PEST_DISTRIBUTION || []
 
-    await clearCollectionIfExists(db, 'PLANT_DATA')
+    //await clearCollectionIfExists(db, 'PLANT_DATA')
     const plantDocsWithDataFromPlantName = buildResultList(
       plantDocsFromPlantNameCol
     )
@@ -194,8 +198,64 @@ async function loadData(db) {
 
     await insertResultList(db, plantDocsWithDataFromPlantName)
     logger.info('insertResultList completed')
+    
+    await renameCollections(db, collectionNames)
+    await updateViewsToNewCollections(db, viewNames)
+    await runIndexManagement(db, logger)
+    dropBackUpCollections(db, collectionNames)
+
   } catch (err) {
     logger?.error(err)
+  }
+}
+
+async function renameCollections(db, collections) {
+  for (const collection of collections) {
+    const tempCollection = `${collection}_TEMP`
+    const backupCollection = `${collection}_backup`
+ 
+    try {
+      // Rename the original collection to backup
+      await db.collection(collection).rename(backupCollection)
+      logger.info(`Renamed ${collection} to ${backupCollection}`)
+ 
+      // Rename the temp collection to the original collection name
+      await db.collection(tempCollection).rename(collection)
+      logger.info(`Renamed ${tempCollection} to ${collection}`)
+    } catch (error) {
+      console.error(`Error renaming collections: ${error}`)
+    }
+  }
+}
+
+async function updateViewsToNewCollections(db, collections) {
+  for (const collection of collections) {
+    const viewName = `${collection}_VIEW`
+    try {
+      // Update each view to point to the newly renamed collection
+      await db.command({
+        collMod: viewName,
+        viewOn: collection, // Point view to the new collection name
+      })
+      logger.info(`View ${viewName} now points to ${collection}`)
+    } catch (error) {
+      console.error(`Error updating view ${viewName}: ${error}`)
+    }
+  }
+}
+
+async function dropBackUpCollections(db, collections) {
+  for (const collection of collections) {
+    const backupCollection = `${collection}_backup`
+ 
+    try {
+      // Drop previous backup collection if it exists to prevent accumulation
+      await db.collection(backupCollection).drop().catch(() => {})
+      logger.info(`Dropped previous backup collection: ${backupCollection}`)
+ 
+    } catch (error) {
+      console.error(`Error dropping backup collection ${collection}: ${error}`)
+    }
   }
 }
 
@@ -206,31 +266,31 @@ async function loadCollections(db) {
   )
   const collections = {}
   collections.plantDocuments = await db
-    .collection('PLANT_NAME')
+    .collection('PLANT_NAME_TEMP')
     .find({})
     .toArray()
   collections.annex11Documents = await db
-    .collection('PLANT_ANNEX11')
+    .collection('PLANT_ANNEX11_TEMP')
     .find({})
     .toArray()
   collections.annex6Documents = await db
-    .collection('PLANT_ANNEX6')
+    .collection('PLANT_ANNEX6_TEMP')
     .find({})
     .toArray()
   collections.plantPestLinkDocuments = await db
-    .collection('PLANT_PEST_LINK')
+    .collection('PLANT_PEST_LINK_TEMP')
     .find({})
     .toArray()
   collections.plantPestRegDocuments = await db
-    .collection('PLANT_PEST_REG')
+    .collection('PLANT_PEST_REG_TEMP')
     .find({})
     .toArray()
   collections.pestNameDocuments = await db
-    .collection('PEST_NAME')
+    .collection('PEST_NAME_TEMP')
     .find({})
     .toArray()
   collections.pestDistributionDocuments = await db
-    .collection('PEST_DISTRIBUTION')
+    .collection('PEST_DISTRIBUTION_TEMP')
     .find({})
     .toArray()
 
@@ -756,10 +816,9 @@ function updateResultListWithPestCountry(plantDocuments, pestDistributionList) {
 
 async function insertResultList(db, plantDocuments) {
   logger.info('insertResultList started...')
-  const collectionNew = db.collection('PLANT_DATA')
+  const collectionNew = db.collection('PLANT_DATA_TEMP')
   const result = await collectionNew.insertMany(plantDocuments)
   logger?.info(`${result.insertedCount} plant documents were inserted...`)
-  await runIndexManagement(db, logger)
 }
 
 export {

@@ -53,13 +53,19 @@ const collectionPestDistribution = 'PEST_DISTRIBUTION'
 const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
 const collectionPestPras = 'PEST_PRA_DATA'
 const collectionPestPlantLink = 'PEST_PLANT_LINK'
+const collectionPlantData = 'PLANT_DATA'
+
+const temp = '_TEMP'
+
 let isLocked = false
 let client = ''
+const collections = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
 
 const populateDbHandler = async (request, h) => {
   if (isLocked) {
     return h
       .response({
+
         status: 'Info',
         message:
           '/PopulateDb load in progress, please try again later if required.'
@@ -71,62 +77,59 @@ const populateDbHandler = async (request, h) => {
   try {
     client = new MongoClient(mongoUri)
     await client.connect()
+
+    const db = request.server.db
+    await setupViews(db, collections)
+
     // clear collections before population
-    dropAllCollections(request.server.db)
+    //dropAllCollections(db)
 
     await loadData(
       filePathPlant,
       mongoUri,
-      request.server.db,
-      collectionNamePlant,
+      db,
+      collectionNamePlant + temp,
       2
     )
     await loadData(
       filePathService,
       mongoUri,
-      request.server.db,
-      collectionNameServiceFormat,
+      db,
+      collectionNameServiceFormat + temp,
       1
     )
     await loadData(
       filePathCountry,
       mongoUri,
-      request.server.db,
-      collectionNameCountry,
+      db,
+      collectionNameCountry + temp,
       1
     )
     await loadDataForAnnex6(
       filePathServiceAnnex6,
       mongoUri,
-      request.server.db,
-      collectionNamePlantAnnex6
+      db,
+      collectionNamePlantAnnex6 + temp
     )
     await loadData(
       filePathServiceAnnex11,
       mongoUri,
-      request.server.db,
-      collectionNamePlantAnnex11,
+      db,
+      collectionNamePlantAnnex11 + temp,
       1
     )
     await loadData(
       filePathServicePestName,
       mongoUri,
-      request.server.db,
-      collectionNamePestName,
+      db,
+      collectionNamePestName + temp,
       1
     )
-    // Load PLANT DATA - COMBINED - START
-    // await loadCombinedDataForPlant(
-    //   mongoUri,
-    //   request.server.db,
-    //   collectionNamePlantName,
-    //   1
-    // )
 
-    await loadCombinedDataForPlantAndBuildParents(
+     await loadCombinedDataForPlantAndBuildParents(
       mongoUri,
-      request.server.db,
-      collectionNamePlantName,
+      db,
+      collectionNamePlantName + temp ,
       1
     )
 
@@ -135,39 +138,39 @@ const populateDbHandler = async (request, h) => {
     await loadData(
       filePathServicePlantPestReg,
       mongoUri,
-      request.server.db,
-      collectionNamePlantPestReg,
+      db,
+      collectionNamePlantPestReg + temp,
       1
     )
     await loadData(
       filePathPestDistribution,
       mongoUri,
-      request.server.db,
-      collectionPestDistribution,
+      db,
+      collectionPestDistribution + temp,
       1
     )
     await loadData(
       filePathPestFCPD,
       mongoUri,
-      request.server.db,
-      collectionPestFCPD,
+      db,
+      collectionPestFCPD + temp,
       1
     )
     await loadData(
       filePathPestPras,
       mongoUri,
-      request.server.db,
-      collectionPestPras,
+      db,
+      collectionPestPras + temp,
       1
     )
     await loadData(
       filePathPestPlantLink,
       mongoUri,
-      request.server.db,
-      collectionPestPlantLink,
+      db,
+      collectionPestPlantLink + temp,
       2
     )
-    await buildPlantPestLinkCollection(mongoUri, request.server.db) // PHIDP-462
+    await buildPlantPestLinkCollection(mongoUri, db) // PHIDP-462
 
     return h
       .response({
@@ -181,6 +184,24 @@ const populateDbHandler = async (request, h) => {
   } finally {
     isLocked = false
     await client.close()
+  }
+}
+
+async function setupViews(db, collections) {
+  for (const collection of collections) {
+    const viewName = `${collection}_VIEW`
+    try {
+      // Check if the view already exists if not, create it
+      const viewExists = await db.listCollections({ name: viewName }).hasNext()
+      if (!viewExists) {
+        await db.createCollection(viewName, { viewOn: collection })
+        logger.info(`View ${viewName} created on ${collection}`)
+      } else {
+        logger.info(`View ${viewName} already exists.`)
+      }
+    } catch (error) {
+      console.error(`Error creating view for ${collection}: ${error}`)
+    }
   }
 }
 
@@ -207,15 +228,15 @@ async function dropAllCollections(db) {
 /*
 NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hierachy (HOST_REF, PARENT_HOST_REF,
   GRAND_PARENT_HOST_REF) were being generated manually. Introduction of the 4th level, GREAT_GRAND_PARENT_HOST_REF
-  made generation of relation upto 4 level quite complex. To tackle that, this process has been automated and instead
+  made the manual generation process 4 level quite complex. To tackle that, this process has been automated and instead
   of reading the JSON files manually using loadCombinedDataForPestLink(), buildPlantPestLinkCollection() has been introduce.
 */
 async function buildPlantPestLinkCollection(mongoUri, db) {
   logger.info('Start the processing of Plant-Pest links')
   try {
-    const plantNameCollection = db.collection(collectionNamePlantName)
-    const plantPestLinkCollection = db.collection(collectionNamePlantPestLink)
-    const pestPlantLinkCollection = db.collection(collectionPestPlantLink)
+    const plantNameCollection = db.collection(collectionNamePlantName + temp)
+    const plantPestLinkCollection = db.collection(collectionNamePlantPestLink + temp)
+    const pestPlantLinkCollection = db.collection(collectionPestPlantLink + temp)
 
     // Fetch all documents from PLANT_NAME collection
     const plantDocuments = await plantNameCollection.find({}).toArray()

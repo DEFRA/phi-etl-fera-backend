@@ -4,7 +4,6 @@ let logger = ''
 let plantInfo = ''
 let plantDocument = ''
 let prohibitedObj = ''
-let counter = 0
 let plantGrandParentHostRef = ''
 let plantGreatGrandParentHostRef = ''
 
@@ -209,9 +208,6 @@ class ProhibitedStrategy extends workflowEngine {
     // FINALLY, GET PESTS----------------------------------------------------------------
     plantInfo = await getPests()
 
-    counter += 1
-    logger.info('execute: ' + counter)
-
     logger.info('Annex6 (PROHIBITED) checks performed')
     return plantInfo
 
@@ -220,7 +216,7 @@ class ProhibitedStrategy extends workflowEngine {
     // HOST_REF, COUNTRY
     async function prohibitionCheckAtHostRefCountryLevel() {
       logger.info('Starting Prohibited check at HOST_REF, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -257,13 +253,11 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtHostRefCountryLevel: ' + counter)
       return plantInfo
     }
     // GENUS, COUNTRY
     async function prohibitionCheckAtGenusCountryLevel() {
       logger.info('Starting Prohibited check at GENUS, COUNTRY level')
-      counter += 1
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -302,13 +296,12 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtGenusCountryLevel: ' + counter)
       return plantInfo
     }
     // SUB-FAMILY, COUNTRY (PHIDP-462)
     async function prohibitionCheckAtSubFamilyCountryLevel() {
       logger.info('Starting Prohibited check at SUB-FAMILY, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -347,15 +340,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
         await Promise.all(annexPromises)
       }
-
-      logger.info('prohibitionCheckAtSubFamilyCountryLevel: ' + counter)
       return plantInfo
     }
 
     // FAMILY, COUNTRY
     async function prohibitionCheckAtFamilyCountryLevel() {
       logger.info('Starting Prohibited check at FAMILY, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -395,14 +386,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtFamilyCountryLevel: ' + counter)
       return plantInfo
     }
 
     // HOST_REF, REGION
     async function prohibitionCheckAtHostRefRegionLevel() {
       logger.info('Starting Prohibition check at HOST_REF, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -454,13 +444,12 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtHostRefRegionLevel: ' + counter)
       return plantInfo
     }
     // GENUS, REGION
     async function prohibitionCheckAtGenusRegionLevel() {
       logger.info('Starting Prohibition check at GENUS, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -513,15 +502,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
         await Promise.all(annexPromises)
       }
-
-      logger.info('prohibitionCheckAtGenusRegionLevel: ' + counter)
       return plantInfo
     }
 
     // SUB-FAMILY, REGION
     async function prohibitionCheckAtSubFamilyRegionLevel() {
       logger.info('Starting Prohibition check at SUB-FAMILY, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -576,14 +563,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtSubFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     // FAMILY, REGION
     async function prohibitionCheckAtFamilyRegionLevel() {
       logger.info('Starting Prohibition check at FAMILY, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -638,14 +624,13 @@ class ProhibitedStrategy extends workflowEngine {
         await Promise.all(annexPromises)
       }
 
-      logger.info('prohibitionCheckAtFamilysRegionLevel: ' + counter)
       return plantInfo
     }
 
     // HOST_REF, ALL
     async function prohibitionCheckHostRefAllLevel() {
       logger.info('Starting Prohibition check at HOST_REF, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
@@ -677,14 +662,12 @@ class ProhibitedStrategy extends workflowEngine {
           }
         })
       }
-
-      logger.info('prohibitionCheckHostRefAllLevel: ' + counter)
       return plantInfo
     }
     // GENUS, ALL
     async function prohibitionCheckGenusAllLevel() {
       logger.info('Starting Prohibition check at GENUS, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
@@ -719,14 +702,13 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckGenusAllLevel: ' + counter)
       return plantInfo
     }
 
     // SUB-FAMILY, ALL
     async function prohibitionCheckSubFamilyAllLevel() {
       logger.info('Starting Prohibition check at SUB-FAMILY, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
@@ -762,14 +744,13 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckSubFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
     // FAMILY, ALL
     async function prohibitionCheckFamilyAllLevel() {
       logger.info('Starting Prohibition check at FAMILY, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         plantDocument.HOST_REGULATION.ANNEX6.forEach(async (annex) => {
@@ -805,7 +786,6 @@ class ProhibitedStrategy extends workflowEngine {
         })
       }
 
-      logger.info('prohibitionCheckFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -816,7 +796,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function partiallyProhibitedCheckAtHostRefCountryLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at GENUS, Country level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -857,7 +837,6 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitionCheckAtGenusCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
         logger.info('PARTIALLY PROHIBITED check APPLICABLE at Country level')
       }
@@ -869,7 +848,7 @@ class ProhibitedStrategy extends workflowEngine {
       logger.info(
         'Starting PARTIALLY PROHIBITED check at HOST_REF, REGION level'
       )
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -933,15 +912,13 @@ class ProhibitedStrategy extends workflowEngine {
           'PARTIALLY PROHIBITED check APPLICABLE at HOST_REF, REGION level'
         )
       }
-
-      logger.info('partiallyProhibitionCheckAtHostRefRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtHostRefAllLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at HOST_REF, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -986,14 +963,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('partiallyProhibitionCheckAtHostRefAllLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtGenusCountryLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at GENUS, Country level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1036,7 +1012,6 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitionCheckAtGenusCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
         logger.info('PARTIALLY PROHIBITED check APPLICABLE at Country level')
       }
@@ -1047,7 +1022,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function partiallyProhibitedCheckAtGenusRegionLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at GENUS, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1114,14 +1089,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('partiallyProhibitionCheckAtGenusRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtGenusAllLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at GENUS, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1166,7 +1140,6 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('PARTIALLY PROHIBITED check APPLICABLE at GENUS, ALL level')
       }
 
-      logger.info('partiallyProhibitionCheckAtAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -1176,7 +1149,7 @@ class ProhibitedStrategy extends workflowEngine {
       logger.info(
         'Starting PARTIALLY PROHIBITED check at SUB-FAMILY, Country level'
       )
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1220,7 +1193,6 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitedCheckAtSubFamilyCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
         logger.info('PARTIALLY PROHIBITED check APPLICABLE at SUB-Family level')
       }
@@ -1232,7 +1204,7 @@ class ProhibitedStrategy extends workflowEngine {
       logger.info(
         'Starting PARTIALLY PROHIBITED check at SUB-FAMILY, REGION level'
       )
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1299,8 +1271,6 @@ class ProhibitedStrategy extends workflowEngine {
           'PARTIALLY PROHIBITED check APPLICABLE at SUB-FAMILY, REGION level'
         )
       }
-
-      logger.info('partiallyProhibitedCheckAtSubFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
@@ -1309,7 +1279,7 @@ class ProhibitedStrategy extends workflowEngine {
       logger.info(
         'Starting PARTIALLY PROHIBITED check at SUB-FAMILY, ALL level'
       )
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1357,7 +1327,6 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtSubFamilyAllLevel: ' + counter)
       return plantInfo
     }
     // PHIDP-462
@@ -1367,7 +1336,7 @@ class ProhibitedStrategy extends workflowEngine {
       logger.info(
         'Starting PARTIALLY PROHIBITED check at FAMILY, Country level'
       )
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1411,7 +1380,6 @@ class ProhibitedStrategy extends workflowEngine {
 
       if (annexMatched === true) await getAnnex11Rules()
 
-      logger.info('partiallyProhibitedCheckAtFamilyCountryLevel: ' + counter)
       if (plantInfo.annex11RulesArr.length > 0) {
         logger.info('PARTIALLY PROHIBITED check APPLICABLE at Family level')
       }
@@ -1421,7 +1389,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function partiallyProhibitedCheckAtFamilyRegionLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at FAMILY, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1489,14 +1457,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function partiallyProhibitedCheckAtFamilyAllLevel() {
       let annexMatched = false
       logger.info('Starting PARTIALLY PROHIBITED check at FAMILY, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -1544,7 +1511,6 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('partiallyProhibitedCheckAtFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -2067,7 +2033,7 @@ class ProhibitedStrategy extends workflowEngine {
     }
 
     async function getAnnex11Rules() {
-      counter += 1
+      
       let annex11CountrySpecies = ''
       let annex11RegionSpecies = ''
       let annex11AllSpecies = ''
@@ -2419,7 +2385,6 @@ class ProhibitedStrategy extends workflowEngine {
         a11RulesFetched = true
       }
 
-      logger.info('getAnnex11Rules: ' + counter)
       return plantInfo
     }
 
@@ -2442,7 +2407,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function unprohibitedCheckAtHostRefCountryLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at HOST_REF, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2479,14 +2444,13 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at HOST_REF, Country level')
       }
 
-      logger.info('unprohibitedCheckAtHostRefCountryLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtHostRefRegionLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at HOST_REF, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2540,14 +2504,13 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at HOST_REF, REGION level')
       }
 
-      logger.info('unprohibitedCheckAtHostRefRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtHostRefAllLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED check at ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2583,14 +2546,13 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at HOST_REF, All level')
       }
 
-      logger.info('unprohibitedCheckAtHostRefAllLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtGenusCountryLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at GENUS, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2628,14 +2590,13 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at GENUS, COUNTRY level')
       }
 
-      logger.info('unprohibitedCheckAtGenusCountryLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtGenusRegionLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at GENUS, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2689,15 +2650,13 @@ class ProhibitedStrategy extends workflowEngine {
       if (plantInfo.annex11RulesArr.length > 0) {
         logger.info('UN-PROHIBITED check APPLICABLE at GENUS, REGION level')
       }
-
-      logger.info('unprohibitedCheckAtGenusRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckkAtGenusAllLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED check at GENUS, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2734,7 +2693,6 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at GENUS, All level')
       }
 
-      logger.info('unprohibitedCheckkAtGenusAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -2742,7 +2700,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function unprohibitedCheckAtSubFamilyCountryLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at SUB-FAMILY, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2783,14 +2741,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('unprohibitedCheckAtSubFamilyCountryLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtSubFamilyRegionLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at SUB-FAMILY, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2848,14 +2805,13 @@ class ProhibitedStrategy extends workflowEngine {
         )
       }
 
-      logger.info('unprohibitedCheckAtSubFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtSubFamilyAllLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED check at SUB-FAMILY, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2893,7 +2849,6 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at SUB-FAMILY, All level')
       }
 
-      logger.info('unprohibitedCheckAtSubFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -2901,7 +2856,7 @@ class ProhibitedStrategy extends workflowEngine {
     async function unprohibitedCheckAtFamilyCountryLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at FAMILY, COUNTRY level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -2940,14 +2895,13 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at FAMILY, COUNTRY level')
       }
 
-      logger.info('unprohibitedCheckAtFamilyCountryLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtFamilyRegionLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED checks at FAMILY, REGION level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -3003,14 +2957,13 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at FAMILY, REGION level')
       }
 
-      logger.info('unprohibitedCheckAtFamilyRegionLevel: ' + counter)
       return plantInfo
     }
 
     async function unprohibitedCheckAtFamilyAllLevel() {
       let annexMatched = false
       logger.info('Starting UN-PROHIBITED check at FAMILY, ALL level')
-      counter += 1
+      
 
       if (Array.isArray(plantDocument.HOST_REGULATION.ANNEX6)) {
         const annexPromises = plantDocument.HOST_REGULATION.ANNEX6.map(
@@ -3048,7 +3001,6 @@ class ProhibitedStrategy extends workflowEngine {
         logger.info('UN-PROHIBITED check APPLICABLE at FAMILY, All level')
       }
 
-      logger.info('unprohibitedCheckAtFamilyAllLevel: ' + counter)
       return plantInfo
     }
 
@@ -3065,15 +3017,13 @@ class ProhibitedStrategy extends workflowEngine {
           `UN-PROHIBITED check APPLICABLE country: ', ${prohibitedObj.country}}`
         )
       }
-
-      logger.info('noAnnex6ItsUnprohibited: ' + counter)
       return plantInfo
     }
 
     // #endregion
 
     async function getPests() {
-      counter += 1
+      
 
       const importCountry = prohibitedObj.country.toLowerCase()
       // Get the pests corresponding to the country
@@ -3134,7 +3084,6 @@ class ProhibitedStrategy extends workflowEngine {
       }
 
       plantInfo.pestDetails = pestNames(plantDocument)
-      logger.info('getPests: ' + counter)
       return plantInfo
     }
   }
