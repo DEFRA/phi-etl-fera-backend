@@ -34,5 +34,4 @@ async function createMongoClient(secureContext, logger) {
   return { client, db }
 }
 
-
 export { createMongoClient, mongoPlugin }

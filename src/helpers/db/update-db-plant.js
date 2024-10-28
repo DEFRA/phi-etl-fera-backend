@@ -11,8 +11,22 @@ import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
 const logger = createLogger()
 let isLocked = false
 
-const collectionNames = ['COUNTRIES', 'SERVICE_FORMAT', 'PLANT_ANNEX6', 'PLANT_ANNEX11', 'PEST_NAME', 'PEST_DATA', 'PLANT_NAME',
-'PLANT_PEST_LINK', 'PLANT_PEST_REG', 'PEST_DISTRIBUTION', 'PEST_DOCUMENT_FCPD', 'PEST_PRA_DATA', 'PEST_PLANT_LINK']
+const collectionNames = [
+  'COUNTRIES',
+  'PEST_DATA',
+  'PEST_DISTRIBUTION',
+  'PEST_DOCUMENT_FCPD',
+  'PEST_NAME',
+  'PEST_PLANT_LINK',
+  'PEST_PRA_DATA',
+  'PLANT_ANNEX11',
+  'PLANT_ANNEX6',
+  'PLANT_DATA',
+  'PLANT_NAME',
+  'PLANT_PEST_LINK',
+  'PLANT_PEST_REG',
+  'SERVICE_FORMAT',
+]
 const viewNames = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
 
 const updateDbPlantHandler = {
@@ -83,7 +97,7 @@ async function loadData(db) {
     const pestDistributionList =
       collections.pestDistributionDocuments[0]?.PEST_DISTRIBUTION || []
 
-    //await clearCollectionIfExists(db, 'PLANT_DATA')
+    // await clearCollectionIfExists(db, 'PLANT_DATA')
     const plantDocsWithDataFromPlantName = buildResultList(
       plantDocsFromPlantNameCol
     )
@@ -198,32 +212,41 @@ async function loadData(db) {
 
     await insertResultList(db, plantDocsWithDataFromPlantName)
     logger.info('insertResultList completed')
-    
-    await renameCollections(db, collectionNames)
+
+    await renameCurrentCollectionsAsBackup(db, collectionNames)
+    await updateTempCollectionsAsLatest(db, collectionNames)
     await updateViewsToNewCollections(db, viewNames)
     await runIndexManagement(db, logger)
     dropBackUpCollections(db, collectionNames)
-
   } catch (err) {
     logger?.error(err)
   }
 }
 
-async function renameCollections(db, collections) {
+async function renameCurrentCollectionsAsBackup(db, collections) {
   for (const collection of collections) {
-    const tempCollection = `${collection}_TEMP`
     const backupCollection = `${collection}_backup`
- 
+
     try {
       // Rename the original collection to backup
       await db.collection(collection).rename(backupCollection)
       logger.info(`Renamed ${collection} to ${backupCollection}`)
- 
+    } catch (error) {
+      logger.error(`Error renaming Current collections as backup: ${error}`)
+    }
+  }
+}
+
+async function updateTempCollectionsAsLatest(db, collections) {
+  for (const collection of collections) {
+    const tempCollection = `${collection}_TEMP`
+
+    try {
       // Rename the temp collection to the original collection name
       await db.collection(tempCollection).rename(collection)
       logger.info(`Renamed ${tempCollection} to ${collection}`)
     } catch (error) {
-      console.error(`Error renaming collections: ${error}`)
+      logger.error(`Error renaming Temp collections as Orignial: ${error}`)
     }
   }
 }
@@ -235,11 +258,11 @@ async function updateViewsToNewCollections(db, collections) {
       // Update each view to point to the newly renamed collection
       await db.command({
         collMod: viewName,
-        viewOn: collection, // Point view to the new collection name
+        viewOn: collection // Point view to the new collection name
       })
       logger.info(`View ${viewName} now points to ${collection}`)
     } catch (error) {
-      console.error(`Error updating view ${viewName}: ${error}`)
+      logger.error(`Error updating view ${viewName}: ${error}`)
     }
   }
 }
@@ -247,14 +270,15 @@ async function updateViewsToNewCollections(db, collections) {
 async function dropBackUpCollections(db, collections) {
   for (const collection of collections) {
     const backupCollection = `${collection}_backup`
- 
+
     try {
       // Drop previous backup collection if it exists to prevent accumulation
-      await db.collection(backupCollection).drop().catch(() => {})
-      logger.info(`Dropped previous backup collection: ${backupCollection}`)
- 
+      await db
+        .collection(backupCollection)
+        .drop()
+        logger.info(`Dropped previous backup collection: ${backupCollection}`)
     } catch (error) {
-      console.error(`Error dropping backup collection ${collection}: ${error}`)
+      logger.error(`Error dropping backup collection ${collection}: ${error}`)
     }
   }
 }

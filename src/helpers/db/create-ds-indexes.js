@@ -16,8 +16,7 @@ async function dropMongoDBIndexes(db, collectionName, logger) {
         )
       }
     }
-
-     } catch (error) {
+  } catch (error) {
     logger.error(
       `Error while managing indexes on collection ${collectionName}:`,
       error
@@ -156,7 +155,7 @@ async function runIndexManagement(db, logger) {
     ]
 
     for (const { name } of collectionsWithIndexes) {
-      await  dropMongoDBIndexes(db, name, logger)
+      await dropMongoDBIndexes(db, name, logger)
     }
 
     // Loop through each collection and manage indexes

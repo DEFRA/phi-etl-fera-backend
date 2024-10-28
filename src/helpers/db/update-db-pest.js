@@ -38,7 +38,7 @@ async function loadData(db) {
     const pestFcpdList = await getPestFcpdList(db)
     const plantPestRegList = await getPlantPestRegList(db)
 
-    //await dropCollectionIfExists(db, 'PEST_DATA_TEMP')
+    // await dropCollectionIfExists(db, 'PEST_DATA_TEMP')
 
     const resultList = preparePestDetails(pestList)
     updateResultListWithLinks(

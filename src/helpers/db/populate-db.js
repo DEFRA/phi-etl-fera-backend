@@ -39,33 +39,30 @@ const filePathPestPlantLink = path.join(
 
 const mongoUri = config.get('mongoUri') // Get MongoDB URI from the config
 
-const collectionNamePlant = 'PLANT_DETAIL'
+// const collectionNamePlant = 'PLANT_DETAIL'
 const collectionNameCountry = 'COUNTRIES'
-const collectionNameServiceFormat = 'SERVICE_FORMAT'
-const collectionNamePlantAnnex6 = 'PLANT_ANNEX6'
-const collectionNamePlantAnnex11 = 'PLANT_ANNEX11'
-const collectionNamePestName = 'PEST_NAME'
-const collectionNamePlantName = 'PLANT_NAME'
-
-const collectionNamePlantPestLink = 'PLANT_PEST_LINK'
-const collectionNamePlantPestReg = 'PLANT_PEST_REG'
 const collectionPestDistribution = 'PEST_DISTRIBUTION'
 const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
-const collectionPestPras = 'PEST_PRA_DATA'
+const collectionNamePestName = 'PEST_NAME'
 const collectionPestPlantLink = 'PEST_PLANT_LINK'
-const collectionPlantData = 'PLANT_DATA'
+const collectionPestPras = 'PEST_PRA_DATA'
+const collectionNamePlantAnnex6 = 'PLANT_ANNEX6'
+const collectionNamePlantAnnex11 = 'PLANT_ANNEX11'
+const collectionNamePlantName = 'PLANT_NAME'
+const collectionNamePlantPestLink = 'PLANT_PEST_LINK'
+const collectionNamePlantPestReg = 'PLANT_PEST_REG'
+const collectionNameServiceFormat = 'SERVICE_FORMAT'
 
 const temp = '_TEMP'
 
 let isLocked = false
 let client = ''
-const collections = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
+const viewCollections = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
 
 const populateDbHandler = async (request, h) => {
   if (isLocked) {
     return h
       .response({
-
         status: 'Info',
         message:
           '/PopulateDb load in progress, please try again later if required.'
@@ -79,18 +76,12 @@ const populateDbHandler = async (request, h) => {
     await client.connect()
 
     const db = request.server.db
-    await setupViews(db, collections)
+    await setupViews(db, viewCollections)
 
     // clear collections before population
-    //dropAllCollections(db)
+    // dropAllCollections(db)
 
-    await loadData(
-      filePathPlant,
-      mongoUri,
-      db,
-      collectionNamePlant + temp,
-      2
-    )
+    // await loadData(filePathPlant, mongoUri, db, collectionNamePlant + temp, 2)
     await loadData(
       filePathService,
       mongoUri,
@@ -126,15 +117,12 @@ const populateDbHandler = async (request, h) => {
       1
     )
 
-     await loadCombinedDataForPlantAndBuildParents(
+    await loadCombinedDataForPlantAndBuildParents(
       mongoUri,
       db,
-      collectionNamePlantName + temp ,
+      collectionNamePlantName + temp,
       1
     )
-
-    // await loadCombinedDataForPestLink() - DEPRECATED
-
     await loadData(
       filePathServicePlantPestReg,
       mongoUri,
@@ -149,20 +137,8 @@ const populateDbHandler = async (request, h) => {
       collectionPestDistribution + temp,
       1
     )
-    await loadData(
-      filePathPestFCPD,
-      mongoUri,
-      db,
-      collectionPestFCPD + temp,
-      1
-    )
-    await loadData(
-      filePathPestPras,
-      mongoUri,
-      db,
-      collectionPestPras + temp,
-      1
-    )
+    await loadData(filePathPestFCPD, mongoUri, db, collectionPestFCPD + temp, 1)
+    await loadData(filePathPestPras, mongoUri, db, collectionPestPras + temp, 1)
     await loadData(
       filePathPestPlantLink,
       mongoUri,
@@ -200,30 +176,30 @@ async function setupViews(db, collections) {
         logger.info(`View ${viewName} already exists.`)
       }
     } catch (error) {
-      console.error(`Error creating view for ${collection}: ${error}`)
+      logger.error(`Error creating view for ${collection}: ${error}`)
     }
   }
 }
 
-async function dropAllCollections(db) {
-  logger.info('clear the collections')
+// async function dropAllCollections(db) {
+//   logger.info('clear the collections')
 
-  try {
-    const collections = await db.collections()
+//   try {
+//     const collections = await db.collections()
 
-    if (collections.length === 0) {
-      logger.info('No collections to drop')
-    } else {
-      for (const collection of collections) {
-        await collection.drop()
-        logger.info(`Dropped collection: ${collection.collectionName}`)
-      }
-      logger.info('All collections dropped')
-    }
-  } catch (error) {
-    logger.error('Error while dropping collections:', error)
-  }
-}
+//     if (collections.length === 0) {
+//       logger.info('No collections to drop')
+//     } else {
+//       for (const collection of collections) {
+//         await collection.drop()
+//         logger.info(`Dropped collection: ${collection.collectionName}`)
+//       }
+//       logger.info('All collections dropped')
+//     }
+//   } catch (error) {
+//     logger.error('Error while dropping collections:', error)
+//   }
+// }
 
 /*
 NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hierachy (HOST_REF, PARENT_HOST_REF,
@@ -235,8 +211,12 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
   logger.info('Start the processing of Plant-Pest links')
   try {
     const plantNameCollection = db.collection(collectionNamePlantName + temp)
-    const plantPestLinkCollection = db.collection(collectionNamePlantPestLink + temp)
-    const pestPlantLinkCollection = db.collection(collectionPestPlantLink + temp)
+    const plantPestLinkCollection = db.collection(
+      collectionNamePlantPestLink + temp
+    )
+    const pestPlantLinkCollection = db.collection(
+      collectionPestPlantLink + temp
+    )
 
     // Fetch all documents from PLANT_NAME collection
     const plantDocuments = await plantNameCollection.find({}).toArray()
@@ -343,62 +323,6 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
     logger.info('Annex6 loading failed:', error)
   }
 }
-
-// async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
-//   logger.info('loading Plant_Name data')
-//   const filePathServicePlantName = path.join(
-//     __dirname,
-//     'data',
-//     'plant_name.json'
-//   )
-//   const filePathServicePlantNameRest = path.join(
-//     __dirname,
-//     'data',
-//     'plant_name_rest.json'
-//   )
-
-//   const data1 = await readJsonFile(filePathServicePlantName)
-//   const data2 = await readJsonFile(filePathServicePlantNameRest)
-
-//   const combinedData = [...data1?.PLANT_NAME, ...data2?.PLANT_NAME]
-
-//   // BUILD THE GRAND PARENT AND GREAT GRAND PARENT HIERARCHY
-
-//   // Create a mapping of HOST_REF to plant objects
-//   const plantMap = new Map()
-//   combinedData.forEach((plant) => {
-//     plantMap.set(plant.HOST_REF, { ...plant })
-//   })
-
-//   // Build the hierarchy
-//   combinedData.forEach((plant) => {
-//     const parentRef = String(plant.PARENT_HOST_REF)
-//     if (parentRef && plantMap.has(parentRef)) {
-//       const parentPlant = plantMap.get(parentRef)
-//       plant.GRAND_PARENT_HOST_REF = String(parentPlant.PARENT_HOST_REF) || null
-//       if (
-//         plant.GRAND_PARENT_HOST_REF &&
-//         plantMap.has(plant.GRAND_PARENT_HOST_REF)
-//       ) {
-//         const grandParentPlant = plantMap.get(
-//           String(plant.GRAND_PARENT_HOST_REF)
-//         )
-//         plant.GREAT_GRAND_PARENT_HOST_REF =
-//           grandParentPlant.PARENT_HOST_REF || null
-//       }
-//     }
-//   })
-//   // --------------------------------------------------------
-
-//   try {
-//     const collection = db.collection(collectionName)
-//     await dropCollections(db, collectionName, client)
-//     await collection.insertMany(combinedData)
-//     logger.info('loading of Plant_Name completed')
-//   } catch (error) {
-//     logger.info('loading of Plant_Name failed: ', error)
-//   }
-// }
 
 async function loadCombinedDataForPlantAndBuildParents(
   mongoUri,
