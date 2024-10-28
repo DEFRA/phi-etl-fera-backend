@@ -1,5 +1,5 @@
 // create index on the mongodb collections, if exists
-async function createMongoDBIndexes(db, collectionName, logger, indexes) {
+async function dropMongoDBIndexes(db, collectionName, logger) {
   try {
     const collection = db.collection(collectionName)
 
@@ -16,6 +16,17 @@ async function createMongoDBIndexes(db, collectionName, logger, indexes) {
         )
       }
     }
+  } catch (error) {
+    logger.error(
+      `Error while managing indexes on collection ${collectionName}:`,
+      error
+    )
+  }
+}
+
+async function createMongoDBIndexes(db, collectionName, logger, indexes) {
+  try {
+    const collection = db.collection(collectionName)
 
     // Create new indexes
     for (const index of indexes) {
@@ -142,6 +153,10 @@ async function runIndexManagement(db, logger) {
         ]
       }
     ]
+
+    for (const { name } of collectionsWithIndexes) {
+      await dropMongoDBIndexes(db, name, logger)
+    }
 
     // Loop through each collection and manage indexes
     for (const { name, indexes } of collectionsWithIndexes) {

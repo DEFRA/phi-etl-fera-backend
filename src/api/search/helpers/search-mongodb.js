@@ -4,7 +4,7 @@ async function searchPlantDetailsDb(db, searchText, logger) {
   try {
     let query = {}
     // TODO: Collection name to be read from config file
-    const collectionPlant = db.collection('PLANT_DATA')
+    const collectionPlant = db.collection('PLANT_DATA_VIEW')
 
     if (searchText) {
       logger.info(`input text is ${searchText}`)
@@ -91,7 +91,7 @@ async function searchPlantDetailsDb(db, searchText, logger) {
 
 async function getCountries(db, logger) {
   try {
-    const collectionCountries = db.collection('COUNTRIES')
+    const collectionCountries = db.collection('COUNTRIES_VIEW')
 
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionCountries.find({}).toArray()
@@ -109,7 +109,7 @@ async function searchPestDetailsDb(db, searchText, logger) {
   try {
     let query = {}
     // TODO: Collection name to be read from config file
-    const collectionPest = await db.collection('PEST_DATA')
+    const collectionPest = await db.collection('PEST_DATA_VIEW')
 
     if (searchText) {
       logger.info(`input text is ${searchText}`)
@@ -192,7 +192,7 @@ async function searchPestDetailsDb(db, searchText, logger) {
 }
 async function getpestDetails(db, cslref, logger) {
   try {
-    const collectionPestDetails = await db.collection('PEST_DATA')
+    const collectionPestDetails = await db.collection('PEST_DATA_VIEW')
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionPestDetails
       .find({ CSL_REF: cslref })
@@ -207,7 +207,7 @@ async function getpestDetails(db, cslref, logger) {
 async function getpestplantLink(db, hostref, logger) {
   try {
     hostref = hostref.map(Number)
-    const collectionPestDetails = await db.collection('PLANT_DATA')
+    const collectionPestDetails = await db.collection('PLANT_DATA_VIEW')
     // Find the document containing the COUNTRY_GROUPING array
     const result = await collectionPestDetails
 
