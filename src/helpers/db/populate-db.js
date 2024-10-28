@@ -39,7 +39,6 @@ const filePathPestPlantLink = path.join(
 
 const mongoUri = config.get('mongoUri') // Get MongoDB URI from the config
 
-// const collectionNamePlant = 'PLANT_DETAIL'
 const collectionNameCountry = 'COUNTRIES'
 const collectionPestDistribution = 'PEST_DISTRIBUTION'
 const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
@@ -57,7 +56,6 @@ const temp = '_TEMP'
 
 let isLocked = false
 let client = ''
-const viewCollections = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
 
 const populateDbHandler = async (request, h) => {
   if (isLocked) {
@@ -76,12 +74,7 @@ const populateDbHandler = async (request, h) => {
     await client.connect()
 
     const db = request.server.db
-    await setupViews(db, viewCollections)
 
-    // clear collections before population
-    // dropAllCollections(db)
-
-    // await loadData(filePathPlant, mongoUri, db, collectionNamePlant + temp, 2)
     await loadData(
       filePathService,
       mongoUri,
@@ -162,44 +155,6 @@ const populateDbHandler = async (request, h) => {
     await client.close()
   }
 }
-
-async function setupViews(db, collections) {
-  for (const collection of collections) {
-    const viewName = `${collection}_VIEW`
-    try {
-      // Check if the view already exists if not, create it
-      const viewExists = await db.listCollections({ name: viewName }).hasNext()
-      if (!viewExists) {
-        await db.createCollection(viewName, { viewOn: collection })
-        logger.info(`View ${viewName} created on ${collection}`)
-      } else {
-        logger.info(`View ${viewName} already exists.`)
-      }
-    } catch (error) {
-      logger.error(`Error creating view for ${collection}: ${error}`)
-    }
-  }
-}
-
-// async function dropAllCollections(db) {
-//   logger.info('clear the collections')
-
-//   try {
-//     const collections = await db.collections()
-
-//     if (collections.length === 0) {
-//       logger.info('No collections to drop')
-//     } else {
-//       for (const collection of collections) {
-//         await collection.drop()
-//         logger.info(`Dropped collection: ${collection.collectionName}`)
-//       }
-//       logger.info('All collections dropped')
-//     }
-//   } catch (error) {
-//     logger.error('Error while dropping collections:', error)
-//   }
-// }
 
 /*
 NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hierachy (HOST_REF, PARENT_HOST_REF,
