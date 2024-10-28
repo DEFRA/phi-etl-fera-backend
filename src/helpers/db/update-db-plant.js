@@ -211,13 +211,13 @@ async function loadData(db) {
     logger.info('updateResultListWithPestCountry completed')
 
     await insertResultList(db, plantDocsWithDataFromPlantName)
-    logger.info('insertResultList completed')
+    logger.info('PLANT_DATA load completed')
 
     await renameCurrentCollectionsAsBackup(db, collectionNames)
     await updateTempCollectionsAsLatest(db, collectionNames)
     await updateViewsToNewCollections(db, viewNames)
     await runIndexManagement(db, logger)
-    dropBackUpCollections(db, collectionNames)
+    await dropBackUpCollections(db, collectionNames)
   } catch (err) {
     logger?.error(err)
   }
@@ -232,7 +232,7 @@ async function renameCurrentCollectionsAsBackup(db, collections) {
       await db.collection(collection).rename(backupCollection)
       logger.info(`Renamed ${collection} to ${backupCollection}`)
     } catch (error) {
-      logger.error(`Error renaming Current collections as backup: ${error}`)
+      logger.error(`Error renaming Current collection as backup: ${error}`)
     }
   }
 }
@@ -840,7 +840,7 @@ async function insertResultList(db, plantDocuments) {
   logger.info('insertResultList started...')
   const collectionNew = db.collection('PLANT_DATA_TEMP')
   const result = await collectionNew.insertMany(plantDocuments)
-  logger?.info(`${result.insertedCount} plant documents were inserted...`)
+  logger?.info(`${result.insertedCount} plant documents were inserted in PLANT_DATA ...`)
 }
 
 export {
