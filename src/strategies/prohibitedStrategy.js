@@ -2050,18 +2050,45 @@ class ProhibitedStrategy extends workflowEngine {
       return annex11PlantRule
     }
 
+    // Separate entries with 'other formats' and those without
     function sortAnnex11(a, b) {
-      if (a.BTOM_EUSL > b.BTOM_EUSL) {
-        return 1
+      if (
+        a.SERVICE_SUBFORMAT === 'other formats' &&
+        b.SERVICE_SUBFORMAT !== 'other formats'
+      ) {
+        return 1 // Move 'other formats' to the bottom
+      } else {
+        if (a.BTOM_EUSL > b.BTOM_EUSL) {
+          return 1
+        }
+        if (a.BTOM_EUSL < b.BTOM_EUSL) {
+          return -1
+        }
+        if (a.BTOM_NON_EUSL > b.BTOM_NON_EUSL) {
+          return 1
+        }
+        if (a.BTOM_NON_EUSL < b.BTOM_NON_EUSL) {
+          return -1
+        }
       }
-      if (a.BTOM_EUSL < b.BTOM_EUSL) {
-        return -1
-      }
-      if (a.BTOM_NON_EUSL > b.BTOM_NON_EUSL) {
-        return 1
-      }
-      if (a.BTOM_NON_EUSL < b.BTOM_NON_EUSL) {
-        return -1
+      if (
+        a.SERVICE_SUBFORMAT !== 'other formats' &&
+        b.SERVICE_SUBFORMAT === 'other formats'
+      ) {
+        return -1 // Keep non-'other formats' at the top
+      } else {
+        if (a.BTOM_EUSL > b.BTOM_EUSL) {
+          return 1
+        }
+        if (a.BTOM_EUSL < b.BTOM_EUSL) {
+          return -1
+        }
+        if (a.BTOM_NON_EUSL > b.BTOM_NON_EUSL) {
+          return 1
+        }
+        if (a.BTOM_NON_EUSL < b.BTOM_NON_EUSL) {
+          return -1
+        }
       }
       return 0
     }
