@@ -53,12 +53,12 @@ async function kickStart(searchInput, db) {
     // Check if there's an INNS rule for the plant, country and serivce format selected
     // by the user on the frontend. This can be identified by HOST_REF feild in the collection
     // as the data is normalised, we dont have to look into multiple collections
-    const plantDocument = await db.collection('PLANT_DATA_VIEW').findOne({
+    const plantDocument = await db.collection('PLANT_DATA').findOne({
       HOST_REF: searchInput.plantDetails.hostRef
     })
 
     // To handle sub-family related conditions, PHIDP-462
-    const plantNameDoc = await db.collection('PLANT_NAME_VIEW').findOne({
+    const plantNameDoc = await db.collection('PLANT_NAME').findOne({
       HOST_REF: searchInput.plantDetails.hostRef
     })
 

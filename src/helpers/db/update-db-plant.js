@@ -27,7 +27,6 @@ const collectionNames = [
   'PLANT_PEST_REG',
   'SERVICE_FORMAT'
 ]
-const viewNames = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
 
 const updateDbPlantHandler = {
   options: {
@@ -213,70 +212,40 @@ async function loadData(db) {
     await insertResultList(db, plantDocsWithDataFromPlantName)
     logger.info('PLANT_DATA load completed')
 
-    await renameCurrentCollectionsAsBackup(db, collectionNames)
-    await updateTempCollectionsAsLatest(db, collectionNames)
-    await updateViewsToNewCollections(db, viewNames)
+    await replaceCollections(db, collectionNames)
     await runIndexManagement(db, logger)
-    await dropBackUpCollections(db, collectionNames)
+    await dropTempCollections(db, collectionNames)
   } catch (err) {
     logger?.error(err)
   }
 }
 
-async function renameCurrentCollectionsAsBackup(db, collections) {
-  for (const collection of collections) {
-    const backupCollection = `${collection}_backup`
-
-    try {
-      // Rename the original collection to backup
-      await db.collection(collection).rename(backupCollection)
-      logger.info(`Renamed ${collection} to ${backupCollection}`)
-    } catch (error) {
-      logger.error(`Error renaming Current collection as backup: ${error}`)
-    }
-  }
-}
-
-async function updateTempCollectionsAsLatest(db, collections) {
+async function replaceCollections(db, collections) {
   for (const collection of collections) {
     const tempCollection = `${collection}_TEMP`
 
     try {
-      // Rename the temp collection to the original collection name
-      await db.collection(tempCollection).rename(collection)
-      logger.info(`Renamed ${tempCollection} to ${collection}`)
+      // Step 1: Replace the original collection with the data from the temp collection
+      await db
+        .collection(tempCollection)
+        .aggregate([{ $match: {} }, { $out: collection }])
+      logger.info(`Replaced ${collection} with data from ${tempCollection}`)
     } catch (error) {
-      logger.error(`Error renaming Temp collections as Orignial: ${error}`)
+      logger.error(`Error processing ${collection}: ${error}`)
     }
   }
 }
 
-async function updateViewsToNewCollections(db, collections) {
+async function dropTempCollections(db, collections) {
   for (const collection of collections) {
-    const viewName = `${collection}_VIEW`
-    try {
-      // Update each view to point to the newly renamed collection
-      await db.command({
-        collMod: viewName,
-        viewOn: collection // Point view to the new collection name
-      })
-      logger.info(`View ${viewName} now points to ${collection}`)
-    } catch (error) {
-      logger.error(`Error updating view ${viewName}: ${error}`)
-    }
-  }
-}
-
-async function dropBackUpCollections(db, collections) {
-  for (const collection of collections) {
-    const backupCollection = `${collection}_backup`
+    const tempCollection = `${collection}_TEMP`
 
     try {
       // Drop previous backup collection if it exists to prevent accumulation
-      await db.collection(backupCollection).drop()
-      logger.info(`Dropped previous backup collection: ${backupCollection}`)
+      await db.collection(tempCollection).drop()
+      logger.info(`Dropped TEMP collection: ${tempCollection}`)
     } catch (error) {
-      logger.error(`Error dropping backup collection ${collection}: ${error}`)
+      logger.error(`Error dropping TEMP collection ${collection}: ${error}`)
     }
   }
 }
@@ -840,7 +809,9 @@ async function insertResultList(db, plantDocuments) {
   logger.info('insertResultList started...')
   const collectionNew = db.collection('PLANT_DATA_TEMP')
   const result = await collectionNew.insertMany(plantDocuments)
-  logger?.info(`${result.insertedCount} plant documents were inserted in PLANT_DATA ...`)
+  logger?.info(
+    `${result.insertedCount} plant documents were inserted in PLANT_DATA ...`
+  )
 }
 
 export {
