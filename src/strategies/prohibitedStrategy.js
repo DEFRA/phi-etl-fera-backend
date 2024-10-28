@@ -1993,7 +1993,20 @@ class ProhibitedStrategy extends workflowEngine {
       return annex11PlantRule
     }
 
+    // Separate entries with 'other formats' and those without
     function sortAnnex11(a, b) {
+      if (
+        a.SERVICE_SUBFORMAT === 'other formats' &&
+        b.SERVICE_SUBFORMAT !== 'other formats'
+      ) {
+        return 1 // Move 'other formats' to the bottom
+      }
+      if (
+        a.SERVICE_SUBFORMAT !== 'other formats' &&
+        b.SERVICE_SUBFORMAT === 'other formats'
+      ) {
+        return -1 // Keep non-'other formats' at the top
+      }
       if (a.BTOM_EUSL > b.BTOM_EUSL) {
         return 1
       }
