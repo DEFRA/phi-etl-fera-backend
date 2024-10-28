@@ -5,7 +5,7 @@ import { MongoClient } from 'mongodb'
 import fs from 'fs/promises'
 
 const logger = createLogger()
-const filePathPlant = path.join(__dirname, 'data', 'plantsv1.json')
+// const filePathPlant = path.join(__dirname, 'data', 'plantsv1.json')
 const filePathCountry = path.join(__dirname, 'data', 'countries.json')
 const filePathService = path.join(__dirname, 'data', 'serviceFormat.json')
 const filePathServiceAnnex6 = path.join(__dirname, 'data', 'plant_annex6.json')

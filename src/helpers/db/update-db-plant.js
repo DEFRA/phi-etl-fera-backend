@@ -25,7 +25,7 @@ const collectionNames = [
   'PLANT_NAME',
   'PLANT_PEST_LINK',
   'PLANT_PEST_REG',
-  'SERVICE_FORMAT',
+  'SERVICE_FORMAT'
 ]
 const viewNames = ['PLANT_NAME', 'PLANT_DATA', 'PEST_DATA', 'COUNTRIES']
 
@@ -273,10 +273,8 @@ async function dropBackUpCollections(db, collections) {
 
     try {
       // Drop previous backup collection if it exists to prevent accumulation
-      await db
-        .collection(backupCollection)
-        .drop()
-        logger.info(`Dropped previous backup collection: ${backupCollection}`)
+      await db.collection(backupCollection).drop()
+      logger.info(`Dropped previous backup collection: ${backupCollection}`)
     } catch (error) {
       logger.error(`Error dropping backup collection ${collection}: ${error}`)
     }
