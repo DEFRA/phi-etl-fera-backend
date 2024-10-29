@@ -1,4 +1,4 @@
-import { plantDetail } from '~/src/api/search/helpers/search-mongodb';
+import { plantDetail } from '~/src/api/search/helpers/search-mongodb'
 
 describe('plantDetail configuration', () => {
   it('should validate the configuration schema without errors', () => {
@@ -79,10 +79,12 @@ describe('plantDetail configuration', () => {
       SPECIES_NAME: 'SpeciesName1',
       TAXONOMY: 'Taxonomy1',
       LEVEL_OF_TAXONOMY: 'Level1'
-    };
+    }
 
-    expect(() => plantDetail?.load(config)?.validate({ allowed: 'strict' })).not.toThrow();
-  });
+    expect(() =>
+      plantDetail?.load(config)?.validate({ allowed: 'strict' })
+    ).not.toThrow()
+  })
 
   it('should throw an error for invalid configuration', () => {
     const invalidConfig = {
@@ -162,8 +164,10 @@ describe('plantDetail configuration', () => {
       SPECIES_NAME: 'SpeciesName1',
       TAXONOMY: 'Taxonomy1',
       LEVEL_OF_TAXONOMY: 'Level1'
-    };
+    }
 
-    expect(() => plantDetail.load(invalidConfig).validate({ allowed: 'strict' })).toThrow();
-  });
-});
+    expect(() =>
+      plantDetail.load(invalidConfig).validate({ allowed: 'strict' })
+    ).toThrow()
+  })
+})

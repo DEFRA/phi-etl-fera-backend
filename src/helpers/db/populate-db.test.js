@@ -113,38 +113,44 @@ describe('populateDbHandler', () => {
   describe('readJsonFile', () => {
     it('should read and parse JSON file and should read multiple files and insert combined data into the collection', async () => {
       const mockFilePath = 'mock/path/to/file.json'
-      const mockData = [{
-        PLANT_NAME: [],
-        PLANT_PEST_LINK: []
-      }]
+      const mockData = [
+        {
+          PLANT_NAME: [],
+          PLANT_PEST_LINK: []
+        }
+      ]
 
       const mockData1 = [
         { HOST_REF: '1', PARENT_HOST_REF: '0' },
         { HOST_REF: '2', PARENT_HOST_REF: '1' }
-      ];
+      ]
       const mockData2 = [
         { HOST_REF: '3', PARENT_HOST_REF: '2' },
         { HOST_REF: '4', PARENT_HOST_REF: '3' }
-      ];
+      ]
 
       // Mock the fs.readFile implementation
       require('fs/promises').readFile = jest
         .fn()
         .mockResolvedValueOnce(JSON.stringify(mockData1))
       require('fs/promises').readFile = jest
-      .fn()
-      .mockResolvedValueOnce(JSON.stringify(mockData2))  
+        .fn()
+        .mockResolvedValueOnce(JSON.stringify(mockData2))
 
-      const result = await readJsonFile('~src/helpers/db/data/PlantDataJson1V0.36Base.json')
-      expect(result).toEqual({"PLANT_NAME": [], "PLANT_PEST_LINK": []})
-      const result1 = await readJsonFile('~src/helpers/db/data/PlantDataJson2V0.36Base.json')
+      const result = await readJsonFile(
+        '~src/helpers/db/data/PlantDataJson1V0.36Base.json'
+      )
+      expect(result).toEqual({ PLANT_NAME: [], PLANT_PEST_LINK: [] })
+      const result1 = await readJsonFile(
+        '~src/helpers/db/data/PlantDataJson2V0.36Base.json'
+      )
       // expect(result1).toEqual(mockData2)
 
       const db = {
         collection: jest.fn().mockReturnThis(),
         dropCollection: jest.fn()
       }
-      
+
       jest.spyOn(fs, 'readFile')
       await loadCombinedDataForPlantAndBuildParents(
         'mongodb://localhost:27017',
@@ -155,9 +161,6 @@ describe('populateDbHandler', () => {
     })
   })
 })
-
-
-
 
 // const mockData1 = [
 //   { HOST_REF: '1', PARENT_HOST_REF: '0' },

@@ -1,14 +1,10 @@
-import { InnsStrategy } from '~/src/strategies/innsStrategy';
-import { workflowEngine } from '~/src/strategies/workflowEngine';
-
- 
+import { InnsStrategy } from '~/src/strategies/innsStrategy'
 
 jest.mock('./workflowEngine', () => {
-  
   return {
     workflowEngine: jest.fn().mockReturnThis()
-  };
-});
+  }
+})
 
 jest.mock('~/src/helpers/logging/logger-options', () => ({
   customLevels: {
@@ -22,104 +18,114 @@ jest.mock('~/src/helpers/logging/logger-options', () => ({
 }))
 
 describe('InnsStrategy', () => {
-  let loggerMock;
-  let dbMock;
-  let searchInputMock;
-  let plantDocumentMock;
-  let plantNameDocMock;
-  let countryMappingMock;
-  let cdpLogger;
-  let innsStrategy;
+  let loggerMock
+  let dbMock
+  let searchInputMock
+  let plantDocumentMock
+  let plantNameDocMock
+  let countryMappingMock
+  let cdpLogger
+  let innsStrategy
 
   beforeEach(() => {
-    loggerMock = { info: jest.fn(), error: jest.fn() };
+    loggerMock = { info: jest.fn(), error: jest.fn() }
     dbMock = {
       collection: jest.fn().mockReturnThis(),
       findOne: jest.fn()
-    };
+    }
 
     plantDocumentMock = {
-        EPPO_CODE: 'E123',
-        PLANT_NAME: 'PlantName',
-        HOST_REGULATION: {
-          ANNEX6: [
-            {
-              SERVICE_FORMAT: 'plants for planting',
-              A6_RULE: 'INNS',
-              COUNTRY_NAME: 'all',
-              OVERALL_DECISION: 'prohibited'
-            }
-          ]
-        },
-        PEST_LINK: [
+      EPPO_CODE: 'E123',
+      PLANT_NAME: 'PlantName',
+      HOST_REGULATION: {
+        ANNEX6: [
           {
-            CSL_REF: 'CSL123',
-            PEST_NAME: 'PestName1',
-            FORMAT: 'Format1',
-            QUARANTINE_INDICATOR: 'R',
-            REGULATION_INDICATOR: 'Indicator1',
-            REGULATION_CATEGORY: 'Category1',
-            PEST_COUNTRY: [
-              {
-                COUNTRY_NAME: 'specificCountry',
-                COUNTRY_STATUS: 'Present'
-              }
-            ]
+            SERVICE_FORMAT: 'plants for planting',
+            A6_RULE: 'INNS',
+            COUNTRY_NAME: 'all',
+            OVERALL_DECISION: 'prohibited'
           }
         ]
-      };
+      },
+      PEST_LINK: [
+        {
+          CSL_REF: 'CSL123',
+          PEST_NAME: 'PestName1',
+          FORMAT: 'Format1',
+          QUARANTINE_INDICATOR: 'R',
+          REGULATION_INDICATOR: 'Indicator1',
+          REGULATION_CATEGORY: 'Category1',
+          PEST_COUNTRY: [
+            {
+              COUNTRY_NAME: 'specificCountry',
+              COUNTRY_STATUS: 'Present'
+            }
+          ]
+        }
+      ]
+    }
 
- 
-    searchInputMock = { plantDetails: { country: 'country', serviceFormat: 'format', hostRef: 'ref' } };
-    plantNameDocMock = { HOST_REF: 245 };
-    countryMappingMock = { COUNTRY_NAME: 'country' };
-    cdpLogger = loggerMock;
+    searchInputMock = {
+      plantDetails: {
+        country: 'country',
+        serviceFormat: 'format',
+        hostRef: 'ref'
+      }
+    }
+    plantNameDocMock = { HOST_REF: 245 }
+    countryMappingMock = { COUNTRY_NAME: 'country' }
+    cdpLogger = loggerMock
 
-    dbMock.findOne.mockResolvedValueOnce(plantDocumentMock).mockResolvedValueOnce(plantNameDocMock).mockResolvedValueOnce(countryMappingMock);
-     });
+    dbMock.findOne
+      .mockResolvedValueOnce(plantDocumentMock)
+      .mockResolvedValueOnce(plantNameDocMock)
+      .mockResolvedValueOnce(countryMappingMock)
+  })
 
   it('should execute and return plant info with annexSixRule and outcome', async () => {
     await InnsStrategy.mockImplementation(() => {
       return {
-        execute: jest.fn().mockResolvedValue({ hostRef: 245, country: 'country',  eppoCode: 'E123',
-        plantName: 'PlantName',
-        annexSixRule: 'INNS',
-        annexElevenRule: '',
-        outcome: 'prohibited',
-        pestDetails: [
-          {
-            csl_ref: 'CSL123',
-            name: 'PestName1',
-            format: 'Format1',
-            quarantine_indicator: 'R',
-            regulated_indicator: 'Indicator1',
-            regulation_category: 'Category1',
-            pest_country: {
-              COUNTRY_NAME: 'specificCountry',
-              COUNTRY_STATUS: 'Present'
+        execute: jest.fn().mockResolvedValue({
+          hostRef: 245,
+          country: 'country',
+          eppoCode: 'E123',
+          plantName: 'PlantName',
+          annexSixRule: 'INNS',
+          annexElevenRule: '',
+          outcome: 'prohibited',
+          pestDetails: [
+            {
+              csl_ref: 'CSL123',
+              name: 'PestName1',
+              format: 'Format1',
+              quarantine_indicator: 'R',
+              regulated_indicator: 'Indicator1',
+              regulation_category: 'Category1',
+              pest_country: {
+                COUNTRY_NAME: 'specificCountry',
+                COUNTRY_STATUS: 'Present'
+              }
             }
-          }
-        ] })
-      };
-    });
+          ]
+        })
+      }
+    })
     innsStrategy = await new InnsStrategy(
       plantDocumentMock,
       plantNameDocMock,
       searchInputMock,
       countryMappingMock,
       loggerMock
-    );
+    )
     innsStrategy.type = 'INNS'
     innsStrategy.decision = 'prohibited'
 
-    innsStrategy.serviceFormat = 'Format1';
-    innsStrategy.country = 'specificCountry';
+    innsStrategy.serviceFormat = 'Format1'
+    innsStrategy.country = 'specificCountry'
 
-   
-    const result = await innsStrategy.execute();
-   
+    const result = await innsStrategy.execute()
+
     //  InnsStrategy.mockResolvedValueOnce(cdpLogger);
-
 
     // expect(cdpLogger.info).toHaveBeenCalledWith('Check if Annex6 (INNS) rule applies?');
     // expect(cdpLogger.info).toHaveBeenCalledWith('Level 1: Starting INNS check at Region & All level');
@@ -153,34 +159,38 @@ describe('InnsStrategy', () => {
           }
         }
       ]
-    });
-  });
+    })
+  })
 
   it('should handle no applicable annexSixRule', async () => {
     await InnsStrategy.mockImplementation(() => {
       return {
-        execute: jest.fn().mockResolvedValue({ hostRef: 245, country: 'country',  eppoCode: 'E123',
-        plantName: 'PlantName',
-        annexSixRule: '',
-        annexElevenRule: '',
-        outcome: '',
-        pestDetails: [
-          {
-            csl_ref: 'CSL123',
-            name: 'PestName1',
-            format: 'Format1',
-            quarantine_indicator: 'R',
-            regulated_indicator: 'Indicator1',
-            regulation_category: 'Category1',
-            pest_country: {
-              COUNTRY_NAME: 'specificCountry',
-              COUNTRY_STATUS: 'Present'
+        execute: jest.fn().mockResolvedValue({
+          hostRef: 245,
+          country: 'country',
+          eppoCode: 'E123',
+          plantName: 'PlantName',
+          annexSixRule: '',
+          annexElevenRule: '',
+          outcome: '',
+          pestDetails: [
+            {
+              csl_ref: 'CSL123',
+              name: 'PestName1',
+              format: 'Format1',
+              quarantine_indicator: 'R',
+              regulated_indicator: 'Indicator1',
+              regulation_category: 'Category1',
+              pest_country: {
+                COUNTRY_NAME: 'specificCountry',
+                COUNTRY_STATUS: 'Present'
+              }
             }
-          }
-        ] })
-      };
-    });
-    plantDocumentMock.HOST_REGULATION.ANNEX6 = [];
+          ]
+        })
+      }
+    })
+    plantDocumentMock.HOST_REGULATION.ANNEX6 = []
 
     innsStrategy = await new InnsStrategy(
       plantDocumentMock,
@@ -188,12 +198,11 @@ describe('InnsStrategy', () => {
       searchInputMock,
       countryMappingMock,
       cdpLogger
-    );
-    innsStrategy.serviceFormat = 'Format1';
-    innsStrategy.country = 'specificCountry';
+    )
+    innsStrategy.serviceFormat = 'Format1'
+    innsStrategy.country = 'specificCountry'
 
-
-    const result = await innsStrategy.execute();
+    const result = await innsStrategy.execute()
 
     // expect(cdpLogger.info).toHaveBeenCalledWith('Check if Annex6 (INNS) rule applies?');
     // expect(cdpLogger.info).toHaveBeenCalledWith('Level 1: Starting INNS check at Region & All level');
@@ -222,8 +231,6 @@ describe('InnsStrategy', () => {
           }
         }
       ]
-    });
-  });
-});
-
-
+    })
+  })
+})

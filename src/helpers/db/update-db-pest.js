@@ -38,7 +38,7 @@ async function loadData(db) {
     const pestFcpdList = await getPestFcpdList(db)
     const plantPestRegList = await getPlantPestRegList(db)
 
-    await dropCollectionIfExists(db, 'PEST_DATA')
+    // await dropCollectionIfExists(db, 'PEST_DATA_TEMP')
 
     const resultList = preparePestDetails(pestList)
     updateResultListWithLinks(
@@ -52,7 +52,7 @@ async function loadData(db) {
     updateResultListWithDistribution(resultList, pestDistributionList)
     updatePlantLinksWithNames(resultList, plantList)
     updatePestRegulations(resultList, plantPestRegList)
-    await insertResultList(db, 'PEST_DATA', resultList)
+    await insertResultList(db, 'PEST_DATA_TEMP', resultList)
   } catch (err) {
     logger?.error(err)
     throw err
@@ -62,7 +62,7 @@ async function loadData(db) {
 }
 
 async function getPlantPestRegList(db) {
-  const collection = db.collection('PLANT_PEST_REG')
+  const collection = db.collection('PLANT_PEST_REG_TEMP')
   const documents = await collection.find({}).toArray()
   const plantPestRegList = documents[0]?.PLANT_PEST_REG
   logger?.info(`plantPestRegList: ${plantPestRegList?.length}`)
@@ -70,7 +70,7 @@ async function getPlantPestRegList(db) {
 }
 
 async function getPestList(db) {
-  const collection = db.collection('PEST_NAME')
+  const collection = db.collection('PEST_NAME_TEMP')
   const documents = await collection.find({}).toArray()
   const pestList = documents[0]?.PEST_NAME
   logger?.info(`pestList: ${pestList?.length}`)
@@ -78,17 +78,17 @@ async function getPestList(db) {
 }
 
 async function getPlantPestLinkList(db) {
-  const collection = db.collection('PEST_PLANT_LINK')
+  const collection = db.collection('PEST_PLANT_LINK_TEMP')
   return await collection.find({}).toArray()
 }
 
 async function getPlantList(db) {
-  const collection = db.collection('PLANT_NAME')
+  const collection = db.collection('PLANT_NAME_TEMP')
   return await collection.find({}).toArray()
 }
 
 async function getPestPrasList(db) {
-  const collection = db.collection('PEST_PRA_DATA')
+  const collection = db.collection('PEST_PRA_DATA_TEMP')
   const documents = await collection.find({}).toArray()
   const pestPrasList = documents[0]?.PEST_PRA_DATA
   logger?.info(`pestPrasList: ${pestPrasList?.length}`)
@@ -96,7 +96,7 @@ async function getPestPrasList(db) {
 }
 
 async function getPestFcpdList(db) {
-  const collection = db.collection('PEST_DOCUMENT_FCPD')
+  const collection = db.collection('PEST_DOCUMENT_FCPD_TEMP')
   const documents = await collection.find({}).toArray()
   const pestFcpdList = documents[0]?.PEST_DOCUMENT_FCPD
   logger?.info(`pestFcpdList: ${pestFcpdList?.length}`)
@@ -203,7 +203,7 @@ function updateResultListWithDocuments(resultList, documentList) {
 }
 
 async function getPestDistributionList(db) {
-  const collection = db.collection('PEST_DISTRIBUTION')
+  const collection = db.collection('PEST_DISTRIBUTION_TEMP')
   const documents = await collection.find({}).toArray()
   return documents[0]?.PEST_DISTRIBUTION
 }

@@ -5,7 +5,7 @@ import { MongoClient } from 'mongodb'
 import fs from 'fs/promises'
 
 const logger = createLogger()
-const filePathPlant = path.join(__dirname, 'data', 'plantsv1.json')
+// const filePathPlant = path.join(__dirname, 'data', 'plantsv1.json')
 const filePathCountry = path.join(__dirname, 'data', 'countries.json')
 const filePathService = path.join(__dirname, 'data', 'serviceFormat.json')
 const filePathServiceAnnex6 = path.join(__dirname, 'data', 'plant_annex6.json')
@@ -39,20 +39,21 @@ const filePathPestPlantLink = path.join(
 
 const mongoUri = config.get('mongoUri') // Get MongoDB URI from the config
 
-const collectionNamePlant = 'PLANT_DETAIL'
 const collectionNameCountry = 'COUNTRIES'
-const collectionNameServiceFormat = 'SERVICE_FORMAT'
-const collectionNamePlantAnnex6 = 'PLANT_ANNEX6'
-const collectionNamePlantAnnex11 = 'PLANT_ANNEX11'
-const collectionNamePestName = 'PEST_NAME'
-const collectionNamePlantName = 'PLANT_NAME'
-
-const collectionNamePlantPestLink = 'PLANT_PEST_LINK'
-const collectionNamePlantPestReg = 'PLANT_PEST_REG'
 const collectionPestDistribution = 'PEST_DISTRIBUTION'
 const collectionPestFCPD = 'PEST_DOCUMENT_FCPD'
-const collectionPestPras = 'PEST_PRA_DATA'
+const collectionNamePestName = 'PEST_NAME'
 const collectionPestPlantLink = 'PEST_PLANT_LINK'
+const collectionPestPras = 'PEST_PRA_DATA'
+const collectionNamePlantAnnex6 = 'PLANT_ANNEX6'
+const collectionNamePlantAnnex11 = 'PLANT_ANNEX11'
+const collectionNamePlantName = 'PLANT_NAME'
+const collectionNamePlantPestLink = 'PLANT_PEST_LINK'
+const collectionNamePlantPestReg = 'PLANT_PEST_REG'
+const collectionNameServiceFormat = 'SERVICE_FORMAT'
+
+const temp = '_TEMP'
+
 let isLocked = false
 let client = ''
 
@@ -71,103 +72,74 @@ const populateDbHandler = async (request, h) => {
   try {
     client = new MongoClient(mongoUri)
     await client.connect()
-    // clear collections before population
-    dropAllCollections(request.server.db)
 
-    await loadData(
-      filePathPlant,
-      mongoUri,
-      request.server.db,
-      collectionNamePlant,
-      2
-    )
+    const db = request.server.db
+
     await loadData(
       filePathService,
       mongoUri,
-      request.server.db,
-      collectionNameServiceFormat,
+      db,
+      collectionNameServiceFormat + temp,
       1
     )
     await loadData(
       filePathCountry,
       mongoUri,
-      request.server.db,
-      collectionNameCountry,
+      db,
+      collectionNameCountry + temp,
       1
     )
     await loadDataForAnnex6(
       filePathServiceAnnex6,
       mongoUri,
-      request.server.db,
-      collectionNamePlantAnnex6
+      db,
+      collectionNamePlantAnnex6 + temp
     )
     await loadData(
       filePathServiceAnnex11,
       mongoUri,
-      request.server.db,
-      collectionNamePlantAnnex11,
+      db,
+      collectionNamePlantAnnex11 + temp,
       1
     )
     await loadData(
       filePathServicePestName,
       mongoUri,
-      request.server.db,
-      collectionNamePestName,
+      db,
+      collectionNamePestName + temp,
       1
     )
-    // Load PLANT DATA - COMBINED - START
-    // await loadCombinedDataForPlant(
-    //   mongoUri,
-    //   request.server.db,
-    //   collectionNamePlantName,
-    //   1
-    // )
 
     await loadCombinedDataForPlantAndBuildParents(
       mongoUri,
-      request.server.db,
-      collectionNamePlantName,
+      db,
+      collectionNamePlantName + temp,
       1
     )
-
-    // await loadCombinedDataForPestLink() - DEPRECATED
-
     await loadData(
       filePathServicePlantPestReg,
       mongoUri,
-      request.server.db,
-      collectionNamePlantPestReg,
+      db,
+      collectionNamePlantPestReg + temp,
       1
     )
     await loadData(
       filePathPestDistribution,
       mongoUri,
-      request.server.db,
-      collectionPestDistribution,
+      db,
+      collectionPestDistribution + temp,
       1
     )
-    await loadData(
-      filePathPestFCPD,
-      mongoUri,
-      request.server.db,
-      collectionPestFCPD,
-      1
-    )
-    await loadData(
-      filePathPestPras,
-      mongoUri,
-      request.server.db,
-      collectionPestPras,
-      1
-    )
+    await loadData(filePathPestFCPD, mongoUri, db, collectionPestFCPD + temp, 1)
+    await loadData(filePathPestPras, mongoUri, db, collectionPestPras + temp, 1)
     await loadData(
       filePathPestPlantLink,
       mongoUri,
-      request.server.db,
-      collectionPestPlantLink,
+      db,
+      collectionPestPlantLink + temp,
       2
     )
-    await buildPlantPestLinkCollection(mongoUri, request.server.db) // PHIDP-462
+    await buildPlantPestLinkCollection(mongoUri, db) // PHIDP-462
 
     return h
       .response({
@@ -184,38 +156,22 @@ const populateDbHandler = async (request, h) => {
   }
 }
 
-async function dropAllCollections(db) {
-  logger?.info('clear the collections')
-
-  try {
-    const collections = await db.collections()
-
-    if (collections.length === 0) {
-      logger?.info('No collections to drop')
-    } else {
-      for (const collection of collections) {
-        await collection.drop()
-        logger?.info(`Dropped collection: ${collection.collectionName}`)
-      }
-      logger?.info('All collections dropped')
-    }
-  } catch (error) {
-    logger?.error('Error while dropping collections:', error)
-  }
-}
-
 /*
 NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hierachy (HOST_REF, PARENT_HOST_REF,
   GRAND_PARENT_HOST_REF) were being generated manually. Introduction of the 4th level, GREAT_GRAND_PARENT_HOST_REF
-  made generation of relation upto 4 level quite complex. To tackle that, this process has been automated and instead
+  made the manual generation process 4 level quite complex. To tackle that, this process has been automated and instead
   of reading the JSON files manually using loadCombinedDataForPestLink(), buildPlantPestLinkCollection() has been introduce.
 */
 async function buildPlantPestLinkCollection(mongoUri, db) {
   logger?.info('Start the processing of Plant-Pest links')
   try {
-    const plantNameCollection = db.collection(collectionNamePlantName)
-    const plantPestLinkCollection = db.collection(collectionNamePlantPestLink)
-    const pestPlantLinkCollection = db.collection(collectionPestPlantLink)
+    const plantNameCollection = db.collection(collectionNamePlantName + temp)
+    const plantPestLinkCollection = db.collection(
+      collectionNamePlantPestLink + temp
+    )
+    const pestPlantLinkCollection = db.collection(
+      collectionPestPlantLink + temp
+    )
 
     // Fetch all documents from PLANT_NAME collection
     const plantDocuments = await plantNameCollection.find({}).toArray()
@@ -323,77 +279,21 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
   }
 }
 
-// async function loadCombinedDataForPlant(mongoUri, db, collectionName) {
-//   logger?.info('loading Plant_Name data')
-//   const filePathServicePlantName = path.join(
-//     __dirname,
-//     'data',
-//     'plant_name.json'
-//   )
-//   const filePathServicePlantNameRest = path.join(
-//     __dirname,
-//     'data',
-//     'plant_name_rest.json'
-//   )
-
-//   const data1 = await readJsonFile(filePathServicePlantName)
-//   const data2 = await readJsonFile(filePathServicePlantNameRest)
-
-//   const combinedData = [...data1?.PLANT_NAME, ...data2?.PLANT_NAME]
-
-//   // BUILD THE GRAND PARENT AND GREAT GRAND PARENT HIERARCHY
-
-//   // Create a mapping of HOST_REF to plant objects
-//   const plantMap = new Map()
-//   combinedData.forEach((plant) => {
-//     plantMap.set(plant.HOST_REF, { ...plant })
-//   })
-
-//   // Build the hierarchy
-//   combinedData.forEach((plant) => {
-//     const parentRef = String(plant.PARENT_HOST_REF)
-//     if (parentRef && plantMap.has(parentRef)) {
-//       const parentPlant = plantMap.get(parentRef)
-//       plant.GRAND_PARENT_HOST_REF = String(parentPlant.PARENT_HOST_REF) || null
-//       if (
-//         plant.GRAND_PARENT_HOST_REF &&
-//         plantMap.has(plant.GRAND_PARENT_HOST_REF)
-//       ) {
-//         const grandParentPlant = plantMap.get(
-//           String(plant.GRAND_PARENT_HOST_REF)
-//         )
-//         plant.GREAT_GRAND_PARENT_HOST_REF =
-//           grandParentPlant.PARENT_HOST_REF || null
-//       }
-//     }
-//   })
-//   // --------------------------------------------------------
-
-//   try {
-//     const collection = db.collection(collectionName)
-//     await dropCollections(db, collectionName, client)
-//     await collection.insertMany(combinedData)
-//     logger?.info('loading of Plant_Name completed')
-//   } catch (error) {
-//     logger?.info('loading of Plant_Name failed: ', error)
-//   }
-// }
-
 async function loadCombinedDataForPlantAndBuildParents(
   mongoUri,
   db,
   collectionName
 ) {
-  logger?.info('loading Plant_Name_Temp data')
+  logger.info('loading Plant_Name data')
   const filePathServicePlantName = path.join(
     __dirname,
     'data',
-    'PlantDataJson1V0.36Base.json'
+    'plant_name.json'
   )
   const filePathServicePlantNameRest = path.join(
     __dirname,
     'data',
-    'PlantDataJson2V0.36Base.json'
+    'plant_name_rest.json'
   )
 
   const data1 = await readJsonFile(filePathServicePlantName)
@@ -465,7 +365,7 @@ async function loadCombinedDataForPlantAndBuildParents(
     await collection.bulkWrite(bulkOps)
   }
 
-  logger?.info('loading of Plant_Name_Temp completed')
+  logger.info('loading of Plant_Name completed')
 }
 
 async function readJsonFile(filePath) {

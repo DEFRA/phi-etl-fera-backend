@@ -11,6 +11,10 @@ const isProduction = config.get('isProduction')
 async function createServer() {
   const server = hapi.server({
     port: config.get('port'),
+    state: {
+      // parse and store in request.state
+      strictHeader: false // may also be 'ignore' or 'log'
+    },
     routes: {
       validate: {
         options: {

@@ -31,8 +31,10 @@ async function doCountryRegionCheck(db, searchInput) {
 
   const countryDetails = await db.collection('COUNTRIES').findOne(query)
   if (!countryDetails || !countryDetails.COUNTRY_GROUPING) {
-    logger?.info(`No country details found for ${searchInput.plantDetails.country}`);
-    return null;
+    logger?.info(
+      `No country details found for ${searchInput.plantDetails.country}`
+    )
+    return null
   }
 
   let filteredCountry = ''

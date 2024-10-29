@@ -11,6 +11,23 @@ import { createTranspiledWorker } from '~/src/helpers/db/update-db-plant-worker'
 const logger = createLogger()
 let isLocked = false
 
+const collectionNames = [
+  'COUNTRIES',
+  'PEST_DATA',
+  'PEST_DISTRIBUTION',
+  'PEST_DOCUMENT_FCPD',
+  'PEST_NAME',
+  'PEST_PLANT_LINK',
+  'PEST_PRA_DATA',
+  'PLANT_ANNEX11',
+  'PLANT_ANNEX6',
+  'PLANT_DATA',
+  'PLANT_NAME',
+  'PLANT_PEST_LINK',
+  'PLANT_PEST_REG',
+  'SERVICE_FORMAT'
+]
+
 const updateDbPlantHandler = {
   options: {
     timeout: {
@@ -79,7 +96,7 @@ async function loadData(db) {
     const pestDistributionList =
       collections.pestDistributionDocuments[0]?.PEST_DISTRIBUTION || []
 
-    await clearCollectionIfExists(db, 'PLANT_DATA')
+    // await clearCollectionIfExists(db, 'PLANT_DATA')
     const plantDocsWithDataFromPlantName = buildResultList(
       plantDocsFromPlantNameCol
     )
@@ -193,9 +210,43 @@ async function loadData(db) {
     logger?.info('updateResultListWithPestCountry completed')
 
     await insertResultList(db, plantDocsWithDataFromPlantName)
-    logger?.info('insertResultList completed')
+    logger.info('PLANT_DATA load completed')
+
+    await replaceCollections(db, collectionNames)
+    await runIndexManagement(db, logger)
+    await dropTempCollections(db, collectionNames)
   } catch (err) {
     logger?.error(err)
+  }
+}
+
+async function replaceCollections(db, collections) {
+  for (const collection of collections) {
+    const tempCollection = `${collection}_TEMP`
+
+    try {
+      // Step 1: Replace the original collection with the data from the temp collection
+      await db
+        .collection(tempCollection)
+        .aggregate([{ $match: {} }, { $out: collection }])
+      logger.info(`Replaced ${collection} with data from ${tempCollection}`)
+    } catch (error) {
+      logger.error(`Error processing ${collection}: ${error}`)
+    }
+  }
+}
+
+async function dropTempCollections(db, collections) {
+  for (const collection of collections) {
+    const tempCollection = `${collection}_TEMP`
+
+    try {
+      // Drop previous backup collection if it exists to prevent accumulation
+      await db.collection(tempCollection).drop()
+      logger.info(`Dropped TEMP collection: ${tempCollection}`)
+    } catch (error) {
+      logger.error(`Error dropping TEMP collection ${collection}: ${error}`)
+    }
   }
 }
 
@@ -206,31 +257,31 @@ async function loadCollections(db) {
   )
   const collections = {}
   collections.plantDocuments = await db
-    .collection('PLANT_NAME')
+    .collection('PLANT_NAME_TEMP')
     .find({})
     .toArray()
   collections.annex11Documents = await db
-    .collection('PLANT_ANNEX11')
+    .collection('PLANT_ANNEX11_TEMP')
     .find({})
     .toArray()
   collections.annex6Documents = await db
-    .collection('PLANT_ANNEX6')
+    .collection('PLANT_ANNEX6_TEMP')
     .find({})
     .toArray()
   collections.plantPestLinkDocuments = await db
-    .collection('PLANT_PEST_LINK')
+    .collection('PLANT_PEST_LINK_TEMP')
     .find({})
     .toArray()
   collections.plantPestRegDocuments = await db
-    .collection('PLANT_PEST_REG')
+    .collection('PLANT_PEST_REG_TEMP')
     .find({})
     .toArray()
   collections.pestNameDocuments = await db
-    .collection('PEST_NAME')
+    .collection('PEST_NAME_TEMP')
     .find({})
     .toArray()
   collections.pestDistributionDocuments = await db
-    .collection('PEST_DISTRIBUTION')
+    .collection('PEST_DISTRIBUTION_TEMP')
     .find({})
     .toArray()
 
@@ -767,11 +818,12 @@ function updateResultListWithPestCountry(plantDocuments, pestDistributionList) {
 }
 
 async function insertResultList(db, plantDocuments) {
-  logger?.info('insertResultList started...')
-  const collectionNew = db.collection('PLANT_DATA')
+  logger.info('insertResultList started...')
+  const collectionNew = db.collection('PLANT_DATA_TEMP')
   const result = await collectionNew.insertMany(plantDocuments)
-  logger?.info(`${result.insertedCount} plant documents were inserted...`)
-  await runIndexManagement(db, logger)
+  logger?.info(
+    `${result.insertedCount} plant documents were inserted in PLANT_DATA ...`
+  )
 }
 
 export {

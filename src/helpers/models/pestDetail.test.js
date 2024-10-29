@@ -1,6 +1,3 @@
-import convict from 'convict';
-import { pestDetail } from '~/src/api/search/helpers/search-mongodb';
-
 describe('pestDetail configuration', () => {
   it('should validate the configuration schema without errors', () => {
     const config = {
@@ -50,10 +47,10 @@ describe('pestDetail configuration', () => {
         SPECIES_NAME: 'SpeciesName1',
         TAXONOMY: 'Taxonomy1'
       }
-    };
+    }
 
-    expect(() => config['pestDetail'].validate({ allowed: 'strict' })).toThrow();
-  });
+    expect(() => config.pestDetail.validate({ allowed: 'strict' })).toThrow()
+  })
 
   it('should throw an error for invalid configuration', () => {
     const invalidConfig = {
@@ -103,8 +100,10 @@ describe('pestDetail configuration', () => {
         SPECIES_NAME: 'SpeciesName1',
         TAXONOMY: 'Taxonomy1'
       }
-    };
+    }
 
-    expect(() => invalidConfig['pestDetail'].validate({ allowed: 'strict' })).toThrow();
-  });
-});
+    expect(() =>
+      invalidConfig.pestDetail.validate({ allowed: 'strict' })
+    ).toThrow()
+  })
+})
