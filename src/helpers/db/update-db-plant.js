@@ -213,7 +213,7 @@ async function loadData(db) {
     logger.info('PLANT_DATA load completed')
 
     await renameCurrentCollectionsAsBackup(db, collectionNames)
-    await renameTempCurrentCollectionsAsOriginal(db, collectionNames)
+    await renameTempCollectionsAsOriginal(db, collectionNames)
     await runIndexManagement(db, logger)
     await dropBackupCollections(db, collectionNames)
     logger.info('updatePlant ETL completed successfully')
@@ -224,41 +224,35 @@ async function loadData(db) {
 
 async function renameCurrentCollectionsAsBackup(db, collections) {
   for (const collection of collections) {
-    const backupCollectionName = `${collection}_backup`
-
     try {
-      // Step 1: Replace the original collection with the data from the temp collection
-      // await db
-      //   .collection(tempCollection)
-      //   .aggregate([{ $match: {} }, { $out: collection }])
-      
-      // Step 2: Rename the existing collection to a backup name
+      // Rename the existing collection to a backup name
       const backupCollectionName = `${collection}_backup`
       await db.collection(collection).rename(backupCollectionName)
 
-      logger.info(`Replaced ${collection} with data from ${backupCollectionName}`)
+      logger.info(
+        `Replaced ${collection} with data from ${backupCollectionName}`
+      )
     } catch (error) {
-      logger.error(`Error processing function renameCurrentCollectionsAsBackup ${collection}: ${error}`)
+      logger.error(
+        `Error processing function renameCurrentCollectionsAsBackup ${collection}: ${error}`
+      )
     }
   }
 }
 
-async function renameTempCurrentCollectionsAsOriginal(db, collections) {
+async function renameTempCollectionsAsOriginal(db, collections) {
   for (const collection of collections) {
     const tempCollection = `${collection}_TEMP`
 
     try {
-      // Step 1: Replace the original collection with the data from the temp collection
-      // await db
-      //   .collection(tempCollection)
-      //   .aggregate([{ $match: {} }, { $out: collection }])
-      
-      // Step 3: Rename the temporary collection to the original collection name
+      // Rename the temporary collection to the original collection name
       await db.collection(tempCollection).rename(collection)
 
       logger.info(`Replaced ${collection} with data from ${tempCollection}`)
     } catch (error) {
-      logger.error(`Error processing function renameTempCurrentCollectionsAsOriginal ${collection}: ${error}`)
+      logger.error(
+        `Error processing function renameTempCurrentCollectionsAsOriginal ${collection}: ${error}`
+      )
     }
   }
 }
