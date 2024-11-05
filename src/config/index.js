@@ -94,6 +94,33 @@ const config = convict({
     format: String,
     default: '10000',
     env: 'READ_TIMEOUT'
+  },
+  aws: {
+    region: {
+      doc: 'AWS region',
+      format: String,
+      default: 'eu-west-2',
+      env: 'AWS_REGION'
+    },
+    s3: {
+      endpoint: {
+        doc: 'AWS S3 endpoint',
+        format: String,
+        default: 'http://localhost:4566',
+        env: 'S3_ENDPOINT'
+      },
+      forcePathStyle: {
+        doc: 'AWS S3 forcePathStyle option',
+        format: Boolean,
+        default: process.env.NODE_ENV !== 'production'
+      }
+    }
+  },
+  s3BucketConfig : {
+    doc: 'aws s3 bucket',
+    format: String,
+    default: 's3://dev-phi-etl-fera-backend-c63f2/',
+    env: 'S3_BUCKET'
   }
 })
 
