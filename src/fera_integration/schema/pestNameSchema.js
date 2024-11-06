@@ -1,23 +1,23 @@
 import convict from 'convict'
- 
+
 const pestMongoSchema = convict({
   CSL_REF: {
-    doc: "Reference ID for the pest",
+    doc: 'Reference ID for the pest',
     format: 'int',
     default: null
   },
   EPPO_CODE: {
-    doc: "EPPO code for the pest",
-    format:  '*',
+    doc: 'EPPO code for the pest',
+    format: '*',
     default: ''
   },
   LATIN_NAME: {
-    doc: "Latin name of the pest",
+    doc: 'Latin name of the pest',
     format: String,
     default: ''
   },
   COMMON_NAME: {
-    doc: "Common name object containing IDs and names",
+    doc: 'Common name object containing IDs and names',
     format: Object,
     default: {
       COMMON_NAME_ID: [],
@@ -25,7 +25,7 @@ const pestMongoSchema = convict({
     }
   },
   SYNONYM_NAME: {
-    doc: "Synonym name object containing IDs and names",
+    doc: 'Synonym name object containing IDs and names',
     format: Object,
     default: {
       SYNONYM_NAME_ID: [],
@@ -33,8 +33,5 @@ const pestMongoSchema = convict({
     }
   }
 })
- 
+
 export default pestMongoSchema
-
-
-

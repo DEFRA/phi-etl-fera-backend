@@ -1,30 +1,20 @@
-// import s3 from './config/s3Config'
-
-// export const saveToS3 = async (data, fileName) => {
-//   const params = {
-//     Bucket: 'bucket-name',
-//     Key: `${fileName}.json`,
-//     Body: JSON.stringify(data),
-//     ContentType: 'application/json'
-//   }
-
-//   try {
-//     await s3.upload(params).promise()
-//     // console.log(`${fileName} saved to S3`)
-//   } catch (error) {
-//     // console.error(`Error saving ${fileName} to S3:`, error.message)
-//   }
-// }
-
 import { PutObjectCommand } from '@aws-sdk/client-s3'
- 
-function uploadS3File(request, key, bucket) {
+import s3Client from './config/s3Config'
+
+async function uploadS3File(key, bucket, data, logger) {
   const command = new PutObjectCommand({
     Bucket: bucket,
-    Key: key
+    Key: key,
+    Body: JSON.stringify(data), // Adding the file content
+    ContentType: 'application/json' // Specifying content type
   })
- 
-  return request.s3Client.send(command)
+
+  try {
+    await s3Client.send(command)
+    logger.info(`${key} saved to S3`)
+  } catch (error) {
+    logger.error(`Error uploading ${key} to S3:`, error.message)
+  }
 }
- 
+
 export { uploadS3File }

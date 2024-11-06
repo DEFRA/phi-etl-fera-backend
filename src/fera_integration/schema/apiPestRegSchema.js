@@ -1,58 +1,58 @@
 import convict from 'convict'
- 
+
 const pestRegulationApiSchema = convict({
   PestRef: {
-    doc: "Reference ID for the pest",
+    doc: 'Reference ID for the pest',
     format: Number,
     default: null
   },
   ArrayRegulation: {
-    doc: "Array of regulations",
+    doc: 'Array of regulations',
     format: Array,
     default: [],
     children: {
       RegulationID: {
-        doc: "Regulation ID",
+        doc: 'Regulation ID',
         format: Number,
         default: null
       },
       Regulation: {
-        doc: "Regulation name",
+        doc: 'Regulation name',
         format: String,
         default: ''
       },
       RegulationCategoryId: {
-        doc: "Regulation category ID",
+        doc: 'Regulation category ID',
         format: Number,
         default: null
       },
       RegulationCategory: {
-        doc: "Category of the regulation",
+        doc: 'Category of the regulation',
         format: String,
         default: ''
       },
       RegulationCategoryDescription: {
-        doc: "Description of the regulation category",
+        doc: 'Description of the regulation category',
         format: String,
         default: null
       },
       ArrayRegulationHost: {
-        doc: "Array of regulation hosts",
+        doc: 'Array of regulation hosts',
         format: Array,
         default: [],
         children: {
           HostRef: {
-            doc: "Host reference ID",
+            doc: 'Host reference ID',
             format: Number,
             default: null
           },
           HostFormatId: {
-            doc: "Host format ID",
+            doc: 'Host format ID',
             format: Number,
             default: null
           },
           HostFormat: {
-            doc: "Host format name",
+            doc: 'Host format name',
             format: String,
             default: null
           }
@@ -61,5 +61,5 @@ const pestRegulationApiSchema = convict({
     }
   }
 })
- 
+
 export default pestRegulationApiSchema

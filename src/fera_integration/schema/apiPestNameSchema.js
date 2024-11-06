@@ -1,5 +1,5 @@
 import convict from 'convict'
- 
+
 // Custom format to handle both numbers and arrays of numbers
 convict.addFormat({
   name: 'numberOrArray',
@@ -9,80 +9,78 @@ convict.addFormat({
     }
   }
 })
- 
+
 const pestApiSchema = convict({
   PestRef: {
-    doc: "Pest reference ID",
+    doc: 'Pest reference ID',
     format: Number,
     default: null
   },
   ParentPestRef: {
-    doc: "Parent pest reference, can be a number or array of numbers",
-    format:  '*',
+    doc: 'Parent pest reference, can be a number or array of numbers',
+    format: '*',
     default: null
   },
   EppoCode: {
-    doc: "EPPO code for the pest",
-    format:  '*',
+    doc: 'EPPO code for the pest',
+    format: '*',
     default: ''
   },
   LatinName: {
-    doc: "Latin name of the pest",
+    doc: 'Latin name of the pest',
     format: String,
     default: ''
   },
   Kingdom: {
-    doc: "Kingdom of the pest",
-    format:  '*',
+    doc: 'Kingdom of the pest',
+    format: '*',
     default: ''
   },
   Phylum: {
-    doc: "Phylum of the pest",
+    doc: 'Phylum of the pest',
     format: '*',
     default: ''
   },
   Class: {
-    doc: "Class of the pest",
-    format:  '*',
+    doc: 'Class of the pest',
+    format: '*',
     default: null
   },
   Order: {
-    doc: "Order of the pest",
+    doc: 'Order of the pest',
     format: '*',
     default: null
   },
   Family: {
-    doc: "Family of the pest",
-    format:  '*',
+    doc: 'Family of the pest',
+    format: '*',
     default: null
   },
   Genus: {
-    doc: "Genus of the pest",
-    format:  '*',
+    doc: 'Genus of the pest',
+    format: '*',
     default: ''
   },
   Species: {
-    doc: "Species of the pest",
-    format:  '*',
+    doc: 'Species of the pest',
+    format: '*',
     default: null
   },
-  "TaxonomicLevel (F/G/S)": {
-    doc: "Taxonomic level (Family, Genus, Species)",
+  'TaxonomicLevel (F/G/S)': {
+    doc: 'Taxonomic level (Family, Genus, Species)',
     format: String,
     default: ''
   },
   ArrayPestCommonNames: {
-    doc: "Array of pest common names",
+    doc: 'Array of pest common names',
     format: '*',
     default: null
   },
   ArrayPestSynonyms: {
-    doc: "Array of pest synonyms",
-    format:  '*',
+    doc: 'Array of pest synonyms',
+    format: '*',
     default: null
   }
 })
- 
+
 export default pestApiSchema
-
-

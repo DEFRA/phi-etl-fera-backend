@@ -95,6 +95,20 @@ const config = convict({
     default: '10000',
     env: 'READ_TIMEOUT'
   },
+  fera: {
+    cert: {
+      doc: 'base64 encoded string',
+      format: '*',
+      default: '',
+      env: 'FERA_CERT'
+    },
+    pwd: {
+      doc: 'FERA env pwd',
+      format: '*',
+      default: '',
+      env: 'FERA_PWD'
+    }
+  },
   aws: {
     region: {
       doc: 'AWS region',
@@ -116,7 +130,7 @@ const config = convict({
       }
     }
   },
-  s3BucketConfig : {
+  s3BucketConfig: {
     doc: 'aws s3 bucket',
     format: String,
     default: 's3://dev-phi-etl-fera-backend-c63f2/',
