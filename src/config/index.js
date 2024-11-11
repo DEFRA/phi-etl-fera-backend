@@ -107,6 +107,12 @@ const config = convict({
       format: '*',
       default: '',
       env: 'FERA_PWD'
+    },
+    key: {
+      doc: 'FERA Cert Key',
+      format: '*',
+      default: '',
+      env: 'FERA_KEY'
     }
   },
   aws: {
@@ -133,7 +139,7 @@ const config = convict({
   s3BucketConfig: {
     doc: 'aws s3 bucket',
     format: String,
-    default: 's3://dev-phi-etl-fera-backend-c63f2/',
+    default: 'dev-phi-etl-fera-backend-c63f2',
     env: 'S3_BUCKET'
   }
 })

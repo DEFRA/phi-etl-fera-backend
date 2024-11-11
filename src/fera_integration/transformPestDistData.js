@@ -43,15 +43,19 @@ export const transformPestRiskData = async (data) => {
       return distributionRecords
     })
   )
+  return transformedData
 
-  // Log a sample of the transformed data for verification
-  // console.log(`Transformed Data Length: ${transformedData.length}`)
-  // console.log(`Sample Record: ${JSON.stringify(transformedData[0], null, 2)}`)
+  // ============================================================================================
+  // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY
+  // ============================================================================================
+  // // Log a sample of the transformed data for verification
+  // // console.log(`Transformed Data Length: ${transformedData.length}`)
+  // // console.log(`Sample Record: ${JSON.stringify(transformedData[0], null, 2)}`)
 
-  // Write transformed data to file
-  const outputPath = path.resolve(
-    'C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/PestDistributionData-transformed.json'
-  )
-  await writeFile(outputPath, JSON.stringify(transformedData, null, 2), 'utf-8')
-  // console.log(`Output successfully written to ${outputPath}`)
+  // // Write transformed data to file
+  // const outputPath = path.resolve(
+  //   'C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/PestDistributionData-transformed.json'
+  // )
+  // await writeFile(outputPath, JSON.stringify(transformedData, null, 2), 'utf-8')
+  // // console.log(`Output successfully written to ${outputPath}`)
 }

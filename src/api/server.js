@@ -51,7 +51,7 @@ async function createServer() {
 
   await server.register({ plugin: mongoPlugin, options: {} })
   await server.register(router)
-  await server.register(s3Client)
+  await server.register({plugin: s3Client.plugin, options:s3Client.options})
 
   return server
 }

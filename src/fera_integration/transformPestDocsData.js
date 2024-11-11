@@ -58,15 +58,20 @@ export const transformPestDocumentsData = async (data) => {
 
   // Wrap the transformed data in the root structure required by MongoDB
   const outputData = { PEST_DOCUMENT_FCPD: transformedData }
+  return outputData
 
-  // Log a sample of the transformed data for verification
-  // console.log(`Transformed Data Length: ${transformedData.length}`)
-  // console.log(`Sample Record: ${JSON.stringify(transformedData[0], null, 2)}`)
+  // ============================================================================================
+  // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY
+  // ============================================================================================
 
-  // Write transformed data to file
-  const outputPath = path.resolve(
-    'C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/PestDocumentsData-transformed.json'
-  )
-  await writeFile(outputPath, JSON.stringify(outputData, null, 2), 'utf-8')
-  // console.log(`Output successfully written to ${outputPath}`)
+  // // Log a sample of the transformed data for verification
+  // // console.log(`Transformed Data Length: ${transformedData.length}`)
+  // // console.log(`Sample Record: ${JSON.stringify(transformedData[0], null, 2)}`)
+
+  // // Write transformed data to file
+  // const outputPath = path.resolve(
+  //   'C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/PestDocumentsData-transformed.json'
+  // )
+  // await writeFile(outputPath, JSON.stringify(outputData, null, 2), 'utf-8')
+  // // console.log(`Output successfully written to ${outputPath}`)
 }
