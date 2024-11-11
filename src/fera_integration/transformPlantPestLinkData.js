@@ -1,6 +1,6 @@
 import plantPestLinkApiSchema from './schema/apiPlantPestLinkSchema'
 import plantPestLinkMongoSchema from './schema/plantPestLinkSchema'
-import { logAndWriteTransformedData } from './utility/dataUtil.js'
+// import { logAndWriteTransformedData } from './utility/dataUtil.js'
 
 const apiToMongoFieldMap = {
   HostRef: 'HOST_REF',

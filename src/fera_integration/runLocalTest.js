@@ -14,23 +14,33 @@ const filePath =
   'C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110'
 const runLocalTest = async () => {
   try {
-    const filePathPlantName = path.resolve(filePath + '/PLANT_NAME/plantNames.json')
+    const filePathPlantName = path.resolve(
+      filePath + '/PLANT_NAME/plantNames.json'
+    )
     const apiDataPlantName = await readJsonFile(filePathPlantName) // Replace with your actual file path
     await transformPlantNameData(apiDataPlantName)
 
-    const filePathPestName = path.resolve(filePath + '/PEST_NAME/pestNames.json')
+    const filePathPestName = path.resolve(
+      filePath + '/PEST_NAME/pestNames.json'
+    )
     const apiDataPestName = await readJsonFile(filePathPestName) // Replace with your actual file path
     await transformPestData(apiDataPestName)
 
-    const filePathPestReg = path.resolve(filePath + '/PEST_REGULATIONS/pestRegulations.json')
+    const filePathPestReg = path.resolve(
+      filePath + '/PEST_REGULATIONS/pestRegulations.json'
+    )
     const apiDataPestReg = await readJsonFile(filePathPestReg) // Replace with your actual file path
     await transformPestRegulationData(apiDataPestReg)
 
-    const filePathPestRisk = path.resolve(filePath + '/PEST_DISTRIBUTION/pestRisks.json')
+    const filePathPestRisk = path.resolve(
+      filePath + '/PEST_DISTRIBUTION/pestRisks.json'
+    )
     const apiDataPestRisk = await readJsonFile(filePathPestRisk) // Replace with your actual file path
     await transformPestRiskData(apiDataPestRisk)
 
-    const filePathPestDocs = path.resolve(filePath + '/PEST_DOCUMENTS/pestDocuments.json')
+    const filePathPestDocs = path.resolve(
+      filePath + '/PEST_DOCUMENTS/pestDocuments.json'
+    )
     const apiDataPestDocs = await readJsonFile(filePathPestDocs) // Replace with your actual file path
     await transformPestDocumentsData(apiDataPestDocs)
   } catch (error) {

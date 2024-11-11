@@ -1,6 +1,6 @@
 import apiSchema from './schema/apiPlantNameSchema.js'
 import plantSchema from './schema/plantNameSchema.js'
-import { logAndWriteTransformedData } from './utility/dataUtil.js'
+// import { logAndWriteTransformedData } from './utility/dataUtil.js'
 
 const apiToMongoFieldMap = {
   HostRef: 'HOST_REF',

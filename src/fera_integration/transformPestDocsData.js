@@ -1,6 +1,6 @@
 import pestDocumentsApiSchema from './schema/apiPestDocsSchema.js'
 import pestDocumentsMongoSchema from './schema/pestDocsSchema.js'
-import { logAndWriteTransformedData } from './utility/dataUtil.js'
+// import { logAndWriteTransformedData } from './utility/dataUtil.js'
 
 const apiToMongoFieldMap = {
   PestRef: 'CSL_REF',

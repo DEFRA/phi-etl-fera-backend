@@ -25,7 +25,7 @@ export const fetchApiData = async (route, logger) => {
     logger.info(`Invoked FERA API: ${baseURL}/${route}`)
 
     const response = await axios.get(`${baseURL}/${route}`, {
-      httpsAgent: httpsAgent, // Include the custom HTTPS agent
+      httpsAgent, // Include the custom HTTPS agent
       headers: {
         'Content-Type': 'application/json'
       }

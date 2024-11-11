@@ -1,6 +1,6 @@
 import pestRegulationApiSchema from './schema/apiPestRegSchema.js'
 import pestRegulationMongoSchema from './schema/plantPestRegSchema.js'
-import { logAndWriteTransformedData } from './utility/dataUtil.js'
+// import { logAndWriteTransformedData } from './utility/dataUtil.js'
 
 const apiToMongoFieldMap = {
   PestRef: 'CSL_REF',
@@ -64,7 +64,7 @@ export const transformPestRegulationData = async (data) => {
     })
   )
   return transformedData
-  
+
   // ============================================================================================
   // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY, DELETE WHEN DONE
   // ============================================================================================

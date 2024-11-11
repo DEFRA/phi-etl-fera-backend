@@ -7,7 +7,7 @@ async function uploadS3File(request, key, bucket, data, logger) {
   // console.log('BUCKET:' + bucket)
   const command = new PutObjectCommand({
     Bucket: bucket,
-    Key: '${key}.json',
+    Key: `${key}.json`,
     Body: JSON.stringify(data), // Adding the file content
     ContentType: 'application/json' // Specifying content type
   })
