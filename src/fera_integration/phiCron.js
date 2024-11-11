@@ -84,4 +84,3 @@ export const runJob = async (request, bucket) => {
     }
   }
 }
-
