@@ -212,40 +212,61 @@ async function loadData(db) {
     await insertResultList(db, plantDocsWithDataFromPlantName)
     logger.info('PLANT_DATA load completed')
 
-    await replaceCollections(db, collectionNames)
+    await renameCurrentCollectionsAsBackup(db, collectionNames)
+    await renameTempCollectionsAsOriginal(db, collectionNames)
     await runIndexManagement(db, logger)
-    await dropTempCollections(db, collectionNames)
+    await dropBackupCollections(db, collectionNames)
+    logger.info('updatePlant ETL completed successfully')
   } catch (err) {
     logger?.error(err)
   }
 }
 
-async function replaceCollections(db, collections) {
+async function renameCurrentCollectionsAsBackup(db, collections) {
   for (const collection of collections) {
-    const tempCollection = `${collection}_TEMP`
-
     try {
-      // Step 1: Replace the original collection with the data from the temp collection
-      await db
-        .collection(tempCollection)
-        .aggregate([{ $match: {} }, { $out: collection }])
-      logger.info(`Replaced ${collection} with data from ${tempCollection}`)
+      // Rename the existing collection to a backup name
+      const backupCollectionName = `${collection}_backup`
+      await db.collection(collection).rename(backupCollectionName)
+
+      logger.info(
+        `Replaced ${collection} with data from ${backupCollectionName}`
+      )
     } catch (error) {
-      logger.error(`Error processing ${collection}: ${error}`)
+      logger.error(
+        `Error processing function renameCurrentCollectionsAsBackup ${collection}: ${error}`
+      )
     }
   }
 }
 
-async function dropTempCollections(db, collections) {
+async function renameTempCollectionsAsOriginal(db, collections) {
   for (const collection of collections) {
     const tempCollection = `${collection}_TEMP`
 
     try {
-      // Drop previous backup collection if it exists to prevent accumulation
-      await db.collection(tempCollection).drop()
-      logger.info(`Dropped TEMP collection: ${tempCollection}`)
+      // Rename the temporary collection to the original collection name
+      await db.collection(tempCollection).rename(collection)
+
+      logger.info(`Replaced ${collection} with data from ${tempCollection}`)
     } catch (error) {
-      logger.error(`Error dropping TEMP collection ${collection}: ${error}`)
+      logger.error(
+        `Error processing function renameTempCurrentCollectionsAsOriginal ${collection}: ${error}`
+      )
+    }
+  }
+}
+
+async function dropBackupCollections(db, collections) {
+  for (const collection of collections) {
+    const backupCollection = `${collection}_backup`
+
+    try {
+      // Drop previous backup collection if it exists to prevent accumulation
+      await db.collection(backupCollection).drop()
+      logger.info(`Dropped backup collection: ${backupCollection}`)
+    } catch (error) {
+      logger.error(`Error dropping backup collection ${collection}: ${error}`)
     }
   }
 }

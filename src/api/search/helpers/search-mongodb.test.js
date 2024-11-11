@@ -69,7 +69,7 @@ describe('searchPlantDetailsDb', () => {
     expect(results).toEqual(mockResults)
   })
 
-  it('should return an error message if the query fails', async () => {
+  it('should return an error message if the search query fails', async () => {
     const hostref = ['1', '2']
     const errorMessage = 'Query failed'
     db.toArray.mockRejectedValue(new Error(errorMessage))
@@ -92,7 +92,7 @@ describe('searchPlantDetailsDb', () => {
     expect(results).toEqual(mockResults)
   })
 
-  it('should return an error message if the query fails', async () => {
+  it('should return an error message if the pest search query fails', async () => {
     const cslref = '12345'
     const errorMessage = 'Query failed'
     db.toArray.mockRejectedValue(new Error(errorMessage))
@@ -174,7 +174,7 @@ describe('searchPlantDetailsDb', () => {
     expect(results).toEqual(mockResults)
   })
 
-  it('should return an error message if the query fails', async () => {
+  it('should return an error message if the country query fails', async () => {
     const errorMessage = 'Query failed'
     db.toArray.mockRejectedValue(new Error(errorMessage))
 

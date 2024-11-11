@@ -1,5 +1,4 @@
 import { ProhibitedStrategy } from './prohibitedStrategy' // Adjust the import path accordingly
-import { workflowEngine } from './workflowEngine'
 
 import { createLogger } from '~/src/helpers/logging/logger'
 
@@ -311,10 +310,6 @@ describe('ProhibitedStrategy', () => {
       }
     ]
 
-    dbMock = {
-      collection: jest.fn().mockReturnThis(),
-      findOne: jest.fn()
-    }
     const searchInputMock = {
       plantDetails: {
         country: 'testCountry',

@@ -141,6 +141,8 @@ const populateDbHandler = async (request, h) => {
     )
     await buildPlantPestLinkCollection(mongoUri, db) // PHIDP-462
 
+    logger.info('populateDB ETL completed successfully')
+
     return h
       .response({
         status: 'success',

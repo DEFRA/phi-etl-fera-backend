@@ -1,12 +1,5 @@
-import {
-  updateDbPestHandler,
-  loadData,
-  getPestList,
-  preparePestDetails
-} from './update-db-pest'
+import { updateDbPestHandler, loadData } from './update-db-pest'
 import { createLogger } from '~/src/helpers/logging/logger'
-import { pestDetail } from '../models/pestDetail'
-import * as myModule from './update-db-pest'
 
 jest.mock('~/src/helpers/logging/logger')
 jest.mock('../models/pestDetail', () => ({
@@ -39,7 +32,7 @@ describe('updateDbPestHandler', () => {
   let isLocked
 
   beforeEach(() => {
-    ;(db = {
+    db = {
       collection: jest.fn().mockReturnValue({
         find: jest.fn().mockReturnValue({
           toArray: jest.fn().mockResolvedValue([
@@ -61,11 +54,11 @@ describe('updateDbPestHandler', () => {
       find: jest.fn().mockReturnValue({
         toArray: jest.fn().mockResolvedValue([])
       })
-    }),
-      (logger = {
-        info: jest.fn(),
-        error: jest.fn()
-      })
+    }
+    logger = {
+      info: jest.fn(),
+      error: jest.fn()
+    }
     createLogger.mockReturnValue(logger)
     request = {
       server: {
@@ -129,7 +122,6 @@ describe('updateDbPestHandler', () => {
   it('should log error and return error response if loadData throws', async () => {
     isLocked = false
     const error = new Error('Test error')
-    console.log('logger1111', logger)
     await loadData.mockImplementation(() => {
       throw error
     })

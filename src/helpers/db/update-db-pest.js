@@ -2,7 +2,6 @@ import { createLogger } from '~/src/helpers/logging/logger'
 import { pestDetail } from '../models/pestDetail'
 
 const logger = createLogger()
-let isLocked = false
 const updateDbPestHandler = async (request, h, isLocked) => {
   if (isLocked) {
     return h
@@ -16,7 +15,7 @@ const updateDbPestHandler = async (request, h, isLocked) => {
   isLocked = true
 
   try {
-    await loadData(request.server.db)
+    await loadData(request.server.db, isLocked)
     return h.response({
       status: 'success',
       message: 'Update Pest Db successful'
@@ -27,7 +26,7 @@ const updateDbPestHandler = async (request, h, isLocked) => {
   }
 }
 
-async function loadData(db) {
+async function loadData(db, isLocked) {
   try {
     logger?.info('Connected successfully to server')
 

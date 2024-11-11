@@ -27,8 +27,6 @@ describe('mongoPlugin', () => {
       close: jest.fn()
     }
 
-    db = {}
-
     MongoClient.connect.mockResolvedValue(client)
     config.get = jest.fn((key) => {
       if (key === 'mongoUri') return 'mongodb://localhost:27017'

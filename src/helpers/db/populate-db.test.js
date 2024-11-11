@@ -112,14 +112,6 @@ describe('populateDbHandler', () => {
 
   describe('readJsonFile', () => {
     it('should read and parse JSON file and should read multiple files and insert combined data into the collection', async () => {
-      const mockFilePath = 'mock/path/to/file.json'
-      const mockData = [
-        {
-          PLANT_NAME: [],
-          PLANT_PEST_LINK: []
-        }
-      ]
-
       const mockData1 = [
         { HOST_REF: '1', PARENT_HOST_REF: '0' },
         { HOST_REF: '2', PARENT_HOST_REF: '1' }
@@ -141,10 +133,7 @@ describe('populateDbHandler', () => {
         '~src/helpers/db/data/PlantDataJson1V0.36Base.json'
       )
       expect(result).toEqual({ PLANT_NAME: [], PLANT_PEST_LINK: [] })
-      const result1 = await readJsonFile(
-        '~src/helpers/db/data/PlantDataJson2V0.36Base.json'
-      )
-      // expect(result1).toEqual(mockData2)
+      await readJsonFile('~src/helpers/db/data/PlantDataJson2V0.36Base.json')
 
       const db = {
         collection: jest.fn().mockReturnThis(),

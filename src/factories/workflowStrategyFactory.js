@@ -62,7 +62,6 @@ async function kickStart(searchInput, db) {
     const plantDocument = await db.collection('PLANT_DATA').findOne({
       HOST_REF: searchInput.plantDetails.hostRef
     })
-    console.log('plantDOOOOOO', plantDocument)
 
     // To handle sub-family related conditions, PHIDP-462
     const plantNameDoc = await db.collection('PLANT_NAME').findOne({
@@ -102,7 +101,6 @@ async function kickStart(searchInput, db) {
         logger
       )
       plantInfo = await strategy.execute()
-      console.log('plantInfo', plantInfo)
 
       if (plantInfo.outcome && plantInfo.outcome.length > 0) {
         logger?.info(
