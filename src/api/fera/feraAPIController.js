@@ -1,6 +1,6 @@
 // import { uploadS3File } from '~/src/fera_integration/saveToS3'
 import { config } from '~/src/config/index'
-import { runJob } from '~/src/fera_integration/phiCron'
+import { runJob } from '~/src/fera_integration/orchestrator'
 
 const feraAPIController = {
   handler: async (request, h) => {

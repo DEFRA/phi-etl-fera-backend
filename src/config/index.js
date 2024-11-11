@@ -113,6 +113,12 @@ const config = convict({
       format: '*',
       default: '',
       env: 'FERA_KEY'
+    },
+    url: {
+      doc: 'FERA env url',
+      format: '*',
+      default: 'https://phis-api-stage.fera.co.uk/api',
+      env: 'FERA_URL'
     }
   },
   aws: {

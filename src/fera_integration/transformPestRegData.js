@@ -1,7 +1,6 @@
 import pestRegulationApiSchema from './schema/apiPestRegSchema.js'
 import pestRegulationMongoSchema from './schema/plantPestRegSchema.js'
-// import { writeFile } from 'fs/promises'
-// import path from 'path'
+// import { logAndWriteTransformedData } from './utility/dataUtil.js'
 
 const apiToMongoFieldMap = {
   PestRef: 'CSL_REF',
@@ -65,18 +64,9 @@ export const transformPestRegulationData = async (data) => {
     })
   )
   return transformedData
-  // ============================================================================================
-  // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY
-  // ============================================================================================
 
-  // // Log the sample of transformed data for verification
-  // // console.log(`Transformed Data Length: ${transformedData.length}`)
-  // // console.log(`Sample Record: ${JSON.stringify(transformedData[0], null, 2)}`)
-
-  // // Write transformed data to file
-  // const outputPath = path.resolve(
-  //   'C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/PestRegulationData-transformed.json'
-  // )
-  // await writeFile(outputPath, JSON.stringify(transformedData, null, 2), 'utf-8')
-  // // console.log(`Output successfully written to ${outputPath}`)
+  // ============================================================================================
+  // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY, DELETE WHEN DONE
+  // ============================================================================================
+  // logAndWriteTransformedData(transformedData, PestRegulationData-transformed.json)
 }

@@ -1,7 +1,6 @@
 import apiSchema from './schema/apiPlantNameSchema.js'
 import plantSchema from './schema/plantNameSchema.js'
-// import { writeFile } from 'fs/promises'
-// import path from 'path'
+// import { logAndWriteTransformedData } from './utility/dataUtil.js'
 
 const apiToMongoFieldMap = {
   HostRef: 'HOST_REF',
@@ -62,14 +61,7 @@ export const transformPlantNameData = async (data) => {
   return transformedData
 
   // ============================================================================================
-  // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY
+  // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY, DELETE WHEN DONE
   // ============================================================================================
-  // // Log transformed data length and sample for verification
-  // console.log(`Transformed Data Length: ${transformedData.length}`)
-  // console.log(`Sample Record: ${JSON.stringify(transformedData[0], null, 2)}`)
-
-  // // Write transformed data to fileC:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/
-  // const outputPath = path.resolve('C:/Projects/DEFRA/PHI-Beta/FERA Data/API Response/OneDrive_2024-10-31/FERA APIs-3110/PlantName-transformed.json')
-  // await writeFile(outputPath, JSON.stringify(transformedData, null, 2), 'utf-8')
-  // console.log(`Output successfully written to ${outputPath}`)
+  // logAndWriteTransformedData(transformedData, PlantName-transformed.json)
 }
