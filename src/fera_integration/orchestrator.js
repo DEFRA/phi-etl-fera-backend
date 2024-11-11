@@ -27,7 +27,7 @@ const routes = [
 export const runJob = async (request, bucket) => {
   const logger = request.logger
   logger.info('S3 bucket info inside Orchestrator: ')
-  logger.info( bucket)
+  logger.info(bucket)
 
   for (const { route, collection } of routes) {
     try {

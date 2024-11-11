@@ -12,12 +12,11 @@ async function uploadS3File(request, key, bucket, data, logger) {
   })
 
   try {
-     await s3Client.send(command)
+    await s3Client.send(command)
     logger.info(`File ${key}.json saved to S3 bucket ${bucket}`)
   } catch (error) {
-    // console.log(error)
     logger.error(`Error uploading ${key} to S3:`, error.message)
-    logger.info( error)
+    logger.info(error)
   }
 }
 
