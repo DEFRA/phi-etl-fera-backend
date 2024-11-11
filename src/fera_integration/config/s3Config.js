@@ -6,7 +6,6 @@ const s3Client = {
     name: 's3Client',
     version: '0.1.0',
     register(server, options) {
-      // console.log('OPTIONS: ', options)
       const client = new S3Client({
         region: options.region,
         endpoint: options.endpoint,
@@ -15,6 +14,8 @@ const s3Client = {
 
       server.decorate('request', 's3Client', client)
       server.decorate('server', 's3Client', client)
+
+      server.logger.info('S3 client details from S3 Config:', client)
 
       server.events.on('stop', () => {
         server.logger.info('Closing S3 client')
