@@ -4,7 +4,6 @@ import { PutObjectCommand } from '@aws-sdk/client-s3'
 async function uploadS3File(request, key, bucket, data, logger) {
   const s3Client = request.server.s3Client
 
-  // console.log('BUCKET:' + bucket)
   const command = new PutObjectCommand({
     Bucket: bucket,
     Key: `${key}.json`,
@@ -13,11 +12,12 @@ async function uploadS3File(request, key, bucket, data, logger) {
   })
 
   try {
-    await s3Client.send(command)
+     await s3Client.send(command)
     logger.info(`File ${key}.json saved to S3 bucket ${bucket}`)
   } catch (error) {
     // console.log(error)
     logger.error(`Error uploading ${key} to S3:`, error.message)
+    logger.info( error)
   }
 }
 

@@ -26,7 +26,8 @@ const routes = [
 
 export const runJob = async (request, bucket) => {
   const logger = request.logger
-  logger.info('S3 bucket info inside Orchestrator: ', bucket)
+  logger.info('S3 bucket info inside Orchestrator: ')
+  logger.info( bucket)
 
   for (const { route, collection } of routes) {
     try {
@@ -86,6 +87,7 @@ export const runJob = async (request, bucket) => {
     } catch (error) {
       // Log and skip to the next route on error
       logger.error(`Failed job for ${route}: ${error.message}`)
+      logger.info(error)
       continue
     }
   }
