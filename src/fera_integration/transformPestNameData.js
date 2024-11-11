@@ -1,7 +1,7 @@
 import pestApiSchema from './schema/apiPestNameSchema.js'
 import pestMongoSchema from './schema/pestNameSchema.js'
-import { writeFile } from 'fs/promises'
-import path from 'path'
+// import { writeFile } from 'fs/promises'
+// import path from 'path'
 
 const apiToMongoFieldMap = {
   PestRef: 'CSL_REF',

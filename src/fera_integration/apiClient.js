@@ -31,7 +31,7 @@ export const fetchApiData = async (route, logger) => {
       }
     })
 
-   return response.data
+    return response.data
   } catch (error) {
     logger.error(`Error fetching data from ${route}:`, error.message)
   }

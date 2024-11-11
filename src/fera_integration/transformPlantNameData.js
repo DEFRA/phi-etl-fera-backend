@@ -1,7 +1,7 @@
 import apiSchema from './schema/apiPlantNameSchema.js'
 import plantSchema from './schema/plantNameSchema.js'
-import { writeFile } from 'fs/promises'
-import path from 'path'
+// import { writeFile } from 'fs/promises'
+// import path from 'path'
 
 const apiToMongoFieldMap = {
   HostRef: 'HOST_REF',
@@ -60,7 +60,7 @@ export const transformPlantNameData = async (data) => {
     })
   )
   return transformedData
-  
+
   // ============================================================================================
   // RETAIN THE FOLLOWING CODE FOR TESTING THE FEATURE LOCALLY
   // ============================================================================================

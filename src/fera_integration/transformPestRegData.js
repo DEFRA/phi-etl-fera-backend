@@ -1,7 +1,7 @@
 import pestRegulationApiSchema from './schema/apiPestRegSchema.js'
 import pestRegulationMongoSchema from './schema/plantPestRegSchema.js'
-import { writeFile } from 'fs/promises'
-import path from 'path'
+// import { writeFile } from 'fs/promises'
+// import path from 'path'
 
 const apiToMongoFieldMap = {
   PestRef: 'CSL_REF',

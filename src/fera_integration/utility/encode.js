@@ -16,5 +16,5 @@ const base64Key = Buffer.from(pemKey).toString('base64')
 writeFileSync(pathToFile + 'fera64encoded1', base64Cert)
 writeFileSync(pathToFile + 'keyEncoded1', base64Key)
 
-console.log('Base64 encoding complete. Check encodedfile.txt', base64Cert.length)
-console.log('Base64 encoding complete. Check encodedfile.txt', base64Key.length)
+// console.log('Base64 encoding complete. Check encodedfile.txt', base64Cert.length)
+// console.log('Base64 encoding complete. Check encodedfile.txt', base64Key.length)
