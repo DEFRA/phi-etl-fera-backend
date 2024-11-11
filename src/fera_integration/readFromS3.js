@@ -1,7 +1,11 @@
 import { GetObjectCommand } from '@aws-sdk/client-s3'
+import s3Client from './config/s3Config'
 
-async function fetchS3File(request, key, bucket) {
-  const s3Client = request.server.s3Client // Accessing s3Client from the server
+async function fetchS3File(key, bucket, logger) {
+  // const s3Client = s3Client // Accessing s3Client from the server
+  logger.info('Inside Read from S3')
+  logger.info(bucket)
+  logger.info(key)
 
   const command = new GetObjectCommand({
     Bucket: bucket,
@@ -11,16 +15,15 @@ async function fetchS3File(request, key, bucket) {
   try {
     return await s3Client.send(command)
   } catch (error) {
-    request.server.logger.error(
-      `Error fetching file ${key} from S3: ${error.message}`
-    )
+    logger.error(`Error fetching file ${key} from S3: ${error.message}`)
+    logger.info(error)
     throw error
   }
 }
 
-async function s3FileHandler(request, h, key, bucket) {
+async function s3FileHandler(h, key, bucket, logger) {
   try {
-    const s3File = await fetchS3File(request, key, bucket)
+    const s3File = await fetchS3File(key, bucket, logger)
 
     // Check if Body is a readable stream and return it as the response
     if (s3File.Body && typeof s3File.Body.pipe === 'function') {
@@ -37,7 +40,9 @@ async function s3FileHandler(request, h, key, bucket) {
       .header('Content-Type', s3File.ContentType)
       .header('Content-Length', s3File.ContentLength)
   } catch (error) {
-    return h.response(`Error fetching file: ${error.message}`).code(500)
+    logger.error(`Error fetching file: ${error.message}`)
+    logger.info(error)
+    throw error
   }
 }
 

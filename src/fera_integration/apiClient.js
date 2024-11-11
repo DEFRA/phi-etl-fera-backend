@@ -20,7 +20,8 @@ const httpsAgent = new https.Agent({
 
 export const fetchApiData = async (route, logger) => {
   try {
-    logger.info('https Agent values in apiClient: ', httpsAgent)
+    logger.info('https Agent values in apiClient: ')
+    logger.info(httpsAgent)
 
     logger.info(`Invoked FERA API: ${baseURL}/${route}`)
 
@@ -34,5 +35,7 @@ export const fetchApiData = async (route, logger) => {
     return response.data
   } catch (error) {
     logger.error(`Error fetching data from ${route}:`, error.message)
+    logger.info(error)
+    throw error
   }
 }
