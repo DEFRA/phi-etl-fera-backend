@@ -11,6 +11,10 @@ import { transformPlantPestLinkData } from './transformPlantPestLinkData.js'
 // import { insertToMongo } from './insertToMongo.js'
 // import cron from 'node-cron'
 
+// Schedule job to run every day at midnight
+// cron.schedule('0 0 * * *', runJob)
+// console.log('Cron job scheduled to run every day at midnight')
+
 const routes = [
   { route: 'plantNames', collection: 'PLANT_NAME' },
   { route: 'plantPestLink', collection: 'PLANT_PEST_LINK' },
@@ -81,6 +85,3 @@ export const runJob = async (request, bucket) => {
   }
 }
 
-// Schedule job to run every day at midnight
-// cron.schedule('0 0 * * *', runJob)
-// console.log('Cron job scheduled to run every day at midnight')
