@@ -6,6 +6,7 @@ import { requestLogger } from '~/src/helpers/logging/request-logger'
 import { mongoPlugin } from '~/src/helpers/mongodb'
 import { failAction } from '~/src/helpers/fail-action'
 import { secureContext } from '~/src/helpers/secure-context'
+import { s3Client } from '~/src/fera_integration/config/s3Config'
 
 const isProduction = config.get('isProduction')
 async function createServer() {
@@ -50,6 +51,7 @@ async function createServer() {
 
   await server.register({ plugin: mongoPlugin, options: {} })
   await server.register(router)
+  await server.register({ plugin: s3Client.plugin, options: s3Client.options })
 
   return server
 }
