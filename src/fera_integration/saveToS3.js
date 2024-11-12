@@ -20,7 +20,6 @@ async function uploadS3File(key, bucket, data, logger) {
   } catch (error) {
     logger.error(`Error uploading ${key} to S3:`, error.message)
     logger.info(error)
-    throw error
   }
 }
 
