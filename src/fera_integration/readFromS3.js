@@ -42,7 +42,6 @@ async function s3FileHandler(h, key, bucket, logger) {
   } catch (error) {
     logger.error(`Error fetching file: ${error.message}`)
     logger.info(error)
-    throw error
   }
 }
 
