@@ -1,4 +1,4 @@
-import { workflowEngine } from './workflowEngine'
+import { WorkflowEngine } from './WorkflowEngine'
 
 let logger = ''
 let plantInfo = ''
@@ -7,7 +7,7 @@ let prohibitedObj = ''
 let plantGrandParentHostRef = ''
 let plantGreatGrandParentHostRef = ''
 
-class ProhibitedStrategy extends workflowEngine {
+class ProhibitedStrategy extends WorkflowEngine {
   constructor(
     plantDocument,
     plantNameDoc,

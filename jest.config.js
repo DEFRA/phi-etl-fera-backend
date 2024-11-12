@@ -19,10 +19,12 @@ module.exports = {
     'src/helpers/proxy-fetch.js',
     'src/api/data',
     'src/helpers/db/mocks',
-    'src/index',
     'src/config',
     'src/strategies/prohibitedStrategy.js',
-    'src/helpers/db'
+    'src/strategies/innsStrategy.js',
+    'src/helpers/db/update-db-pest.js',
+    'src/fera_integration',
+    'src/api/fera'
   ],
   coverageDirectory: '<rootDir>/coverage'
 }

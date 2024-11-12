@@ -1,6 +1,6 @@
-import { WorkflowEngine } from './workflowEngine'
+import { WorkflowEngine } from './WorkflowEngine'
 
-describe('workflowEngine', () => {
+describe('WorkflowEngine', () => {
   let plantDocumentMock
   let plantNameDocMock
   let searchInputMock

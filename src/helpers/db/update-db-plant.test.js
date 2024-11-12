@@ -462,7 +462,7 @@ describe('insertResultList', () => {
     await expect(insertResultList(db, resultList)).rejects.toThrow(
       'insertMany failed'
     )
-    expect(db.collection).toHaveBeenCalledWith('PLANT_DATA')
+    expect(db.collection).toHaveBeenCalledWith('PLANT_DATA_TEMP')
     expect(collectionNew.insertMany).toHaveBeenCalledWith(resultList)
     // expect(logger?.info).not.toHaveBeenCalled()
   })

@@ -6,17 +6,18 @@ const baseURL = config.get('fera.url') // to-be read from config
 const cert = config.get('fera.cert')
 const pwd = config.get('fera.pwd')
 const key = config.get('fera.key')
+if (cert?.length > 0) {
+  const certAscii = Buffer.from(cert, 'base64').toString('ascii') // Decode base64 cert
+  const certKey = Buffer.from(key, 'base64').toString('ascii') // Decode base64 key
 
-const certAscii = Buffer.from(cert, 'base64').toString('ascii') // Decode base64 cert
-const certKey = Buffer.from(key, 'base64').toString('ascii') // Decode base64 key
-
-// Set up HTTPS agent with the certificate and password
-const httpsAgent = new https.Agent({
-  cert: certAscii, // ASCII format certificate
-  key: certKey, // ASCII format key
-  passphrase: pwd, // Password if required for the certificate
-  rejectUnauthorized: true // Set to true if you need to verify SSL
-})
+  // Set up HTTPS agent with the certificate and password
+  const httpsAgent = new https.Agent({
+    cert: certAscii, // ASCII format certificate
+    key: certKey, // ASCII format key
+    passphrase: pwd, // Password if required for the certificate
+    rejectUnauthorized: true // Set to true if you need to verify SSL
+  })
+}
 
 export const fetchApiData = async (route, logger) => {
   try {

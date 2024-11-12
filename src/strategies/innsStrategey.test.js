@@ -1,8 +1,8 @@
 import { InnsStrategy } from '~/src/strategies/innsStrategy'
 
-jest.mock('./workflowEngine', () => {
+jest.mock('./WorkflowEngine', () => {
   return {
-    workflowEngine: jest.fn().mockReturnThis()
+    WorkflowEngine: jest.fn().mockReturnThis()
   }
 })
 

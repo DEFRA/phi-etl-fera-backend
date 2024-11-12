@@ -1,10 +1,10 @@
-import { workflowEngine } from './workflowEngine'
+import { WorkflowEngine } from './WorkflowEngine'
 
 let logger = ''
 let plantInfo = ''
 const pestDetails = []
 
-class InnsStrategy extends workflowEngine {
+class InnsStrategy extends WorkflowEngine {
   constructor(
     plantDocument,
     plantNameDoc,

@@ -85,6 +85,9 @@ describe('createServer', () => {
           xframe: true
         }
       },
+      state: {
+        strictHeader: false
+      },
       router: {
         stripTrailingSlash: true
       }

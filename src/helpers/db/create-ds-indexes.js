@@ -169,4 +169,4 @@ async function runIndexManagement(db, logger) {
   }
 }
 
-export { runIndexManagement, createMongoDBIndexes }
+export { runIndexManagement, createMongoDBIndexes, dropMongoDBIndexes }

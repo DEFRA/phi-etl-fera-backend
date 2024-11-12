@@ -286,7 +286,7 @@ async function loadCombinedDataForPlantAndBuildParents(
   db,
   collectionName
 ) {
-  logger.info('loading Plant_Name data')
+  logger?.info('loading Plant_Name data')
   const filePathServicePlantName = path.join(
     __dirname,
     'data',
@@ -367,7 +367,7 @@ async function loadCombinedDataForPlantAndBuildParents(
     await collection.bulkWrite(bulkOps)
   }
 
-  logger.info('loading of Plant_Name completed')
+  logger?.info('loading of Plant_Name completed')
 }
 
 async function readJsonFile(filePath) {
@@ -411,7 +411,7 @@ async function loadData(filePath, mongoUri, db, collectionName, indicator) {
 
 async function dropCollections(db, collection) {
   const collections = await db.listCollections({ name: collection }).toArray()
-  if (collections.length > 0) {
+  if (collections?.length > 0) {
     await db.dropCollection(collection, function (err, result) {
       if (err) {
         // eslint-disable-next-line no-console
