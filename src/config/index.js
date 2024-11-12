@@ -94,6 +94,59 @@ const config = convict({
     format: String,
     default: '10000',
     env: 'READ_TIMEOUT'
+  },
+  fera: {
+    cert: {
+      doc: 'base64 encoded string',
+      format: '*',
+      default: '',
+      env: 'FERA_CERT'
+    },
+    pwd: {
+      doc: 'FERA env pwd',
+      format: '*',
+      default: '',
+      env: 'FERA_PWD'
+    },
+    key: {
+      doc: 'FERA Cert Key',
+      format: '*',
+      default: '',
+      env: 'FERA_KEY'
+    },
+    url: {
+      doc: 'FERA env url',
+      format: '*',
+      default: 'https://phis-api-stage.fera.co.uk/api',
+      env: 'FERA_URL'
+    }
+  },
+  aws: {
+    region: {
+      doc: 'AWS region',
+      format: String,
+      default: 'eu-west-2',
+      env: 'AWS_REGION'
+    },
+    s3: {
+      endpoint: {
+        doc: 'AWS S3 endpoint',
+        format: String,
+        default: 'http://localhost:4566',
+        env: 'S3_ENDPOINT'
+      },
+      forcePathStyle: {
+        doc: 'AWS S3 forcePathStyle option',
+        format: Boolean,
+        default: process.env.NODE_ENV !== 'production'
+      }
+    }
+  },
+  s3BucketConfig: {
+    doc: 'aws s3 bucket',
+    format: String,
+    default: 'dev-phi-etl-fera-backend-c63f2',
+    env: 'S3_BUCKET'
   }
 })
 
