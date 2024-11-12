@@ -26,6 +26,9 @@ describe('createTranspiledWorker', () => {
     require('@babel/register');
     require(${JSON.stringify('./update-db-plant-worker')});
   `
-    expect(Worker).toHaveBeenCalledWith(transpileCode, { eval: true })
+    expect(Worker).toHaveBeenCalledWith(transpileCode, {
+      eval: true,
+      resourceLimits: { maxOldGenerationSizeMb: 8192 }
+    })
   })
 })

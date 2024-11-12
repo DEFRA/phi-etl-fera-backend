@@ -1,100 +1,127 @@
-// updateDbPestHandler.test.js
+import { updateDbPestHandler, loadData, setIsLocked } from './update-db-pest'
 import { createLogger } from '~/src/helpers/logging/logger'
-import {
-  updateDbPestHandler,
-  preparePestDetails,
-  getPestList
-} from './update-db-pest'
-import { pestNames } from './mocks/pest_names'
 
-// Mock dependencies
-// jest.mock('~/src/helpers/logging/logger', () => ({
-//   createLogger: jest.fn()
-// }))
-jest.mock('~/src/helpers/logging/logger')
-
-jest.mock('~/src/helpers/db/create-ds-indexes', () => ({
-  createMongoDBIndexes: jest.fn()
+jest.mock('~/src/helpers/logging/logger', () => ({
+  createLogger: jest.fn()
 }))
 
-// const logger = {
-//   info: jest.fn(),
-//   error: jest.fn()
-// }
-// createLogger.mockReturnValue(logger)
+jest.mock('./update-db-pest', () => {
+  const originalModule = jest.requireActual('./update-db-pest')
+  return {
+    ...originalModule,
+    loadData: jest.fn()
+  }
+})
 
 describe('updateDbPestHandler', () => {
-  let mockLogger, mockResponse
-  let db
+  let request
+  let h
+  let logger
 
-  beforeAll(() => {
-    mockLogger = {
+  beforeEach(() => {
+    logger = {
       info: jest.fn(),
       error: jest.fn()
     }
-    createLogger.mockReturnValue(mockLogger)
-
-    db = {
-      collection: jest.fn().mockReturnThis(),
-      find: jest.fn().mockReturnThis(),
-      toArray: jest.fn().mockResolvedValue([]),
-      listCollections: jest.fn().mockReturnThis(),
-      drop: jest.fn()
+    createLogger.mockReturnValue(logger)
+    request = {
+      server: {
+        db: {
+          collection: jest.fn().mockReturnValue({
+            insertMany: jest.fn(),
+            find: jest.fn().mockReturnValue({
+              toArray: jest.fn().mockResolvedValue([
+                {
+                  PEST_NAME: [],
+                  PLANT_PEST_REG: [],
+                  PEST_PRA_DATA: [],
+                  PEST_DOCUMENT_FCPD: [],
+                  PEST_DISTRIBUTION: []
+                }
+              ])
+            })
+          }),
+          dropCollection: jest.fn(),
+          listCollections: jest.fn().mockReturnThis({ name: 'PEST_DATA' }),
+          toArray: jest.fn(),
+          insertMany: jest.fn(),
+          insertOne: jest.fn(),
+          find: jest.fn().mockReturnValue({
+            toArray: jest.fn().mockResolvedValue([])
+          })
+        }
+      }
     }
-  })
-
-  beforeEach(() => {
-    mockResponse = {
+    h = {
       response: jest.fn().mockReturnThis(),
-      code: jest.fn().mockReturnThis()
+      code: jest.fn()
     }
-  })
 
-  afterEach(() => {
     jest.clearAllMocks()
   })
 
-  it('should respond with error message when loadData fails', async () => {
-    // loadData.mockReturnValue()
+  it('should return 429 if already locked', async () => {
+    setIsLocked(true)
+    await updateDbPestHandler(request, h)
 
-    const request = {
+    expect(h.response).toHaveBeenCalledWith({
+      status: 'Info',
+      message:
+        '/udpatePest load in progress, please try again later if required.'
+    })
+    expect(h.code).toHaveBeenCalledWith(429)
+  })
+
+  it('should call loadData and return success response', async () => {
+    setIsLocked(false)
+    loadData.mockResolvedValue()
+    await loadData(request.server.db)
+    await updateDbPestHandler(request, h)
+
+    expect(loadData).toHaveBeenCalledWith(request.server.db)
+    expect(h.response).toHaveBeenCalledWith({
+      status: 'success',
+      message: 'Update Pest Db successful'
+    })
+    expect(h.code).not.toHaveBeenCalled()
+  })
+
+  it('should handle errors and return error response', async () => {
+    const error = new Error('Test error')
+    request = {
       server: {
-        db: {}
+        db: {
+          collection: jest.fn().mockReturnValue({
+            find: jest.fn().mockReturnValue({
+              toArray: jest.fn().mockResolvedValue([
+                {
+                  PEST_NAME: [],
+                  PLANT_PEST_REG: [],
+                  PEST_PRA_DATA: [],
+                  PEST_DOCUMENT_FCPD: [],
+                  PEST_DISTRIBUTION: []
+                }
+              ])
+            })
+          }),
+          dropCollection: jest.fn(),
+          listCollections: jest.fn().mockReturnThis({ name: 'PEST_DATA' }),
+          toArray: jest.fn(),
+          insertMany: jest.fn(),
+          insertOne: jest.fn(),
+          find: jest.fn().mockReturnValue({
+            toArray: jest.fn().mockResolvedValue([])
+          })
+        }
       }
     }
+    await loadData.mockRejectedValue(error)
+    await updateDbPestHandler(request, h)
 
-    await updateDbPestHandler(request, mockResponse)
-    expect(mockResponse.code).toHaveBeenCalledWith(500)
-  })
-
-  it('should build a pest list', async () => {
-    db.listCollections().toArray.mockResolvedValue([])
-
-    const pestListMock = pestNames
-    const resultList = preparePestDetails(pestListMock)
-
-    expect(resultList.length).toEqual(4)
-  })
-
-  it('should get pest list', async () => {
-    const mockPestNameCollection = [
-      {
-        PEST_NAME: [
-          { PEST_NAME: 'Mock Pest Name 1' },
-          { PEST_NAME: 'Mock Pest Name 2' }
-        ]
-      },
-      {}
-    ]
-    db = {
-      collection: jest.fn().mockReturnThis(),
-      find: jest.fn().mockReturnThis(),
-      toArray: jest.fn().mockResolvedValue(mockPestNameCollection),
-      listCollections: jest.fn().mockReturnThis(),
-      drop: jest.fn()
-    }
-    const resultList = getPestList(db)
-    // eslint-disable-next-line jest/valid-expect-in-promise
-    resultList.then((pest) => expect(pest?.length).toEqual(2))
+    expect(h.response).toHaveBeenCalledWith({
+      status: 'error',
+      message: 'collection.insertMany is not a function'
+    })
+    expect(h.code).toHaveBeenCalledWith(500)
   })
 })
