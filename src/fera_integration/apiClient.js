@@ -1,12 +1,25 @@
-import axios from 'axios'
+// import axios from 'axios'
 import https from 'https'
 import { config } from '~/src/config/index'
+import { proxyFetch } from '~/src/helpers/proxy-fetch'
 
-const baseURL = config.get('fera.url') // to-be read from config
-const cert = config.get('fera.cert')
-const pwd = config.get('fera.pwd')
-const key = config.get('fera.key')
-if (cert?.length > 0) {
+// async function getstatus(proxyStatus) {
+//   const status = Number(proxyStatus)
+//   // Evaluate the response
+//   if (status === 200) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+export const fetchApiData = async (route, logger) => {
+  logger.info('INSIDE API CLIENT')
+  const baseURL = config.get('fera.url') // to-be read from config
+  const cert = config.get('fera.cert')
+  const pwd = config.get('fera.pwd')
+  const key = config.get('fera.key')
+
   const certAscii = Buffer.from(cert, 'base64').toString('ascii') // Decode base64 cert
   const certKey = Buffer.from(key, 'base64').toString('ascii') // Decode base64 key
 
@@ -17,26 +30,20 @@ if (cert?.length > 0) {
     passphrase: pwd, // Password if required for the certificate
     rejectUnauthorized: true // Set to true if you need to verify SSL
   })
-}
 
-export const fetchApiData = async (route, logger) => {
   try {
-    logger.info('https Agent values in apiClient: ')
-    logger.info(httpsAgent)
-
     logger.info(`Invoked FERA API: ${baseURL}/${route}`)
 
-    const response = await axios.get(`${baseURL}/${route}`, {
+    const apiResponse = await proxyFetch(`${baseURL}/${route}`, {
       httpsAgent, // Include the custom HTTPS agent
       headers: {
         'Content-Type': 'application/json'
       }
     })
 
-    return response.data
+    return apiResponse.data
   } catch (error) {
     logger.error(`Error fetching data from ${route}:`, error.message)
     logger.info(error)
-    throw error
   }
 }
