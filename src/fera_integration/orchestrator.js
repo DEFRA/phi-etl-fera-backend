@@ -8,13 +8,6 @@ import { transformPestRiskData } from './transformPestDistData.js'
 import { transformPestDocumentsData } from './transformPestDocsData.js'
 import { transformPlantPestLinkData } from './transformPlantPestLinkData.js'
 
-// import { insertToMongo } from './insertToMongo.js'
-// import cron from 'node-cron'
-
-// Schedule job to run every day at midnight
-// cron.schedule('0 0 * * *', runJob)
-// console.log('Cron job scheduled to run every day at midnight')
-
 const routes = [
   { route: 'plantNames', collection: 'PLANT_NAME' },
   { route: 'plantPestLink', collection: 'PLANT_PEST_LINK' },
@@ -24,7 +17,7 @@ const routes = [
   { route: 'pestDocuments', collection: 'PEST_DOCUMENT_FCPD' }
 ]
 
-export const runJob = async (request, bucket, h) => {
+export const runJob = async (request, bucket, h, s3Client) => {
   const logger = request.logger
   logger.info('Inside Orchestrator: ')
   logger.info(bucket)
@@ -73,12 +66,12 @@ export const runJob = async (request, bucket, h) => {
       // Stage 3: Save data to S3
       const s3Key = `${route}.json` // Ensures consistent naming with .json extension
       logger.info(`Saving to S3 for route: ${route}`)
-      await uploadS3File(s3Key, bucket, transformedData, logger)
+      await uploadS3File(s3Client, s3Key, bucket, transformedData, logger)
       logger.info(`Data saved to S3 for route: ${route}`)
 
       // Stage 4: Read data back from S3
       logger.info(`Reading back from S3 for route: ${route}`)
-      const s3Data = await readFromS3(h, s3Key, bucket, logger)
+      const s3Data = await readFromS3(s3Client, h, s3Key, bucket, logger)
       if (!s3Data) throw new Error(`Reading from S3 failed for ${route}`)
       logger.info(`Data read from S3 successfully for route: ${route}`)
 

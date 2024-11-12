@@ -6,7 +6,7 @@ const feraAPIController = {
   handler: async (request, h) => {
     try {
       const bucket = config.get('s3BucketConfig')
-      await runJob(request, bucket, h)
+      await runJob(request, bucket, h, request.server.s3Client)
       return h.response('job completed successfully').code(200)
     } catch (error) {
       // request.logger.error(`Failed to fetch countries: ${error.message}`)

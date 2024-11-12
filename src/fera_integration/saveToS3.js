@@ -1,9 +1,7 @@
 import { PutObjectCommand } from '@aws-sdk/client-s3'
-import s3Client from './config/s3Config'
 
-async function uploadS3File(key, bucket, data, logger) {
-  // const s3Client = s3Client
-  logger.info('Inside Save to S3')
+async function uploadS3File(s3Client, key, bucket, data, logger) {
+  logger.info('INSIDE SAVE TO S3')
   logger.info(bucket)
   logger.info(key)
 

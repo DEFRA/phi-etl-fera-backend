@@ -3,21 +3,19 @@ import https from 'https'
 import { config } from '~/src/config/index'
 import { proxyFetch } from '~/src/helpers/proxy-fetch'
 
-async function getstatus(proxyStatus) {
-  const status = Number(proxyStatus)
-  // Evaluate the response
-  if (status === 200) {
-    return true
-  } else {
-    return false
-  }
-}
+// async function getstatus(proxyStatus) {
+//   const status = Number(proxyStatus)
+//   // Evaluate the response
+//   if (status === 200) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
 
 export const fetchApiData = async (route, logger) => {
+  logger.info('INSIDE API CLIENT')
   const baseURL = config.get('fera.url') // to-be read from config
-  const proxy = proxyFetch(baseURL, null)
-  const proxyStatus = proxy.status
-
   const cert = config.get('fera.cert')
   const pwd = config.get('fera.pwd')
   const key = config.get('fera.key')
@@ -36,30 +34,14 @@ export const fetchApiData = async (route, logger) => {
   try {
     logger.info(`Invoked FERA API: ${baseURL}/${route}`)
 
-    let response = []
-    if (await getstatus(proxyStatus)) {
-      logger.info('Proxy connected')
+    const apiResponse = await proxyFetch(`${baseURL}/${route}`, {
+      httpsAgent, // Include the custom HTTPS agent
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
 
-      // const httpResponse = await axios.get(`${baseURL}/${route}`, {
-      //   httpsAgent, // Include the custom HTTPS agent
-      //   headers: {
-      //     'Content-Type': 'application/json'
-      //   }
-      // })
-
-      const httpResponse = await proxyFetch(`${baseURL}/${route}`, {
-        httpsAgent, // Include the custom HTTPS agent
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-
-      response = httpResponse.data
-    } else {
-      logger.info('Proxy connection unsuccessful')
-    }
-
-    return response
+    return apiResponse.data
   } catch (error) {
     logger.error(`Error fetching data from ${route}:`, error.message)
     logger.info(error)
