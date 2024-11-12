@@ -15,7 +15,8 @@ const s3Client = {
       server.decorate('request', 's3Client', client)
       server.decorate('server', 's3Client', client)
 
-      server.logger.info('S3 client details from S3 Config:', client)
+      server.logger.info('S3 Options S3 Config:')
+      server.logger.info(options)
 
       server.events.on('stop', () => {
         server.logger.info('Closing S3 client')
