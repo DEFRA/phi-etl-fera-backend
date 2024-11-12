@@ -24,9 +24,9 @@ const routes = [
   { route: 'pestDocuments', collection: 'PEST_DOCUMENT_FCPD' }
 ]
 
-export const runJob = async (request, bucket) => {
+export const runJob = async (request, bucket, h) => {
   const logger = request.logger
-  logger.info('S3 bucket info inside Orchestrator: ')
+  logger.info('Inside Orchestrator: ')
   logger.info(bucket)
 
   for (const { route, collection } of routes) {
@@ -73,12 +73,12 @@ export const runJob = async (request, bucket) => {
       // Stage 3: Save data to S3
       const s3Key = `${route}.json` // Ensures consistent naming with .json extension
       logger.info(`Saving to S3 for route: ${route}`)
-      await uploadS3File(request, s3Key, bucket, transformedData, logger)
+      await uploadS3File(s3Key, bucket, transformedData, logger)
       logger.info(`Data saved to S3 for route: ${route}`)
 
       // Stage 4: Read data back from S3
       logger.info(`Reading back from S3 for route: ${route}`)
-      const s3Data = await readFromS3(request, s3Key, bucket)
+      const s3Data = await readFromS3(h, s3Key, bucket, logger)
       if (!s3Data) throw new Error(`Reading from S3 failed for ${route}`)
       logger.info(`Data read from S3 successfully for route: ${route}`)
 

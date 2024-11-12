@@ -36,5 +36,6 @@ export const fetchApiData = async (route, logger) => {
   } catch (error) {
     logger.error(`Error fetching data from ${route}:`, error.message)
     logger.info(error)
+    throw error
   }
 }
