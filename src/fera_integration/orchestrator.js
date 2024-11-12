@@ -80,7 +80,6 @@ export const runJob = async (request, bucket, h, s3Client) => {
     } catch (error) {
       // Log and skip to the next route on error
       logger.error(`Failed job for ${route}: ${error.message}`)
-      logger.info(error)
       continue
     }
   }

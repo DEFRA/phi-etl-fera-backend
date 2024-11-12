@@ -1,5 +1,5 @@
 import { S3Client } from '@aws-sdk/client-s3'
-import { config } from '~/src/config/index.js'
+// import { config } from '~/src/config/index.js'
 
 const s3Client = {
   plugin: {
@@ -23,12 +23,13 @@ const s3Client = {
         client.destroy()
       })
     }
-  },
-  options: {
-    region: config.get('aws.region'),
-    endpoint: config.get('aws.s3.endpoint'),
-    forcePathStyle: config.get('aws.s3.forcePathStyle')
   }
+  //,
+  // options: {
+  //   region: config.get('aws.region'),
+  //   endpoint: config.get('aws.s3.endpoint'),
+  //   forcePathStyle: config.get('aws.s3.forcePathStyle')
+  // }
 }
 
 export { s3Client }

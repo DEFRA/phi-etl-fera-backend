@@ -39,7 +39,6 @@ async function s3FileHandler(s3Client, h, key, bucket, logger) {
       .header('Content-Length', s3File.ContentLength)
   } catch (error) {
     logger.error(`Error fetching file: ${error.message}`)
-    logger.info(error)
   }
 }
 
