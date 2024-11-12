@@ -51,7 +51,13 @@ async function createServer() {
 
   await server.register({ plugin: mongoPlugin, options: {} })
   await server.register(router)
-  await server.register({ plugin: s3Client.plugin, options: s3Client.options })
+
+  const options = {
+    region: config.get('aws.region'),
+    endpoint: config.get('aws.s3.endpoint'),
+    forcePathStyle: config.get('aws.s3.forcePathStyle')
+  }
+  await server.register({ plugin: s3Client.plugin, options })
 
   return server
 }

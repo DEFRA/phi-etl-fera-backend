@@ -118,7 +118,7 @@ const config = convict({
       doc: 'FERA env url',
       format: '*',
       default: 'https://phis-api-stage.fera.co.uk/api',
-      env: 'FERA_URL'
+      env: 'FERA_HOST'
     }
   },
   aws: {
@@ -145,7 +145,7 @@ const config = convict({
   s3BucketConfig: {
     doc: 'aws s3 bucket',
     format: String,
-    default: 'dev-phi-etl-fera-backend-c63f2',
+    default: 'test-phi-etl-fera-backend-6bf3a',
     env: 'S3_BUCKET'
   }
 })

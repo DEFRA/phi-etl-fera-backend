@@ -17,7 +17,6 @@ async function uploadS3File(s3Client, key, bucket, data, logger) {
     logger.info(`File ${key}.json saved to S3 bucket ${bucket}`)
   } catch (error) {
     logger.error(`Error uploading ${key} to S3:`, error.message)
-    logger.info(error)
   }
 }
 
