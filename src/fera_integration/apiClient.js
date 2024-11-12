@@ -36,7 +36,7 @@ export const fetchApiData = async (route, logger) => {
   try {
     logger.info(`Invoked FERA API: ${baseURL}/${route}`)
 
-    let response
+    let response = []
     if (await getstatus(proxyStatus)) {
       logger.info('Proxy connected')
 
@@ -49,7 +49,6 @@ export const fetchApiData = async (route, logger) => {
       response = httpResponse.data
     } else {
       logger.info('Proxy connection unsuccessful')
-      response = 'no data fetched'
     }
 
     return response
