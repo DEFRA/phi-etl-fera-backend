@@ -1,9 +1,7 @@
 import { GetObjectCommand } from '@aws-sdk/client-s3'
-import s3Client from './config/s3Config'
 
-async function fetchS3File(key, bucket, logger) {
-  // const s3Client = s3Client // Accessing s3Client from the server
-  logger.info('Inside Read from S3')
+async function fetchS3File(s3Client, key, bucket, logger) {
+  logger.info('INSIDE READ FROM S3')
   logger.info(bucket)
   logger.info(key)
 
@@ -21,9 +19,9 @@ async function fetchS3File(key, bucket, logger) {
   }
 }
 
-async function s3FileHandler(h, key, bucket, logger) {
+async function s3FileHandler(s3Client, h, key, bucket, logger) {
   try {
-    const s3File = await fetchS3File(key, bucket, logger)
+    const s3File = await fetchS3File(s3Client, key, bucket, logger)
 
     // Check if Body is a readable stream and return it as the response
     if (s3File.Body && typeof s3File.Body.pipe === 'function') {
