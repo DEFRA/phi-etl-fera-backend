@@ -2922,16 +2922,6 @@
         "REGULATION_INDICATOR": ""
     },
     {
-        "CSL_REF": 27270,
-        "HOST_REF": null,
-        "HOST_FORMAT_ID": null,
-        "HOST_FORMAT": null,
-        "REGULATION": "GB",
-        "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-        "QUARANTINE_INDICATOR": "Q",
-        "REGULATION_INDICATOR": ""
-    },
-    {
         "CSL_REF": 27261,
         "HOST_REF": null,
         "HOST_FORMAT_ID": null,
@@ -11589,6 +11579,36 @@
         "REGULATION": "GB",
         "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4L (seed of Solanum sisymbriifolium Lamarck)",
         "QUARANTINE_INDICATOR": "R",
+        "REGULATION_INDICATOR": ""
+    },
+    {
+        "CSL_REF": 27270,
+        "HOST_REF": null,
+        "HOST_FORMAT_ID": null,
+        "HOST_FORMAT": null,
+        "REGULATION": "GB",
+        "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+        "QUARANTINE_INDICATOR": "Q",
+        "REGULATION_INDICATOR": ""
+    },
+    {
+        "CSL_REF": 25291,
+        "HOST_REF": null,
+        "HOST_FORMAT_ID": null,
+        "HOST_FORMAT": null,
+        "REGULATION": "GB",
+        "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+        "QUARANTINE_INDICATOR": "Q",
+        "REGULATION_INDICATOR": ""
+    },
+    {
+        "CSL_REF": 25181,
+        "HOST_REF": null,
+        "HOST_FORMAT_ID": null,
+        "HOST_FORMAT": null,
+        "REGULATION": "GB",
+        "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+        "QUARANTINE_INDICATOR": "Q",
         "REGULATION_INDICATOR": ""
     }
 ]
