@@ -484,24 +484,24 @@
    "CSL_REF": 8548,
    "EPPO_CODE": "CRTHCI",
    "LATIN_NAME": "Corythucha ciliata",
-   "DOCUMENT_TITLE": "Defra_PRA_Corythucha_ciliata_final.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8548/risk-analyses/453/documents/4464/document",
-   "PUBLICATION_DATE": "31/12/2022",
-   "DOCUMENT_SIZE": 916756,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 8548,
-   "EPPO_CODE": "CRTHCI",
-   "LATIN_NAME": "Corythucha ciliata",
    "DOCUMENT_TITLE": "Defra_PRA_Corythucha_ciliata_final_draft.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8548/risk-analyses/453/documents/4452/document",
    "PUBLICATION_DATE": "31/12/2022",
    "DOCUMENT_SIZE": 1014466,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 8548,
+   "EPPO_CODE": "CRTHCI",
+   "LATIN_NAME": "Corythucha ciliata",
+   "DOCUMENT_TITLE": "Defra_PRA_Corythucha_ciliata_final.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8548/risk-analyses/453/documents/4464/document",
+   "PUBLICATION_DATE": "31/12/2022",
+   "DOCUMENT_SIZE": 916756,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -604,18 +604,6 @@
    "CSL_REF": 10607,
    "EPPO_CODE": "THAUPI",
    "LATIN_NAME": "Thaumetopoea pityocampa",
-   "DOCUMENT_TITLE": "Thaumetopoea pityocampa PRA.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10607/risk-analyses/317/documents/4430/document",
-   "PUBLICATION_DATE": "30/09/2015",
-   "DOCUMENT_SIZE": 1769696,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 10607,
-   "EPPO_CODE": "THAUPI",
-   "LATIN_NAME": "Thaumetopoea pityocampa",
    "DOCUMENT_TITLE": "PPM consultation response.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -634,6 +622,18 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10607/risk-analyses/449/documents/4432/document",
    "PUBLICATION_DATE": "28/04/2022",
    "DOCUMENT_SIZE": 214237,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 10607,
+   "EPPO_CODE": "THAUPI",
+   "LATIN_NAME": "Thaumetopoea pityocampa",
+   "DOCUMENT_TITLE": "Thaumetopoea pityocampa PRA.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10607/risk-analyses/317/documents/4430/document",
+   "PUBLICATION_DATE": "30/09/2015",
+   "DOCUMENT_SIZE": 1769696,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -844,18 +844,6 @@
    "CSL_REF": 12666,
    "EPPO_CODE": "PHYTLA",
    "LATIN_NAME": "Phytophthora lateralis",
-   "DOCUMENT_TITLE": "pra_lat.doc",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12666/risk-analyses/244/documents/408/document",
-   "PUBLICATION_DATE": "15/07/2015",
-   "DOCUMENT_SIZE": 770050,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 12666,
-   "EPPO_CODE": "PHYTLA",
-   "LATIN_NAME": "Phytophthora lateralis",
    "DOCUMENT_TITLE": "P lateralis PRA_July 2015 post consultation.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -863,6 +851,18 @@
    "PUBLICATION_DATE": "15/07/2015",
    "DOCUMENT_SIZE": 342318,
    "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12666,
+   "EPPO_CODE": "PHYTLA",
+   "LATIN_NAME": "Phytophthora lateralis",
+   "DOCUMENT_TITLE": "pra_lat.doc",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12666/risk-analyses/244/documents/408/document",
+   "PUBLICATION_DATE": "15/07/2015",
+   "DOCUMENT_SIZE": 770050,
+   "DOCUMENT_FORMAT": "application/msword"
  },
  {
    "CSL_REF": 12723,
@@ -1024,24 +1024,24 @@
    "CSL_REF": 15399,
    "EPPO_CODE": "EUZOBI",
    "LATIN_NAME": "Euzophera bigella",
-   "DOCUMENT_TITLE": "Euzophera_bigella_PRA_v4-for-consultation.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15399/risk-analyses/426/documents/4234/document",
-   "PUBLICATION_DATE": "15/06/2018",
-   "DOCUMENT_SIZE": 864204,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 15399,
-   "EPPO_CODE": "EUZOBI",
-   "LATIN_NAME": "Euzophera bigella",
    "DOCUMENT_TITLE": "Euzophera-bigella-Consultation-Response.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15399/risk-analyses/426/documents/4239/document",
    "PUBLICATION_DATE": "15/06/2018",
    "DOCUMENT_SIZE": 143228,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 15399,
+   "EPPO_CODE": "EUZOBI",
+   "LATIN_NAME": "Euzophera bigella",
+   "DOCUMENT_TITLE": "Euzophera_bigella_PRA_v4-for-consultation.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15399/risk-analyses/426/documents/4234/document",
+   "PUBLICATION_DATE": "15/06/2018",
+   "DOCUMENT_SIZE": 864204,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1731,7 +1731,7 @@
  {
    "CSL_REF": 26116,
    "EPPO_CODE": "CLVD00",
-   "LATIN_NAME": "Columnea latent viroid",
+   "LATIN_NAME": "Pospiviroid latenscolumneae",
    "DOCUMENT_TITLE": "CLVd0110.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -1935,19 +1935,7 @@
  {
    "CSL_REF": 26873,
    "EPPO_CODE": "CHIVMV",
-   "LATIN_NAME": "Chilli veinal mottle virus",
-   "DOCUMENT_TITLE": "Chilli-veinal-PRA-FINAL-v2.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26873/risk-analyses/455/documents/4454/document",
-   "PUBLICATION_DATE": "30/04/2022",
-   "DOCUMENT_SIZE": 522923,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 26873,
-   "EPPO_CODE": "CHIVMV",
-   "LATIN_NAME": "Chilli veinal mottle virus",
+   "LATIN_NAME": "Potyvirus capsivenamaculae",
    "DOCUMENT_TITLE": "Chilli_veinal_PRA_FINAL v3.docx",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -1955,6 +1943,18 @@
    "PUBLICATION_DATE": "30/04/2022",
    "DOCUMENT_SIZE": 2580466,
    "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+ },
+ {
+   "CSL_REF": 26873,
+   "EPPO_CODE": "CHIVMV",
+   "LATIN_NAME": "Potyvirus capsivenamaculae",
+   "DOCUMENT_TITLE": "Chilli-veinal-PRA-FINAL-v2.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26873/risk-analyses/455/documents/4454/document",
+   "PUBLICATION_DATE": "30/04/2022",
+   "DOCUMENT_SIZE": 522923,
+   "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 26898,
@@ -2067,7 +2067,7 @@
  {
    "CSL_REF": 27244,
    "EPPO_CODE": "SPMV30",
-   "LATIN_NAME": "Spiranthes Mosaic Virus 3",
+   "LATIN_NAME": "Potyvirus spiranthesis",
    "DOCUMENT_TITLE": "Spiranthes Mosaic Virus 3 one page v2.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -2164,6 +2164,18 @@
    "CSL_REF": 27281,
    "EPPO_CODE": "PHYTUV",
    "LATIN_NAME": "Phytophthora pluvialis",
+   "DOCUMENT_TITLE": "Defra PRA P pluvialis_vrs2.1_final.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27281/risk-analyses/451/documents/4447/document",
+   "PUBLICATION_DATE": "09/10/2022",
+   "DOCUMENT_SIZE": 1517176,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27281,
+   "EPPO_CODE": "PHYTUV",
+   "LATIN_NAME": "Phytophthora pluvialis",
    "DOCUMENT_TITLE": "Defra PRA P pluvialis_vrs2.1_final_redate.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -2194,18 +2206,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27281/risk-analyses/447/documents/4389/document",
    "PUBLICATION_DATE": "18/09/2021",
    "DOCUMENT_SIZE": 220283,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27281,
-   "EPPO_CODE": "PHYTUV",
-   "LATIN_NAME": "Phytophthora pluvialis",
-   "DOCUMENT_TITLE": "Defra PRA P pluvialis_vrs2.1_final.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27281/risk-analyses/451/documents/4447/document",
-   "PUBLICATION_DATE": "09/10/2022",
-   "DOCUMENT_SIZE": 1517176,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2248,18 +2248,6 @@
    "CSL_REF": 27337,
    "EPPO_CODE": "LYCMDE",
    "LATIN_NAME": "Lycorma delicatula",
-   "DOCUMENT_TITLE": "PRA_Lycorma_delicatula_DLK_v25final.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/risk-analyses/456/documents/4457/document",
-   "PUBLICATION_DATE": "03/03/2023",
-   "DOCUMENT_SIZE": 1304514,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27337,
-   "EPPO_CODE": "LYCMDE",
-   "LATIN_NAME": "Lycorma delicatula",
    "DOCUMENT_TITLE": "PRA_Lycorma_delicatula_final.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -2269,15 +2257,15 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 27371,
-   "EPPO_CODE": "AGRLCV",
-   "LATIN_NAME": "Agrilus convexicollis",
-   "DOCUMENT_TITLE": "Feb16-Agrilus convexicollis consultation response.pdf",
+   "CSL_REF": 27337,
+   "EPPO_CODE": "LYCMDE",
+   "LATIN_NAME": "Lycorma delicatula",
+   "DOCUMENT_TITLE": "PRA_Lycorma_delicatula_DLK_v25final.pdf",
    "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27371/risk-analyses/388/documents/4085/document",
-   "PUBLICATION_DATE": "16/12/2015",
-   "DOCUMENT_SIZE": 85453,
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/risk-analyses/456/documents/4457/document",
+   "PUBLICATION_DATE": "03/03/2023",
+   "DOCUMENT_SIZE": 1304514,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2290,6 +2278,18 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27371/risk-analyses/388/documents/4046/document",
    "PUBLICATION_DATE": "16/12/2015",
    "DOCUMENT_SIZE": 457838,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27371,
+   "EPPO_CODE": "AGRLCV",
+   "LATIN_NAME": "Agrilus convexicollis",
+   "DOCUMENT_TITLE": "Feb16-Agrilus convexicollis consultation response.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27371/risk-analyses/388/documents/4085/document",
+   "PUBLICATION_DATE": "16/12/2015",
+   "DOCUMENT_SIZE": 85453,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2320,24 +2320,24 @@
    "CSL_REF": 27393,
    "EPPO_CODE": "HETEPA",
    "LATIN_NAME": "Heterobasidion parviporum",
-   "DOCUMENT_TITLE": "Heterobasidion_parviporum_Nov17_FINAL.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27393/risk-analyses/404/documents/4157/document",
-   "PUBLICATION_DATE": "16/05/2016",
-   "DOCUMENT_SIZE": 39264,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27393,
-   "EPPO_CODE": "HETEPA",
-   "LATIN_NAME": "Heterobasidion parviporum",
    "DOCUMENT_TITLE": "Heterobasidion parviporum PRA 2016 v6post-consultation.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27393/risk-analyses/404/documents/4160/document",
    "PUBLICATION_DATE": "16/05/2016",
    "DOCUMENT_SIZE": 796935,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27393,
+   "EPPO_CODE": "HETEPA",
+   "LATIN_NAME": "Heterobasidion parviporum",
+   "DOCUMENT_TITLE": "Heterobasidion_parviporum_Nov17_FINAL.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27393/risk-analyses/404/documents/4157/document",
+   "PUBLICATION_DATE": "16/05/2016",
+   "DOCUMENT_SIZE": 39264,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2488,24 +2488,24 @@
    "CSL_REF": 27756,
    "EPPO_CODE": "PEVYV0",
    "LATIN_NAME": "Pepper vein yellows virus",
-   "DOCUMENT_TITLE": "PeVYVs Consultation Response Letter.pdf",
-   "DOCUMENT_TYPE": "PRA",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27756/risk-analyses/429/documents/4296/document",
-   "PUBLICATION_DATE": "25/10/2018",
-   "DOCUMENT_SIZE": 151951,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27756,
-   "EPPO_CODE": "PEVYV0",
-   "LATIN_NAME": "Pepper vein yellows virus",
    "DOCUMENT_TITLE": "pepper vein yellows virus PRA SRLv6 final.pdf",
    "DOCUMENT_TYPE": "PRA",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27756/risk-analyses/429/documents/4295/document",
    "PUBLICATION_DATE": "25/10/2018",
    "DOCUMENT_SIZE": 362185,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27756,
+   "EPPO_CODE": "PEVYV0",
+   "LATIN_NAME": "Pepper vein yellows virus",
+   "DOCUMENT_TITLE": "PeVYVs Consultation Response Letter.pdf",
+   "DOCUMENT_TYPE": "PRA",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27756/risk-analyses/429/documents/4296/document",
+   "PUBLICATION_DATE": "25/10/2018",
+   "DOCUMENT_SIZE": 151951,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
