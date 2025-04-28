@@ -1,53 +1,115 @@
-// tests/createMongoDBIndexes.test.js
+import {
+  dropMongoDBIndexes,
+  createMongoDBIndexes,
+  runIndexManagement
+} from './create-ds-indexes' // Adjust the path to your module
 
-import { createMongoDBIndexes } from './create-ds-indexes'
-import { createLogger } from '~/src/helpers/logging/logger'
-
-// Mock the dependencies
-jest.mock('~/src/helpers/logging/logger')
-
-describe('createMongoDBIndexes', () => {
-  let mockCollection
-  let mockLogger
+describe('MongoDB Index Management', () => {
+  let db
+  let logger
+  let collection
 
   beforeEach(() => {
-    mockCollection = {
+    collection = {
+      indexes: jest.fn(),
+      dropIndex: jest.fn(),
       createIndex: jest.fn()
     }
-    mockLogger = {
+    db = {
+      collection: jest.fn().mockReturnValue(collection)
+    }
+    logger = {
       info: jest.fn(),
       error: jest.fn()
     }
-    createLogger.mockReturnValue(mockLogger)
-  })
-
-  afterEach(() => {
     jest.clearAllMocks()
   })
 
-  it('should create indexes and log success messages', async () => {
-    const indexHostRef = 'indexHostRef'
-    const indexPlantName = 'indexPlantName'
+  describe('dropMongoDBIndexes', () => {
+    it('should drop non-default indexes', async () => {
+      collection.indexes.mockResolvedValue([
+        { name: '_id_' },
+        { name: 'index1' }
+      ])
 
-    mockCollection.createIndex
-      .mockResolvedValueOnce(indexHostRef)
-      .mockResolvedValueOnce(indexPlantName)
+      await dropMongoDBIndexes(db, 'testCollection', logger)
 
-    await createMongoDBIndexes(mockCollection)
+      expect(collection.indexes).toHaveBeenCalled()
+      expect(collection.dropIndex).toHaveBeenCalledWith('index1')
+      expect(logger.info).toHaveBeenCalledWith(
+        'Dropped index: index1 on collection: testCollection'
+      )
+    })
 
-    expect(mockCollection.createIndex).toHaveBeenCalledWith({ HOST_REF: 1 })
-    expect(mockCollection.createIndex).toHaveBeenCalledWith({
-      'PLANT_NAME.NAME': 1
+    it('should handle errors', async () => {
+      const error = new Error('Test error')
+      collection.indexes.mockRejectedValue(error)
+
+      await dropMongoDBIndexes(db, '', logger)
+
+      expect(logger.error).toHaveBeenCalledWith(
+        'Error while managing indexes on collection :',
+        error
+      )
     })
   })
 
-  it('should log an error message if index creation fails', async () => {
-    const error = new Error('Index creation failed')
+  describe('createMongoDBIndexes', () => {
+    it('should create indexes', async () => {
+      const indexes = [{ key: { field1: 1 }, name: 'index1' }]
 
-    mockCollection.createIndex.mockRejectedValue(error)
+      await createMongoDBIndexes(db, 'testCollection', logger, indexes)
 
-    await createMongoDBIndexes(mockCollection)
+      expect(collection.createIndex).toHaveBeenCalledWith(
+        { field1: 1 },
+        { name: 'index1' }
+      )
+      expect(logger.info).toHaveBeenCalledWith(
+        'Created index: index1 on collection: testCollection'
+      )
+    })
 
-    expect(mockCollection.createIndex).toHaveBeenCalledWith({ HOST_REF: 1 })
+    it('should handle errors', async () => {
+      const error = new Error('db.collection is not a function')
+      collection.createIndex.mockRejectedValue(error)
+      collection.indexes.mockRejectedValue(error)
+
+      await createMongoDBIndexes('', '', logger, [])
+
+      expect(logger.error).toHaveBeenCalledWith(
+        'Error while managing indexes on collection :',
+        error
+      )
+    })
+  })
+
+  describe('runIndexManagement', () => {
+    it('should manage indexes for all collections', async () => {
+      await runIndexManagement(db, logger)
+      expect(logger.info).toHaveBeenCalledWith('Index management started')
+      expect(logger.info).toHaveBeenCalledWith(
+        'Index management completed successfully'
+      )
+    })
+
+    it('should handle errors during index management', async () => {
+      const error = new Error('Test error')
+      collection.indexes.mockRejectedValue(error)
+
+      await runIndexManagement(db, logger)
+
+      expect(logger.error).toHaveBeenCalledWith(
+        'Error while managing indexes on collection PLANT_ANNEX11:',
+        error
+      )
+      expect(logger.error).toHaveBeenCalledWith(
+        'Error while managing indexes on collection PLANT_ANNEX6:',
+        error
+      )
+      expect(logger.error).toHaveBeenCalledWith(
+        'Error while managing indexes on collection PLANT_NAME:',
+        error
+      )
+    })
   })
 })
