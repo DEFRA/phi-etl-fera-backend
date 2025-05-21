@@ -1,21 +1,9 @@
 {
-    "PEST_DOCUMENT_FCPD": [
+  "PEST_DOCUMENT_FCPD":[
  {
    "CSL_REF": 13,
    "EPPO_CODE": "BCTV00",
-   "LATIN_NAME": "Curtovirus betae",
-   "DOCUMENT_TITLE": "bctv_ppfactsheet_v2023.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13/notices/6913/documents/4535/document",
-   "PUBLICATION_DATE": "20/10/2023",
-   "DOCUMENT_SIZE": 568863,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 13,
-   "EPPO_CODE": "BCTV00",
-   "LATIN_NAME": "Curtovirus betae",
+   "LATIN_NAME": "Beet curly top virus",
    "DOCUMENT_TITLE": "pest_alert_bctv_v2023.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -25,9 +13,21 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
+   "CSL_REF": 13,
+   "EPPO_CODE": "BCTV00",
+   "LATIN_NAME": "Beet curly top virus",
+   "DOCUMENT_TITLE": "bctv_ppfactsheet_v2023.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13/notices/6913/documents/4535/document",
+   "PUBLICATION_DATE": "20/10/2023",
+   "DOCUMENT_SIZE": 568863,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
    "CSL_REF": 16,
    "EPPO_CODE": "BSSV00",
-   "LATIN_NAME": "Sobemovirus BSSV",
+   "LATIN_NAME": "Blueberry shoestring virus",
    "DOCUMENT_TITLE": "blueberry_factsheet_final.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -63,7 +63,7 @@
  {
    "CSL_REF": 121,
    "EPPO_CODE": "PYVV00",
-   "LATIN_NAME": "Crinivirus flavisolani",
+   "LATIN_NAME": "Potato yellow vein virus",
    "DOCUMENT_TITLE": "pdn29.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -95,6 +95,18 @@
    "PUBLICATION_DATE": "05/11/1981",
    "DOCUMENT_SIZE": 21506,
    "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 464,
+   "EPPO_CODE": "PSDMAL",
+   "LATIN_NAME": "Pseudomonas avellanae",
+   "DOCUMENT_TITLE": "pseudomonas_avellanae.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/464/notices/6850/documents/4444/document",
+   "PUBLICATION_DATE": "02/08/2022",
+   "DOCUMENT_SIZE": 177662,
+   "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 464,
@@ -145,21 +157,9 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 464,
-   "EPPO_CODE": "PSDMAL",
-   "LATIN_NAME": "Pseudomonas avellanae",
-   "DOCUMENT_TITLE": "pseudomonas_avellanae.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/464/notices/6850/documents/4444/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 177662,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
    "CSL_REF": 549,
    "EPPO_CODE": "TOCV00",
-   "LATIN_NAME": "Crinivirus tomatichlorosis",
+   "LATIN_NAME": "Tomato chlorosis virus",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -172,24 +172,24 @@
    "CSL_REF": 556,
    "EPPO_CODE": "TSWV00",
    "LATIN_NAME": "Orthotospovirus tomatomaculae",
-   "DOCUMENT_TITLE": "pdn63.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/556/notices/2054/documents/29/document",
-   "PUBLICATION_DATE": "04/02/1989",
-   "DOCUMENT_SIZE": 16940,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 556,
-   "EPPO_CODE": "TSWV00",
-   "LATIN_NAME": "Orthotospovirus tomatomaculae",
    "DOCUMENT_TITLE": "pdn80.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/556/notices/5637/documents/108/document",
    "PUBLICATION_DATE": "10/11/1995",
    "DOCUMENT_SIZE": 12799,
+   "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 556,
+   "EPPO_CODE": "TSWV00",
+   "LATIN_NAME": "Orthotospovirus tomatomaculae",
+   "DOCUMENT_TITLE": "pdn63.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/556/notices/2054/documents/29/document",
+   "PUBLICATION_DATE": "04/02/1989",
+   "DOCUMENT_SIZE": 16940,
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
@@ -268,18 +268,6 @@
    "CSL_REF": 876,
    "EPPO_CODE": "KABAZE",
    "LATIN_NAME": "Kabatiella zeae",
-   "DOCUMENT_TITLE": "maize_factsheet_update_2022.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/876/notices/6840/documents/4426/document",
-   "PUBLICATION_DATE": "11/03/2022",
-   "DOCUMENT_SIZE": 950853,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 876,
-   "EPPO_CODE": "KABAZE",
-   "LATIN_NAME": "Kabatiella zeae",
    "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -313,6 +301,18 @@
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
+   "CSL_REF": 876,
+   "EPPO_CODE": "KABAZE",
+   "LATIN_NAME": "Kabatiella zeae",
+   "DOCUMENT_TITLE": "maize_factsheet_update_2022.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/876/notices/6840/documents/4426/document",
+   "PUBLICATION_DATE": "11/03/2022",
+   "DOCUMENT_SIZE": 950853,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
    "CSL_REF": 924,
    "EPPO_CODE": "PBRSV0",
    "LATIN_NAME": "Nepovirus solani",
@@ -339,7 +339,7 @@
  {
    "CSL_REF": 1041,
    "EPPO_CODE": "TYLCV0",
-   "LATIN_NAME": "Begomovirus coheni",
+   "LATIN_NAME": "Tomato yellow leaf curl virus",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -496,24 +496,24 @@
    "CSL_REF": 3493,
    "EPPO_CODE": "DRYCKU",
    "LATIN_NAME": "Dryocosmus kuriphilus",
-   "DOCUMENT_TITLE": "dryocosmus kuriphilus.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/3493/notices/6851/documents/4445/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 326531,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 3493,
-   "EPPO_CODE": "DRYCKU",
-   "LATIN_NAME": "Dryocosmus kuriphilus",
    "DOCUMENT_TITLE": "pest_alert_ocgw_update.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/3493/notices/6876/documents/4491/document",
    "PUBLICATION_DATE": "11/09/2023",
    "DOCUMENT_SIZE": 211203,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 3493,
+   "EPPO_CODE": "DRYCKU",
+   "LATIN_NAME": "Dryocosmus kuriphilus",
+   "DOCUMENT_TITLE": "dryocosmus kuriphilus.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/3493/notices/6851/documents/4445/document",
+   "PUBLICATION_DATE": "02/08/2022",
+   "DOCUMENT_SIZE": 326531,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -593,11 +593,11 @@
    "EPPO_CODE": "HETDRO",
    "LATIN_NAME": "Globodera rostochiensis",
    "DOCUMENT_TITLE": "",
-   "DOCUMENT_TYPE": "PD Notice",
+   "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4276/notices/6924/documents/4557/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4276/notices/6925/documents/4558/document",
    "PUBLICATION_DATE": "16/10/2024",
-   "DOCUMENT_SIZE": 278594,
+   "DOCUMENT_SIZE": 553354,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -605,11 +605,11 @@
    "EPPO_CODE": "HETDRO",
    "LATIN_NAME": "Globodera rostochiensis",
    "DOCUMENT_TITLE": "",
-   "DOCUMENT_TYPE": "Factsheet",
+   "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4276/notices/6925/documents/4558/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4276/notices/6924/documents/4557/document",
    "PUBLICATION_DATE": "16/10/2024",
-   "DOCUMENT_SIZE": 553354,
+   "DOCUMENT_SIZE": 278594,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -640,36 +640,24 @@
    "CSL_REF": 4840,
    "EPPO_CODE": "LPTNDE",
    "LATIN_NAME": "Leptinotarsa decemlineata",
-   "DOCUMENT_TITLE": "pest_alert_colorado_potato_beetle.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6880/documents/4495/document",
-   "PUBLICATION_DATE": "11/09/2023",
-   "DOCUMENT_SIZE": 266562,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 4840,
-   "EPPO_CODE": "LPTNDE",
-   "LATIN_NAME": "Leptinotarsa decemlineata",
-   "DOCUMENT_TITLE": "leptinotarsa decemlineata.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6847/documents/4441/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 673999,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 4840,
-   "EPPO_CODE": "LPTNDE",
-   "LATIN_NAME": "Leptinotarsa decemlineata",
    "DOCUMENT_TITLE": "pest_alert_col_potato_beetle.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6814/documents/4399/document",
    "PUBLICATION_DATE": "20/01/2022",
    "DOCUMENT_SIZE": 133553,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 4840,
+   "EPPO_CODE": "LPTNDE",
+   "LATIN_NAME": "Leptinotarsa decemlineata",
+   "DOCUMENT_TITLE": "ppf_insects-mistaken-coloradobeetle.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6915/documents/4539/document",
+   "PUBLICATION_DATE": "24/10/2023",
+   "DOCUMENT_SIZE": 673999,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -688,12 +676,24 @@
    "CSL_REF": 4840,
    "EPPO_CODE": "LPTNDE",
    "LATIN_NAME": "Leptinotarsa decemlineata",
-   "DOCUMENT_TITLE": "ppf_insects-mistaken-coloradobeetle.pdf",
+   "DOCUMENT_TITLE": "leptinotarsa decemlineata.pdf",
    "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6915/documents/4539/document",
-   "PUBLICATION_DATE": "24/10/2023",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6847/documents/4441/document",
+   "PUBLICATION_DATE": "02/08/2022",
    "DOCUMENT_SIZE": 673999,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 4840,
+   "EPPO_CODE": "LPTNDE",
+   "LATIN_NAME": "Leptinotarsa decemlineata",
+   "DOCUMENT_TITLE": "pest_alert_colorado_potato_beetle.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/4840/notices/6880/documents/4495/document",
+   "PUBLICATION_DATE": "11/09/2023",
+   "DOCUMENT_SIZE": 266562,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -748,18 +748,6 @@
    "CSL_REF": 6289,
    "EPPO_CODE": "POMASP",
    "LATIN_NAME": "Pomacea spp.",
-   "DOCUMENT_TITLE": "pomacea defra revised3.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/6289/notices/6804/documents/4381/document",
-   "PUBLICATION_DATE": "12/07/2021",
-   "DOCUMENT_SIZE": 645826,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 6289,
-   "EPPO_CODE": "POMASP",
-   "LATIN_NAME": "Pomacea spp.",
    "DOCUMENT_TITLE": "pomacea defra ppf v3.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -778,6 +766,18 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/6289/notices/6917/documents/4541/document",
    "PUBLICATION_DATE": "12/02/2024",
    "DOCUMENT_SIZE": 498378,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 6289,
+   "EPPO_CODE": "POMASP",
+   "LATIN_NAME": "Pomacea spp.",
+   "DOCUMENT_TITLE": "pomacea defra revised3.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/6289/notices/6804/documents/4381/document",
+   "PUBLICATION_DATE": "12/07/2021",
+   "DOCUMENT_SIZE": 645826,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -808,24 +808,24 @@
    "CSL_REF": 6569,
    "EPPO_CODE": "PYRUNU",
    "LATIN_NAME": "Ostrinia nubilalis",
-   "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/6569/notices/6785/documents/4338/document",
-   "PUBLICATION_DATE": "19/11/2020",
-   "DOCUMENT_SIZE": 448966,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 6569,
-   "EPPO_CODE": "PYRUNU",
-   "LATIN_NAME": "Ostrinia nubilalis",
    "DOCUMENT_TITLE": "emerging pest of maize_factsheet_.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/6569/notices/6905/documents/4527/document",
    "PUBLICATION_DATE": "17/10/2023",
    "DOCUMENT_SIZE": 929117,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 6569,
+   "EPPO_CODE": "PYRUNU",
+   "LATIN_NAME": "Ostrinia nubilalis",
+   "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/6569/notices/6785/documents/4338/document",
+   "PUBLICATION_DATE": "19/11/2020",
+   "DOCUMENT_SIZE": 448966,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -892,18 +892,6 @@
    "CSL_REF": 7214,
    "EPPO_CODE": "TECASO",
    "LATIN_NAME": "Tecia solanivora",
-   "DOCUMENT_TITLE": "pest_alert_tecia__solanivora.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7214/notices/6870/documents/4484/document",
-   "PUBLICATION_DATE": "05/09/2023",
-   "DOCUMENT_SIZE": 214629,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 7214,
-   "EPPO_CODE": "TECASO",
-   "LATIN_NAME": "Tecia solanivora",
    "DOCUMENT_TITLE": "31_tecia.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -923,6 +911,54 @@
    "PUBLICATION_DATE": "07/02/2022",
    "DOCUMENT_SIZE": 224391,
    "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 7214,
+   "EPPO_CODE": "TECASO",
+   "LATIN_NAME": "Tecia solanivora",
+   "DOCUMENT_TITLE": "pest_alert_tecia__solanivora.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7214/notices/6870/documents/4484/document",
+   "PUBLICATION_DATE": "05/09/2023",
+   "DOCUMENT_SIZE": 214629,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 7359,
+   "EPPO_CODE": "THRIPL",
+   "LATIN_NAME": "Thrips palmi",
+   "DOCUMENT_TITLE": "herbaceous growers factsheetv6.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/6739/documents/4272/document",
+   "PUBLICATION_DATE": "01/07/2019",
+   "DOCUMENT_SIZE": 434547,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 7359,
+   "EPPO_CODE": "THRIPL",
+   "LATIN_NAME": "Thrips palmi",
+   "DOCUMENT_TITLE": "thrips palmi_v6.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/6788/documents/4341/document",
+   "PUBLICATION_DATE": "30/11/2020",
+   "DOCUMENT_SIZE": 337030,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 7359,
+   "EPPO_CODE": "THRIPL",
+   "LATIN_NAME": "Thrips palmi",
+   "DOCUMENT_TITLE": "15_thripsp.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/3589/documents/63/document",
+   "PUBLICATION_DATE": "15/01/1993",
+   "DOCUMENT_SIZE": 29186,
+   "DOCUMENT_FORMAT": "application/msword"
  },
  {
    "CSL_REF": 7359,
@@ -946,42 +982,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/6865/documents/4479/document",
    "PUBLICATION_DATE": "31/08/2023",
    "DOCUMENT_SIZE": 244547,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 7359,
-   "EPPO_CODE": "THRIPL",
-   "LATIN_NAME": "Thrips palmi",
-   "DOCUMENT_TITLE": "herbaceous growers factsheetv6.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/6739/documents/4272/document",
-   "PUBLICATION_DATE": "01/07/2019",
-   "DOCUMENT_SIZE": 434547,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 7359,
-   "EPPO_CODE": "THRIPL",
-   "LATIN_NAME": "Thrips palmi",
-   "DOCUMENT_TITLE": "15_thripsp.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/3589/documents/63/document",
-   "PUBLICATION_DATE": "15/01/1993",
-   "DOCUMENT_SIZE": 29186,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 7359,
-   "EPPO_CODE": "THRIPL",
-   "LATIN_NAME": "Thrips palmi",
-   "DOCUMENT_TITLE": "thrips palmi_v6.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7359/notices/6788/documents/4341/document",
-   "PUBLICATION_DATE": "30/11/2020",
-   "DOCUMENT_SIZE": 337030,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1014,11 +1014,11 @@
    "LATIN_NAME": "Trialeurodes abutiloneus",
    "DOCUMENT_TITLE": "39_trialeurodes_abutiloneus.doc",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/7473/notices/6664/documents/2325/document",
-   "PUBLICATION_DATE": "11/05/2025",
-   "DOCUMENT_SIZE": 252033,
-   "DOCUMENT_FORMAT": "application/pdf"
+   "PUBLICATION_DATE": "01/04/2005",
+   "DOCUMENT_SIZE": 913920,
+   "DOCUMENT_FORMAT": "application/msword"
  },
  {
    "CSL_REF": 8192,
@@ -1031,6 +1031,18 @@
    "PUBLICATION_DATE": "15/10/1999",
    "DOCUMENT_SIZE": 6212846,
    "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 8467,
+   "EPPO_CODE": "CONHNE",
+   "LATIN_NAME": "Conotrachelus nenuphar",
+   "DOCUMENT_TITLE": "pest_alert_plum_weevil.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8467/notices/6821/documents/4406/document",
+   "PUBLICATION_DATE": "24/01/2022",
+   "DOCUMENT_SIZE": 193343,
+   "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 8467,
@@ -1057,18 +1069,6 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 8467,
-   "EPPO_CODE": "CONHNE",
-   "LATIN_NAME": "Conotrachelus nenuphar",
-   "DOCUMENT_TITLE": "pest_alert_plum_weevil.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8467/notices/6821/documents/4406/document",
-   "PUBLICATION_DATE": "24/01/2022",
-   "DOCUMENT_SIZE": 193343,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
    "CSL_REF": 8548,
    "EPPO_CODE": "CRTHCI",
    "LATIN_NAME": "Corythucha ciliata",
@@ -1076,8 +1076,8 @@
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8548/notices/6668/documents/2442/document",
-   "PUBLICATION_DATE": "10/03/2025",
-   "DOCUMENT_SIZE": 562095,
+   "PUBLICATION_DATE": "25/10/2023",
+   "DOCUMENT_SIZE": 831192,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1088,8 +1088,8 @@
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/8548/notices/6881/documents/4496/document",
-   "PUBLICATION_DATE": "10/03/2025",
-   "DOCUMENT_SIZE": 311601,
+   "PUBLICATION_DATE": "11/09/2023",
+   "DOCUMENT_SIZE": 417515,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1156,24 +1156,24 @@
    "CSL_REF": 10274,
    "EPPO_CODE": "RHAGCI",
    "LATIN_NAME": "Rhagoletis cingulata",
-   "DOCUMENT_TITLE": "pest-alert-r-cingulata_update.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10274/notices/6875/documents/4490/document",
-   "PUBLICATION_DATE": "05/09/2023",
-   "DOCUMENT_SIZE": 167262,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 10274,
-   "EPPO_CODE": "RHAGCI",
-   "LATIN_NAME": "Rhagoletis cingulata",
    "DOCUMENT_TITLE": "pest-alert-r-cingulata.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10274/notices/6823/documents/4408/document",
    "PUBLICATION_DATE": "07/02/2022",
    "DOCUMENT_SIZE": 157668,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 10274,
+   "EPPO_CODE": "RHAGCI",
+   "LATIN_NAME": "Rhagoletis cingulata",
+   "DOCUMENT_TITLE": "pest-alert-r-cingulata_update.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10274/notices/6875/documents/4490/document",
+   "PUBLICATION_DATE": "05/09/2023",
+   "DOCUMENT_SIZE": 167262,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1216,18 +1216,6 @@
    "CSL_REF": 10803,
    "EPPO_CODE": "XYLBCR",
    "LATIN_NAME": "Xylosandrus crassiusculus",
-   "DOCUMENT_TITLE": "x crassiusculus.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10803/notices/6698/documents/4208/document",
-   "PUBLICATION_DATE": "02/11/2015",
-   "DOCUMENT_SIZE": 305178,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 10803,
-   "EPPO_CODE": "XYLBCR",
-   "LATIN_NAME": "Xylosandrus crassiusculus",
    "DOCUMENT_TITLE": "pest alert xylosandrus_crassiusculus.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1261,16 +1249,16 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 10954,
-   "EPPO_CODE": "CORBSE",
-   "LATIN_NAME": "Clavibacter sepedonicus",
-   "DOCUMENT_TITLE": "pdn94.doc",
+   "CSL_REF": 10803,
+   "EPPO_CODE": "XYLBCR",
+   "LATIN_NAME": "Xylosandrus crassiusculus",
+   "DOCUMENT_TITLE": "x crassiusculus.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10954/notices/4615/documents/86/document",
-   "PUBLICATION_DATE": "23/01/2002",
-   "DOCUMENT_SIZE": 2733752,
-   "DOCUMENT_FORMAT": "application/msword"
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10803/notices/6698/documents/4208/document",
+   "PUBLICATION_DATE": "02/11/2015",
+   "DOCUMENT_SIZE": 305178,
+   "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 10954,
@@ -1283,6 +1271,18 @@
    "PUBLICATION_DATE": "25/11/2021",
    "DOCUMENT_SIZE": 303435,
    "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 10954,
+   "EPPO_CODE": "CORBSE",
+   "LATIN_NAME": "Clavibacter sepedonicus",
+   "DOCUMENT_TITLE": "pdn94.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/10954/notices/4615/documents/86/document",
+   "PUBLICATION_DATE": "23/01/2002",
+   "DOCUMENT_SIZE": 2733752,
+   "DOCUMENT_FORMAT": "application/msword"
  },
  {
    "CSL_REF": 10967,
@@ -1312,30 +1312,6 @@
    "CSL_REF": 11066,
    "EPPO_CODE": "RALSSL",
    "LATIN_NAME": "Ralstonia solanacearum",
-   "DOCUMENT_TITLE": "plant_pest_factsheet_brown_rot_final.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11066/notices/6897/documents/4519/document",
-   "PUBLICATION_DATE": "16/10/2023",
-   "DOCUMENT_SIZE": 460312,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 11066,
-   "EPPO_CODE": "RALSSL",
-   "LATIN_NAME": "Ralstonia solanacearum",
-   "DOCUMENT_TITLE": "plant_pest_factsheet_brown_rot_v7.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11066/notices/6832/documents/4418/document",
-   "PUBLICATION_DATE": "10/03/2022",
-   "DOCUMENT_SIZE": 436617,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 11066,
-   "EPPO_CODE": "RALSSL",
-   "LATIN_NAME": "Ralstonia solanacearum",
    "DOCUMENT_TITLE": "pdn73.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1357,9 +1333,33 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
+   "CSL_REF": 11066,
+   "EPPO_CODE": "RALSSL",
+   "LATIN_NAME": "Ralstonia solanacearum",
+   "DOCUMENT_TITLE": "plant_pest_factsheet_brown_rot_final.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11066/notices/6897/documents/4519/document",
+   "PUBLICATION_DATE": "16/10/2023",
+   "DOCUMENT_SIZE": 460312,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 11066,
+   "EPPO_CODE": "RALSSL",
+   "LATIN_NAME": "Ralstonia solanacearum",
+   "DOCUMENT_TITLE": "plant_pest_factsheet_brown_rot_v7.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11066/notices/6832/documents/4418/document",
+   "PUBLICATION_DATE": "10/03/2022",
+   "DOCUMENT_SIZE": 436617,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
    "CSL_REF": 11073,
    "EPPO_CODE": "PVT000",
-   "LATIN_NAME": "Tepovirus tafsolani",
+   "LATIN_NAME": "Potato virus T",
    "DOCUMENT_TITLE": "pdn29.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1371,7 +1371,7 @@
  {
    "CSL_REF": 11367,
    "EPPO_CODE": "BNYVV0",
-   "LATIN_NAME": "Benyvirus necrobetae",
+   "LATIN_NAME": "Beet necrotic yellow vein virus",
    "DOCUMENT_TITLE": "pdn43.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1383,7 +1383,7 @@
  {
    "CSL_REF": 11367,
    "EPPO_CODE": "BNYVV0",
-   "LATIN_NAME": "Benyvirus necrobetae",
+   "LATIN_NAME": "Beet necrotic yellow vein virus",
    "DOCUMENT_TITLE": "pdn38.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1395,7 +1395,7 @@
  {
    "CSL_REF": 11367,
    "EPPO_CODE": "BNYVV0",
-   "LATIN_NAME": "Benyvirus necrobetae",
+   "LATIN_NAME": "Beet necrotic yellow vein virus",
    "DOCUMENT_TITLE": "pdn66.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1420,6 +1420,18 @@
    "CSL_REF": 11775,
    "EPPO_CODE": "DIAPVA",
    "LATIN_NAME": "Phomopsis vaccinii",
+   "DOCUMENT_TITLE": "blueberry_factsheet_final.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11775/notices/6855/documents/4467/document",
+   "PUBLICATION_DATE": "31/08/2023",
+   "DOCUMENT_SIZE": 1845170,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 11775,
+   "EPPO_CODE": "DIAPVA",
+   "LATIN_NAME": "Phomopsis vaccinii",
    "DOCUMENT_TITLE": "96-vaccinium phomopsis canker and diebac",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1429,15 +1441,15 @@
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
-   "CSL_REF": 11775,
-   "EPPO_CODE": "DIAPVA",
-   "LATIN_NAME": "Phomopsis vaccinii",
-   "DOCUMENT_TITLE": "blueberry_factsheet_final.pdf",
+   "CSL_REF": 11794,
+   "EPPO_CODE": "ERWIST",
+   "LATIN_NAME": "Pantoea stewartii subsp. stewartii",
+   "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
    "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11775/notices/6855/documents/4467/document",
-   "PUBLICATION_DATE": "31/08/2023",
-   "DOCUMENT_SIZE": 1845170,
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11794/notices/6777/documents/4330/document",
+   "PUBLICATION_DATE": "19/11/2020",
+   "DOCUMENT_SIZE": 448966,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1465,18 +1477,6 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 11794,
-   "EPPO_CODE": "ERWIST",
-   "LATIN_NAME": "Pantoea stewartii subsp. stewartii",
-   "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11794/notices/6777/documents/4330/document",
-   "PUBLICATION_DATE": "19/11/2020",
-   "DOCUMENT_SIZE": 448966,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
    "CSL_REF": 11966,
    "EPPO_CODE": "PPV000",
    "LATIN_NAME": "Potyvirus plumpoxi",
@@ -1491,7 +1491,7 @@
  {
    "CSL_REF": 11980,
    "EPPO_CODE": "PSTVD0",
-   "LATIN_NAME": "Pospiviroid fusituberis",
+   "LATIN_NAME": "Potato spindle tuber viroid",
    "DOCUMENT_TITLE": "pdn29.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1503,19 +1503,7 @@
  {
    "CSL_REF": 11980,
    "EPPO_CODE": "PSTVD0",
-   "LATIN_NAME": "Pospiviroid fusituberis",
-   "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11980/notices/6722/documents/4255/document",
-   "PUBLICATION_DATE": "26/06/2019",
-   "DOCUMENT_SIZE": 598775,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 11980,
-   "EPPO_CODE": "PSTVD0",
-   "LATIN_NAME": "Pospiviroid fusituberis",
+   "LATIN_NAME": "Potato spindle tuber viroid",
    "DOCUMENT_TITLE": "",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -1525,9 +1513,21 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
+   "CSL_REF": 11980,
+   "EPPO_CODE": "PSTVD0",
+   "LATIN_NAME": "Potato spindle tuber viroid",
+   "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11980/notices/6722/documents/4255/document",
+   "PUBLICATION_DATE": "26/06/2019",
+   "DOCUMENT_SIZE": 598775,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
    "CSL_REF": 11991,
    "EPPO_CODE": "PVV000",
-   "LATIN_NAME": "Potyvirus vetuberosi",
+   "LATIN_NAME": "Potato virus V",
    "DOCUMENT_TITLE": "pdn51.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1551,7 +1551,7 @@
  {
    "CSL_REF": 12054,
    "EPPO_CODE": "TICV00",
-   "LATIN_NAME": "Crinivirus contagichlorosis",
+   "LATIN_NAME": "Tomato infectious chlorosis virus",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -1588,18 +1588,6 @@
    "CSL_REF": 12213,
    "EPPO_CODE": "PUCCHN",
    "LATIN_NAME": "Puccinia horiana",
-   "DOCUMENT_TITLE": "pdn41.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12213/notices/3079/documents/54/document",
-   "PUBLICATION_DATE": "31/08/1983",
-   "DOCUMENT_SIZE": 28246,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 12213,
-   "EPPO_CODE": "PUCCHN",
-   "LATIN_NAME": "Puccinia horiana",
    "DOCUMENT_TITLE": "pdn64.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1609,9 +1597,21 @@
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
+   "CSL_REF": 12213,
+   "EPPO_CODE": "PUCCHN",
+   "LATIN_NAME": "Puccinia horiana",
+   "DOCUMENT_TITLE": "pdn41.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12213/notices/3079/documents/54/document",
+   "PUBLICATION_DATE": "31/08/1983",
+   "DOCUMENT_SIZE": 28246,
+   "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
    "CSL_REF": 12300,
    "EPPO_CODE": "CEVD00",
-   "LATIN_NAME": "Pospiviroid exocortiscitri",
+   "LATIN_NAME": "Citrus exocortis viroid",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -1635,7 +1635,7 @@
  {
    "CSL_REF": 12380,
    "EPPO_CODE": "HSVD00",
-   "LATIN_NAME": "Hostuviroid impedihumuli",
+   "LATIN_NAME": "Hop stunt viroid",
    "DOCUMENT_TITLE": "hop stunt viroid on hop.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1672,54 +1672,6 @@
    "CSL_REF": 12570,
    "EPPO_CODE": "XYLEFA",
    "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "herbaceous growers factsheetv6.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6750/documents/4283/document",
-   "PUBLICATION_DATE": "01/07/2019",
-   "DOCUMENT_SIZE": 434547,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 12570,
-   "EPPO_CODE": "XYLEFA",
-   "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "pest_alert_xylella_on_olive_trees.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6824/documents/4409/document",
-   "PUBLICATION_DATE": "07/02/2022",
-   "DOCUMENT_SIZE": 241101,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 12570,
-   "EPPO_CODE": "XYLEFA",
-   "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "xylella__whatyouneedtoknow.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6849/documents/4443/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 187475,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 12570,
-   "EPPO_CODE": "XYLEFA",
-   "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "xylella on olive.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6795/documents/4355/document",
-   "PUBLICATION_DATE": "15/03/2021",
-   "DOCUMENT_SIZE": 222573,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 12570,
-   "EPPO_CODE": "XYLEFA",
-   "LATIN_NAME": "Xylella fastidiosa",
    "DOCUMENT_TITLE": "pest_alert_xylella_on_olive_trees.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -1732,12 +1684,12 @@
    "CSL_REF": 12570,
    "EPPO_CODE": "XYLEFA",
    "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "pest_factsheet_xylella_fastidiosa_.pdf",
+   "DOCUMENT_TITLE": "herbaceous growers factsheetv6.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6843/documents/4436/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 1110806,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6750/documents/4283/document",
+   "PUBLICATION_DATE": "01/07/2019",
+   "DOCUMENT_SIZE": 434547,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1756,12 +1708,36 @@
    "CSL_REF": 12570,
    "EPPO_CODE": "XYLEFA",
    "LATIN_NAME": "Xylella fastidiosa",
+   "DOCUMENT_TITLE": "pest_factsheet_xylella_fastidiosa_.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6843/documents/4436/document",
+   "PUBLICATION_DATE": "02/08/2022",
+   "DOCUMENT_SIZE": 1110806,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12570,
+   "EPPO_CODE": "XYLEFA",
+   "LATIN_NAME": "Xylella fastidiosa",
    "DOCUMENT_TITLE": "xf_plant_pest_factsheet_2023_march.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6896/documents/4518/document",
    "PUBLICATION_DATE": "16/10/2023",
    "DOCUMENT_SIZE": 702827,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12570,
+   "EPPO_CODE": "XYLEFA",
+   "LATIN_NAME": "Xylella fastidiosa",
+   "DOCUMENT_TITLE": "xylella_on_olive_trees.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6848/documents/4442/document",
+   "PUBLICATION_DATE": "02/08/2022",
+   "DOCUMENT_SIZE": 241191,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1792,30 +1768,6 @@
    "CSL_REF": 12570,
    "EPPO_CODE": "XYLEFA",
    "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "xylella-host-info-note-ver6.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6689/documents/4193/document",
-   "PUBLICATION_DATE": "20/06/2017",
-   "DOCUMENT_SIZE": 240142,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 12570,
-   "EPPO_CODE": "XYLEFA",
-   "LATIN_NAME": "Xylella fastidiosa",
-   "DOCUMENT_TITLE": "xylella_on_olive_trees.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6848/documents/4442/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 241191,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 12570,
-   "EPPO_CODE": "XYLEFA",
-   "LATIN_NAME": "Xylella fastidiosa",
    "DOCUMENT_TITLE": "xylella consumer pest alert-ver4.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1828,12 +1780,60 @@
    "CSL_REF": 12570,
    "EPPO_CODE": "XYLEFA",
    "LATIN_NAME": "Xylella fastidiosa",
+   "DOCUMENT_TITLE": "xylella-host-info-note-ver6.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6689/documents/4193/document",
+   "PUBLICATION_DATE": "20/06/2017",
+   "DOCUMENT_SIZE": 240142,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12570,
+   "EPPO_CODE": "XYLEFA",
+   "LATIN_NAME": "Xylella fastidiosa",
+   "DOCUMENT_TITLE": "pest_alert_xylella_on_olive_trees.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6824/documents/4409/document",
+   "PUBLICATION_DATE": "07/02/2022",
+   "DOCUMENT_SIZE": 241101,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12570,
+   "EPPO_CODE": "XYLEFA",
+   "LATIN_NAME": "Xylella fastidiosa",
+   "DOCUMENT_TITLE": "xylella__whatyouneedtoknow.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6849/documents/4443/document",
+   "PUBLICATION_DATE": "02/08/2022",
+   "DOCUMENT_SIZE": 187475,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12570,
+   "EPPO_CODE": "XYLEFA",
+   "LATIN_NAME": "Xylella fastidiosa",
    "DOCUMENT_TITLE": "xf plant pest factsheet 2017v3.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6686/documents/4190/document",
    "PUBLICATION_DATE": "06/07/2017",
    "DOCUMENT_SIZE": 867015,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 12570,
+   "EPPO_CODE": "XYLEFA",
+   "LATIN_NAME": "Xylella fastidiosa",
+   "DOCUMENT_TITLE": "xylella on olive.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12570/notices/6795/documents/4355/document",
+   "PUBLICATION_DATE": "15/03/2021",
+   "DOCUMENT_SIZE": 222573,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -1875,19 +1875,7 @@
  {
    "CSL_REF": 12846,
    "EPPO_CODE": "PVY000",
-   "LATIN_NAME": "Potyvirus yituberosi",
-   "DOCUMENT_TITLE": "pdn32.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12846/notices/5380/documents/6/document",
-   "PUBLICATION_DATE": "15/08/1982",
-   "DOCUMENT_SIZE": 14850,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 12846,
-   "EPPO_CODE": "PVY000",
-   "LATIN_NAME": "Potyvirus yituberosi",
+   "LATIN_NAME": "Potato virus Y",
    "DOCUMENT_TITLE": "pdn80.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -1899,13 +1887,25 @@
  {
    "CSL_REF": 12846,
    "EPPO_CODE": "PVY000",
-   "LATIN_NAME": "Potyvirus yituberosi",
+   "LATIN_NAME": "Potato virus Y",
    "DOCUMENT_TITLE": "pdn36.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12846/notices/1283/documents/8/document",
    "PUBLICATION_DATE": "10/01/1983",
    "DOCUMENT_SIZE": 12802,
+   "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 12846,
+   "EPPO_CODE": "PVY000",
+   "LATIN_NAME": "Potato virus Y",
+   "DOCUMENT_TITLE": "pdn32.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/12846/notices/5380/documents/6/document",
+   "PUBLICATION_DATE": "15/08/1982",
+   "DOCUMENT_SIZE": 14850,
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
@@ -1951,7 +1951,7 @@
    "DOCUMENT_TITLE": "anthomonus eugenii v5.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13339/notices/6802/documents/4378/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13339/notices/6801/documents/4377/document",
    "PUBLICATION_DATE": "12/07/2021",
    "DOCUMENT_SIZE": 376976,
    "DOCUMENT_FORMAT": "application/pdf"
@@ -1963,34 +1963,10 @@
    "DOCUMENT_TITLE": "anthomonus eugenii v5.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13339/notices/6801/documents/4377/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13339/notices/6802/documents/4378/document",
    "PUBLICATION_DATE": "12/07/2021",
    "DOCUMENT_SIZE": 376976,
    "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 13756,
-   "EPPO_CODE": "BEMITA",
-   "LATIN_NAME": "Bemisia tabaci",
-   "DOCUMENT_TITLE": "btand poinsettias.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6770/documents/4322/document",
-   "PUBLICATION_DATE": "19/11/2020",
-   "DOCUMENT_SIZE": 126919,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 13756,
-   "EPPO_CODE": "BEMITA",
-   "LATIN_NAME": "Bemisia tabaci",
-   "DOCUMENT_TITLE": "17_bemisi.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/3591/documents/65/document",
-   "PUBLICATION_DATE": "15/05/1994",
-   "DOCUMENT_SIZE": 31234,
-   "DOCUMENT_FORMAT": "application/msword"
  },
  {
    "CSL_REF": 13756,
@@ -2002,6 +1978,30 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6702/documents/4212/document",
    "PUBLICATION_DATE": "02/09/2015",
    "DOCUMENT_SIZE": 307936,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 13756,
+   "EPPO_CODE": "BEMITA",
+   "LATIN_NAME": "Bemisia tabaci",
+   "DOCUMENT_TITLE": "pest_alert_bt-and_poinsettias.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6869/documents/4483/document",
+   "PUBLICATION_DATE": "04/09/2023",
+   "DOCUMENT_SIZE": 157583,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 13756,
+   "EPPO_CODE": "BEMITA",
+   "LATIN_NAME": "Bemisia tabaci",
+   "DOCUMENT_TITLE": "pest_alert_bt poinsettias.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6810/documents/4395/document",
+   "PUBLICATION_DATE": "20/01/2022",
+   "DOCUMENT_SIZE": 152965,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2032,25 +2032,25 @@
    "CSL_REF": 13756,
    "EPPO_CODE": "BEMITA",
    "LATIN_NAME": "Bemisia tabaci",
-   "DOCUMENT_TITLE": "pest_alert_bt poinsettias.pdf",
+   "DOCUMENT_TITLE": "btand poinsettias.pdf",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6810/documents/4395/document",
-   "PUBLICATION_DATE": "20/01/2022",
-   "DOCUMENT_SIZE": 152965,
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6770/documents/4322/document",
+   "PUBLICATION_DATE": "19/11/2020",
+   "DOCUMENT_SIZE": 126919,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 13756,
    "EPPO_CODE": "BEMITA",
    "LATIN_NAME": "Bemisia tabaci",
-   "DOCUMENT_TITLE": "pest_alert_bt-and_poinsettias.pdf",
+   "DOCUMENT_TITLE": "17_bemisi.doc",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/6869/documents/4483/document",
-   "PUBLICATION_DATE": "04/09/2023",
-   "DOCUMENT_SIZE": 157583,
-   "DOCUMENT_FORMAT": "application/pdf"
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/13756/notices/3591/documents/65/document",
+   "PUBLICATION_DATE": "15/05/1994",
+   "DOCUMENT_SIZE": 31234,
+   "DOCUMENT_FORMAT": "application/msword"
  },
  {
    "CSL_REF": 13910,
@@ -2063,6 +2063,18 @@
    "PUBLICATION_DATE": "15/10/1998",
    "DOCUMENT_SIZE": 15264,
    "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 14609,
+   "EPPO_CODE": "CRTHAR",
+   "LATIN_NAME": "Corythucha arcuata",
+   "DOCUMENT_TITLE": "c. arcuata-pest alert-aug18_4.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14609/notices/6769/documents/4320/document",
+   "PUBLICATION_DATE": "01/08/2018",
+   "DOCUMENT_SIZE": 119598,
+   "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 14609,
@@ -2089,18 +2101,6 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 14609,
-   "EPPO_CODE": "CRTHAR",
-   "LATIN_NAME": "Corythucha arcuata",
-   "DOCUMENT_TITLE": "c. arcuata-pest alert-aug18_4.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14609/notices/6769/documents/4320/document",
-   "PUBLICATION_DATE": "01/08/2018",
-   "DOCUMENT_SIZE": 119598,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
    "CSL_REF": 14849,
    "EPPO_CODE": "DIABVI",
    "LATIN_NAME": "Diabrotica virgifera subsp. virgifera",
@@ -2110,30 +2110,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14849/notices/6405/documents/123/document",
    "PUBLICATION_DATE": "02/08/2004",
    "DOCUMENT_SIZE": 4216322,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 14849,
-   "EPPO_CODE": "DIABVI",
-   "LATIN_NAME": "Diabrotica virgifera subsp. virgifera",
-   "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14849/notices/6780/documents/4333/document",
-   "PUBLICATION_DATE": "19/11/2020",
-   "DOCUMENT_SIZE": 448966,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 14849,
-   "EPPO_CODE": "DIABVI",
-   "LATIN_NAME": "Diabrotica virgifera subsp. virgifera",
-   "DOCUMENT_TITLE": "pest notice 37-2_.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14849/notices/6666/documents/2327/document",
-   "PUBLICATION_DATE": "01/08/2005",
-   "DOCUMENT_SIZE": 2512896,
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
@@ -2158,6 +2134,30 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14849/notices/6837/documents/4423/document",
    "PUBLICATION_DATE": "10/03/2022",
    "DOCUMENT_SIZE": 950853,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 14849,
+   "EPPO_CODE": "DIABVI",
+   "LATIN_NAME": "Diabrotica virgifera subsp. virgifera",
+   "DOCUMENT_TITLE": "pest notice 37-2_.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14849/notices/6666/documents/2327/document",
+   "PUBLICATION_DATE": "01/08/2005",
+   "DOCUMENT_SIZE": 2512896,
+   "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 14849,
+   "EPPO_CODE": "DIABVI",
+   "LATIN_NAME": "Diabrotica virgifera subsp. virgifera",
+   "DOCUMENT_TITLE": "maize-pest-factsheet-plu-content2.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/14849/notices/6780/documents/4333/document",
+   "PUBLICATION_DATE": "19/11/2020",
+   "DOCUMENT_SIZE": 448966,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2237,11 +2237,11 @@
    "EPPO_CODE": "HETDPA",
    "LATIN_NAME": "Globodera pallida",
    "DOCUMENT_TITLE": "",
-   "DOCUMENT_TYPE": "PD Notice",
+   "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15786/notices/6922/documents/4555/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15786/notices/6923/documents/4556/document",
    "PUBLICATION_DATE": "16/10/2024",
-   "DOCUMENT_SIZE": 278594,
+   "DOCUMENT_SIZE": 553354,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2249,11 +2249,11 @@
    "EPPO_CODE": "HETDPA",
    "LATIN_NAME": "Globodera pallida",
    "DOCUMENT_TITLE": "",
-   "DOCUMENT_TYPE": "Factsheet",
+   "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15786/notices/6923/documents/4556/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/15786/notices/6922/documents/4555/document",
    "PUBLICATION_DATE": "16/10/2024",
-   "DOCUMENT_SIZE": 553354,
+   "DOCUMENT_SIZE": 278594,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2272,24 +2272,36 @@
    "CSL_REF": 16114,
    "EPPO_CODE": "LAPHFR",
    "LATIN_NAME": "Spodoptera frugiperda",
-   "DOCUMENT_TITLE": "emerging pest of maize_factsheet_.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16114/notices/6904/documents/4526/document",
-   "PUBLICATION_DATE": "17/10/2023",
-   "DOCUMENT_SIZE": 929117,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 16114,
-   "EPPO_CODE": "LAPHFR",
-   "LATIN_NAME": "Spodoptera frugiperda",
    "DOCUMENT_TITLE": "spodoptera-frugiperda_pest-alert-v2.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16114/notices/6680/documents/4179/document",
    "PUBLICATION_DATE": "22/05/2017",
    "DOCUMENT_SIZE": 109852,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 16114,
+   "EPPO_CODE": "LAPHFR",
+   "LATIN_NAME": "Spodoptera frugiperda",
+   "DOCUMENT_TITLE": "pest_alert_spodoptera_frugiperda.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16114/notices/6877/documents/4492/document",
+   "PUBLICATION_DATE": "11/09/2023",
+   "DOCUMENT_SIZE": 142437,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 16114,
+   "EPPO_CODE": "LAPHFR",
+   "LATIN_NAME": "Spodoptera frugiperda",
+   "DOCUMENT_TITLE": "emerging pest of maize_factsheet_.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16114/notices/6904/documents/4526/document",
+   "PUBLICATION_DATE": "17/10/2023",
+   "DOCUMENT_SIZE": 929117,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2314,18 +2326,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16114/notices/6829/documents/4415/document",
    "PUBLICATION_DATE": "07/02/2022",
    "DOCUMENT_SIZE": 132398,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 16114,
-   "EPPO_CODE": "LAPHFR",
-   "LATIN_NAME": "Spodoptera frugiperda",
-   "DOCUMENT_TITLE": "pest_alert_spodoptera_frugiperda.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16114/notices/6877/documents/4492/document",
-   "PUBLICATION_DATE": "11/09/2023",
-   "DOCUMENT_SIZE": 142437,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2368,24 +2368,24 @@
    "CSL_REF": 16540,
    "EPPO_CODE": "MELGFA",
    "LATIN_NAME": "Meloidogyne fallax",
-   "DOCUMENT_TITLE": "m2.fallax_ppfs_v3.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16540/notices/6806/documents/4383/document",
-   "PUBLICATION_DATE": "04/03/2024",
-   "DOCUMENT_SIZE": 371067,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 16540,
-   "EPPO_CODE": "MELGFA",
-   "LATIN_NAME": "Meloidogyne fallax",
    "DOCUMENT_TITLE": "meloidogyne fallax.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16540/notices/6803/documents/4380/document",
    "PUBLICATION_DATE": "12/07/2021",
    "DOCUMENT_SIZE": 192970,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 16540,
+   "EPPO_CODE": "MELGFA",
+   "LATIN_NAME": "Meloidogyne fallax",
+   "DOCUMENT_TITLE": "m2.fallax_ppfs_v3.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16540/notices/6806/documents/4383/document",
+   "PUBLICATION_DATE": "04/03/2024",
+   "DOCUMENT_SIZE": 371067,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2416,18 +2416,6 @@
    "CSL_REF": 18132,
    "EPPO_CODE": "RHAGPO",
    "LATIN_NAME": "Rhagoletis pomonella",
-   "DOCUMENT_TITLE": "",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/18132/notices/6931/documents/4565/document",
-   "PUBLICATION_DATE": "13/11/2024",
-   "DOCUMENT_SIZE": 408908,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 18132,
-   "EPPO_CODE": "RHAGPO",
-   "LATIN_NAME": "Rhagoletis pomonella",
    "DOCUMENT_TITLE": "pest_alert_rhagoletis_pomonella.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -2440,24 +2428,36 @@
    "CSL_REF": 18132,
    "EPPO_CODE": "RHAGPO",
    "LATIN_NAME": "Rhagoletis pomonella",
-   "DOCUMENT_TITLE": "rhagoletis pomonella pest alert v4.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/18132/notices/6681/documents/4182/document",
-   "PUBLICATION_DATE": "29/01/2018",
-   "DOCUMENT_SIZE": 132977,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 18132,
-   "EPPO_CODE": "RHAGPO",
-   "LATIN_NAME": "Rhagoletis pomonella",
    "DOCUMENT_TITLE": "pest_alert_rhagoletis_pomonella.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/18132/notices/6830/documents/4416/document",
    "PUBLICATION_DATE": "07/02/2022",
    "DOCUMENT_SIZE": 155864,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 18132,
+   "EPPO_CODE": "RHAGPO",
+   "LATIN_NAME": "Rhagoletis pomonella",
+   "DOCUMENT_TITLE": "",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/18132/notices/6931/documents/4565/document",
+   "PUBLICATION_DATE": "13/11/2024",
+   "DOCUMENT_SIZE": 408908,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 18132,
+   "EPPO_CODE": "RHAGPO",
+   "LATIN_NAME": "Rhagoletis pomonella",
+   "DOCUMENT_TITLE": "rhagoletis pomonella pest alert v4.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/18132/notices/6681/documents/4182/document",
+   "PUBLICATION_DATE": "29/01/2018",
+   "DOCUMENT_SIZE": 132977,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2560,12 +2560,12 @@
    "CSL_REF": 20889,
    "EPPO_CODE": "LIRIHU",
    "LATIN_NAME": "Liriomyza huidobrensis",
-   "DOCUMENT_TITLE": "7_A-leafminer.doc",
+   "DOCUMENT_TITLE": "10_leafminer90.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/3585/documents/419/document",
-   "PUBLICATION_DATE": "15/09/1989",
-   "DOCUMENT_SIZE": 16349,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/3587/documents/61/document",
+   "PUBLICATION_DATE": "10/05/1990",
+   "DOCUMENT_SIZE": 28674,
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
@@ -2578,18 +2578,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/4612/documents/83/document",
    "PUBLICATION_DATE": "22/10/2001",
    "DOCUMENT_SIZE": 330754,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 20889,
-   "EPPO_CODE": "LIRIHU",
-   "LATIN_NAME": "Liriomyza huidobrensis",
-   "DOCUMENT_TITLE": "10_leafminer90.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/3587/documents/61/document",
-   "PUBLICATION_DATE": "10/05/1990",
-   "DOCUMENT_SIZE": 28674,
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
@@ -2620,18 +2608,6 @@
    "CSL_REF": 20889,
    "EPPO_CODE": "LIRIHU",
    "LATIN_NAME": "Liriomyza huidobrensis",
-   "DOCUMENT_TITLE": "30.doc",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/4611/documents/82/document",
-   "PUBLICATION_DATE": "15/10/2001",
-   "DOCUMENT_SIZE": 330754,
-   "DOCUMENT_FORMAT": "application/msword"
- },
- {
-   "CSL_REF": 20889,
-   "EPPO_CODE": "LIRIHU",
-   "LATIN_NAME": "Liriomyza huidobrensis",
    "DOCUMENT_TITLE": "8_leafminer89.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -2644,12 +2620,36 @@
    "CSL_REF": 20889,
    "EPPO_CODE": "LIRIHU",
    "LATIN_NAME": "Liriomyza huidobrensis",
+   "DOCUMENT_TITLE": "30.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/4611/documents/82/document",
+   "PUBLICATION_DATE": "15/10/2001",
+   "DOCUMENT_SIZE": 330754,
+   "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 20889,
+   "EPPO_CODE": "LIRIHU",
+   "LATIN_NAME": "Liriomyza huidobrensis",
    "DOCUMENT_TITLE": "22_lhctl.doc",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/3843/documents/67/document",
    "PUBLICATION_DATE": "15/02/1997",
    "DOCUMENT_SIZE": 14783,
+   "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 20889,
+   "EPPO_CODE": "LIRIHU",
+   "LATIN_NAME": "Liriomyza huidobrensis",
+   "DOCUMENT_TITLE": "7_A-leafminer.doc",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/20889/notices/3585/documents/419/document",
+   "PUBLICATION_DATE": "15/09/1989",
+   "DOCUMENT_SIZE": 16349,
    "DOCUMENT_FORMAT": "application/msword"
  },
  {
@@ -2728,18 +2728,6 @@
    "CSL_REF": 22255,
    "EPPO_CODE": "TYLRCL",
    "LATIN_NAME": "Tylenchorhynchus claytoni",
-   "DOCUMENT_TITLE": "emerging pest of maize_factsheet_.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22255/notices/6902/documents/4524/document",
-   "PUBLICATION_DATE": "17/10/2023",
-   "DOCUMENT_SIZE": 929117,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 22255,
-   "EPPO_CODE": "TYLRCL",
-   "LATIN_NAME": "Tylenchorhynchus claytoni",
    "DOCUMENT_TITLE": "maize_factsheet_update_2022.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -2758,6 +2746,54 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22255/notices/6784/documents/4337/document",
    "PUBLICATION_DATE": "19/11/2020",
    "DOCUMENT_SIZE": 448966,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 22255,
+   "EPPO_CODE": "TYLRCL",
+   "LATIN_NAME": "Tylenchorhynchus claytoni",
+   "DOCUMENT_TITLE": "emerging pest of maize_factsheet_.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22255/notices/6902/documents/4524/document",
+   "PUBLICATION_DATE": "17/10/2023",
+   "DOCUMENT_SIZE": 929117,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 22293,
+   "EPPO_CODE": "VITEVI",
+   "LATIN_NAME": "Daktulosphaira vitifoliae",
+   "DOCUMENT_TITLE": "pest_alert_grape_phylloxera.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6818/documents/4403/document",
+   "PUBLICATION_DATE": "24/01/2022",
+   "DOCUMENT_SIZE": 320696,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 22293,
+   "EPPO_CODE": "VITEVI",
+   "LATIN_NAME": "Daktulosphaira vitifoliae",
+   "DOCUMENT_TITLE": "pest-alert-grape-phylloxera-v2.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6764/documents/4312/document",
+   "PUBLICATION_DATE": "12/11/2020",
+   "DOCUMENT_SIZE": 252418,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 22293,
+   "EPPO_CODE": "VITEVI",
+   "LATIN_NAME": "Daktulosphaira vitifoliae",
+   "DOCUMENT_TITLE": "daktulosphaira vitifoliae ppf.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6710/documents/4221/document",
+   "PUBLICATION_DATE": "01/07/2016",
+   "DOCUMENT_SIZE": 209316,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2782,42 +2818,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6766/documents/4314/document",
    "PUBLICATION_DATE": "13/11/2020",
    "DOCUMENT_SIZE": 252415,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 22293,
-   "EPPO_CODE": "VITEVI",
-   "LATIN_NAME": "Daktulosphaira vitifoliae",
-   "DOCUMENT_TITLE": "daktulosphaira vitifoliae ppf.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6710/documents/4221/document",
-   "PUBLICATION_DATE": "01/07/2016",
-   "DOCUMENT_SIZE": 209316,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 22293,
-   "EPPO_CODE": "VITEVI",
-   "LATIN_NAME": "Daktulosphaira vitifoliae",
-   "DOCUMENT_TITLE": "pest-alert-grape-phylloxera-v2.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6764/documents/4312/document",
-   "PUBLICATION_DATE": "12/11/2020",
-   "DOCUMENT_SIZE": 252418,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 22293,
-   "EPPO_CODE": "VITEVI",
-   "LATIN_NAME": "Daktulosphaira vitifoliae",
-   "DOCUMENT_TITLE": "pest_alert_grape_phylloxera.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/22293/notices/6818/documents/4403/document",
-   "PUBLICATION_DATE": "24/01/2022",
-   "DOCUMENT_SIZE": 320696,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2863,9 +2863,9 @@
    "DOCUMENT_TITLE": "",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/23022/notices/6929/documents/4562/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/23022/notices/6930/documents/4563/document",
    "PUBLICATION_DATE": "16/10/2024",
-   "DOCUMENT_SIZE": 395602,
+   "DOCUMENT_SIZE": 284217,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2887,21 +2887,9 @@
    "DOCUMENT_TITLE": "",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/23022/notices/6930/documents/4563/document",
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/23022/notices/6929/documents/4562/document",
    "PUBLICATION_DATE": "16/10/2024",
-   "DOCUMENT_SIZE": 284217,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 23196,
-   "EPPO_CODE": "PAYSAR",
-   "LATIN_NAME": "Paysandisia archon",
-   "DOCUMENT_TITLE": "paysandisia archon  v8.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/23196/notices/6789/documents/4342/document",
-   "PUBLICATION_DATE": "10/12/2024",
-   "DOCUMENT_SIZE": 622650,
+   "DOCUMENT_SIZE": 395602,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -2915,6 +2903,18 @@
    "PUBLICATION_DATE": "24/08/2007",
    "DOCUMENT_SIZE": 1638912,
    "DOCUMENT_FORMAT": "application/msword"
+ },
+ {
+   "CSL_REF": 23196,
+   "EPPO_CODE": "PAYSAR",
+   "LATIN_NAME": "Paysandisia archon",
+   "DOCUMENT_TITLE": "paysandisia archon  v8.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/23196/notices/6789/documents/4342/document",
+   "PUBLICATION_DATE": "10/12/2024",
+   "DOCUMENT_SIZE": 622650,
+   "DOCUMENT_FORMAT": "application/pdf"
  },
  {
    "CSL_REF": 23214,
@@ -2968,18 +2968,6 @@
    "CSL_REF": 24229,
    "EPPO_CODE": "ARGPLE",
    "LATIN_NAME": "Thaumatotibia leucotreta",
-   "DOCUMENT_TITLE": "pest_alert_thaumatotibia_leucotreta.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/24229/notices/6878/documents/4493/document",
-   "PUBLICATION_DATE": "11/09/2023",
-   "DOCUMENT_SIZE": 145386,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 24229,
-   "EPPO_CODE": "ARGPLE",
-   "LATIN_NAME": "Thaumatotibia leucotreta",
    "DOCUMENT_TITLE": "pest_alert_t_leucotreta.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -3013,6 +3001,18 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
+   "CSL_REF": 24229,
+   "EPPO_CODE": "ARGPLE",
+   "LATIN_NAME": "Thaumatotibia leucotreta",
+   "DOCUMENT_TITLE": "pest_alert_thaumatotibia_leucotreta.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/24229/notices/6878/documents/4493/document",
+   "PUBLICATION_DATE": "11/09/2023",
+   "DOCUMENT_SIZE": 145386,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
    "CSL_REF": 24314,
    "EPPO_CODE": "NAPOGY",
    "LATIN_NAME": "Phytomyza gymnostoma",
@@ -3040,24 +3040,24 @@
    "CSL_REF": 25108,
    "EPPO_CODE": "RRV000",
    "LATIN_NAME": "Emaravirus rosae",
-   "DOCUMENT_TITLE": "rrv_factsheet.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/25108/notices/6763/documents/4307/document",
-   "PUBLICATION_DATE": "21/04/2020",
-   "DOCUMENT_SIZE": 340853,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 25108,
-   "EPPO_CODE": "RRV000",
-   "LATIN_NAME": "Emaravirus rosae",
    "DOCUMENT_TITLE": "rose_rosette_virus.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/25108/notices/6844/documents/4437/document",
    "PUBLICATION_DATE": "02/08/2022",
    "DOCUMENT_SIZE": 559125,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 25108,
+   "EPPO_CODE": "RRV000",
+   "LATIN_NAME": "Emaravirus rosae",
+   "DOCUMENT_TITLE": "rrv_factsheet.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/25108/notices/6763/documents/4307/document",
+   "PUBLICATION_DATE": "21/04/2020",
+   "DOCUMENT_SIZE": 340853,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3087,7 +3087,7 @@
  {
    "CSL_REF": 26072,
    "EPPO_CODE": "BLSCV0",
-   "LATIN_NAME": "Carlavirus vaccinii",
+   "LATIN_NAME": "Blueberry scorch virus",
    "DOCUMENT_TITLE": "blueberry_factsheet_final.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -3148,30 +3148,6 @@
    "CSL_REF": 26575,
    "EPPO_CODE": "AROMBU",
    "LATIN_NAME": "Aromia bungii",
-   "DOCUMENT_TITLE": "aromia-bungii-pest-alert3.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26575/notices/6678/documents/4137/document",
-   "PUBLICATION_DATE": "22/01/2018",
-   "DOCUMENT_SIZE": 126111,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 26575,
-   "EPPO_CODE": "AROMBU",
-   "LATIN_NAME": "Aromia bungii",
-   "DOCUMENT_TITLE": "pest_factsheet_aromia bungii.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26575/notices/6845/documents/4439/document",
-   "PUBLICATION_DATE": "02/08/2022",
-   "DOCUMENT_SIZE": 1222322,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 26575,
-   "EPPO_CODE": "AROMBU",
-   "LATIN_NAME": "Aromia bungii",
    "DOCUMENT_TITLE": "aromia_bungii_factsheet__final.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -3196,12 +3172,36 @@
    "CSL_REF": 26575,
    "EPPO_CODE": "AROMBU",
    "LATIN_NAME": "Aromia bungii",
+   "DOCUMENT_TITLE": "aromia-bungii-pest-alert3.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26575/notices/6678/documents/4137/document",
+   "PUBLICATION_DATE": "22/01/2018",
+   "DOCUMENT_SIZE": 126111,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 26575,
+   "EPPO_CODE": "AROMBU",
+   "LATIN_NAME": "Aromia bungii",
    "DOCUMENT_TITLE": "pest_alert_aromia_bungii.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26575/notices/6808/documents/4392/document",
    "PUBLICATION_DATE": "20/01/2022",
    "DOCUMENT_SIZE": 146632,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 26575,
+   "EPPO_CODE": "AROMBU",
+   "LATIN_NAME": "Aromia bungii",
+   "DOCUMENT_TITLE": "pest_factsheet_aromia bungii.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26575/notices/6845/documents/4439/document",
+   "PUBLICATION_DATE": "02/08/2022",
+   "DOCUMENT_SIZE": 1222322,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3268,24 +3268,24 @@
    "CSL_REF": 26871,
    "EPPO_CODE": "PHYPFG",
    "LATIN_NAME": "'Candidatus Phytoplasma fragariae'",
-   "DOCUMENT_TITLE": "pest_candidatus_phytoplasma_frag.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26871/notices/6894/documents/4516/document",
-   "PUBLICATION_DATE": "16/10/2023",
-   "DOCUMENT_SIZE": 207567,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 26871,
-   "EPPO_CODE": "PHYPFG",
-   "LATIN_NAME": "'Candidatus Phytoplasma fragariae'",
    "DOCUMENT_TITLE": "pest_alert_c_phytoplasma_frag.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26871/notices/6812/documents/4397/document",
    "PUBLICATION_DATE": "20/01/2022",
    "DOCUMENT_SIZE": 196632,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 26871,
+   "EPPO_CODE": "PHYPFG",
+   "LATIN_NAME": "'Candidatus Phytoplasma fragariae'",
+   "DOCUMENT_TITLE": "pest_candidatus_phytoplasma_frag.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/26871/notices/6894/documents/4516/document",
+   "PUBLICATION_DATE": "16/10/2023",
+   "DOCUMENT_SIZE": 207567,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3316,12 +3316,12 @@
    "CSL_REF": 27077,
    "EPPO_CODE": "PARZCO",
    "LATIN_NAME": "Bactericera cockerelli",
-   "DOCUMENT_TITLE": "bactericera cockerelli pest alert v3.pdf",
+   "DOCUMENT_TITLE": "pest_alert_bactericera_cockerelli.pdf",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27077/notices/6682/documents/4183/document",
-   "PUBLICATION_DATE": "20/06/2017",
-   "DOCUMENT_SIZE": 129289,
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27077/notices/6868/documents/4482/document",
+   "PUBLICATION_DATE": "04/09/2023",
+   "DOCUMENT_SIZE": 198816,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3340,12 +3340,12 @@
    "CSL_REF": 27077,
    "EPPO_CODE": "PARZCO",
    "LATIN_NAME": "Bactericera cockerelli",
-   "DOCUMENT_TITLE": "pest_alert_bactericera_cockerelli.pdf",
+   "DOCUMENT_TITLE": "bactericera cockerelli pest alert v3.pdf",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27077/notices/6868/documents/4482/document",
-   "PUBLICATION_DATE": "04/09/2023",
-   "DOCUMENT_SIZE": 198816,
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27077/notices/6682/documents/4183/document",
+   "PUBLICATION_DATE": "20/06/2017",
+   "DOCUMENT_SIZE": 129289,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3358,18 +3358,6 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27123/notices/6694/documents/4202/document",
    "PUBLICATION_DATE": "02/12/2015",
    "DOCUMENT_SIZE": 541744,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27279,
-   "EPPO_CODE": "GEOHMO",
-   "LATIN_NAME": "Geosmithia morbida",
-   "DOCUMENT_TITLE": "pest_alert_geosmithia_morbida.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27279/notices/6817/documents/4402/document",
-   "PUBLICATION_DATE": "20/01/2022",
-   "DOCUMENT_SIZE": 259647,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3394,6 +3382,18 @@
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27279/notices/6774/documents/4327/document",
    "PUBLICATION_DATE": "19/11/2020",
    "DOCUMENT_SIZE": 421210,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27279,
+   "EPPO_CODE": "GEOHMO",
+   "LATIN_NAME": "Geosmithia morbida",
+   "DOCUMENT_TITLE": "pest_alert_geosmithia_morbida.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27279/notices/6817/documents/4402/document",
+   "PUBLICATION_DATE": "20/01/2022",
+   "DOCUMENT_SIZE": 259647,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3424,6 +3424,42 @@
    "CSL_REF": 27337,
    "EPPO_CODE": "LYCMDE",
    "LATIN_NAME": "Lycorma delicatula",
+   "DOCUMENT_TITLE": "pest_alert_lycorma_delicatula.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/notices/6852/documents/4450/document",
+   "PUBLICATION_DATE": "25/11/2022",
+   "DOCUMENT_SIZE": 333487,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27337,
+   "EPPO_CODE": "LYCMDE",
+   "LATIN_NAME": "Lycorma delicatula",
+   "DOCUMENT_TITLE": "lycorma delicatula.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/notices/6866/documents/4480/document",
+   "PUBLICATION_DATE": "31/08/2023",
+   "DOCUMENT_SIZE": 470585,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27337,
+   "EPPO_CODE": "LYCMDE",
+   "LATIN_NAME": "Lycorma delicatula",
+   "DOCUMENT_TITLE": "lycorma delicatula ppf  v9.pdf",
+   "DOCUMENT_TYPE": "Factsheet",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/notices/6717/documents/4228/document",
+   "PUBLICATION_DATE": "02/05/2016",
+   "DOCUMENT_SIZE": 651787,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27337,
+   "EPPO_CODE": "LYCMDE",
+   "LATIN_NAME": "Lycorma delicatula",
    "DOCUMENT_TITLE": "pest_alert_lycorma_delicatula_update.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -3445,45 +3481,9 @@
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
-   "CSL_REF": 27337,
-   "EPPO_CODE": "LYCMDE",
-   "LATIN_NAME": "Lycorma delicatula",
-   "DOCUMENT_TITLE": "pest_alert_lycorma_delicatula.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/notices/6852/documents/4450/document",
-   "PUBLICATION_DATE": "25/11/2022",
-   "DOCUMENT_SIZE": 333487,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27337,
-   "EPPO_CODE": "LYCMDE",
-   "LATIN_NAME": "Lycorma delicatula",
-   "DOCUMENT_TITLE": "lycorma delicatula ppf  v9.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/notices/6717/documents/4228/document",
-   "PUBLICATION_DATE": "02/05/2016",
-   "DOCUMENT_SIZE": 651787,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27337,
-   "EPPO_CODE": "LYCMDE",
-   "LATIN_NAME": "Lycorma delicatula",
-   "DOCUMENT_TITLE": "lycorma delicatula.pdf",
-   "DOCUMENT_TYPE": "Factsheet",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27337/notices/6866/documents/4480/document",
-   "PUBLICATION_DATE": "31/08/2023",
-   "DOCUMENT_SIZE": 470585,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
    "CSL_REF": 27346,
    "EPPO_CODE": "PCFVD0",
-   "LATIN_NAME": "Pospiviroid parvicapsici",
+   "LATIN_NAME": "Pepper chat fruit viroid",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -3495,7 +3495,19 @@
  {
    "CSL_REF": 27364,
    "EPPO_CODE": "CBCVD0",
-   "LATIN_NAME": "Cocadviroid rimocitri",
+   "LATIN_NAME": "Citrus bark cracking viroid",
+   "DOCUMENT_TITLE": "hort pest alert cbcvd on hop2.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27364/notices/6792/documents/4345/document",
+   "PUBLICATION_DATE": "01/12/2020",
+   "DOCUMENT_SIZE": 375687,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27364,
+   "EPPO_CODE": "CBCVD0",
+   "LATIN_NAME": "Citrus bark cracking viroid",
    "DOCUMENT_TITLE": "pest_alert_citrus_bark_c_viroid.pdf",
    "DOCUMENT_TYPE": "PD Notice",
    "VISIBLE_ON_PHI_INDICATOR": 0,
@@ -3507,25 +3519,13 @@
  {
    "CSL_REF": 27364,
    "EPPO_CODE": "CBCVD0",
-   "LATIN_NAME": "Cocadviroid rimocitri",
+   "LATIN_NAME": "Citrus bark cracking viroid",
    "DOCUMENT_TITLE": "",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27364/notices/6916/documents/4540/document",
    "PUBLICATION_DATE": "06/11/2023",
    "DOCUMENT_SIZE": 193291,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27364,
-   "EPPO_CODE": "CBCVD0",
-   "LATIN_NAME": "Cocadviroid rimocitri",
-   "DOCUMENT_TITLE": "hort pest alert cbcvd on hop2.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27364/notices/6792/documents/4345/document",
-   "PUBLICATION_DATE": "01/12/2020",
-   "DOCUMENT_SIZE": 375687,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3568,24 +3568,24 @@
    "CSL_REF": 27437,
    "EPPO_CODE": "OVACFU",
    "LATIN_NAME": "Ovachlamys fulgens",
-   "DOCUMENT_TITLE": "ovachlamys fulgens  v5.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27437/notices/6787/documents/4340/document",
-   "PUBLICATION_DATE": "30/11/2020",
-   "DOCUMENT_SIZE": 263486,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 27437,
-   "EPPO_CODE": "OVACFU",
-   "LATIN_NAME": "Ovachlamys fulgens",
    "DOCUMENT_TITLE": "ovachlamys fulgens v5.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27437/notices/6800/documents/4376/document",
    "PUBLICATION_DATE": "12/07/2021",
    "DOCUMENT_SIZE": 266302,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 27437,
+   "EPPO_CODE": "OVACFU",
+   "LATIN_NAME": "Ovachlamys fulgens",
+   "DOCUMENT_TITLE": "ovachlamys fulgens  v5.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/27437/notices/6787/documents/4340/document",
+   "PUBLICATION_DATE": "30/11/2020",
+   "DOCUMENT_SIZE": 263486,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3627,7 +3627,7 @@
  {
    "CSL_REF": 27725,
    "EPPO_CODE": "TOMMV0",
-   "LATIN_NAME": "Tobamovirus maculatessellati",
+   "LATIN_NAME": "Tomato mottle mosaic virus",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -3675,7 +3675,19 @@
  {
    "CSL_REF": 28537,
    "EPPO_CODE": "TOBRFV",
-   "LATIN_NAME": "Tobamovirus fructirugosum",
+   "LATIN_NAME": "Tomato brown rugose fruit virus",
+   "DOCUMENT_TITLE": "pest_alert_tobrfv_2023.pdf",
+   "DOCUMENT_TYPE": "PD Notice",
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/28537/notices/6883/documents/4499/document",
+   "PUBLICATION_DATE": "14/09/2023",
+   "DOCUMENT_SIZE": 439129,
+   "DOCUMENT_FORMAT": "application/pdf"
+ },
+ {
+   "CSL_REF": 28537,
+   "EPPO_CODE": "TOBRFV",
+   "LATIN_NAME": "Tomato brown rugose fruit virus",
    "DOCUMENT_TITLE": "ppf pests-of-tomatoes-201906.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -3687,25 +3699,13 @@
  {
    "CSL_REF": 28537,
    "EPPO_CODE": "TOBRFV",
-   "LATIN_NAME": "Tobamovirus fructirugosum",
+   "LATIN_NAME": "Tomato brown rugose fruit virus",
    "DOCUMENT_TITLE": "tobrfv factsheet_v4.pdf",
    "DOCUMENT_TYPE": "Factsheet",
    "VISIBLE_ON_PHI_INDICATOR": 1,
    "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/28537/notices/6762/documents/4306/document",
    "PUBLICATION_DATE": "21/05/2024",
    "DOCUMENT_SIZE": 1066840,
-   "DOCUMENT_FORMAT": "application/pdf"
- },
- {
-   "CSL_REF": 28537,
-   "EPPO_CODE": "TOBRFV",
-   "LATIN_NAME": "Tobamovirus fructirugosum",
-   "DOCUMENT_TITLE": "pest_alert_tobrfv_2023.pdf",
-   "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/28537/notices/6883/documents/4499/document",
-   "PUBLICATION_DATE": "14/09/2023",
-   "DOCUMENT_SIZE": 439129,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3724,12 +3724,12 @@
    "CSL_REF": 29642,
    "EPPO_CODE": "PTRKLI",
    "LATIN_NAME": "Petrakia liobae",
-   "DOCUMENT_TITLE": "pest_alert_petrakia_liobae.pdf",
+   "DOCUMENT_TITLE": "pest_alert_petrakia_liobae_update.pdf",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 0,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/29642/notices/6820/documents/4405/document",
-   "PUBLICATION_DATE": "24/01/2022",
-   "DOCUMENT_SIZE": 239434,
+   "VISIBLE_ON_PHI_INDICATOR": 1,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/29642/notices/6887/documents/4506/document",
+   "PUBLICATION_DATE": "28/09/2023",
+   "DOCUMENT_SIZE": 249215,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {
@@ -3748,12 +3748,12 @@
    "CSL_REF": 29642,
    "EPPO_CODE": "PTRKLI",
    "LATIN_NAME": "Petrakia liobae",
-   "DOCUMENT_TITLE": "pest_alert_petrakia_liobae_update.pdf",
+   "DOCUMENT_TITLE": "pest_alert_petrakia_liobae.pdf",
    "DOCUMENT_TYPE": "PD Notice",
-   "VISIBLE_ON_PHI_INDICATOR": 1,
-   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/29642/notices/6887/documents/4506/document",
-   "PUBLICATION_DATE": "28/09/2023",
-   "DOCUMENT_SIZE": 249215,
+   "VISIBLE_ON_PHI_INDICATOR": 0,
+   "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/29642/notices/6820/documents/4405/document",
+   "PUBLICATION_DATE": "24/01/2022",
+   "DOCUMENT_SIZE": 239434,
    "DOCUMENT_FORMAT": "application/pdf"
  },
  {

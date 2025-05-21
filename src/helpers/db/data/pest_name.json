@@ -1,8 +1,10 @@
+{
+   "PEST_NAME": 
 [
  {
    "CSL_REF": 13,
    "EPPO_CODE": "BCTV00",
-   "LATIN_NAME": "Curtovirus betae",
+   "LATIN_NAME": "Beet curly top virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          742,
@@ -82,7 +84,7 @@
          "15111",
          "15376",
          "15378",
-         57189,
+         null,
          "",
          "",
          null,
@@ -142,7 +144,7 @@
          "Beet curly top hybrigeminivirus",
          "Sugarbeet curly-leaf virus",
          "Western yellows blight virus",
-         "Beet curly top virus",
+         "",
          "",
          "",
          "",
@@ -195,7 +197,7 @@
  {
    "CSL_REF": 16,
    "EPPO_CODE": "BSSV00",
-   "LATIN_NAME": "Sobemovirus BSSV",
+   "LATIN_NAME": "Blueberry shoestring virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -266,7 +268,7 @@
       "SYNONYM_NAME_ID": [
          12392,
          12427,
-         "56947",
+         "",
          "",
          "",
          "",
@@ -326,7 +328,7 @@
       "SYNONYM_NAME": [
          "Blueberry shoestring sobemovirus",
          "BSSV",
-         "Blueberry shoestring virus",
+         "",
          "",
          "",
          "",
@@ -1932,7 +1934,7 @@
  {
    "CSL_REF": 118,
    "EPPO_CODE": "PVM000",
-   "LATIN_NAME": "Carlavirus misolani",
+   "LATIN_NAME": "Potato virus M",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -2011,8 +2013,8 @@
          "22453",
          "22454",
          "22455",
-         "57201",
-         9050,
+         "9050",
+         null,
          "",
          "",
          null,
@@ -2071,8 +2073,8 @@
          "Potato virus E",
          "Solanum virus 11",
          "Solanum virus 7",
-         "Potato virus M",
          "Potato M carlavirus",
+         "",
          "",
          "",
          "",
@@ -2318,7 +2320,7 @@
  {
    "CSL_REF": 121,
    "EPPO_CODE": "PYVV00",
-   "LATIN_NAME": "Crinivirus flavisolani",
+   "LATIN_NAME": "Potato yellow vein virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          4176,
@@ -4055,7 +4057,7 @@
  {
    "CSL_REF": 212,
    "EPPO_CODE": "CCCVD0",
-   "LATIN_NAME": "Cocadviroid cadangi",
+   "LATIN_NAME": "Coconut cadang-cadang viroid",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          1108,
@@ -4441,7 +4443,7 @@
  {
    "CSL_REF": 247,
    "EPPO_CODE": "CPMMV0",
-   "LATIN_NAME": "Carlavirus vignae",
+   "LATIN_NAME": "Cowpea mild mottle virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          1812,
@@ -4513,7 +4515,7 @@
          12613,
          12619,
          "22457",
-         "57010",
+         "",
          "",
          "",
          "",
@@ -4573,7 +4575,7 @@
          "Cowpea mild mottle carlavirus",
          "CPMMV",
          "CMMMV",
-         "Cowpea mild mottle virus",
+         "",
          "",
          "",
          "",
@@ -4827,7 +4829,7 @@
  {
    "CSL_REF": 262,
    "EPPO_CODE": "CYSDV0",
-   "LATIN_NAME": "Crinivirus cucurbitae",
+   "LATIN_NAME": "Cucurbit yellow stunting disorder virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          12183,
@@ -4902,7 +4904,7 @@
          "15258",
          "15259",
          "15523",
-         "57194",
+         "",
          "",
          "",
          "",
@@ -4962,7 +4964,7 @@
          "Cucurbit yellow stunting disorder crinivirus",
          "Cucumber yellow stunting crinivirus",
          "Cucurbit yellow stunting disorder closterovirus",
-         "Cucurbit yellow stunting disorder virus",
+         "",
          "",
          "",
          "",
@@ -8108,7 +8110,7 @@
  {
    "CSL_REF": 549,
    "EPPO_CODE": "TOCV00",
-   "LATIN_NAME": "Crinivirus tomatichlorosis",
+   "LATIN_NAME": "Tomato chlorosis virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -8180,7 +8182,7 @@
          13605,
          13611,
          "13612",
-         "57033",
+         "",
          "",
          "",
          "",
@@ -8240,7 +8242,7 @@
          "ToCV",
          "Tomato chlorosis closterovirus",
          "Tomato chlorosis crinivirus",
-         "Tomato chlorosis virus",
+         "",
          "",
          "",
          "",
@@ -11582,7 +11584,7 @@
  {
    "CSL_REF": 757,
    "EPPO_CODE": "ALV000",
-   "LATIN_NAME": "Foveavirus latensarmeniacae",
+   "LATIN_NAME": "Apricot latent virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -11653,7 +11655,7 @@
       "SYNONYM_NAME_ID": [
          12258,
          12294,
-         "57186",
+         "",
          "",
          "",
          "",
@@ -11713,7 +11715,7 @@
       "SYNONYM_NAME": [
          "ALV",
          "Apricot latent foveavirus",
-         "Apricot latent virus",
+         "",
          "",
          "",
          "",
@@ -12740,7 +12742,7 @@
  {
    "CSL_REF": 815,
    "EPPO_CODE": "CTTLV0",
-   "LATIN_NAME": "Potyvirus carotatenuifoli",
+   "LATIN_NAME": "Carrot thin leaf potyvirus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -12811,7 +12813,7 @@
       "SYNONYM_NAME_ID": [
          12464,
          12637,
-         "56980",
+         "",
          "",
          "",
          "",
@@ -12871,7 +12873,7 @@
       "SYNONYM_NAME": [
          "Carrot thin leaf virus",
          "CtTLV",
-         "Carrot thin leaf potyvirus",
+         "",
          "",
          "",
          "",
@@ -15828,7 +15830,7 @@
  {
    "CSL_REF": 1015,
    "EPPO_CODE": "SMYEV0",
-   "LATIN_NAME": "Potexvirus fragariae",
+   "LATIN_NAME": "Strawberry mild yellow edge virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          4474,
@@ -15905,7 +15907,7 @@
          "15308",
          "15309",
          "15375",
-         "56999",
+         "",
          "",
          "",
          null,
@@ -15965,7 +15967,7 @@
          "Strawberry xanthosis",
          "Strawberry yellow edge virus",
          "Strawberry virus 2",
-         "Strawberry mild yellow edge virus",
+         "",
          "",
          "",
          "",
@@ -16600,7 +16602,7 @@
  {
    "CSL_REF": 1041,
    "EPPO_CODE": "TYLCV0",
-   "LATIN_NAME": "Begomovirus coheni",
+   "LATIN_NAME": "Tomato yellow leaf curl virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          16213,
@@ -16680,7 +16682,7 @@
          "14086",
          "15582",
          "39877",
-         57692,
+         null,
          "",
          "",
          null,
@@ -16740,7 +16742,7 @@
          "TYLCV-Sr",
          "Tomato leaf curl geminivirus",
          " Tomato yellow leaf curl Gezira virus",
-         "Tomato yellow leaf curl virus",
+         "",
          "",
          "",
          "",
@@ -17372,7 +17374,7 @@
  {
    "CSL_REF": 1095,
    "EPPO_CODE": "CVV000",
-   "LATIN_NAME": "Ilarvirus CVV",
+   "LATIN_NAME": "Citrus variegation virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -17446,7 +17448,7 @@
          "12555",
          "12659",
          "16923",
-         "57180",
+         "",
          "",
          "",
          "",
@@ -17506,7 +17508,7 @@
          "Citrus variegation ilarvirus",
          "CVV",
          "Citrus psorosis virus complex",
-         "Citrus variegation virus",
+         "",
          "",
          "",
          "",
@@ -33201,7 +33203,7 @@
    "LATIN_NAME": "Epitrix fasciata",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
-         17143,
+         null,
          null,
          "",
          "",
@@ -33233,7 +33235,7 @@
          null
       ],
       "COMMON_NAME": [
-         "Southern tobacco flea beetle",
+         "",
          "",
          "",
          "",
@@ -33267,9 +33269,9 @@
    },
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
-         57939,
-         57940,
-         "57941",
+         null,
+         null,
+         "",
          "",
          "",
          "",
@@ -33327,9 +33329,9 @@
          null
       ],
       "SYNONYM_NAME": [
-         "Crioceris parvula",
-         "Haltica parvula",
-         "Epitrix parvula",
+         "",
+         "",
+         "",
          "",
          "",
          "",
@@ -62024,9 +62026,9 @@
    },
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
-         3879,
-         null,
-         "",
+         1175,
+         23968,
+         "3879",
          "",
          "",
          "",
@@ -62084,9 +62086,9 @@
          null
       ],
       "SYNONYM_NAME": [
+         "Epitrimerus vitis",
+         "Calepitrimerus vitis",
          "Phyllocoptes vitis",
-         "",
-         "",
          "",
          "",
          "",
@@ -77202,7 +77204,7 @@
  {
    "CSL_REF": 11073,
    "EPPO_CODE": "PVT000",
-   "LATIN_NAME": "Tepovirus tafsolani",
+   "LATIN_NAME": "Potato virus T",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -77274,7 +77276,7 @@
          13301,
          13305,
          "13349",
-         "56944",
+         "",
          "",
          "",
          "",
@@ -77334,7 +77336,7 @@
          "Potato T capillovirus",
          "Potato T trichovirus",
          "PVT",
-         "Potato virus T",
+         "",
          "",
          "",
          "",
@@ -77395,7 +77397,7 @@
  {
    "CSL_REF": 11112,
    "EPPO_CODE": "TYVSV0",
-   "LATIN_NAME": "Begomovirus solanumflavusvenae",
+   "LATIN_NAME": "Tomato yellow vein streak begomovirus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -77466,7 +77468,7 @@
       "SYNONYM_NAME_ID": [
          13639,
          13678,
-         "57215",
+         "",
          "",
          "",
          "",
@@ -77526,7 +77528,7 @@
       "SYNONYM_NAME": [
          "Tomato yellow vein streak virus",
          "TYVSV",
-         "Tomato yellow vein streak begomovirus",
+         "",
          "",
          "",
          "",
@@ -77781,7 +77783,7 @@
  {
    "CSL_REF": 11131,
    "EPPO_CODE": "ASGV00",
-   "LATIN_NAME": "Capillovirus mali",
+   "LATIN_NAME": "Apple stem grooving virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -77857,7 +77859,7 @@
          "12289",
          "12307",
          "13691",
-         "57206",
+         "",
          "",
          "",
          "",
@@ -77917,7 +77919,7 @@
          "Capillovirus Apple stem grooving virus",
          "ASGV",
          "Virginia Crab stem grooving virus",
-         "Apple stem grooving virus",
+         "",
          "",
          "",
          "",
@@ -78939,7 +78941,7 @@
  {
    "CSL_REF": 11217,
    "EPPO_CODE": "BGMV00",
-   "LATIN_NAME": "Begomovirus costai",
+   "LATIN_NAME": "Bean golden mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          767,
@@ -79015,7 +79017,7 @@
          "13805",
          "13865",
          "13867",
-         "57699",
+         "",
          "",
          "",
          "",
@@ -79075,7 +79077,7 @@
          "Bean calico mosaic begomovirus",
          "Bean calico mosaic virus",
          "Bean golden mosaic virus (Brazil)",
-         "Bean golden mosaic virus",
+         "",
          "",
          "",
          "",
@@ -81448,7 +81450,7 @@
  {
    "CSL_REF": 11367,
    "EPPO_CODE": "BNYVV0",
-   "LATIN_NAME": "Benyvirus necrobetae",
+   "LATIN_NAME": "Beet necrotic yellow vein virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          821,
@@ -81522,7 +81524,7 @@
          "12398",
          "15645",
          "16828",
-         "57683",
+         "",
          "",
          "",
          "",
@@ -81582,7 +81584,7 @@
          "BNYVV",
          "Beet rhizomania virus",
          "Beet yellow vein virus",
-         "Beet necrotic yellow vein virus",
+         "",
          "",
          "",
          "",
@@ -82413,7 +82415,7 @@
  {
    "CSL_REF": 11413,
    "EPPO_CODE": "PVS000",
-   "LATIN_NAME": "Carlavirus sigmasolani",
+   "LATIN_NAME": "Potato virus S",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -82484,7 +82486,7 @@
       "SYNONYM_NAME_ID": [
          13304,
          13348,
-         "57200",
+         "",
          "",
          "",
          "",
@@ -82544,7 +82546,7 @@
       "SYNONYM_NAME": [
          "Potato S carlavirus",
          "PVS",
-         "Potato virus S",
+         "",
          "",
          "",
          "",
@@ -82606,7 +82608,7 @@
  {
    "CSL_REF": 11433,
    "EPPO_CODE": "CMBV00",
-   "LATIN_NAME": "Badnavirus tessellocitri",
+   "LATIN_NAME": "Citrus mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -82678,7 +82680,7 @@
          12535,
          12546,
          "13808",
-         "57689",
+         "",
          "",
          "",
          "",
@@ -82738,7 +82740,7 @@
          "CiMV",
          "Citrus mosaic badnavirus",
          "Citrus yellow mosaic badnavirus",
-         "Citrus mosaic virus",
+         "",
          "",
          "",
          "",
@@ -82799,7 +82801,7 @@
  {
    "CSL_REF": 11440,
    "EPPO_CODE": "LIYV00",
-   "LATIN_NAME": "Crinivirus lactucaflavi",
+   "LATIN_NAME": "Lettuce infectious yellows virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -82871,7 +82873,7 @@
          12952,
          12953,
          "12979",
-         "57034",
+         "",
          "",
          "",
          "",
@@ -82931,7 +82933,7 @@
          "Lettuce infectious yellows closterovirus",
          "Lettuce infectious yellows crinivirus",
          "LIYV",
-         "Lettuce infectious yellows virus",
+         "",
          "",
          "",
          "",
@@ -84922,7 +84924,7 @@
  {
    "CSL_REF": 11539,
    "EPPO_CODE": "CRNRM0",
-   "LATIN_NAME": "Robigovirus necroavii",
+   "LATIN_NAME": "Cherry necrotic rusty mottle virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          1824,
@@ -84993,7 +84995,7 @@
       "SYNONYM_NAME_ID": [
          23430,
          39467,
-         "56949",
+         "",
          "",
          "",
          "",
@@ -85053,7 +85055,7 @@
       "SYNONYM_NAME": [
          "Cherry necrotic rusty mottle disease",
          "Cherry necrotic rusty mottle agent",
-         "Cherry necrotic rusty mottle virus",
+         "",
          "",
          "",
          "",
@@ -86273,7 +86275,7 @@
  {
    "CSL_REF": 11625,
    "EPPO_CODE": "PVA000",
-   "LATIN_NAME": "Potyvirus atuberosi",
+   "LATIN_NAME": "Potato virus A",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          4052,
@@ -86348,7 +86350,7 @@
          "22506",
          "22507",
          "22508",
-         "56964",
+         "",
          "",
          "",
          "",
@@ -86408,7 +86410,7 @@
          "Potato mild mosaic virus",
          "Potato virus P",
          "Solanum virus 3",
-         "Potato virus A",
+         "",
          "",
          "",
          "",
@@ -87238,7 +87240,7 @@
  {
    "CSL_REF": 11698,
    "EPPO_CODE": "ASPV00",
-   "LATIN_NAME": "Foveavirus mali",
+   "LATIN_NAME": "Apple stem pitting virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          12527,
@@ -87313,7 +87315,7 @@
          "12876",
          "13195",
          "13196",
-         "56969",
+         "",
          "",
          "",
          "",
@@ -87373,7 +87375,7 @@
          "Hawthorn ring pattern mosaic virus",
          "Pear stony pit virus",
          "Pear vein yellows virus",
-         "Apple stem pitting virus",
+         "",
          "",
          "",
          "",
@@ -87817,7 +87819,7 @@
  {
    "CSL_REF": 11740,
    "EPPO_CODE": "CMV000",
-   "LATIN_NAME": "Cucumovirus CMV",
+   "LATIN_NAME": "Cucumber mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          1572,
@@ -87898,7 +87900,7 @@
          "15214",
          "22512",
          28921,
-         "57032",
+         "",
          "",
          null,
          null,
@@ -87958,7 +87960,7 @@
          "Soybean stunt virus",
          "Southern celery mosaic virus",
          "Lima bean mosaic virus",
-         "Cucumber mosaic virus",
+         "",
          "",
          "",
          "",
@@ -92642,7 +92644,7 @@
  {
    "CSL_REF": 11980,
    "EPPO_CODE": "PSTVD0",
-   "LATIN_NAME": "Pospiviroid fusituberis",
+   "LATIN_NAME": "Potato spindle tuber viroid",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          3931,
@@ -92717,7 +92719,7 @@
          "13338",
          "13608",
          "16832",
-         "57000",
+         "",
          "",
          "",
          "",
@@ -92777,7 +92779,7 @@
          "PSTVd",
          "Tomato bunchy top viroid",
          "Tomato bunchy top virus",
-         "Potato spindle tuber viroid",
+         "",
          "",
          "",
          "",
@@ -93221,7 +93223,7 @@
  {
    "CSL_REF": 11991,
    "EPPO_CODE": "PVV000",
-   "LATIN_NAME": "Potyvirus vetuberosi",
+   "LATIN_NAME": "Potato virus V",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -93292,7 +93294,7 @@
       "SYNONYM_NAME_ID": [
          13307,
          13351,
-         "56919",
+         "",
          "",
          "",
          "",
@@ -93352,7 +93354,7 @@
       "SYNONYM_NAME": [
          "Potato V potyvirus",
          "PVV",
-         "Potato virus V",
+         "",
          "",
          "",
          "",
@@ -93607,7 +93609,7 @@
  {
    "CSL_REF": 12013,
    "EPPO_CODE": "RLMV00",
-   "LATIN_NAME": "Closterovirus macularubi",
+   "LATIN_NAME": "Raspberry leaf mottle virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          16119,
@@ -93679,7 +93681,7 @@
          39640,
          null,
          "RLMV",
-         "Raspberry leaf mottle virus",
+         "",
          "",
          "",
          "",
@@ -93738,7 +93740,7 @@
       "SYNONYM_NAME": [
          "Raspberry leaf mottle closterovirus ",
          "39641",
-         "57710",
+         "",
          "",
          "",
          "",
@@ -94572,7 +94574,7 @@
  {
    "CSL_REF": 12054,
    "EPPO_CODE": "TICV00",
-   "LATIN_NAME": "Crinivirus contagichlorosis",
+   "LATIN_NAME": "Tomato infectious chlorosis virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -94644,7 +94646,7 @@
          13577,
          13619,
          "13620",
-         "57192",
+         "",
          "",
          "",
          "",
@@ -94704,7 +94706,7 @@
          "TICV",
          "Tomato infectious chlorosis closterovirus",
          "Tomato infectious chlorosis crinivirus",
-         "Tomato infectious chlorosis virus",
+         "",
          "",
          "",
          "",
@@ -96116,7 +96118,7 @@
  {
    "CSL_REF": 12123,
    "EPPO_CODE": "CLYMV0",
-   "LATIN_NAME": "Potexvirus flavitrifolii",
+   "LATIN_NAME": "Clover yellow mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -96191,7 +96193,7 @@
          "15386",
          "22526",
          "22527",
-         "56994",
+         "",
          "",
          "",
          "",
@@ -96251,7 +96253,7 @@
          "Clover yellow mosaic viroid",
          "Marmor efficiens",
          "Pea mottle virus",
-         "Clover yellow mosaic virus",
+         "",
          "",
          "",
          "",
@@ -97467,7 +97469,7 @@
  {
    "CSL_REF": 12270,
    "EPPO_CODE": "APMV00",
-   "LATIN_NAME": "Ilarvirus ApMV",
+   "LATIN_NAME": "Apple mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          12585,
@@ -97554,7 +97556,7 @@
          24426,
          "24427",
          24428,
-         57181,
+         null,
          "",
          null,
          null,
@@ -97614,7 +97616,7 @@
          "Birch ringspot virus",
          "Severe apple mosiac virus",
          "Mild apple mosaic virus",
-         "Apple mosaic virus",
+         "",
          "",
          "",
          "",
@@ -97853,7 +97855,7 @@
  {
    "CSL_REF": 12300,
    "EPPO_CODE": "CEVD00",
-   "LATIN_NAME": "Pospiviroid exocortiscitri",
+   "LATIN_NAME": "Citrus exocortis viroid",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          1355,
@@ -98046,7 +98048,7 @@
  {
    "CSL_REF": 12301,
    "EPPO_CODE": "CGRMV0",
-   "LATIN_NAME": "Robigovirus viridiavii",
+   "LATIN_NAME": "Cherry green ring mottle virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          16180,
@@ -98120,7 +98122,7 @@
          "39861",
          "39862",
          "39863",
-         "56961",
+         "",
          "",
          "",
          "",
@@ -98180,7 +98182,7 @@
          "Cherry green ring mottle trichovirus",
          "Pear vein yellows virus",
          "Sour cherry green ring mottle virus",
-         "Cherry green ring mottle virus",
+         "",
          "",
          "",
          "",
@@ -98818,7 +98820,7 @@
  {
    "CSL_REF": 12351,
    "EPPO_CODE": "EUMV00",
-   "LATIN_NAME": "Begomovirus euphorbiamusivi",
+   "LATIN_NAME": "Euphorbia mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -98891,7 +98893,7 @@
          12742,
          "12743",
          "12744",
-         "57704",
+         "",
          "",
          "",
          "",
@@ -98951,7 +98953,7 @@
          "Euphorbia mosaic bigeminivirus",
          "Euphorbia mosaic geminivirus",
          "Euphorbia mosaic begomovirus",
-         "Euphorbia mosaic virus",
+         "",
          "",
          "",
          "",
@@ -99783,7 +99785,7 @@
  {
    "CSL_REF": 12380,
    "EPPO_CODE": "HSVD00",
-   "LATIN_NAME": "Hostuviroid impedihumuli",
+   "LATIN_NAME": "Hop stunt viroid",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          16187,
@@ -99861,7 +99863,7 @@
          "15664",
          "39864",
          "39865",
-         "57182",
+         "",
          "",
          null,
          "",
@@ -99921,7 +99923,7 @@
          "Citrus xyloporosis viroid",
          "Citrus viroid II",
          "Dapple plum and peach fruit disease viroid",
-         "Hop stunt viroid",
+         "",
          "",
          "",
          "",
@@ -101713,7 +101715,7 @@
  {
    "CSL_REF": 12477,
    "EPPO_CODE": " PVP000",
-   "LATIN_NAME": "Carlavirus pisolani",
+   "LATIN_NAME": "Potato virus P",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -101786,7 +101788,7 @@
          13321,
          "42205",
          "42206",
-         "57007",
+         "",
          "",
          "",
          "",
@@ -101846,7 +101848,7 @@
          "PVP",
          "Potato rough dwarf carlavirus",
          "PRDV",
-         "Potato virus P",
+         "",
          "",
          "",
          "",
@@ -106152,7 +106154,7 @@
  {
    "CSL_REF": 12789,
    "EPPO_CODE": "CTV000",
-   "LATIN_NAME": "Closterovirus tristezae",
+   "LATIN_NAME": "Citrus tristeza virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          1897,
@@ -106228,7 +106230,7 @@
          "15248",
          "15449",
          "15687",
-         "57709",
+         "",
          "",
          "",
          "",
@@ -106288,7 +106290,7 @@
          "Tristeza disease of citrus",
          "Lime dieback virus",
          "Lime die-back virus",
-         "Citrus tristeza virus",
+         "",
          "",
          "",
          "",
@@ -106924,7 +106926,7 @@
  {
    "CSL_REF": 12846,
    "EPPO_CODE": "PVY000",
-   "LATIN_NAME": "Potyvirus yituberosi",
+   "LATIN_NAME": "Potato virus Y",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          4058,
@@ -107002,7 +107004,7 @@
          "22414",
          "22415",
          "22416",
-         "56918",
+         "",
          "",
          null,
          "",
@@ -107062,7 +107064,7 @@
          "Potato severe mosaic virus",
          "Solanum virus 2",
          "Tobacco vein-banding virus",
-         "Potato virus Y",
+         "",
          "",
          "",
          "",
@@ -112479,199 +112481,6 @@
          "Bemisia achyranthes",
          "Bemisia hibisci",
          "Bemisia lonicerae",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   }
-},
- {
-   "CSL_REF": 13793,
-   "EPPO_CODE": "BLISIN",
-   "LATIN_NAME": "Blissus insularis",
-   "COMMON_NAME": {
-      "COMMON_NAME_ID": [
-         6020,
-         null,
-         "",
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "COMMON_NAME": [
-         "Chinch bug, southern",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   },
-   "SYNONYM_NAME": {
-      "SYNONYM_NAME_ID": [
-         null,
-         null,
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         null,
-         "",
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "SYNONYM_NAME": [
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
          "",
          "",
          "",
@@ -137229,8 +137038,8 @@
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          11033,
-         17116,
-         "17117",
+         null,
+         "",
          "",
          null,
          null,
@@ -137261,8 +137070,8 @@
       ],
       "COMMON_NAME": [
          "Red palm weevil",
-         "Asian palm weevil",
-         "Indian palm weevil",
+         "",
+         "",
          "",
          "",
          "",
@@ -137299,11 +137108,11 @@
          "29646",
          "29647",
          "38790",
+         "38791",
          "38792",
-         "57559",
-         "57560",
-         "57561",
-         "57562",
+         "",
+         "",
+         "",
          "",
          null,
          "",
@@ -137359,11 +137168,11 @@
          "Curculio ferrugineus",
          "Calandra ferruginea",
          "Cordyle sexmaculatus",
+         "Rhynchophorus pascha v. papuanus",
          "Rhynchophorus indostanus",
-         "Rhynchophorus pascha var. cinctus",
-         "Rhynchophorus signaticollis var. dimidiatus",
-         "Curculio hemipterus",
-         "Rhynchophorus signaticollis",
+         "",
+         "",
+         "",
          "",
          "",
          "",
@@ -156909,199 +156718,6 @@
    }
 },
  {
-   "CSL_REF": 22273,
-   "EPPO_CODE": "URCEJA",
-   "LATIN_NAME": "Urocerus japonicus",
-   "COMMON_NAME": {
-      "COMMON_NAME_ID": [
-         null,
-         null,
-         "",
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "COMMON_NAME": [
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   },
-   "SYNONYM_NAME": {
-      "SYNONYM_NAME_ID": [
-         8690,
-         8691,
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         null,
-         "",
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "SYNONYM_NAME": [
-         "Sirex japonicus",
-         "Xanthosirex japonicus",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   }
-},
- {
    "CSL_REF": 22293,
    "EPPO_CODE": "VITEVI",
    "LATIN_NAME": "Daktulosphaira vitifoliae",
@@ -164245,7 +163861,7 @@
  {
    "CSL_REF": 22870,
    "EPPO_CODE": "WMSMOV",
-   "LATIN_NAME": "Orthotospovirus citrullomaculosi",
+   "LATIN_NAME": "Watermelon silver mottle tospovirus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -164317,7 +163933,7 @@
          13703,
          13736,
          "16004",
-         "56937",
+         "",
          "",
          "",
          "",
@@ -164377,7 +163993,7 @@
          "Watermelon silver mottle virus",
          "WmSMoV",
          "Tomato spotted wilt tospovirus strain W",
-         "Watermelon silver mottle tospovirus",
+         "",
          "",
          "",
          "",
@@ -168491,7 +168107,7 @@
  {
    "CSL_REF": 23186,
    "EPPO_CODE": "CVYV00",
-   "LATIN_NAME": "Ipomovirus cucumisvenaflavi",
+   "LATIN_NAME": "Cucumber vein yellowing virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -168561,7 +168177,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          15257,
-         56928,
+         null,
          "",
          "",
          "",
@@ -168621,7 +168237,7 @@
       ],
       "SYNONYM_NAME": [
          "Cucumber vein yellowing ipomovirus",
-         "Cucumber vein yellowing virus",
+         "",
          "",
          "",
          "",
@@ -183615,7 +183231,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          12106,
-         58260,
+         null,
          "",
          "",
          "",
@@ -183675,7 +183291,7 @@
       ],
       "SYNONYM_NAME": [
          "Pantomorus taeniatulus",
-         "Artipus texanus",
+         "",
          "",
          "",
          "",
@@ -185282,7 +184898,7 @@
  {
    "CSL_REF": 24580,
    "EPPO_CODE": "",
-   "LATIN_NAME": "Begomovirus solanumflavusardiniaense",
+   "LATIN_NAME": "Tomato yellow leaf curl-Sardinia begomovirus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -186440,7 +186056,7 @@
  {
    "CSL_REF": 24776,
    "EPPO_CODE": "SPCSV0",
-   "LATIN_NAME": "Crinivirus ipomeae",
+   "LATIN_NAME": "Sweet potato chlorotic stunt virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -186512,7 +186128,7 @@
          13916,
          13917,
          "13918",
-         "57193",
+         "",
          "",
          "",
          "",
@@ -186572,7 +186188,7 @@
          "SPSCV",
          "Sweet potato sunken vein virus",
          "Sweet potato sunken vein (?) closterovirus",
-         "Sweet potato chlorotic stunt virus",
+         "",
          "",
          "",
          "",
@@ -186633,7 +186249,7 @@
  {
    "CSL_REF": 24784,
    "EPPO_CODE": "TOLCND",
-   "LATIN_NAME": "Begomovirus solanumdelhiense",
+   "LATIN_NAME": "Tomato leaf curl virus - New Delhi",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -186710,7 +186326,7 @@
          "54274",
          "54275",
          "54276",
-         "57223",
+         "",
          "",
          "",
          null,
@@ -186770,7 +186386,7 @@
          "Bitter gourd yellow vein virus",
          "ToLCNDV",
          "Tomato leaf curl New Delhi begomovirus",
-         "Tomato leaf curl virus - New Delhi",
+         "",
          "",
          "",
          "",
@@ -186826,7 +186442,7 @@
  {
    "CSL_REF": 24808,
    "EPPO_CODE": "CHILCU",
-   "LATIN_NAME": "Begomovirus chillicapsici",
+   "LATIN_NAME": "Chilli leaf curl virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -186896,7 +186512,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          13966,
-         57220,
+         null,
          "",
          "",
          "",
@@ -186956,7 +186572,7 @@
       ],
       "SYNONYM_NAME": [
          "CHiLCuV",
-         "Chilli leaf curl virus",
+         "",
          "",
          "",
          "",
@@ -187019,7 +186635,7 @@
  {
    "CSL_REF": 24860,
    "EPPO_CODE": "THV000",
-   "LATIN_NAME": "Begomovirus solanumhavanaense",
+   "LATIN_NAME": "Tomato mosaic virus - Havana",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -187212,7 +186828,7 @@
  {
    "CSL_REF": 24862,
    "EPPO_CODE": "TOMOTV",
-   "LATIN_NAME": "Begomovirus solanumtainoense",
+   "LATIN_NAME": "Tomato mottle virus - Taino",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -187290,7 +186906,7 @@
          "Tomato Taino mottle bigeminivirus",
          "Tomato Taino mottle virus",
          "TTMV",
-         "Tomato mottle virus - Taino",
+         "",
          "",
          null,
          "",
@@ -187349,7 +186965,7 @@
          "54284",
          "54285",
          "54286",
-         "57222",
+         "",
          "",
          "",
          "",
@@ -188370,7 +187986,7 @@
  {
    "CSL_REF": 25099,
    "EPPO_CODE": "SCFAV0",
-   "LATIN_NAME": "Closterovirus fragariae",
+   "LATIN_NAME": "Strawberry chlorotic fleck-associated virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -188440,7 +188056,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          42151,
-         57198,
+         null,
          "",
          "",
          "",
@@ -188500,7 +188116,7 @@
       ],
       "SYNONYM_NAME": [
          "SCFaV",
-         "Strawberry chlorotic fleck-associated virus",
+         "",
          "",
          "",
          "",
@@ -188563,7 +188179,7 @@
  {
    "CSL_REF": 25105,
    "EPPO_CODE": "CTLAV0",
-   "LATIN_NAME": "Robigovirus tortifoliae",
+   "LATIN_NAME": "Cherry twisted leaf associated virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          16375,
@@ -188638,7 +188254,7 @@
          "42032",
          "42033",
          "42034",
-         "56948",
+         "",
          "",
          "",
          "",
@@ -188698,7 +188314,7 @@
          "apricot ring pox disease",
          "apricot ringspot disease",
          "cherry twisted leaf disease",
-         "Cherry twisted leaf associated virus",
+         "",
          "",
          "",
          "",
@@ -191458,7 +191074,7 @@
  {
    "CSL_REF": 25586,
    "EPPO_CODE": "HVX000",
-   "LATIN_NAME": "Potexvirus ecshostae",
+   "LATIN_NAME": "Hosta virus X",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -191528,7 +191144,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          16768,
-         56993,
+         null,
          "",
          "",
          "",
@@ -191588,7 +191204,7 @@
       ],
       "SYNONYM_NAME": [
          "HVX",
-         "Hosta virus X",
+         "",
          "",
          "",
          "",
@@ -193002,7 +192618,7 @@
  {
    "CSL_REF": 26072,
    "EPPO_CODE": "BLSCV0",
-   "LATIN_NAME": "Carlavirus vaccinii",
+   "LATIN_NAME": "Blueberry scorch virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          14187,
@@ -193073,7 +192689,7 @@
       "SYNONYM_NAME_ID": [
          23471,
          39762,
-         "57205",
+         "",
          "",
          "",
          "",
@@ -193133,7 +192749,7 @@
       "SYNONYM_NAME": [
          "Blueberry scorch carlavirus",
          "BlScV",
-         "Blueberry scorch virus",
+         "",
          "",
          "",
          "",
@@ -196283,7 +195899,7 @@
  {
    "CSL_REF": 26359,
    "EPPO_CODE": "PACHV0",
-   "LATIN_NAME": "Potyvirus passifloraflavi",
+   "LATIN_NAME": "Passiflora chlorosis virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -196354,7 +195970,7 @@
       "SYNONYM_NAME_ID": [
          24541,
          24542,
-         "56995",
+         "",
          "",
          "",
          "",
@@ -196414,7 +196030,7 @@
       "SYNONYM_NAME": [
          "Passiflora chlorosis virus (tentative)",
          "Florida passionflower potyvirus",
-         "Passiflora chlorosis virus",
+         "",
          "",
          "",
          "",
@@ -206898,7 +206514,7 @@
  {
    "CSL_REF": 27265,
    "EPPO_CODE": "",
-   "LATIN_NAME": "Emaravirus sorbi",
+   "LATIN_NAME": "European mountain ash ringspot associated virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          14943,
@@ -206968,7 +206584,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          27229,
-         56926,
+         null,
          "",
          "",
          "",
@@ -207028,7 +206644,7 @@
       ],
       "SYNONYM_NAME": [
          "EMARAV",
-         "European mountain ash ringspot associated virus",
+         "",
          "",
          "",
          "",
@@ -215004,7 +214620,7 @@
  {
    "CSL_REF": 27346,
    "EPPO_CODE": "PCFVD0",
-   "LATIN_NAME": "Pospiviroid parvicapsici",
+   "LATIN_NAME": "Pepper chat fruit viroid",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -215073,7 +214689,7 @@
    },
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
-         57001,
+         null,
          null,
          "",
          "",
@@ -215133,7 +214749,7 @@
          null
       ],
       "SYNONYM_NAME": [
-         "Pepper chat fruit viroid",
+         "",
          "",
          "",
          "",
@@ -216741,7 +216357,7 @@
  {
    "CSL_REF": 27364,
    "EPPO_CODE": "CBCVD0",
-   "LATIN_NAME": "Cocadviroid rimocitri",
+   "LATIN_NAME": "Citrus bark cracking viroid",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -216813,7 +216429,7 @@
          27604,
          27605,
          "30184",
-         "57196",
+         "",
          "",
          "",
          "",
@@ -216873,7 +216489,7 @@
          "Citrus bark cracking cocadviroid",
          "Citrus viroid IV",
          "CBCVd",
-         "Citrus bark cracking viroid",
+         "",
          "",
          "",
          "",
@@ -219250,7 +218866,7 @@
  {
    "CSL_REF": 27389,
    "EPPO_CODE": "GRBAV0",
-   "LATIN_NAME": "Grablovirus vitis",
+   "LATIN_NAME": "Grapevine red blotch-associated virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -219323,7 +218939,7 @@
          27637,
          "39061",
          "39062",
-         "56930",
+         "",
          "",
          "",
          "",
@@ -219383,7 +218999,7 @@
          "Grapevine cabernet franc-associated virus",
          "Grapevine red blotch virus",
          "Grapevine red blotch disease",
-         "Grapevine red blotch-associated virus",
+         "",
          "",
          "",
          "",
@@ -229479,7 +229095,7 @@
  {
    "CSL_REF": 27725,
    "EPPO_CODE": "TOMMV0",
-   "LATIN_NAME": "Tobamovirus maculatessellati",
+   "LATIN_NAME": "Tomato mottle mosaic virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -229550,7 +229166,7 @@
       "SYNONYM_NAME_ID": [
          29167,
          29168,
-         "56942",
+         "",
          "",
          "",
          "",
@@ -229610,7 +229226,7 @@
       "SYNONYM_NAME": [
          "ToMMV",
          "Tomato mottle mosaic tobamovirus",
-         "Tomato mottle mosaic virus",
+         "",
          "",
          "",
          "",
@@ -236813,7 +236429,7 @@
  {
    "CSL_REF": 27888,
    "EPPO_CODE": "PNYDV0",
-   "LATIN_NAME": "Nanovirus necropisi",
+   "LATIN_NAME": "Pea necrotic yellow dwarf virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -236883,7 +236499,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          30578,
-         57170,
+         null,
          "",
          "",
          "",
@@ -236943,7 +236559,7 @@
       ],
       "SYNONYM_NAME": [
          "PNYDV",
-         "Pea necrotic yellow dwarf virus",
+         "",
          "",
          "",
          "",
@@ -240287,7 +239903,7 @@
  {
    "CSL_REF": 28537,
    "EPPO_CODE": "TOBRFV",
-   "LATIN_NAME": "Tobamovirus fructirugosum",
+   "LATIN_NAME": "Tomato brown rugose fruit virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -240357,7 +239973,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          32926,
-         56943,
+         null,
          "",
          "",
          "",
@@ -240417,7 +240033,7 @@
       ],
       "SYNONYM_NAME": [
          "ToBRFV",
-         "Tomato brown rugose fruit virus",
+         "",
          "",
          "",
          "",
@@ -244726,7 +244342,7 @@
  {
    "CSL_REF": 29149,
    "EPPO_CODE": "SQVYVX",
-   "LATIN_NAME": "Ipomovirus cucurbitavenaflavi",
+   "LATIN_NAME": "Squash vein yellowing virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -244797,7 +244413,7 @@
       "SYNONYM_NAME_ID": [
          37490,
          37491,
-         "57174",
+         "",
          "",
          "",
          "",
@@ -244857,7 +244473,7 @@
       "SYNONYM_NAME": [
          "Squash vein yellowing Ipomovirus",
          "SqVYV",
-         "Squash vein yellowing virus",
+         "",
          "",
          "",
          "",
@@ -245112,7 +244728,7 @@
  {
    "CSL_REF": 29336,
    "EPPO_CODE": "MYAV00",
-   "LATIN_NAME": "Carlavirus melonis",
+   "LATIN_NAME": "Melon yellowing-associated virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -245182,7 +244798,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          37937,
-         57204,
+         null,
          "",
          "",
          "",
@@ -245242,7 +244858,7 @@
       ],
       "SYNONYM_NAME": [
          "MYAV",
-         "Melon yellowing-associated virus",
+         "",
          "",
          "",
          "",
@@ -248779,7 +248395,7 @@
  {
    "CSL_REF": 29612,
    "EPPO_CODE": "CLBV00",
-   "LATIN_NAME": "Citrivirus citri",
+   "LATIN_NAME": "Citrus leaf blotch virus",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -248850,7 +248466,7 @@
       "SYNONYM_NAME_ID": [
          39632,
          39633,
-         "57016",
+         "",
          "",
          "",
          "",
@@ -248910,7 +248526,7 @@
       "SYNONYM_NAME": [
          "Dweet mottle virus",
          "CLBV",
-         "Citrus leaf blotch virus",
+         "",
          "",
          "",
          "",
@@ -262096,7 +261712,7 @@
  {
    "CSL_REF": 30225,
    "EPPO_CODE": "PVH000",
-   "LATIN_NAME": "Carlavirus chisolani",
+   "LATIN_NAME": "Potato virus H",
    "COMMON_NAME": {
       "COMMON_NAME_ID": [
          null,
@@ -262166,7 +261782,7 @@
    "SYNONYM_NAME": {
       "SYNONYM_NAME_ID": [
          42155,
-         57006,
+         null,
          "",
          "",
          "",
@@ -262226,7 +261842,7 @@
       ],
       "SYNONYM_NAME": [
          "PVH",
-         "Potato virus H",
+         "",
          "",
          "",
          "",
@@ -274446,199 +274062,6 @@
    }
 },
  {
-   "CSL_REF": 34762,
-   "EPPO_CODE": "ATHERE",
-   "LATIN_NAME": "Atherigona reversura",
-   "COMMON_NAME": {
-      "COMMON_NAME_ID": [
-         16981,
-         null,
-         "",
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "COMMON_NAME": [
-         "bermudagrass stem maggot",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   },
-   "SYNONYM_NAME": {
-      "SYNONYM_NAME_ID": [
-         54821,
-         null,
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         null,
-         "",
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "SYNONYM_NAME": [
-         "Atherigona sinobella",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   }
-},
- {
    "CSL_REF": 34763,
    "EPPO_CODE": "",
    "LATIN_NAME": "Phyllactinia fraxinicola",
@@ -274830,198 +274253,6 @@
          ""
       ]
    }
-},
- {
-   "CSL_REF": 34764,
-   "EPPO_CODE": "PUCCSR",
-   "LATIN_NAME": "Puccinia sparganioidis",
-   "COMMON_NAME": {
-      "COMMON_NAME_ID": [
-         16982,
-         null,
-         "",
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "COMMON_NAME": [
-         "ash rust",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   },
-   "SYNONYM_NAME": {
-      "SYNONYM_NAME_ID": [
-         54822,
-         null,
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         null,
-         "",
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         "",
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null,
-         null
-      ],
-      "SYNONYM_NAME": [
-         "Puccinia sparganioides",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         "",
-         ""
-      ]
-   }
 }
 ]
+}
