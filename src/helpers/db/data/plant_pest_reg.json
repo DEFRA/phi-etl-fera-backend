@@ -1,6 +1,4 @@
-{
-  "PLANT_PEST_REG" :
-  [
+[
     {
         "CSL_REF": 10954,
         "HOST_REF": null,
@@ -11612,4 +11610,3 @@
         "REGULATION_INDICATOR": ""
     }
 ]
-}
