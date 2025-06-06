@@ -27643,7 +27643,7 @@
         },
         {
             "CSL_REF": 23238,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Xiphinema brasilense",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27685,7 +27685,7 @@
         },
         {
             "CSL_REF": 23240,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Xiphinema elongatum",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27727,7 +27727,7 @@
         },
         {
             "CSL_REF": 23242,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Xiphinema thornei",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27796,7 +27796,7 @@
         },
         {
             "CSL_REF": 23253,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Wiseana jacosa",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27838,7 +27838,7 @@
         },
         {
             "CSL_REF": 23255,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Wiseana umbraculata",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27953,7 +27953,7 @@
         },
         {
             "CSL_REF": 23270,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Erysiphe euphorbiae",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27976,7 +27976,7 @@
         },
         {
             "CSL_REF": 23301,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Eulecanium excrescens",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -27999,7 +27999,7 @@
         },
         {
             "CSL_REF": 23592,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Aclerda berlesii",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28148,7 +28148,7 @@
         },
         {
             "CSL_REF": 23642,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Anomala exitalis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28231,7 +28231,7 @@
         },
         {
             "CSL_REF": 23707,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Carbula spp.",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28252,7 +28252,7 @@
         },
         {
             "CSL_REF": 23721,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Ceroplastes cistudiformis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28358,7 +28358,7 @@
         },
         {
             "CSL_REF": 23876,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Globodera tabacum",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28536,7 +28536,7 @@
         },
         {
             "CSL_REF": 24108,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Plagionotus christophi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28688,7 +28688,7 @@
         },
         {
             "CSL_REF": 24226,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Tetraleurodes stirlingiae",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28744,7 +28744,7 @@
         },
         {
             "CSL_REF": 24238,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Thrips pusillus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28765,7 +28765,7 @@
         },
         {
             "CSL_REF": 24308,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Delia sanctijacobi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28788,7 +28788,7 @@
         },
         {
             "CSL_REF": 24309,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Listroderes delaiguei",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28813,7 +28813,7 @@
         },
         {
             "CSL_REF": 24310,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Parapoynx bilinealis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28836,7 +28836,7 @@
         },
         {
             "CSL_REF": 24311,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Synaptothrips distinctus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28943,7 +28943,7 @@
         },
         {
             "CSL_REF": 24320,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Phytomyza thymi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28964,7 +28964,7 @@
         },
         {
             "CSL_REF": 24321,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Phytomyza abdominalis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -28985,7 +28985,7 @@
         },
         {
             "CSL_REF": 24322,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Parapoynx diminutalis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29014,7 +29014,7 @@
         },
         {
             "CSL_REF": 24324,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Clivina vagans",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29035,7 +29035,7 @@
         },
         {
             "CSL_REF": 24325,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Epicauta (Epicauta) pilme",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29064,7 +29064,7 @@
         },
         {
             "CSL_REF": 24326,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Epicauta (Epicauta) luctifera",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29091,7 +29091,7 @@
         },
         {
             "CSL_REF": 24327,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Epicauta (Epicauta) monachica",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29114,7 +29114,7 @@
         },
         {
             "CSL_REF": 24328,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Epicauta (Epicauta) pluvialis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29135,7 +29135,7 @@
         },
         {
             "CSL_REF": 24329,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Epicauta (Epicauta) willei",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29156,7 +29156,7 @@
         },
         {
             "CSL_REF": 24330,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Pantomorus viridis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29198,7 +29198,7 @@
         },
         {
             "CSL_REF": 24431,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Atrichonotus taeniatulus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29350,7 +29350,7 @@
         },
         {
             "CSL_REF": 24516,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Tinocallis nevskyi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29417,7 +29417,7 @@
         },
         {
             "CSL_REF": 24580,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Begomovirus solanumflavusardiniaense",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31167,7 +31167,7 @@
         },
         {
             "CSL_REF": 26791,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Candidatus Liberibacter solanacearum",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31211,7 +31211,7 @@
         },
         {
             "CSL_REF": 26809,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Nipponorthezinella guadalcanalia",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31545,7 +31545,7 @@
         },
         {
             "CSL_REF": 27051,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Cryptocline taxicola",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31698,7 +31698,7 @@
         },
         {
             "CSL_REF": 27213,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Parapoynx polydectalis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31744,7 +31744,7 @@
         },
         {
             "CSL_REF": 27217,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Unknown",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31897,7 +31897,7 @@
         },
         {
             "CSL_REF": 27249,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Pseudococcus meridionalis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31960,7 +31960,7 @@
         },
         {
             "CSL_REF": 27252,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Acute Oak Decline",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -31981,7 +31981,7 @@
         },
         {
             "CSL_REF": 27256,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Amata cyssea",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32139,7 +32139,7 @@
         },
         {
             "CSL_REF": 27265,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Emaravirus sorbi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32231,7 +32231,7 @@
         },
         {
             "CSL_REF": 27277,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Donacia javana",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32365,7 +32365,7 @@
         },
         {
             "CSL_REF": 27285,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Argyrotaenia lignea",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32428,7 +32428,7 @@
         },
         {
             "CSL_REF": 27288,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Diaporthe chamaeropis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32537,7 +32537,7 @@
         },
         {
             "CSL_REF": 27294,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Pineus harukawai",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32581,7 +32581,7 @@
         },
         {
             "CSL_REF": 27298,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Pterophorus lacteipennis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32698,7 +32698,7 @@
         },
         {
             "CSL_REF": 27306,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Cassida obtusata",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32763,7 +32763,7 @@
         },
         {
             "CSL_REF": 27309,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Aubeus himalayanus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32784,7 +32784,7 @@
         },
         {
             "CSL_REF": 27310,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Silvestraspis uberifera",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -32811,7 +32811,7 @@
         },
         {
             "CSL_REF": 27311,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Liriomyza katoi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33123,7 +33123,7 @@
         },
         {
             "CSL_REF": 27348,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Hymenoscyphus albidoides",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33407,7 +33407,7 @@
         },
         {
             "CSL_REF": 27381,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Coleosporium plectranthi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33541,7 +33541,7 @@
         },
         {
             "CSL_REF": 27387,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Simo hirticornis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33737,7 +33737,7 @@
         },
         {
             "CSL_REF": 27398,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Candidatus Phytoplasma pini",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33844,7 +33844,7 @@
         },
         {
             "CSL_REF": 27403,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Neolochmaea obliterata",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33890,7 +33890,7 @@
         },
         {
             "CSL_REF": 27409,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Rapala iarbus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33973,7 +33973,7 @@
         },
         {
             "CSL_REF": 27438,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Cerodontha unisetiorbita",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33994,7 +33994,7 @@
         },
         {
             "CSL_REF": 27439,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Phyllonorycter pastorella",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34019,7 +34019,7 @@
         },
         {
             "CSL_REF": 27471,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Florithrips traegardhi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34075,7 +34075,7 @@
         },
         {
             "CSL_REF": 27550,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Thaumatotibia hemitoma",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34117,7 +34117,7 @@
         },
         {
             "CSL_REF": 27616,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Sybra praeusta",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34390,7 +34390,7 @@
         },
         {
             "CSL_REF": 27644,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Xylotoles griseus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34429,7 +34429,7 @@
         },
         {
             "CSL_REF": 27667,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Zeugodacus tau complex",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34496,7 +34496,7 @@
         },
         {
             "CSL_REF": 27685,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Colobopyga australiensis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34517,7 +34517,7 @@
         },
         {
             "CSL_REF": 27686,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Bitylenchus aerolatus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34546,7 +34546,7 @@
         },
         {
             "CSL_REF": 27687,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Bitylenchus ventrosignatus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34569,7 +34569,7 @@
         },
         {
             "CSL_REF": 27688,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Paratylenchus (Paratylenchus) tenuicaudatus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34632,7 +34632,7 @@
         },
         {
             "CSL_REF": 27700,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Fusarium miscanthi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34653,7 +34653,7 @@
         },
         {
             "CSL_REF": 27701,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Peronospora sp. nov. Aquilegia",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34676,7 +34676,7 @@
         },
         {
             "CSL_REF": 27702,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Tropidacris dux",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34697,7 +34697,7 @@
         },
         {
             "CSL_REF": 27704,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Texas Phoenix palm decline",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34739,7 +34739,7 @@
         },
         {
             "CSL_REF": 27706,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Chrysaster ostensackenella",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34937,7 +34937,7 @@
         },
         {
             "CSL_REF": 27717,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Macrosiphoniella pseudoartemisiae",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -34983,7 +34983,7 @@
         },
         {
             "CSL_REF": 27728,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Agriphila aeneociliella",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35037,7 +35037,7 @@
         },
         {
             "CSL_REF": 27732,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Otiorhynchus lavandus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35206,7 +35206,7 @@
         },
         {
             "CSL_REF": 27757,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Paropsisterna variicollis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35292,7 +35292,7 @@
         },
         {
             "CSL_REF": 27768,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Hylesinus eos",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35313,7 +35313,7 @@
         },
         {
             "CSL_REF": 27769,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Hylesinus cholodkovskyi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35334,7 +35334,7 @@
         },
         {
             "CSL_REF": 27770,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Hylesinus laticollis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35355,7 +35355,7 @@
         },
         {
             "CSL_REF": 27771,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Hylesinus striatus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35707,7 +35707,7 @@
         },
         {
             "CSL_REF": 27850,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Stenchaetothrips martini",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35841,7 +35841,7 @@
         },
         {
             "CSL_REF": 27889,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Agrilus hastulifer",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -35904,7 +35904,7 @@
         },
         {
             "CSL_REF": 27907,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Cathaica (Cathaica) fasciola fasciola",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -36071,7 +36071,7 @@
         },
         {
             "CSL_REF": 27922,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Oxycarenus modestus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -36125,7 +36125,7 @@
         },
         {
             "CSL_REF": 27929,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Non-native terrestrial slugs and snails",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -36301,7 +36301,7 @@
         },
         {
             "CSL_REF": 28543,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Phellinus spiculosus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -36366,7 +36366,7 @@
         },
         {
             "CSL_REF": 28753,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Phellinus everhartii",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -36416,7 +36416,7 @@
         },
         {
             "CSL_REF": 28782,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Agrilus granulatus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -37202,7 +37202,7 @@
         },
         {
             "CSL_REF": 29608,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Apple bumpy fruit of Ben Davis disease",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -37273,7 +37273,7 @@
         },
         {
             "CSL_REF": 29613,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Apple russet wart disease",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -37566,7 +37566,7 @@
         },
         {
             "CSL_REF": 29718,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Cerroneuroterus lanuginosus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -40286,7 +40286,7 @@
         },
         {
             "CSL_REF": 32362,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Paracantha cultaris",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -40336,7 +40336,7 @@
         },
         {
             "CSL_REF": 34271,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Nidularia pulvinata",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -40378,7 +40378,7 @@
         },
         {
             "CSL_REF": 34763,
-            "EPPO_CODE": null,
+            "EPPO_CODE": "",
             "LATIN_NAME": "Phyllactinia fraxinicola",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
