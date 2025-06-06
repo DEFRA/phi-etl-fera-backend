@@ -2691,16 +2691,6 @@
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 1038,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
             "CSL_REF": 11652,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -4259,36 +4249,6 @@
             "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
             "QUARANTINE_INDICATOR": "R",
             "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes; \n Fruit propagating material and fruit plants intended for fruit production"
-        },
-        {
-            "CSL_REF": 732,
-            "HOST_REF": 18340,
-            "HOST_FORMAT_ID": 2,
-            "HOST_FORMAT": "Plants for planting other than seed",
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes"
-        },
-        {
-            "CSL_REF": 732,
-            "HOST_REF": 20152,
-            "HOST_FORMAT_ID": 2,
-            "HOST_FORMAT": "Plants for planting other than seed",
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes; \n Fruit propagating material and fruit plants intended for fruit production"
-        },
-        {
-            "CSL_REF": 732,
-            "HOST_REF": 22007,
-            "HOST_FORMAT_ID": 2,
-            "HOST_FORMAT": "Plants for planting other than seed",
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes"
         },
         {
             "CSL_REF": 556,
@@ -8638,7 +8598,7 @@
             "REGULATION": "GB",
             "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
             "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes; \n Fruit propagating material and fruit plants intended for fruit production"
+            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
         },
         {
             "CSL_REF": 732,
@@ -9002,16 +8962,6 @@
         },
         {
             "CSL_REF": 11546,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 464,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -10142,16 +10092,6 @@
         },
         {
             "CSL_REF": 16811,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 5334,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -11609,6 +11549,86 @@
             "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
             "QUARANTINE_INDICATOR": "Q",
             "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 464,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 5334,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 1038,
+            "HOST_REF": 26870,
+            "HOST_FORMAT_ID": 2,
+            "HOST_FORMAT": "Plants for planting other than seed",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4B (Vine propagating material)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Vine propagating material"
+        },
+        {
+            "CSL_REF": 732,
+            "HOST_REF": 26870,
+            "HOST_FORMAT_ID": 2,
+            "HOST_FORMAT": "Plants for planting other than seed",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4B (Vine propagating material)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Vine propagating material"
+        },
+        {
+            "CSL_REF": 1038,
+            "HOST_REF": 11566,
+            "HOST_FORMAT_ID": 3,
+            "HOST_FORMAT": "Plants for planting",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4G (Seed of oil and fibre plants)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Seed of oil and fibre plants"
+        },
+        {
+            "CSL_REF": 1038,
+            "HOST_REF": 26275,
+            "HOST_FORMAT_ID": 3,
+            "HOST_FORMAT": "Plants for planting",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
+        },
+        {
+            "CSL_REF": 732,
+            "HOST_REF": 22007,
+            "HOST_FORMAT_ID": 3,
+            "HOST_FORMAT": "Plants for planting",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
+        },
+        {
+            "CSL_REF": 732,
+            "HOST_REF": 26275,
+            "HOST_FORMAT_ID": 3,
+            "HOST_FORMAT": "Plants for planting",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
         }
     ]
 }
