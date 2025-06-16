@@ -7470,10 +7470,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    43207
+                    43207,
+                    59972
                 ],
                 "SYNONYM_NAME": [
-                    "Polygraphus magnus"
+                    "Polygraphus magnus",
+                    "Polyphagus laticollis"
                 ]
             }
         },
