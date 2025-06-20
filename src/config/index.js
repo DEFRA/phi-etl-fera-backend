@@ -92,7 +92,7 @@ const config = convict({
   readTimeout: {
     doc: 'Read timeout value in milliseconds for I/O operations',
     format: String,
-    default: '10000',
+    default: '100000',
     env: 'READ_TIMEOUT'
   },
   fera: {
