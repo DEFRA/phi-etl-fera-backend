@@ -75,6 +75,8 @@ const populateDbHandler = async (request, h) => {
 
     const db = request.server.db
 
+    await dropAnyLeftOverTempCollections(db)
+
     await loadData(
       filePathService,
       mongoUri,
@@ -423,10 +425,33 @@ async function dropCollections(db, collection) {
     })
   }
 }
+
+async function dropAnyLeftOverTempCollections(db) {
+  // Check to to see if any '_temp' collection exists and drop them
+  const collections = await db.listCollections().toArray()
+  const tempCollections = collections.filter(col => col.name.endsWith('_TEMP'))
+  
+  if (tempCollections.length > 0) {
+    logger.info(`Found ${tempCollections.length} temporary collections to drop`)
+    
+    for (const tempCol of tempCollections) {
+      try {
+        await db.collection(tempCol.name).drop()
+        logger.info(`Dropped temporary collection: ${tempCol.name}`)
+      } catch (error) {
+        logger.error(`Error dropping temporary collection ${tempCol.name}: ${error}`)
+      }
+    }
+  } else {
+    logger.info('No temporary collections found to drop')
+  }
+}
+
 export {
   populateDbHandler,
   loadData,
   loadCombinedDataForPlantAndBuildParents,
   loadDataForAnnex6,
-  readJsonFile
+  readJsonFile,
+  dropAnyLeftOverTempCollections
 }
