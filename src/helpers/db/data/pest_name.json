@@ -6117,7 +6117,7 @@
         {
             "CSL_REF": 4499,
             "EPPO_CODE": "IPSXCA",
-            "LATIN_NAME": "Ips calligraphus",
+            "LATIN_NAME": "Ips calligraphus caligraphus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     8600,
@@ -6132,26 +6132,28 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    2927,
                     43171,
                     43172,
                     4174,
+                    2927,
                     43173,
                     43175,
                     43174,
                     4330,
+                    60397,
                     15953,
                     2661
                 ],
                 "SYNONYM_NAME": [
-                    "Bostrichus calligraphus",
                     "Bostrichus chloroticus",
                     "Bostrichus conformis",
                     "Bostrichus exesus",
+                    "Ips calligraphus",
                     "Ips calligraphus interstitialis",
                     "Ips calligraphus ponderosae",
                     "Ips interstitialis",
                     "Ips ponderosae",
+                    "Tomicus calligraphus",
                     "Tomicus interstitialis",
                     "Tomicus praemorsus"
                 ]
@@ -6160,22 +6162,24 @@
         {
             "CSL_REF": 4500,
             "EPPO_CODE": "IPSXCO",
-            "LATIN_NAME": "Ips confusus",
+            "LATIN_NAME": "Ips paraconfusus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    12354,
-                    8604
+                    8604,
+                    12354
                 ],
                 "COMMON_NAME": [
-                    "Californian five-spined engraver",
-                    "Piñon ips"
+                    "California five-spined ips",
+                    "Californian five-spined engraver"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
+                    60404,
                     740
                 ],
                 "SYNONYM_NAME": [
+                    "Ips confusus",
                     "Tomicus confusus"
                 ]
             }
@@ -6217,11 +6221,13 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
+                    60405,
                     3464,
                     2665,
                     35847
                 ],
                 "SYNONYM_NAME": [
+                    "Ips interpunctus",
                     "Tomicus hudsonicus",
                     "Tomicus interpunctus",
                     "Tomicus perturbatus"
@@ -10421,24 +10427,156 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
+                    60237,
                     30110,
+                    60219,
+                    60178,
+                    60188,
+                    60246,
+                    60179,
+                    60189,
+                    60190,
+                    60187,
+                    60180,
+                    60231,
+                    60233,
+                    60192,
                     30111,
+                    60247,
+                    60193,
+                    60248,
+                    60232,
+                    60243,
+                    60234,
+                    60224,
+                    60249,
+                    60200,
+                    60202,
+                    60203,
+                    60182,
+                    60242,
+                    60236,
+                    60204,
+                    60205,
+                    60238,
+                    60186,
+                    60225,
+                    60206,
+                    60250,
+                    60207,
+                    60239,
+                    60208,
                     30112,
+                    60245,
                     30113,
+                    60209,
+                    60210,
+                    60211,
+                    60240,
+                    60244,
                     30114,
+                    60212,
+                    60213,
+                    60214,
+                    60215,
+                    60226,
+                    60217,
+                    60218,
+                    60221,
+                    60191,
                     30115,
+                    60223,
+                    60184,
+                    60181,
+                    60194,
+                    60199,
+                    60201,
+                    60183,
                     30116,
-                    30117
+                    60227,
+                    30117,
+                    60216,
+                    60220,
+                    60235,
+                    60241,
+                    60222,
+                    60185
                 ],
                 "SYNONYM_NAME": [
+                    "Archeophalus ealensis",
                     "Bostrichus boildieui",
+                    "Cosmoderes schwarzii",
+                    "Cryphalus aspericollis",
+                    "Cryphalus basjoo",
+                    "Cryphalus minutus",
+                    "Cryphalus obscurus",
+                    "Cryphalus striatopunctatus",
+                    "Cryphalus tantillus",
+                    "Cryphalus tectonae",
+                    "Homeocryphalus ehlersii",
+                    "Hypothenemus argentinensis",
+                    "Hypothenemus asaroensis",
+                    "Hypothenemus asiminae",
                     "Hypothenemus bicolor",
+                    "Hypothenemus bicolor",
+                    "Hypothenemus bradfordi",
+                    "Hypothenemus citri",
+                    "Hypothenemus cylindricus",
+                    "Hypothenemus cylindripennis",
+                    "Hypothenemus dubiosus",
+                    "Hypothenemus ehlersi rotroui",
+                    "Hypothenemus erythrinae",
+                    "Hypothenemus ferrugineus",
+                    "Hypothenemus flavipes",
+                    "Hypothenemus flavosquamosus",
+                    "Hypothenemus germari",
+                    "Hypothenemus glabratellus",
+                    "Hypothenemus glabratus",
+                    "Hypothenemus hamamelidis",
+                    "Hypothenemus heathi",
+                    "Hypothenemus hirtipennis",
+                    "Hypothenemus insularis",
+                    "Hypothenemus juglandis",
+                    "Hypothenemus koebelei",
+                    "Hypothenemus lezhavai",
+                    "Hypothenemus lineatifrons",
+                    "Hypothenemus longipilis",
+                    "Hypothenemus mali",
                     "Hypothenemus mauiensis",
+                    "Hypothenemus mesoleius",
                     "Hypothenemus minutulus",
+                    "Hypothenemus myristicae",
+                    "Hypothenemus nigricollis",
+                    "Hypothenemus nigripennis",
+                    "Hypothenemus obscuriceps",
+                    "Hypothenemus parcilus",
                     "Hypothenemus parilis",
+                    "Hypothenemus parvus",
+                    "Hypothenemus pruni",
+                    "Hypothenemus punctifrons",
+                    "Hypothenemus punctipennis",
+                    "Hypothenemus pusillus",
+                    "Hypothenemus rumseyi",
+                    "Hypothenemus sacchari",
+                    "Hypothenemus tenuis",
+                    "Hypothenemus tuberculosus",
                     "Hypothenemus vianai",
+                    "Hypothenemus webbi",
+                    "Stephanodere myrmedon",
+                    "Stephanoderes ehlersii",
+                    "Stephanoderes elongatus",
+                    "Stephanoderes evonymi",
+                    "Stephanoderes flavicollis",
+                    "Stephanoderes germari",
                     "Stephanoderes gracilis",
-                    "Stephanoderes nanulus"
+                    "Stephanoderes intersetosus",
+                    "Stephanoderes nanulus",
+                    "Stephanoderes pygmaeus",
+                    "Stephanoderes subconcentralis",
+                    "Stephanoderes subcylindricus",
+                    "Stephanoderes tigrensis",
+                    "Stephanoderes unicolor",
+                    "Stephanopodius communis"
                 ]
             }
         },
@@ -10464,10 +10602,10 @@
                 ],
                 "SYNONYM_NAME": [
                     "Bostrichus cembrae",
-                    "Ips cembrae var. engadinensis",
+                    "Ips  engadinensis",
                     "Ips fallax",
                     "Ips shinanoensis",
-                    "Tomicus cembrae"
+                    "Tomicus subelongatus"
                 ]
             }
         },
@@ -10499,27 +10637,6 @@
                     "Ips cloudcrofti",
                     "Tomicus  cacographus",
                     "Tomicus grandicollis"
-                ]
-            }
-        },
-        {
-            "CSL_REF": 9249,
-            "EPPO_CODE": "IPSXPL",
-            "LATIN_NAME": "Ips plastographus",
-            "COMMON_NAME": {
-                "COMMON_NAME_ID": [
-                    12433
-                ],
-                "COMMON_NAME": [
-                    "California pine engraver"
-                ]
-            },
-            "SYNONYM_NAME": {
-                "SYNONYM_NAME_ID": [
-                    3465
-                ],
-                "SYNONYM_NAME": [
-                    "Tomicus plastographus"
                 ]
             }
         },
@@ -20466,36 +20583,15 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     4156,
+                    3318,
                     2816,
-                    2663,
-                    3318
+                    2663
                 ],
                 "SYNONYM_NAME": [
                     "Bostrichus duplicatus",
+                    "Bostrichus judeichi",
                     "Tomicus duplicatus",
-                    "Tomicus infucatus",
-                    "Tomicus judeichi"
-                ]
-            }
-        },
-        {
-            "CSL_REF": 16012,
-            "EPPO_CODE": "IPSXFA",
-            "LATIN_NAME": "Ips subelongatus",
-            "COMMON_NAME": {
-                "COMMON_NAME_ID": [
-                    15824
-                ],
-                "COMMON_NAME": [
-                    "oblong bark beetle"
-                ]
-            },
-            "SYNONYM_NAME": {
-                "SYNONYM_NAME_ID": [
-                    3827
-                ],
-                "SYNONYM_NAME": [
-                    "Ips fallax"
+                    "Tomicus infucatus"
                 ]
             }
         },
@@ -24260,29 +24356,6 @@
             }
         },
         {
-            "CSL_REF": 20758,
-            "EPPO_CODE": "IPSXPA",
-            "LATIN_NAME": "Ips paraconfusus",
-            "COMMON_NAME": {
-                "COMMON_NAME_ID": [
-                    8612,
-                    8613
-                ],
-                "COMMON_NAME": [
-                    "California five-spined engraver",
-                    "California five-spined ips"
-                ]
-            },
-            "SYNONYM_NAME": {
-                "SYNONYM_NAME_ID": [
-                    ""
-                ],
-                "SYNONYM_NAME": [
-                    ""
-                ]
-            }
-        },
-        {
             "CSL_REF": 20830,
             "EPPO_CODE": "LECAPN",
             "LATIN_NAME": "Sphaerolecanium prunastri",
@@ -25304,6 +25377,31 @@
             }
         },
         {
+            "CSL_REF": 21813,
+            "EPPO_CODE": "RHYCPH",
+            "LATIN_NAME": "Rhynchophorus phoenicis",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    11038
+                ],
+                "COMMON_NAME": [
+                    "African palm weevil"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    29655,
+                    29657,
+                    29656
+                ],
+                "SYNONYM_NAME": [
+                    "Calandra phoenicis",
+                    "Rhynchophorus phoenicis var. niger",
+                    "Rhynchophorus phoenicis var. ruber"
+                ]
+            }
+        },
+        {
             "CSL_REF": 21873,
             "EPPO_CODE": "SCITDO",
             "LATIN_NAME": "Scirtothrips dorsalis",
@@ -25345,7 +25443,7 @@
                     11226
                 ],
                 "COMMON_NAME": [
-                    "Fir engraver"
+                    "white fir engraver"
                 ]
             },
             "SYNONYM_NAME": {
@@ -25648,10 +25746,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    2206
+                    2206,
+                    60609
                 ],
                 "SYNONYM_NAME": [
-                    "Xyleborus germanus"
+                    "Xyleborus germanus",
+                    "Xyleborus orbatus \t"
                 ]
             }
         },
@@ -30212,10 +30312,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    16625
+                    16625,
+                    60483
                 ],
                 "SYNONYM_NAME": [
-                    "Eccoptogaster morawitzi"
+                    "Eccoptogaster morawitzi",
+                    "Scolytus pini"
                 ]
             }
         },
@@ -40333,6 +40435,45 @@
                     "ToFBV",
                     "Tomato blunervirus 1",
                     "Tomato fruit blotch virus"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 32951,
+            "EPPO_CODE": "ANOLHO",
+            "LATIN_NAME": "Anoplophora horsfieldii",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    16759
+                ],
+                "COMMON_NAME": [
+                    "Chinaberry yellow-banded longhorn beetle"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    51201,
+                    51200,
+                    51217,
+                    51195,
+                    51197,
+                    51196,
+                    51198,
+                    51199,
+                    51218,
+                    51194
+                ],
+                "SYNONYM_NAME": [
+                    "Anoplophora horsfieldii horsfieldii",
+                    "Anoplophora horsfieldii taiwanensis",
+                    "Anoplophora horsfieldii tonkinensis",
+                    "Cerosterna voluptuosa",
+                    "Cyriocrates horsfieldi tonkinensis",
+                    "Cyriocrates horsfieldii",
+                    "Cyriocrates nigrotrifasciatus",
+                    "Cyriocrates nigrotrifasciatus var. quadrifasciata",
+                    "Lamia horsfieldii",
+                    "Oplophora horsfieldii"
                 ]
             }
         },

@@ -2382,9 +2382,20 @@
             "LATIN_NAME": "Pochazia shantungensis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": "0",
             "PUBLICATION_DATE": "25/03/2025",
             "DOCUMENT_SIZE": 2323511,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 30362,
+            "EPPO_CODE": "POCZSH",
+            "LATIN_NAME": "Pochazia shantungensis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "PUBLICATION_DATE": "25/03/2025",
+            "DOCUMENT_SIZE": 2250106,
             "DOCUMENT_FORMAT": "application/pdf"
         }
     ]

@@ -2368,12 +2368,24 @@
             "CSL_REF": 16539,
             "EPPO_CODE": "MELGCH",
             "LATIN_NAME": "Meloidogyne chitwoodi",
-            "DOCUMENT_TITLE": "plant_pest_f_m_chitwoodi.pdf",
+            "DOCUMENT_TITLE": "factsheet_m_chitwoodi_2025.pdf",
             "DOCUMENT_TYPE": "Factsheet",
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16539/notices/6912/documents/4534/document",
-            "PUBLICATION_DATE": "20/10/2023",
-            "DOCUMENT_SIZE": 235886,
+            "PUBLICATION_DATE": "01/07/2025",
+            "DOCUMENT_SIZE": 317778,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 16539,
+            "EPPO_CODE": "MELGCH",
+            "LATIN_NAME": "Meloidogyne chitwoodi",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PD Notice",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/16539/notices/6938/documents/4586/document",
+            "PUBLICATION_DATE": "01/07/2025",
+            "DOCUMENT_SIZE": 310578,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
