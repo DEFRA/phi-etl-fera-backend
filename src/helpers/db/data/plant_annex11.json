@@ -22715,6 +22715,24 @@
    "BTOM_CLARIFICATION": "",
    "BTOM_EUSL": "11C",
    "BTOM_NON_EUSL": "11C"
+ },
+ {
+   "PLANT_LATIN_NAME": "Manihot esculenta Crantz",
+   "PLANT_CHILDREN_HOST_REF": "15683",
+   "PHI_PLANT_NAME": "Manihot esculenta",
+   "FERA_PLANT_NAME": "Manihot esculenta",
+   "EPPO_CODE": "MANES",
+   "HOST_REF": 15683,
+   "COUNTRY_NAME": "all",
+   "COUNTRY_NAME_OLD": "all",
+   "A11_RULE": "11A11 11A5",
+   "INFERRED_INDICATOR": "",
+   "SERVICE_FORMAT": "Parts of a plant",
+   "SERVICE_SUBFORMAT": "leaves",
+   "SERVICE_SUBFORMAT_EXCLUDED": "",
+   "BTOM_CLARIFICATION": "",
+   "BTOM_EUSL": "11C",
+   "BTOM_NON_EUSL": "11A"
  }
 ]
 }
