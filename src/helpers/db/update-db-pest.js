@@ -3,6 +3,11 @@ import { pestDetail } from '../models/pestDetail'
 
 const logger = createLogger()
 let isLocked = false
+
+export const getIsLocked = () => isLocked
+export const setIsLocked = (value) => {
+  isLocked = value
+}
 const updateDbPestHandler = async (request, h) => {
   if (isLocked) {
     return h
@@ -13,7 +18,7 @@ const updateDbPestHandler = async (request, h) => {
       })
       .code(429)
   }
-  isLocked = true
+  setIsLocked(true)
 
   try {
     await loadData(request.server.db)
@@ -29,7 +34,7 @@ const updateDbPestHandler = async (request, h) => {
 
 async function loadData(db) {
   try {
-    logger.info('Connected successfully to server')
+    logger?.info('Connected successfully to server')
 
     const pestList = await getPestList(db)
     const plantPestLinkList = await getPlantPestLinkList(db)
@@ -54,9 +59,10 @@ async function loadData(db) {
     updatePestRegulations(resultList, plantPestRegList)
     await insertResultList(db, 'PEST_DATA_TEMP', resultList)
   } catch (err) {
-    logger.error(err)
+    logger?.error(err)
+    throw err
   } finally {
-    isLocked = false
+    setIsLocked(false)
   }
 }
 
@@ -64,7 +70,7 @@ async function getPlantPestRegList(db) {
   const collection = db.collection('PLANT_PEST_REG_TEMP')
   const documents = await collection.find({}).toArray()
   const plantPestRegList = documents[0]?.PLANT_PEST_REG
-  logger.info(`plantPestRegList: ${plantPestRegList?.length}`)
+  logger?.info(`plantPestRegList: ${plantPestRegList?.length}`)
   return plantPestRegList
 }
 
@@ -90,7 +96,7 @@ async function getPestPrasList(db) {
   const collection = db.collection('PEST_PRA_DATA_TEMP')
   const documents = await collection.find({}).toArray()
   const pestPrasList = documents[0]?.PEST_PRA_DATA
-  logger.info(`pestPrasList: ${pestPrasList?.length}`)
+  logger?.info(`pestPrasList: ${pestPrasList?.length}`)
   return pestPrasList
 }
 
@@ -98,7 +104,7 @@ async function getPestFcpdList(db) {
   const collection = db.collection('PEST_DOCUMENT_FCPD_TEMP')
   const documents = await collection.find({}).toArray()
   const pestFcpdList = documents[0]?.PEST_DOCUMENT_FCPD
-  logger.info(`pestFcpdList: ${pestFcpdList?.length}`)
+  logger?.info(`pestFcpdList: ${pestFcpdList?.length}`)
   return pestFcpdList
 }
 
@@ -108,7 +114,7 @@ async function dropCollectionIfExists(db, collectionName) {
     .toArray()
   if (collections.length > 0) {
     await db.collection(collectionName).drop()
-    logger.info(`Collection ${collectionName} dropped.`)
+    logger?.info(`Collection ${collectionName} dropped.`)
   }
 }
 
@@ -268,7 +274,7 @@ function updatePestRegulations(resultList, plantPestRegList) {
 async function insertResultList(db, collectionName, resultList) {
   const collection = db.collection(collectionName)
   const result = await collection.insertMany(resultList)
-  logger.info(`${result.insertedCount} pest documents were inserted...`)
+  logger?.info(`${result.insertedCount} pest documents were inserted...`)
 }
 
 export {

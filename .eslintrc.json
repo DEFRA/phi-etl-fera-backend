@@ -29,6 +29,7 @@
     ".public",
     "src/__fixtures__",
     "coverage",
-    "src/helpers/db/data"
+    "src/helpers/db/data",
+    "src/fera_integration/apiClient.js"
   ]
 }

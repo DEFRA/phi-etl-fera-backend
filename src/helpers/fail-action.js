@@ -1,5 +1,5 @@
 function failAction(request, h, error) {
-  request.logger.error(error, error.message)
+  request.logger?.error(error, error.message)
 
   throw error
 }
