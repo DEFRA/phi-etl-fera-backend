@@ -1,70 +1,15 @@
 {
     "PEST_PRA_DATA": [
         {
-            "CSL_REF": 111,
-            "EPPO_CODE": "PSDMAC",
-            "LATIN_NAME": "Acidovorax citrulli",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "13/06/2014",
-            "DOCUMENT_SIZE": 443396,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 464,
-            "EPPO_CODE": "PSDMAL",
-            "LATIN_NAME": "Pseudomonas avellanae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "12/05/2022",
-            "DOCUMENT_SIZE": 890901,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
             "CSL_REF": 477,
             "EPPO_CODE": "PUCCGT",
             "LATIN_NAME": "Puccinia graminis f.sp. tritici",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "09/05/2008",
-            "DOCUMENT_SIZE": 30119,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 609,
-            "EPPO_CODE": "CERAVI",
-            "LATIN_NAME": "Ceratocystis virescens",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "17/12/2008",
-            "DOCUMENT_SIZE": 175616,
+            "DOCUMENT_SIZE": 60928,
             "DOCUMENT_FORMAT": "application/msword"
-        },
-        {
-            "CSL_REF": 688,
-            "EPPO_CODE": "PHYPSO",
-            "LATIN_NAME": "\"Candidatus Phytoplasma solani\"",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "11/08/2014",
-            "DOCUMENT_SIZE": 879255,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 732,
-            "EPPO_CODE": "TORSV0",
-            "LATIN_NAME": "Nepovirus lycopersici",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "18/04/2018",
-            "DOCUMENT_SIZE": 413153,
-            "DOCUMENT_FORMAT": "application/pdf"
         },
         {
             "CSL_REF": 1038,
@@ -72,32 +17,32 @@
             "LATIN_NAME": "Nepovirus nicotianae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "18/04/2018",
-            "DOCUMENT_SIZE": 415627,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 12053,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 1038,
+            "EPPO_CODE": "TRSV00",
+            "LATIN_NAME": "Nepovirus nicotianae",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "18/04/2018",
+            "DOCUMENT_SIZE": 12053,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
             "CSL_REF": 1144,
             "EPPO_CODE": "PEPMV0",
-            "LATIN_NAME": "Potexvirus pepini",
+            "LATIN_NAME": "Pepino mosaic virus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "11/06/2010",
             "DOCUMENT_SIZE": 1506818,
             "DOCUMENT_FORMAT": "application/msword"
-        },
-        {
-            "CSL_REF": 1144,
-            "EPPO_CODE": "PEPMV0",
-            "LATIN_NAME": "Potexvirus pepini",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "11/06/2010",
-            "DOCUMENT_SIZE": 1101685,
-            "DOCUMENT_FORMAT": "application/pdf"
         },
         {
             "CSL_REF": 1387,
@@ -105,9 +50,20 @@
             "LATIN_NAME": "Aceria tulipae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "25/09/2007",
-            "DOCUMENT_SIZE": 56003,
+            "DOCUMENT_SIZE": 221696,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1387,
+            "EPPO_CODE": "ACEITU",
+            "LATIN_NAME": "Aceria tulipae",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "31/10/2022",
+            "DOCUMENT_SIZE": 522923,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -116,21 +72,241 @@
             "LATIN_NAME": "Aculops fuchsiae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "01/11/2007",
-            "DOCUMENT_SIZE": 141868,
+            "DOCUMENT_SIZE": 161280,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "17/11/2015",
+            "DOCUMENT_SIZE": 40962,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "17/11/2015",
+            "DOCUMENT_SIZE": 112640,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "17/11/2015",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "17/11/2015",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "17/11/2015",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "09/11/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "28/11/2022",
+            "DOCUMENT_SIZE": 188346,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
-            "CSL_REF": 1582,
-            "EPPO_CODE": "ALERMA",
-            "LATIN_NAME": "Aleurolobus marlatti",
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "13/09/2013",
-            "DOCUMENT_SIZE": 348505,
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "28/11/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "15/12/2022",
+            "DOCUMENT_SIZE": 188346,
             "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "01/12/2022",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1786,
+            "EPPO_CODE": "ANOLGL",
+            "LATIN_NAME": "Anoplophora glabripennis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "21/08/2023",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 1813,
+            "EPPO_CODE": "ANSTLU",
+            "LATIN_NAME": "Anastrepha ludens",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "04/11/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 1940,
@@ -138,21 +314,54 @@
             "LATIN_NAME": "Aphis spiraecola",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "12/09/2014",
-            "DOCUMENT_SIZE": 773723,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 2745,
-            "EPPO_CODE": "CHRXER",
-            "LATIN_NAME": "Chrysodeixis eriosoma",
+            "CSL_REF": 1940,
+            "EPPO_CODE": "APHISI",
+            "LATIN_NAME": "Aphis spiraecola",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/11/2014",
-            "DOCUMENT_SIZE": 404315,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "12/09/2014",
+            "DOCUMENT_SIZE": 1757696,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1940,
+            "EPPO_CODE": "APHISI",
+            "LATIN_NAME": "Aphis spiraecola",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "05/07/2022",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1940,
+            "EPPO_CODE": "APHISI",
+            "LATIN_NAME": "Aphis spiraecola",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "05/07/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 1940,
+            "EPPO_CODE": "APHISI",
+            "LATIN_NAME": "Aphis spiraecola",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "05/07/2022",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 2959,
@@ -160,20 +369,9 @@
             "LATIN_NAME": "Contarinia maculipennis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "09/07/2012",
-            "DOCUMENT_SIZE": 110424,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 3294,
-            "EPPO_CODE": "DENCVA",
-            "LATIN_NAME": "Dendroctonus valens",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/09/2021",
-            "DOCUMENT_SIZE": 1558788,
+            "DOCUMENT_SIZE": 65737,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -182,9 +380,31 @@
             "LATIN_NAME": "Acaphylla theae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "14/05/2012",
-            "DOCUMENT_SIZE": 119446,
+            "DOCUMENT_SIZE": 3243520,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 4053,
+            "EPPO_CODE": "GNORLY",
+            "LATIN_NAME": "Keiferia lycopersicella",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "15/02/2012",
+            "DOCUMENT_SIZE": 74852,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 4053,
+            "EPPO_CODE": "GNORLY",
+            "LATIN_NAME": "Keiferia lycopersicella",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "15/02/2012",
+            "DOCUMENT_SIZE": 73068,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -193,10 +413,10 @@
             "LATIN_NAME": "Helicoverpa armigera",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "10/05/2007",
-            "DOCUMENT_SIZE": 259065,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 1886720,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 4225,
@@ -204,43 +424,10 @@
             "LATIN_NAME": "Helicotylenchus dihystera",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "08/08/2012",
-            "DOCUMENT_SIZE": 105976,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 4262,
-            "EPPO_CODE": "HESOCA",
-            "LATIN_NAME": "Trichoferus campestris",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/01/2014",
-            "DOCUMENT_SIZE": 480725,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 5332,
-            "EPPO_CODE": "NEOBPA",
-            "LATIN_NAME": "Tropidosteptes pacificus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "21/11/2013",
-            "DOCUMENT_SIZE": 438569,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 5334,
-            "EPPO_CODE": "NEODAB",
-            "LATIN_NAME": "Neodiprion abietis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "07/04/2024",
-            "DOCUMENT_SIZE": 483649,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 38912,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 5654,
@@ -248,153 +435,32 @@
             "LATIN_NAME": "Otiorhynchus meridionalis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "01/08/2011",
             "DOCUMENT_SIZE": 2308608,
             "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 5920,
-            "EPPO_CODE": "PHENSL",
-            "LATIN_NAME": "Phenacoccus solani",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "17/01/2013",
-            "DOCUMENT_SIZE": 332422,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 6144,
-            "EPPO_CODE": "PLAARO",
-            "LATIN_NAME": "Platynota rostrana",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/09/2014",
-            "DOCUMENT_SIZE": 1318736,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
             "CSL_REF": 6145,
             "EPPO_CODE": "PLAAST",
             "LATIN_NAME": "Platynota stultana",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "01/11/2011",
             "DOCUMENT_SIZE": 2070016,
             "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 6145,
-            "EPPO_CODE": "PLAAST",
-            "LATIN_NAME": "Platynota stultana",
+            "CSL_REF": 7406,
+            "EPPO_CODE": "CINACV",
+            "LATIN_NAME": "Cinara curvipes",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/03/2015",
-            "DOCUMENT_SIZE": 631110,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 6296,
-            "EPPO_CODE": "POPIJA",
-            "LATIN_NAME": "Popillia japonica",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "20/06/2015",
-            "DOCUMENT_SIZE": 44172,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 6296,
-            "EPPO_CODE": "POPIJA",
-            "LATIN_NAME": "Popillia japonica",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/06/2015",
-            "DOCUMENT_SIZE": 1688256,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 6569,
-            "EPPO_CODE": "PYRUNU",
-            "LATIN_NAME": "Ostrinia nubilalis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "28/09/2010",
-            "DOCUMENT_SIZE": 172890,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 6805,
-            "EPPO_CODE": "SCITCI",
-            "LATIN_NAME": "Scirtothrips citri",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2015",
-            "DOCUMENT_SIZE": 538043,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 7270,
-            "EPPO_CODE": "TETOFU",
-            "LATIN_NAME": "Tetropium fuscum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/01/2018",
-            "DOCUMENT_SIZE": 584630,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 7270,
-            "EPPO_CODE": "TETOFU",
-            "LATIN_NAME": "Tetropium fuscum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "01/01/2018",
-            "DOCUMENT_SIZE": 158297,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 7319,
-            "EPPO_CODE": "THAUPR",
-            "LATIN_NAME": "Thaumetopoea processionea",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "25/08/2009",
-            "DOCUMENT_SIZE": 1242019,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 7319,
-            "EPPO_CODE": "THAUPR",
-            "LATIN_NAME": "Thaumetopoea processionea",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "25/08/2009",
-            "DOCUMENT_SIZE": 1242019,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 7319,
-            "EPPO_CODE": "THAUPR",
-            "LATIN_NAME": "Thaumetopoea processionea",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "25/08/2009",
-            "DOCUMENT_SIZE": 1242019,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "23/05/2023",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 7425,
@@ -402,65 +468,10 @@
             "LATIN_NAME": "Cacoecimorpha pronubana",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "30/04/2009",
-            "DOCUMENT_SIZE": 34558,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 7473,
-            "EPPO_CODE": "TRIAAB",
-            "LATIN_NAME": "Trialeurodes abutiloneus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "14/05/2014",
-            "DOCUMENT_SIZE": 749797,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 8139,
-            "EPPO_CODE": "BLISDI",
-            "LATIN_NAME": "Macchiademus diplopterus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "15/02/2012",
-            "DOCUMENT_SIZE": 393382,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 8292,
-            "EPPO_CODE": "CERPRB",
-            "LATIN_NAME": "Ceroplastes rubens",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "12/12/2011",
-            "DOCUMENT_SIZE": 233141,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 8548,
-            "EPPO_CODE": "CRTHCI",
-            "LATIN_NAME": "Corythucha ciliata",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "31/12/2022",
-            "DOCUMENT_SIZE": 1014466,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 8548,
-            "EPPO_CODE": "CRTHCI",
-            "LATIN_NAME": "Corythucha ciliata",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "31/12/2022",
-            "DOCUMENT_SIZE": 916756,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 201216,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 8672,
@@ -468,21 +479,10 @@
             "LATIN_NAME": "Dialeurodes citri",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "25/03/2010",
             "DOCUMENT_SIZE": 47616,
             "DOCUMENT_FORMAT": "application/msword"
-        },
-        {
-            "CSL_REF": 8838,
-            "EPPO_CODE": "EPITVI",
-            "LATIN_NAME": "Calepitrimerus vitis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "15/11/2013",
-            "DOCUMENT_SIZE": 432262,
-            "DOCUMENT_FORMAT": "application/pdf"
         },
         {
             "CSL_REF": 9265,
@@ -490,10 +490,10 @@
             "LATIN_NAME": "Japananus hyalinus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "07/05/2015",
-            "DOCUMENT_SIZE": 449150,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 21506,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 9512,
@@ -501,7 +501,7 @@
             "LATIN_NAME": "Meloidogyne incognita",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "09/07/2007",
             "DOCUMENT_SIZE": 21504,
             "DOCUMENT_FORMAT": "application/msword"
@@ -512,10 +512,10 @@
             "LATIN_NAME": "Milviscutulus mangiferae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "02/05/2008",
-            "DOCUMENT_SIZE": 99911,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 190464,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 10254,
@@ -523,10 +523,10 @@
             "LATIN_NAME": "Comstockaspis perniciosa",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "30/04/2009",
-            "DOCUMENT_SIZE": 112598,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 231936,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 10274,
@@ -534,10 +534,10 @@
             "LATIN_NAME": "Rhagoletis cingulata",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "12/09/2011",
-            "DOCUMENT_SIZE": 229556,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 612352,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 10482,
@@ -545,130 +545,20 @@
             "LATIN_NAME": "Stephanitis takeyai",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "03/01/2007",
-            "DOCUMENT_SIZE": 35309,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 10607,
-            "EPPO_CODE": "THAUPI",
-            "LATIN_NAME": "Thaumetopoea pityocampa",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "30/09/2015",
-            "DOCUMENT_SIZE": 108914,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "PUBLICATION_DATE": "03/01/2007",
+            "DOCUMENT_SIZE": 137728,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 10607,
-            "EPPO_CODE": "THAUPI",
-            "LATIN_NAME": "Thaumetopoea pityocampa",
+            "CSL_REF": 11032,
+            "EPPO_CODE": "PCMV00",
+            "LATIN_NAME": "Peach mosaic virus (American)",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/09/2015",
-            "DOCUMENT_SIZE": 1769696,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 10607,
-            "EPPO_CODE": "THAUPI",
-            "LATIN_NAME": "Thaumetopoea pityocampa",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "28/04/2022",
-            "DOCUMENT_SIZE": 214237,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 10800,
-            "EPPO_CODE": "XIPHRI",
-            "LATIN_NAME": "Xiphinema rivesi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/06/2014",
-            "DOCUMENT_SIZE": 452462,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 10803,
-            "EPPO_CODE": "XYLBCR",
-            "LATIN_NAME": "Xylosandrus crassiusculus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/04/2015",
-            "DOCUMENT_SIZE": 1424045,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 11469,
-            "EPPO_CODE": "ENDOPA",
-            "LATIN_NAME": "Cryphonectria parasitica",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/05/2013",
-            "DOCUMENT_SIZE": 292118,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 11546,
-            "EPPO_CODE": "DIAPPS",
-            "LATIN_NAME": "Phomopsis phaseoli",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "24/10/2024",
-            "DOCUMENT_SIZE": 780376,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 11558,
-            "EPPO_CODE": "FUSALC",
-            "LATIN_NAME": "Fusarium oxysporum f.sp. lactucae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "13/06/2011",
-            "DOCUMENT_SIZE": 311703,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 12090,
-            "EPPO_CODE": "XANTCY",
-            "LATIN_NAME": "Xanthomonas arboricola pv. corylina",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/09/2014",
-            "DOCUMENT_SIZE": 580206,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 12093,
-            "EPPO_CODE": "XANTTR",
-            "LATIN_NAME": "Xanthomonas translucens pv. translucens",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "14/01/2015",
-            "DOCUMENT_SIZE": 477367,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 12123,
-            "EPPO_CODE": "CLYMV0",
-            "LATIN_NAME": "Potexvirus flavitrifolii",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "16/04/2014",
-            "DOCUMENT_SIZE": 585216,
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "25/07/2023",
+            "DOCUMENT_SIZE": 26112,
             "DOCUMENT_FORMAT": "application/msword"
         },
         {
@@ -679,8 +569,8 @@
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "26/11/2016",
-            "DOCUMENT_SIZE": 42109,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 122370,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 12161,
@@ -688,65 +578,43 @@
             "LATIN_NAME": "Orthotospovirus iridimaculaflavi",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "26/11/2016",
-            "DOCUMENT_SIZE": 841091,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 174080,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 12294,
-            "EPPO_CODE": "CERAFA",
-            "LATIN_NAME": "Bretziella fagacearum",
+            "CSL_REF": 12161,
+            "EPPO_CODE": "IYSV00",
+            "LATIN_NAME": "Orthotospovirus iridimaculaflavi",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "30/07/2015",
-            "DOCUMENT_SIZE": 1274456,
-            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            "PUBLICATION_DATE": "26/11/2016",
+            "DOCUMENT_SIZE": 139776,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 12294,
-            "EPPO_CODE": "CERAFA",
-            "LATIN_NAME": "Bretziella fagacearum",
+            "CSL_REF": 12666,
+            "EPPO_CODE": "PHYTLA",
+            "LATIN_NAME": "Phytophthora lateralis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/07/2015",
-            "DOCUMENT_SIZE": 693936,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "15/07/2015",
+            "DOCUMENT_SIZE": 101890,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 12380,
-            "EPPO_CODE": "HSVD00",
-            "LATIN_NAME": "Hostuviroid impedihumuli",
+            "CSL_REF": 12666,
+            "EPPO_CODE": "PHYTLA",
+            "LATIN_NAME": "Phytophthora lateralis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "19/11/2013",
-            "DOCUMENT_SIZE": 726376,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 12570,
-            "EPPO_CODE": "XYLEFA",
-            "LATIN_NAME": "Xylella fastidiosa",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "21/02/2020",
-            "DOCUMENT_SIZE": 883461,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 12570,
-            "EPPO_CODE": "XYLEFA",
-            "LATIN_NAME": "Xylella fastidiosa",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "14/10/2020",
-            "DOCUMENT_SIZE": 183187,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "15/07/2015",
+            "DOCUMENT_SIZE": 812034,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 12666,
@@ -776,21 +644,21 @@
             "LATIN_NAME": "Phytophthora lateralis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "15/07/2015",
-            "DOCUMENT_SIZE": 342318,
+            "DOCUMENT_SIZE": 486769,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
-            "CSL_REF": 12666,
-            "EPPO_CODE": "PHYTLA",
-            "LATIN_NAME": "Phytophthora lateralis",
+            "CSL_REF": 12723,
+            "EPPO_CODE": "COLSAS",
+            "LATIN_NAME": "Coleosporium asterum",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "15/07/2015",
-            "DOCUMENT_SIZE": 108013,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "PUBLICATION_DATE": "16/02/2016",
+            "DOCUMENT_SIZE": 80898,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 13042,
@@ -798,9 +666,64 @@
             "LATIN_NAME": "Agrilus bilineatus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "24/03/2021",
-            "DOCUMENT_SIZE": 306361,
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "10/04/2023",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13042,
+            "EPPO_CODE": "AGRLBL",
+            "LATIN_NAME": "Agrilus bilineatus",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "10/04/2023",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13042,
+            "EPPO_CODE": "AGRLBL",
+            "LATIN_NAME": "Agrilus bilineatus",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "10/04/2023",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13295,
+            "EPPO_CODE": "ANOLCN",
+            "LATIN_NAME": "Anoplophora chinensis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "05/09/2008",
+            "DOCUMENT_SIZE": 377447,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 13295,
+            "EPPO_CODE": "ANOLCN",
+            "LATIN_NAME": "Anoplophora chinensis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "03/11/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13295,
+            "EPPO_CODE": "ANOLCN",
+            "LATIN_NAME": "Anoplophora chinensis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "03/11/2022",
+            "DOCUMENT_SIZE": 97051,
             "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
@@ -809,21 +732,428 @@
             "LATIN_NAME": "Anoplophora chinensis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "05/09/2008",
-            "DOCUMENT_SIZE": 377447,
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "03/11/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13295,
+            "EPPO_CODE": "ANOLCN",
+            "LATIN_NAME": "Anoplophora chinensis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "04/11/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13295,
+            "EPPO_CODE": "ANOLCN",
+            "LATIN_NAME": "Anoplophora chinensis",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "04/11/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "21/06/2022",
+            "DOCUMENT_SIZE": 22018,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/06/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "21/06/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "20/06/2022",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "20/06/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "04/12/2022",
+            "DOCUMENT_SIZE": 188346,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
-            "CSL_REF": 13339,
-            "EPPO_CODE": "ANTHEU",
-            "LATIN_NAME": "Anthonomus eugenii",
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "21/11/2012",
-            "DOCUMENT_SIZE": 269787,
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "04/12/2022",
+            "DOCUMENT_SIZE": 26112,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "04/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "07/12/2022",
+            "DOCUMENT_SIZE": 188346,
             "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "07/12/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 22016,
+            "DOCUMENT_FORMAT": "application/msword"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "08/12/2022",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "09/12/2022",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "09/12/2022",
+            "DOCUMENT_SIZE": 188346,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "PUBLICATION_DATE": "14/02/2023",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "14/02/2023",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+            "CSL_REF": 13756,
+            "EPPO_CODE": "BEMITA",
+            "LATIN_NAME": "Bemisia tabaci",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "14/02/2023",
+            "DOCUMENT_SIZE": 11880,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
             "CSL_REF": 14098,
@@ -831,21 +1161,10 @@
             "LATIN_NAME": "Ceroplastes rusci",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "21/09/2011",
-            "DOCUMENT_SIZE": 177538,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 14254,
-            "EPPO_CODE": "CHRXCH",
-            "LATIN_NAME": "Chrysodeixis chalcites",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "14/05/2014",
-            "DOCUMENT_SIZE": 521345,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 1099264,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 14609,
@@ -853,21 +1172,10 @@
             "LATIN_NAME": "Corythucha arcuata",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/11/2018",
-            "DOCUMENT_SIZE": 457127,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 14847,
-            "EPPO_CODE": "DIABSC",
-            "LATIN_NAME": "Diabrotica speciosa speciosa",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/03/2015",
-            "DOCUMENT_SIZE": 377807,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "28/06/2007",
+            "DOCUMENT_SIZE": 171520,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 14849,
@@ -875,10 +1183,10 @@
             "LATIN_NAME": "Diabrotica virgifera subsp. virgifera",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "31/01/2007",
-            "DOCUMENT_SIZE": 1211546,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 3750912,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 14977,
@@ -886,32 +1194,10 @@
             "LATIN_NAME": "Diaphania nitidalis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "14/01/2011",
             "DOCUMENT_SIZE": 2179584,
             "DOCUMENT_FORMAT": "application/msword"
-        },
-        {
-            "CSL_REF": 15069,
-            "EPPO_CODE": "ELASLI",
-            "LATIN_NAME": "Elasmopalpus lignosellus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/01/2021",
-            "DOCUMENT_SIZE": 1522256,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 15116,
-            "EPPO_CODE": "ENNOSU",
-            "LATIN_NAME": "Ennomos subsignaria",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "15/06/2025",
-            "DOCUMENT_SIZE": 1755293,
-            "DOCUMENT_FORMAT": "application/pdf"
         },
         {
             "CSL_REF": 15186,
@@ -919,21 +1205,10 @@
             "LATIN_NAME": "Epichoristodes acerbella",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "08/05/2009",
-            "DOCUMENT_SIZE": 51507,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 15273,
-            "EPPO_CODE": "ETIEZI",
-            "LATIN_NAME": "Etiella zinckenella",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/07/2013",
-            "DOCUMENT_SIZE": 69134,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 231936,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 15399,
@@ -941,20 +1216,9 @@
             "LATIN_NAME": "Euzophera bigella",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "15/06/2018",
-            "DOCUMENT_SIZE": 864204,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 15399,
-            "EPPO_CODE": "EUZOBI",
-            "LATIN_NAME": "Euzophera bigella",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "15/06/2018",
-            "DOCUMENT_SIZE": 143228,
+            "DOCUMENT_SIZE": 522923,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -963,10 +1227,10 @@
             "LATIN_NAME": "Hyphantria cunea",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "30/11/2015",
-            "DOCUMENT_SIZE": 1770744,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 72706,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 15954,
@@ -976,19 +1240,8 @@
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "30/11/2015",
-            "DOCUMENT_SIZE": 42252,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 16019,
-            "EPPO_CODE": "IPSXTY",
-            "LATIN_NAME": "Ips typographus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/09/2023",
-            "DOCUMENT_SIZE": 1252457,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 93186,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 16710,
@@ -996,32 +1249,10 @@
             "LATIN_NAME": "Monochamus sartor",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "20/11/2009",
-            "DOCUMENT_SIZE": 106356,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 17022,
-            "EPPO_CODE": "OLIGPD",
-            "LATIN_NAME": "Oligonychus perditus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/01/2015",
-            "DOCUMENT_SIZE": 378425,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 17431,
-            "EPPO_CODE": "PHENSO",
-            "LATIN_NAME": "Phenacoccus solenopsis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "28/01/2013",
-            "DOCUMENT_SIZE": 332422,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 98816,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 17580,
@@ -1029,43 +1260,10 @@
             "LATIN_NAME": "Phylloxera quercus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/06/2011",
-            "DOCUMENT_SIZE": 143661,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 17654,
-            "EPPO_CODE": "PLAAFL",
-            "LATIN_NAME": "Platynota flavedana",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/09/2014",
-            "DOCUMENT_SIZE": 1318736,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 18830,
-            "EPPO_CODE": "THAUPV",
-            "LATIN_NAME": "Thaumetopoea pinivora",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/02/2016",
-            "DOCUMENT_SIZE": 464179,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 18830,
-            "EPPO_CODE": "THAUPV",
-            "LATIN_NAME": "Thaumetopoea pinivora",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "20/02/2016",
-            "DOCUMENT_SIZE": 77322,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "PUBLICATION_DATE": "30/06/2011",
+            "DOCUMENT_SIZE": 1312256,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 19011,
@@ -1073,10 +1271,10 @@
             "LATIN_NAME": "Paratrichodorus minor",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "02/07/2008",
-            "DOCUMENT_SIZE": 86694,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 300544,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 19105,
@@ -1084,42 +1282,9 @@
             "LATIN_NAME": "Tuta absoluta",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "31/08/2009",
             "DOCUMENT_SIZE": 564832,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 19231,
-            "EPPO_CODE": "XIPHBR",
-            "LATIN_NAME": "Xiphinema brevicolle",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/06/2014",
-            "DOCUMENT_SIZE": 452462,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 19233,
-            "EPPO_CODE": "XIPHME",
-            "LATIN_NAME": "Xiphinema pachtaicum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/06/2014",
-            "DOCUMENT_SIZE": 452462,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 19240,
-            "EPPO_CODE": "EUWAWH",
-            "LATIN_NAME": "Euwallacea fornicatus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2024",
-            "DOCUMENT_SIZE": 3549628,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -1128,54 +1293,10 @@
             "LATIN_NAME": "Aphis nerii",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "10/12/2015",
-            "DOCUMENT_SIZE": 699279,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 20174,
-            "EPPO_CODE": "DIABBA",
-            "LATIN_NAME": "Diabrotica balteata",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/01/2015",
-            "DOCUMENT_SIZE": 316170,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 20194,
-            "EPPO_CODE": "DICHPU",
-            "LATIN_NAME": "Conogethes punctiferalis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/05/2012",
-            "DOCUMENT_SIZE": 100730,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 20985,
-            "EPPO_CODE": "MALLRA",
-            "LATIN_NAME": "Neocerambyx raddei",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "23/05/2021",
-            "DOCUMENT_SIZE": 337056,
-            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        },
-        {
-            "CSL_REF": 21018,
-            "EPPO_CODE": "MEITSE",
-            "LATIN_NAME": "Melittomma sericeum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "29/04/2025",
-            "DOCUMENT_SIZE": 530795,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 292354,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 21181,
@@ -1183,43 +1304,10 @@
             "LATIN_NAME": "Neotoxoptera formosana",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "05/10/2007",
-            "DOCUMENT_SIZE": 63764,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 21558,
-            "EPPO_CODE": "PLAAID",
-            "LATIN_NAME": "Platynota idaeusalis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/09/2014",
-            "DOCUMENT_SIZE": 1318736,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 21645,
-            "EPPO_CODE": "PRATSC",
-            "LATIN_NAME": "Pratylenchus scribneri",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/12/2015",
-            "DOCUMENT_SIZE": 357025,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 21645,
-            "EPPO_CODE": "PRATSC",
-            "LATIN_NAME": "Pratylenchus scribneri",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "30/12/2015",
-            "DOCUMENT_SIZE": 73412,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "PUBLICATION_DATE": "05/10/2007",
+            "DOCUMENT_SIZE": 239616,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 21693,
@@ -1227,10 +1315,10 @@
             "LATIN_NAME": "Pseudaulacaspis pentagona",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "05/01/2007",
-            "DOCUMENT_SIZE": 68624,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 205824,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 21721,
@@ -1238,120 +1326,10 @@
             "LATIN_NAME": "Acizzia uncatoides",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "10/01/2008",
-            "DOCUMENT_SIZE": 89695,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22313,
-            "EPPO_CODE": "XYLBGE",
-            "LATIN_NAME": "Xylosandrus germanus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "28/01/2015",
-            "DOCUMENT_SIZE": 391960,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22313,
-            "EPPO_CODE": "XYLBGE",
-            "LATIN_NAME": "Xylosandrus germanus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "28/01/2015",
-            "DOCUMENT_SIZE": 104295,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22322,
-            "EPPO_CODE": "XYLSCO",
-            "LATIN_NAME": "Xylosandrus compactus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "21/05/2025",
-            "DOCUMENT_SIZE": 599049,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22630,
-            "EPPO_CODE": "WDV000",
-            "LATIN_NAME": "Mastrevirus hordei",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2015",
-            "DOCUMENT_SIZE": 371576,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22686,
-            "EPPO_CODE": "PHYP63",
-            "LATIN_NAME": "Candidatus Phytoplasma ulmi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "18/02/2014",
-            "DOCUMENT_SIZE": 217264,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22817,
-            "EPPO_CODE": "PHYPFR",
-            "LATIN_NAME": "Candidatus Phytoplasma fraxini",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/01/2016",
-            "DOCUMENT_SIZE": 867162,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22817,
-            "EPPO_CODE": "PHYPFR",
-            "LATIN_NAME": "Candidatus Phytoplasma fraxini",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "30/01/2016",
-            "DOCUMENT_SIZE": 74185,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22882,
-            "EPPO_CODE": "CERAFP",
-            "LATIN_NAME": "Ceratocystis platani",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "11/04/2013",
-            "DOCUMENT_SIZE": 353506,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22899,
-            "EPPO_CODE": "GNOMUL",
-            "LATIN_NAME": "Stegophora ulmea",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2013",
-            "DOCUMENT_SIZE": 392108,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 22953,
-            "EPPO_CODE": "GYMNAS",
-            "LATIN_NAME": "Gymnosporangium asiaticum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "03/02/2014",
-            "DOCUMENT_SIZE": 427927,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 192512,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 23022,
@@ -1359,9 +1337,9 @@
             "LATIN_NAME": "Phytophthora ramorum",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "26/02/2009",
-            "DOCUMENT_SIZE": 6250989,
+            "DOCUMENT_SIZE": 6293839,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -1370,9 +1348,9 @@
             "LATIN_NAME": "Tetropium gracilicorne",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "10/12/2015",
-            "DOCUMENT_SIZE": 739432,
+            "DOCUMENT_SIZE": 522923,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -1381,10 +1359,10 @@
             "LATIN_NAME": "Aleurocerus palmae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "05/07/2007",
-            "DOCUMENT_SIZE": 45809,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 136704,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 23614,
@@ -1392,32 +1370,10 @@
             "LATIN_NAME": "Aleuroclava jasmini",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "21/09/2011",
-            "DOCUMENT_SIZE": 105066,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 23803,
-            "EPPO_CODE": "DALPDE",
-            "LATIN_NAME": "Dialeuropora decempuncta",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/11/2012",
-            "DOCUMENT_SIZE": 396529,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 23876,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Globodera tabacum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "03/11/2014",
-            "DOCUMENT_SIZE": 362723,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 223744,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 24011,
@@ -1425,10 +1381,10 @@
             "LATIN_NAME": "Neopulvinaria",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "18/12/2014",
-            "DOCUMENT_SIZE": 581139,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 23042,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 24314,
@@ -1436,32 +1392,10 @@
             "LATIN_NAME": "Phytomyza gymnostoma",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "20/04/2007",
-            "DOCUMENT_SIZE": 463412,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 24315,
-            "EPPO_CODE": "DIABSI",
-            "LATIN_NAME": "Diabrotica significata",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "03/04/2014",
-            "DOCUMENT_SIZE": 529506,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 24429,
-            "EPPO_CODE": "ECCPEF",
-            "LATIN_NAME": "Eccopisa effractella",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "17/09/2014",
-            "DOCUMENT_SIZE": 616794,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 1916928,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 24474,
@@ -1469,21 +1403,10 @@
             "LATIN_NAME": "Aleuroclava psidii",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "21/09/2011",
-            "DOCUMENT_SIZE": 197782,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 24578,
-            "EPPO_CODE": "ADFVD0",
-            "LATIN_NAME": "Apscaviroid fossulamali",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/11/2018",
-            "DOCUMENT_SIZE": 343011,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 3527433,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
             "CSL_REF": 24587,
@@ -1491,32 +1414,10 @@
             "LATIN_NAME": "Crenidorsum aroidephagus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "17/11/2011",
-            "DOCUMENT_SIZE": 199898,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 25108,
-            "EPPO_CODE": "RRV000",
-            "LATIN_NAME": "Emaravirus rosae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "06/12/2016",
-            "DOCUMENT_SIZE": 928308,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 25108,
-            "EPPO_CODE": "RRV000",
-            "LATIN_NAME": "Emaravirus rosae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "06/12/2016",
-            "DOCUMENT_SIZE": 67235,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "PUBLICATION_DATE": "17/11/2011",
+            "DOCUMENT_SIZE": 1218850,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
             "CSL_REF": 25156,
@@ -1524,21 +1425,10 @@
             "LATIN_NAME": "Oemona hirta",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "28/10/2010",
-            "DOCUMENT_SIZE": 144788,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 25311,
-            "EPPO_CODE": "MALAPA",
-            "LATIN_NAME": "Malacosoma parallela",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/12/2014",
-            "DOCUMENT_SIZE": 440073,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 676864,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 25314,
@@ -1546,10 +1436,10 @@
             "LATIN_NAME": "Plasmopara obducens",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "27/10/2007",
-            "DOCUMENT_SIZE": 46717,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 82432,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 25428,
@@ -1557,54 +1447,21 @@
             "LATIN_NAME": "Phytophthora kernoviae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "25/02/2008",
-            "DOCUMENT_SIZE": 450081,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 25550,
-            "EPPO_CODE": "SCOLMO",
-            "LATIN_NAME": "Scolytus morawitzi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "17/03/2014",
-            "DOCUMENT_SIZE": 573804,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 25602,
-            "EPPO_CODE": "PLTPMU",
-            "LATIN_NAME": "Megaplatypus mutatus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/05/2014",
-            "DOCUMENT_SIZE": 810803,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 25683,
-            "EPPO_CODE": "MELGMI",
-            "LATIN_NAME": "Meloidogyne minor",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/01/2007",
-            "DOCUMENT_SIZE": 961977,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 1135104,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26116,
             "EPPO_CODE": "CLVD00",
-            "LATIN_NAME": "Pospiviroid latenscolumneae",
+            "LATIN_NAME": "Columnea latent viroid",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "21/01/2010",
-            "DOCUMENT_SIZE": 256671,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 235008,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26191,
@@ -1612,32 +1469,10 @@
             "LATIN_NAME": "Trichodorus cedarus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "30/09/2011",
             "DOCUMENT_SIZE": 678400,
             "DOCUMENT_FORMAT": "application/msword"
-        },
-        {
-            "CSL_REF": 26229,
-            "EPPO_CODE": "IPSXHA",
-            "LATIN_NAME": "Ips hauseri",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/06/2016",
-            "DOCUMENT_SIZE": 370394,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26229,
-            "EPPO_CODE": "IPSXHA",
-            "LATIN_NAME": "Ips hauseri",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "20/06/2016",
-            "DOCUMENT_SIZE": 192169,
-            "DOCUMENT_FORMAT": "application/pdf"
         },
         {
             "CSL_REF": 26253,
@@ -1645,21 +1480,21 @@
             "LATIN_NAME": "Ophelimus maskelli",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "01/07/2007",
-            "DOCUMENT_SIZE": 223834,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 138752,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
-            "CSL_REF": 26297,
-            "EPPO_CODE": "TMGMV0",
-            "LATIN_NAME": "Tobamovirus mititessellati",
+            "CSL_REF": 26253,
+            "EPPO_CODE": "OPHEMA",
+            "LATIN_NAME": "Ophelimus maskelli",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "18/10/2012",
-            "DOCUMENT_SIZE": 311349,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "01/07/2007",
+            "DOCUMENT_SIZE": 138752,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26345,
@@ -1667,21 +1502,10 @@
             "LATIN_NAME": "Hymenoscyphus fraxineus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "23/05/2013",
-            "DOCUMENT_SIZE": 5511417,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26359,
-            "EPPO_CODE": "PACHV0",
-            "LATIN_NAME": "Potyvirus passifloraflavi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "15/05/2008",
-            "DOCUMENT_SIZE": 74423,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 50009,
+            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
             "CSL_REF": 26378,
@@ -1689,21 +1513,10 @@
             "LATIN_NAME": "Cydalima perspectalis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "10/09/2010",
-            "DOCUMENT_SIZE": 212757,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26575,
-            "EPPO_CODE": "AROMBU",
-            "LATIN_NAME": "Aromia bungii",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "31/01/2013",
-            "DOCUMENT_SIZE": 538387,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 2756096,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26585,
@@ -1711,10 +1524,10 @@
             "LATIN_NAME": "Aceria kuko",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "05/03/2010",
-            "DOCUMENT_SIZE": 68332,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 605696,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26702,
@@ -1722,10 +1535,10 @@
             "LATIN_NAME": "Parthenolecanium fletcheri",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "12/10/2011",
-            "DOCUMENT_SIZE": 219638,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 4145152,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26767,
@@ -1733,21 +1546,10 @@
             "LATIN_NAME": "Phytophthora pseudosyringae",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "30/01/2012",
-            "DOCUMENT_SIZE": 181120,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26791,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Candidatus Liberibacter solanacearum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "14/02/2014",
-            "DOCUMENT_SIZE": 847990,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 254464,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 26813,
@@ -1755,54 +1557,10 @@
             "LATIN_NAME": "Peronospora belbahrii",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "09/07/2012",
-            "DOCUMENT_SIZE": 234347,
+            "DOCUMENT_SIZE": 73617,
             "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26822,
-            "EPPO_CODE": "PHYTPF",
-            "LATIN_NAME": "Phytophthora pinifolia",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "14/07/2014",
-            "DOCUMENT_SIZE": 533404,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26871,
-            "EPPO_CODE": "PHYPFG",
-            "LATIN_NAME": "'Candidatus Phytoplasma fragariae'",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/09/2015",
-            "DOCUMENT_SIZE": 881041,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26873,
-            "EPPO_CODE": "CHIVMV",
-            "LATIN_NAME": "Potyvirus capsivenamaculae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "30/04/2022",
-            "DOCUMENT_SIZE": 522923,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26873,
-            "EPPO_CODE": "CHIVMV",
-            "LATIN_NAME": "Potyvirus capsivenamaculae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/04/2022",
-            "DOCUMENT_SIZE": 2580466,
-            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
         },
         {
             "CSL_REF": 26898,
@@ -1810,53 +1568,9 @@
             "LATIN_NAME": "Musotima nitidalis",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "12/12/2011",
-            "DOCUMENT_SIZE": 108525,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26975,
-            "EPPO_CODE": "APRCLE",
-            "LATIN_NAME": "Aproceros leucopoda",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "18/07/2017",
-            "DOCUMENT_SIZE": 583587,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 26975,
-            "EPPO_CODE": "APRCLE",
-            "LATIN_NAME": "Aproceros leucopoda",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "18/07/2017",
-            "DOCUMENT_SIZE": 136346,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27043,
-            "EPPO_CODE": "TOTV00",
-            "LATIN_NAME": "Torradovirus lycopersici",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/03/2015",
-            "DOCUMENT_SIZE": 477117,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27086,
-            "EPPO_CODE": "CITPSA",
-            "LATIN_NAME": "Citripestis sagittiferella",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "18/09/2013",
-            "DOCUMENT_SIZE": 348357,
+            "PUBLICATION_DATE": "12/12/2011",
+            "DOCUMENT_SIZE": 72497,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -1865,21 +1579,10 @@
             "LATIN_NAME": "Phenacoccus peruvianus",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 0,
             "PUBLICATION_DATE": "07/12/2011",
-            "DOCUMENT_SIZE": 94983,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27213,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Parapoynx polydectalis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "19/02/2013",
-            "DOCUMENT_SIZE": 98369,
-            "DOCUMENT_FORMAT": "application/pdf"
+            "DOCUMENT_SIZE": 556032,
+            "DOCUMENT_FORMAT": "application/msword"
         },
         {
             "CSL_REF": 27216,
@@ -1887,9 +1590,9 @@
             "LATIN_NAME": "Phytophthora austrocedri",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "07/07/2015",
-            "DOCUMENT_SIZE": 634187,
+            "DOCUMENT_SIZE": 147876,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -1900,502 +1603,7 @@
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "07/07/2015",
-            "DOCUMENT_SIZE": 80161,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27244,
-            "EPPO_CODE": "SPMV30",
-            "LATIN_NAME": "Potyvirus spiranthesis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/12/2014",
-            "DOCUMENT_SIZE": 443305,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27245,
-            "EPPO_CODE": "MELDHI",
-            "LATIN_NAME": "Melampsoridium hiratsukanum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/03/2013",
-            "DOCUMENT_SIZE": 454942,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27247,
-            "EPPO_CODE": "OPHOKW",
-            "LATIN_NAME": "Ophiomyia kwansonis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "19/11/2012",
-            "DOCUMENT_SIZE": 1524514,
-            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        },
-        {
-            "CSL_REF": 27248,
-            "EPPO_CODE": "PLAMV0",
-            "LATIN_NAME": "Potexvirus marmorplantagonis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "26/02/2013",
-            "DOCUMENT_SIZE": 386731,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27249,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Pseudococcus meridionalis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/03/2015",
-            "DOCUMENT_SIZE": 448844,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27252,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Acute Oak Decline",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/05/2014",
-            "DOCUMENT_SIZE": 1315004,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27263,
-            "EPPO_CODE": "ESSICA",
-            "LATIN_NAME": "Essigella californica",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/02/2015",
-            "DOCUMENT_SIZE": 198215,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27265,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Emaravirus sorbi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "02/09/2013",
-            "DOCUMENT_SIZE": 227958,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27281,
-            "EPPO_CODE": "PHYTUV",
-            "LATIN_NAME": "Phytophthora pluvialis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "18/09/2021",
-            "DOCUMENT_SIZE": 220283,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27281,
-            "EPPO_CODE": "PHYTUV",
-            "LATIN_NAME": "Phytophthora pluvialis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "09/10/2022",
-            "DOCUMENT_SIZE": 1517176,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27281,
-            "EPPO_CODE": "PHYTUV",
-            "LATIN_NAME": "Phytophthora pluvialis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "09/10/2022",
-            "DOCUMENT_SIZE": 1517174,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27281,
-            "EPPO_CODE": "PHYTUV",
-            "LATIN_NAME": "Phytophthora pluvialis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "09/10/2022",
-            "DOCUMENT_SIZE": 1517174,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27295,
-            "EPPO_CODE": "PHENPA",
-            "LATIN_NAME": "Phenacoccus parvus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/04/2013",
-            "DOCUMENT_SIZE": 96974,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27336,
-            "EPPO_CODE": "SIROTS",
-            "LATIN_NAME": "Sirococcus tsugae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "16/10/2016",
-            "DOCUMENT_SIZE": 42903,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27336,
-            "EPPO_CODE": "SIROTS",
-            "LATIN_NAME": "Sirococcus tsugae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "16/10/2016",
-            "DOCUMENT_SIZE": 1102515,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27337,
-            "EPPO_CODE": "LYCMDE",
-            "LATIN_NAME": "Lycorma delicatula",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "03/03/2023",
-            "DOCUMENT_SIZE": 1304514,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27337,
-            "EPPO_CODE": "LYCMDE",
-            "LATIN_NAME": "Lycorma delicatula",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "03/03/2023",
-            "DOCUMENT_SIZE": 1178194,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27371,
-            "EPPO_CODE": "AGRLCV",
-            "LATIN_NAME": "Agrilus convexicollis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "16/12/2015",
-            "DOCUMENT_SIZE": 457838,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27371,
-            "EPPO_CODE": "AGRLCV",
-            "LATIN_NAME": "Agrilus convexicollis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "16/12/2015",
-            "DOCUMENT_SIZE": 85453,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27383,
-            "EPPO_CODE": "HETEOC",
-            "LATIN_NAME": "Heterobasidion occidentale",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "16/07/2016",
-            "DOCUMENT_SIZE": 39500,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27383,
-            "EPPO_CODE": "HETEOC",
-            "LATIN_NAME": "Heterobasidion occidentale",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "16/07/2016",
-            "DOCUMENT_SIZE": 995438,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27393,
-            "EPPO_CODE": "HETEPA",
-            "LATIN_NAME": "Heterobasidion parviporum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "16/05/2016",
-            "DOCUMENT_SIZE": 39264,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27393,
-            "EPPO_CODE": "HETEPA",
-            "LATIN_NAME": "Heterobasidion parviporum",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "16/05/2016",
-            "DOCUMENT_SIZE": 796935,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27401,
-            "EPPO_CODE": "PRDILO",
-            "LATIN_NAME": "Prodiplosis longifila",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "12/03/2021",
-            "DOCUMENT_SIZE": 259956,
-            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        },
-        {
-            "CSL_REF": 27631,
-            "EPPO_CODE": "ENIGAG",
-            "LATIN_NAME": "Enigmadiplosis agapanthi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2015",
-            "DOCUMENT_SIZE": 468036,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27631,
-            "EPPO_CODE": "ENIGAG",
-            "LATIN_NAME": "Enigmadiplosis agapanthi",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "10/12/2015",
-            "DOCUMENT_SIZE": 143422,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27689,
-            "EPPO_CODE": "DACLPI",
-            "LATIN_NAME": "Crisicoccus pini",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/04/2019",
-            "DOCUMENT_SIZE": 786027,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27689,
-            "EPPO_CODE": "DACLPI",
-            "LATIN_NAME": "Crisicoccus pini",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "01/04/2019",
-            "DOCUMENT_SIZE": 208931,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27701,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Peronospora sp. nov. Aquilegia",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "20/09/2016",
-            "DOCUMENT_SIZE": 313158,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27701,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Peronospora sp. nov. Aquilegia",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "20/09/2016",
-            "DOCUMENT_SIZE": 40787,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27725,
-            "EPPO_CODE": "TOMMV0",
-            "LATIN_NAME": "Tobamovirus maculatessellati",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "17/11/2022",
-            "DOCUMENT_SIZE": 688967,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27725,
-            "EPPO_CODE": "TOMMV0",
-            "LATIN_NAME": "Tobamovirus maculatessellati",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "17/11/2022",
-            "DOCUMENT_SIZE": 606048,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27729,
-            "EPPO_CODE": "PHENFX",
-            "LATIN_NAME": "Phenacoccus fraxinus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "30/04/2017",
-            "DOCUMENT_SIZE": 480146,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27729,
-            "EPPO_CODE": "PHENFX",
-            "LATIN_NAME": "Phenacoccus fraxinus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "30/04/2017",
-            "DOCUMENT_SIZE": 130784,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27733,
-            "EPPO_CODE": "MONCGU",
-            "LATIN_NAME": "Monochamus guttulatus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/09/2019",
-            "DOCUMENT_SIZE": 618482,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27756,
-            "EPPO_CODE": "PEVYV0",
-            "LATIN_NAME": "Pepper vein yellows virus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "25/10/2018",
-            "DOCUMENT_SIZE": 362185,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27756,
-            "EPPO_CODE": "PEVYV0",
-            "LATIN_NAME": "Pepper vein yellows virus",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "25/10/2018",
-            "DOCUMENT_SIZE": 151951,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 27776,
-            "EPPO_CODE": "AGRLFL",
-            "LATIN_NAME": "Agrilus fleischeri",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "12/03/2021",
-            "DOCUMENT_SIZE": 430510,
-            "DOCUMENT_FORMAT": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-        },
-        {
-            "CSL_REF": 27850,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Stenchaetothrips martini",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "16/02/2011",
-            "DOCUMENT_SIZE": 43139,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 28781,
-            "EPPO_CODE": "AGRLHO",
-            "LATIN_NAME": "Agrilus horni",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "01/06/2021",
-            "DOCUMENT_SIZE": 689709,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 29564,
-            "EPPO_CODE": "EUWAKU",
-            "LATIN_NAME": "Euwallacea kuroshio",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2024",
-            "DOCUMENT_SIZE": 3549628,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 29565,
-            "EPPO_CODE": "EUWAPE",
-            "LATIN_NAME": "Euwallacea perbrevis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2024",
-            "DOCUMENT_SIZE": 3549628,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 29570,
-            "EPPO_CODE": "EUWAFO",
-            "LATIN_NAME": "Euwallacea fornicatior",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "10/12/2024",
-            "DOCUMENT_SIZE": 3549628,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 30362,
-            "EPPO_CODE": "POCZSH",
-            "LATIN_NAME": "Pochazia shantungensis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "0",
-            "PUBLICATION_DATE": "25/03/2025",
-            "DOCUMENT_SIZE": 2323511,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 30362,
-            "EPPO_CODE": "POCZSH",
-            "LATIN_NAME": "Pochazia shantungensis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": "1",
-            "PUBLICATION_DATE": "25/03/2025",
-            "DOCUMENT_SIZE": 2250106,
+            "DOCUMENT_SIZE": 147876,
             "DOCUMENT_FORMAT": "application/pdf"
         }
     ]

@@ -2691,6 +2691,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 1038,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 11652,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -2902,6 +2912,16 @@
         },
         {
             "CSL_REF": 12264,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 27270,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -4249,6 +4269,36 @@
             "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
             "QUARANTINE_INDICATOR": "R",
             "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes; \n Fruit propagating material and fruit plants intended for fruit production"
+        },
+        {
+            "CSL_REF": 732,
+            "HOST_REF": 18340,
+            "HOST_FORMAT_ID": 2,
+            "HOST_FORMAT": "Plants for planting other than seed",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes"
+        },
+        {
+            "CSL_REF": 732,
+            "HOST_REF": 20152,
+            "HOST_FORMAT_ID": 2,
+            "HOST_FORMAT": "Plants for planting other than seed",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes; \n Fruit propagating material and fruit plants intended for fruit production"
+        },
+        {
+            "CSL_REF": 732,
+            "HOST_REF": 22007,
+            "HOST_FORMAT_ID": 2,
+            "HOST_FORMAT": "Plants for planting other than seed",
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4C (Propagating material of ornamental plants and other plants for planting intended for ornamental purposes)",
+            "QUARANTINE_INDICATOR": "R",
+            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes"
         },
         {
             "CSL_REF": 556,
@@ -8598,7 +8648,7 @@
             "REGULATION": "GB",
             "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
             "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
+            "REGULATION_INDICATOR": "Propagating material of ornamental plants and other plants for planting intended for ornamental purposes; \n Fruit propagating material and fruit plants intended for fruit production"
         },
         {
             "CSL_REF": 732,
@@ -8962,6 +9012,16 @@
         },
         {
             "CSL_REF": 11546,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 464,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -10101,6 +10161,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 5334,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 5577,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -10421,6 +10491,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 18659,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 2959,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -10572,6 +10652,16 @@
         },
         {
             "CSL_REF": 27393,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 27359,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -11071,6 +11161,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 9114,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 12691,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -11481,154 +11581,144 @@
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 18659,
+            "CSL_REF": 1723,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 9114,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 27359,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 11980,
-            "HOST_REF": 23902,
-            "HOST_FORMAT_ID": 1,
-            "HOST_FORMAT": "Seed",
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4L (seed of Solanum sisymbriifolium Lamarck)",
+            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4A (Fodder plant seed)",
             "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "seed of Solanum sisymbriifolium Lamarck"
+            "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 27270,
+            "CSL_REF": 16935,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_CATEGORY": "Pest free area quarantine pests (Annex 3)",
+            "QUARANTINE_INDICATOR": "P",
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 25291,
+            "CSL_REF": 24729,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+            "REGULATION_CATEGORY": "Priority pests",
             "QUARANTINE_INDICATOR": "Q",
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 25181,
+            "CSL_REF": 24729,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+            "REGULATION_CATEGORY": "Priority pests",
             "QUARANTINE_INDICATOR": "Q",
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 464,
+            "CSL_REF": 8121,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_CATEGORY": "MR Test 4",
+            "QUARANTINE_INDICATOR": "",
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 5334,
+            "CSL_REF": 24729,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
             "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 1038,
-            "HOST_REF": 26870,
-            "HOST_FORMAT_ID": 2,
-            "HOST_FORMAT": "Plants for planting other than seed",
+            "CSL_REF": 24729,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4B (Vine propagating material)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Vine propagating material"
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 732,
-            "HOST_REF": 26870,
-            "HOST_FORMAT_ID": 2,
-            "HOST_FORMAT": "Plants for planting other than seed",
+            "CSL_REF": 1208,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4B (Vine propagating material)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Vine propagating material"
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 1038,
-            "HOST_REF": 11566,
-            "HOST_FORMAT_ID": 3,
-            "HOST_FORMAT": "Plants for planting",
+            "CSL_REF": 1208,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4G (Seed of oil and fibre plants)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Seed of oil and fibre plants"
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 1038,
-            "HOST_REF": 26275,
-            "HOST_FORMAT_ID": 3,
-            "HOST_FORMAT": "Plants for planting",
+            "CSL_REF": 1208,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 732,
-            "HOST_REF": 22007,
-            "HOST_FORMAT_ID": 3,
-            "HOST_FORMAT": "Plants for planting",
+            "CSL_REF": 1208,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
+            "REGULATION_CATEGORY": "MR Test 2",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
         },
         {
-            "CSL_REF": 732,
-            "HOST_REF": 26275,
-            "HOST_FORMAT_ID": 3,
-            "HOST_FORMAT": "Plants for planting",
+            "CSL_REF": 1208,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
             "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
-            "QUARANTINE_INDICATOR": "R",
-            "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
+            "REGULATION_CATEGORY": "MR Test 2",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 25502,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 8121,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "MR Test 1",
+            "QUARANTINE_INDICATOR": "",
+            "REGULATION_INDICATOR": ""
         }
     ]
 }
