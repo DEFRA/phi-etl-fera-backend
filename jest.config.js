@@ -10,8 +10,21 @@ module.exports = {
   collectCoverageFrom: ['src/**/*.js'],
   coveragePathIgnorePatterns: [
     '<rootDir>/node_modules/',
+    '<rootDir>/postman/',
     '<rootDir>/.server',
-    '<rootDir>/src/__fixtures__'
+    '<rootDir>/src/__fixtures__',
+    'src/helpers/db/data',
+    'src/helpers/secure-context',
+    'src/helpers/proxy-agent.js',
+    'src/helpers/proxy-fetch.js',
+    'src/api/data',
+    'src/helpers/db/mocks',
+    'src/config',
+    'src/strategies/prohibitedStrategy.js',
+    'src/strategies/innsStrategy.js',
+    'src/helpers/db/update-db-pest.js',
+    'src/fera_integration',
+    'src/api/fera'
   ],
   coverageDirectory: '<rootDir>/coverage'
 }

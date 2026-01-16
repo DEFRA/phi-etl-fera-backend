@@ -100,7 +100,7 @@ async function loadData(db) {
     const plantDocsWithDataFromPlantName = buildResultList(
       plantDocsFromPlantNameCol
     )
-    logger.info(
+    logger?.info(
       `plantDocsWithDataMappedFromPlantName: ${plantDocsWithDataFromPlantName.length}`
     )
 
@@ -109,21 +109,21 @@ async function loadData(db) {
       plantDocsWithDataFromPlantName,
       annex6List
     )
-    logger.info('mapAnnex6 completed')
+    logger?.info('mapAnnex6 completed')
 
     // ANNEX 11 - For Rule 1
     const annex11ResultList = mapAnnex11(
       plantDocsWithDataFromPlantName,
       annex11List
     )
-    logger.info('mapAnnex11 completed')
+    logger?.info('mapAnnex11 completed')
 
     // ANNEX 11 - For Rule 2
     const annex11ResultListParentHost = mapAnnex11ParentHost(
       plantDocsWithDataFromPlantName,
       annex11List
     )
-    logger.info('mapAnnex11ParentHost completed')
+    logger?.info('mapAnnex11ParentHost completed')
 
     // ANNEX 11 - For Rule 3 - Find GRANDPARENT
     const annex11ResultListGrandParent = mapAnnex11GrandParent(
@@ -131,7 +131,7 @@ async function loadData(db) {
       plantDocsFromPlantNameCol,
       annex11List
     )
-    logger.info('mapAnnex11GrandParent completed')
+    logger?.info('mapAnnex11GrandParent completed')
 
     // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
     // ANNEX 11 - For Rule 4 - Find GREAT GRANDPARENT
@@ -141,7 +141,7 @@ async function loadData(db) {
       annex11List
     )
     // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
-    logger.info('mapAnnex11GreatGrandParent completed')
+    logger?.info('mapAnnex11GreatGrandParent completed')
 
     const annex11ResultListDefault = annex11List.filter(
       (n11) => +n11.HOST_REF === 99999
@@ -153,21 +153,21 @@ async function loadData(db) {
       annex11ResultList,
       annex11ResultListDefault
     )
-    logger.info('updateResultListWithAnnex11 completed')
+    logger?.info('updateResultListWithAnnex11 completed')
 
     // Map Rule 2(PARENT_HOST_REF)
     updateResultListWithAnnex11ParentHost(
       plantDocsWithDataFromPlantName,
       annex11ResultListParentHost
     )
-    logger.info('updateResultListWithAnnex11ParentHost completed')
+    logger?.info('updateResultListWithAnnex11ParentHost completed')
 
     // Map Rule 3
     updateResultListWithAnnex11GrandParent(
       plantDocsWithDataFromPlantName,
       annex11ResultListGrandParent
     )
-    logger.info('updateResultListWithAnnex11GrandParent completed')
+    logger?.info('updateResultListWithAnnex11GrandParent completed')
 
     // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
     // Map Rule 4
@@ -175,39 +175,39 @@ async function loadData(db) {
       plantDocsWithDataFromPlantName,
       annex11ResultListGreatGrandParent
     )
-    logger.info('updateResultListWithAnnex11GreatGrandParent completed')
+    logger?.info('updateResultListWithAnnex11GreatGrandParent completed')
 
     // ----------GREAT GRAND PARENT JIRA STORY PHIDP-462------------------------------
 
     updateResultListWithAnnex6(plantDocsWithDataFromPlantName, annex6ResultList)
-    logger.info('updateResultListWithAnnex6 completed')
+    logger?.info('updateResultListWithAnnex6 completed')
 
     const pestLinkResultList = mapPestLink(
       plantDocsWithDataFromPlantName,
       plantPestLinkList
     )
-    logger.info(`mapPestLink: ${pestLinkResultList.length}`)
+    logger?.info(`mapPestLink: ${pestLinkResultList.length}`)
     updateResultListWithPestLink(
       plantDocsWithDataFromPlantName,
       pestLinkResultList
     )
-    logger.info('updateResultListWithPestLink completed')
+    logger?.info('updateResultListWithPestLink completed')
 
     updateResultListWithPestNames(plantDocsWithDataFromPlantName, pestNamesList)
-    logger.info('updateResultListWithPestNames completed')
+    logger?.info('updateResultListWithPestNames completed')
 
     updateResultListWithPestReg(
       plantDocsWithDataFromPlantName,
       plantPestRegList,
       plantDocsFromPlantNameCol
     )
-    logger.info('updateResultListWithPestReg completed')
+    logger?.info('updateResultListWithPestReg completed')
 
     updateResultListWithPestCountry(
       plantDocsWithDataFromPlantName,
       pestDistributionList
     )
-    logger.info('updateResultListWithPestCountry completed')
+    logger?.info('updateResultListWithPestCountry completed')
 
     await insertResultList(db, plantDocsWithDataFromPlantName)
     logger.info('PLANT_DATA load completed')
@@ -272,8 +272,8 @@ async function dropBackupCollections(db, collections) {
 }
 
 async function loadCollections(db) {
-  logger.info('loading of MASTER collections from DB STARTED')
-  logger.info(
+  logger?.info('loading of MASTER collections from DB STARTED')
+  logger?.info(
     'PLANT_NAME, PLANT_ANNEX11, PLANT_ANNEX6, PLANT_PEST_LINK, PLANT_PEST_REG, PEST_NAME, PEST_DISTRIBUTION '
   )
   const collections = {}
@@ -306,7 +306,7 @@ async function loadCollections(db) {
     .find({})
     .toArray()
 
-  logger.info('loading of collections from DB COMPLETED')
+  logger?.info('loading of collections from DB COMPLETED')
   return collections
 }
 
@@ -316,12 +316,12 @@ async function clearCollectionIfExists(db, collectionName) {
     .toArray()
   if (collections?.length > 0) {
     await db.collection(collectionName).drop()
-    logger.info(`Collection ${collectionName} dropped.`)
+    logger?.info(`Collection ${collectionName} dropped.`)
   }
 }
 
 function buildResultList(plantNameDocsFromDB) {
-  logger.info(
+  logger?.info(
     'get the plant structure from CONVICT PLANTDETAIL, and map values from from PLANT_NAME into it'
   )
   return plantNameDocsFromDB.map((plant) => {
@@ -387,7 +387,7 @@ function updateResultListWithAnnex11(
 
 // ANNEX11 - Rule 2 - using PARENT_HOST_REF
 function mapAnnex11ParentHost(docsFromPlantName, annex11List) {
-  logger.info('mapAnnex11ParentHost started...')
+  logger?.info('mapAnnex11ParentHost started...')
   return docsFromPlantName.map((plantDocs) => {
     const nx11List = annex11List.filter(
       (nx11) => +nx11.HOST_REF === +plantDocs.PARENT_HOST_REF
@@ -402,7 +402,7 @@ function mapAnnex11GrandParent(
   docsFromPlantNameCol,
   annex11List
 ) {
-  logger.info('mapAnnex11GrandParent started...')
+  logger?.info('mapAnnex11GrandParent started...')
   // eslint-disable-next-line array-callback-return
   const resultListGrandParent = docsMappedWithPlantNameData
     .map((plantDocs) => {
@@ -431,7 +431,7 @@ function updateResultListWithAnnex11ParentHost(
   plantDocuments,
   annex11ResultListParentHost
 ) {
-  logger.info('updateResultListWithAnnex11ParentHost started...')
+  logger?.info('updateResultListWithAnnex11ParentHost started...')
   plantDocuments.forEach((plant) => {
     annex11ResultListParentHost.forEach((nx11) => {
       if (plant.HOST_REF === nx11.HOST_REF) {
@@ -449,7 +449,7 @@ function updateResultListWithAnnex11GrandParent(
   plantDocuments,
   annex11ResultListGrandParent
 ) {
-  logger.info('updateResultListWithAnnex11GrandParent started...')
+  logger?.info('updateResultListWithAnnex11GrandParent started...')
   plantDocuments.forEach((plant) => {
     annex11ResultListGrandParent.forEach((nx11) => {
       if (plant.HOST_REF === nx11.HOST_REF) {
@@ -469,7 +469,7 @@ function mapAnnex11GreatGrandParent(
   docsFromPlantNameCol,
   annex11List
 ) {
-  logger.info('mapAnnex11GreatGrandParent started...')
+  logger?.info('mapAnnex11GreatGrandParent started...')
 
   // Logic: When compared to mapAnnex11GrandParent, this function reverses the mapping, the comparison
   // is done agains the PLANT_NAME collection, as docsMappedWithPlantNameData does not have GRAND_PARENT_HOST_REF
@@ -496,6 +496,12 @@ function mapAnnex11GreatGrandParent(
       return null // Return null if no match or GRAND_PARENT_HOST_REF is invalid
     })
     .filter((element) => element !== null) // Filter out null entries
+
+  // The sub-family introduction is recent, retain the below for testing, once stable delete
+  // Write the resultListGreatGrandParent to a JSON file
+  // writeFileSync('greatgrandplantcol.json', JSON.stringify(resultListGreatGrandParent, null, 2))
+  // logger?.info('resultListGreatGrandParent list written to greatgrandplantcol.json')
+
   // Now map the filtered results and associate with ANNEX11 data
   const resultWithAnnex11 = resultListGreatGrandParent.map((rl) => {
     const nx11ListParent = annex11List
@@ -506,6 +512,12 @@ function mapAnnex11GreatGrandParent(
     // Return the ANNEX11 rules associated with the HOST_REF of the child
     return { HOST_REF: rl.HOST_CHILD_REF, ANNEX11: nx11ListParent }
   })
+
+  // The sub-family introduction is recent, retain the below for testing, once stable delete
+  // Write the resultWithAnnex11 to a JSON file
+  // writeFileSync('greatgrandparentList.json', JSON.stringify(resultWithAnnex11, null, 2))
+  // logger?.info('Great Grandparent list written to greatgrandparentList.json')
+
   return resultWithAnnex11
 }
 
@@ -513,7 +525,7 @@ function updateResultListWithAnnex11GreatGrandParent(
   plantDocuments,
   annex11ResultListGreatGrandParent
 ) {
-  logger.info('updateResultListWithAnnex11GreatGrandParent started...')
+  logger?.info('updateResultListWithAnnex11GreatGrandParent started...')
   plantDocuments.forEach((plantDoc) => {
     annex11ResultListGreatGrandParent.forEach((annex11) => {
       if (plantDoc.HOST_REF === annex11.HOST_REF) {
@@ -527,7 +539,7 @@ function updateResultListWithAnnex11GreatGrandParent(
 }
 
 function updateResultListWithAnnex6(plantDocuments, annex6ResultList) {
-  logger.info('updateResultListWithAnnex6 started...')
+  logger?.info('updateResultListWithAnnex6 started...')
   plantDocuments.forEach((x) => {
     annex6ResultList.forEach((nx6) => {
       if (x.HOST_REF === nx6.HOST_REF) {
@@ -538,7 +550,7 @@ function updateResultListWithAnnex6(plantDocuments, annex6ResultList) {
 }
 
 function mapPestLink(plantDocuments, plantPestLinkList) {
-  logger.info('mapPestLink started...')
+  logger?.info('mapPestLink started...')
   return plantDocuments.map((plantItem) => {
     const pplList = plantPestLinkList
       .filter((cListItem) => cListItem.HOST_REF === plantItem.HOST_REF)
@@ -567,7 +579,7 @@ function mapPestLink(plantDocuments, plantPestLinkList) {
 }
 
 function updateResultListWithPestLink(plantDocuments, pestLinkResultList) {
-  logger.info('updateResultListWithPestLink started...')
+  logger?.info('updateResultListWithPestLink started...')
   plantDocuments.forEach((x) => {
     pestLinkResultList.forEach((pest) => {
       if (x?.HOST_REF === pest?.HOST_REF) {
@@ -578,7 +590,7 @@ function updateResultListWithPestLink(plantDocuments, pestLinkResultList) {
 }
 
 function updateResultListWithPestNames(plantDocuments, pestNamesList) {
-  logger.info('updateResultListWithPestNames started...')
+  logger?.info('updateResultListWithPestNames started...')
   plantDocuments.forEach((pl) => {
     pestNamesList.forEach((pest) => {
       pl.PEST_LINK?.forEach((x) => {
@@ -608,7 +620,7 @@ function updateResultListWithPestReg(
   plantPestRegList,
   plantDocsFromDB
 ) {
-  logger.info('updateResultListWithPestReg started...')
+  logger?.info('updateResultListWithPestReg started...')
   const pestRegResultListGrandParent = pestRegParentListresultList(
     plantDocuments,
     plantPestRegList,
@@ -706,7 +718,7 @@ function pestRegParentListresultList(
   plantDocsFromDB,
   plantPestRegList
 ) {
-  logger.info('pestRegParentListresultList started...')
+  logger?.info('pestRegParentListresultList started...')
   const resultListParent = plantDocuments
     // eslint-disable-next-line array-callback-return
     .map((rl) => {
@@ -778,7 +790,7 @@ function mapPestRegGreatGrandParent(
 }
 
 function updateResultListWithPestCountry(plantDocuments, pestDistributionList) {
-  logger.info('updateResultListWithPestCountry started...')
+  logger?.info('updateResultListWithPestCountry started...')
   const cslRefMap = {}
 
   plantDocuments.forEach((item) => {

@@ -33,14 +33,12 @@ describe('loggerOptions', () => {
         paths: [
           'req.headers.authorization',
           'req.headers.cookie',
-          'res.headers'
+          'res.headers',
+          'sensitive'
         ],
         remove: true
       },
-      level: 'undefined',
-      customLevels: {
-        undefined: 30
-      }
+      level: undefined
     }
 
     expect(loggerOptions).toEqual(expectedOptions)
@@ -64,14 +62,12 @@ describe('loggerOptions', () => {
         paths: [
           'req.headers.authorization',
           'req.headers.cookie',
-          'res.headers'
+          'res.headers',
+          'sensitive'
         ],
         remove: true
       },
-      level: 'undefined',
-      customLevels: {
-        undefined: 30
-      }
+      level: undefined
     }
 
     expect(loggerOptions).toEqual(expectedOptions)
