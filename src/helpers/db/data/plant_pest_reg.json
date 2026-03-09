@@ -1321,6 +1321,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 4204,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 15715,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -3051,6 +3061,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 18944,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 27292,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -3238,6 +3258,26 @@
             "REGULATION": "GB",
             "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
             "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 8644,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Pest free area quarantine pests (Annex 3)",
+            "QUARANTINE_INDICATOR": "P",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 9246,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Pest free area quarantine pests (Annex 3)",
+            "QUARANTINE_INDICATOR": "P",
             "REGULATION_INDICATOR": ""
         },
         {
@@ -8911,6 +8951,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 28781,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 11546,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -9911,6 +9961,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 27383,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 27957,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -10262,6 +10322,16 @@
         },
         {
             "CSL_REF": 26191,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 23236,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -10831,6 +10901,26 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 24309,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 29947,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 28678,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -10882,6 +10972,26 @@
         },
         {
             "CSL_REF": 13516,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 21018,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
+            "CSL_REF": 16287,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
             "HOST_FORMAT": null,
@@ -11281,6 +11391,16 @@
             "REGULATION_INDICATOR": ""
         },
         {
+            "CSL_REF": 30362,
+            "HOST_REF": null,
+            "HOST_FORMAT_ID": null,
+            "HOST_FORMAT": null,
+            "REGULATION": "GB",
+            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
+            "QUARANTINE_INDICATOR": "Q",
+            "REGULATION_INDICATOR": ""
+        },
+        {
             "CSL_REF": 27633,
             "HOST_REF": null,
             "HOST_FORMAT_ID": null,
@@ -11509,76 +11629,6 @@
             "REGULATION_CATEGORY": "Regulated non quarantine pest Annex 4I (Fruit propagating material and fruit plants intended for fruit production)",
             "QUARANTINE_INDICATOR": "R",
             "REGULATION_INDICATOR": "Fruit propagating material and fruit plants intended for fruit production"
-        },
-        {
-            "CSL_REF": 28781,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 27383,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 18944,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Quarantine pest (Annex 2 part A) - Pests not known to occur in Great Britain",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 9167,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Provisional quarantine pest (Annex 2A)",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 32951,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 1602,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
-        },
-        {
-            "CSL_REF": 37155,
-            "HOST_REF": null,
-            "HOST_FORMAT_ID": null,
-            "HOST_FORMAT": null,
-            "REGULATION": "GB",
-            "REGULATION_CATEGORY": "Statutory action designated on UK Plant Health Risk Register. Not currently specifically regulated or subject to specific import requirements",
-            "QUARANTINE_INDICATOR": "Q",
-            "REGULATION_INDICATOR": ""
         }
     ]
 }
