@@ -8878,14 +8878,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    62184,
-                    62185,
-                    62186
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    "Sirex camelogigas",
-                    "Sirex fuscicornis",
-                    "Sirex strutiocamelus"
+                    ""
                 ]
             }
         },
@@ -15166,14 +15162,10 @@
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     16193,
-                    17325,
-                    17326,
                     12554
                 ],
                 "COMMON_NAME": [
                     "American mosaic of peach",
-                    "latent mosaic of peach",
-                    "peach blotch",
                     "Peach yellow mosaic"
                 ]
             },
@@ -19048,15 +19040,15 @@
                     6762
                 ],
                 "COMMON_NAME": [
-                    "Hawaiian sugarcane wireworm"
+                    "Wireworm, Hawaiian, sugarcane"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    64199
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    "Monocrepidius exsul"
+                    ""
                 ]
             }
         },
@@ -19710,12 +19702,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    64171,
-                    64170
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    " Desmogramma conjugata",
-                    "Chrysomela conjugata"
+                    ""
                 ]
             }
         },
@@ -22175,24 +22165,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    62785,
-                    62779,
-                    62780,
-                    62781,
-                    62782,
-                    62783,
-                    62784,
-                    62786
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    " Psacothea hilaris subsp. szetschuanica",
-                    "Diochares flavoguttatus",
-                    "Hammoderes suzukii",
-                    "Monohammus hilaris",
-                    "Monohammus hilaris",
-                    "Psacothea hilaris subsp. albomaculata",
-                    "Psacothea hilaris subsp. machidai",
-                    "Psacothea szetschuanica"
+                    ""
                 ]
             }
         },
@@ -25615,34 +25591,18 @@
             "LATIN_NAME": "Stereonychus fraxini",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    17368
+                    ""
                 ],
                 "COMMON_NAME": [
-                    "Slimy ash weevil"
+                    ""
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    63125,
-                    63126,
-                    63127,
-                    63128,
-                    63129,
-                    63130,
-                    63131,
-                    63132,
-                    63133
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    "Cionus fraxini",
-                    "Cionus rectangulus",
-                    "Cleopus fraxini",
-                    "Curculio fraxini",
-                    "Curculio geerii",
-                    "Curculio rectangulus",
-                    "Rhynchaenus foetidus",
-                    "Rhynchaenus fraxini",
-                    "Rhynchaenus rectangulus"
+                    ""
                 ]
             }
         },
@@ -29244,10 +29204,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    61758
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    "Phytomyza hepaticae"
+                    ""
                 ]
             }
         },
@@ -33511,7 +33471,7 @@
         {
             "CSL_REF": 27359,
             "EPPO_CODE": "LNSDQP",
-            "LATIN_NAME": "Lonsdalea populi",
+            "LATIN_NAME": "Lonsdalea quercina subsp. populi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -33522,10 +33482,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    61912
+                    ""
                 ],
                 "SYNONYM_NAME": [
-                    "Lonsdalea quercina subsp. populi"
+                    ""
                 ]
             }
         },
@@ -37493,7 +37453,7 @@
         },
         {
             "CSL_REF": 29609,
-            "EPPO_CODE": "BLMAV0",
+            "EPPO_CODE": "BLMAV00",
             "LATIN_NAME": "Ophiovirus vaccinii",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
