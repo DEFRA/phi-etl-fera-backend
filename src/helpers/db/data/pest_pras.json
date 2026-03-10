@@ -1295,7 +1295,7 @@
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "21/05/2025",
-            "DOCUMENT_SIZE": 698816,
+            "DOCUMENT_SIZE": 599049,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -2080,17 +2080,6 @@
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
-            "CSL_REF": 27281,
-            "EPPO_CODE": "PHYTUV",
-            "LATIN_NAME": "Phytophthora pluvialis",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "04/03/2026",
-            "DOCUMENT_SIZE": 294774,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
             "CSL_REF": 27295,
             "EPPO_CODE": "PHENPA",
             "LATIN_NAME": "Phenacoccus parvus",
@@ -2385,17 +2374,6 @@
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "16/02/2011",
             "DOCUMENT_SIZE": 43139,
-            "DOCUMENT_FORMAT": "application/pdf"
-        },
-        {
-            "CSL_REF": 28678,
-            "EPPO_CODE": "LITYCR",
-            "LATIN_NAME": "Litylenchus crenatae",
-            "DOCUMENT_TITLE": "",
-            "DOCUMENT_TYPE": "PRA",
-            "VISIBLE_ON_PHI_INDICATOR": 1,
-            "PUBLICATION_DATE": "27/01/2026",
-            "DOCUMENT_SIZE": 3413112,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
