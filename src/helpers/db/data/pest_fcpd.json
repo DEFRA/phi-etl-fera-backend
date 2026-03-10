@@ -1362,10 +1362,10 @@
             "LATIN_NAME": "Ralstonia solanacearum",
             "DOCUMENT_TITLE": "ralstonia solanacearum (race 1).pdf",
             "DOCUMENT_TYPE": "PD Notice",
-            "VISIBLE_ON_PHI_INDICATOR": 0,
+            "VISIBLE_ON_PHI_INDICATOR": 1,
             "DOCUMENT_HYPER_LINK": "https://planthealthportal.defra.gov.uk/plant-health-api/api/pests/11066/notices/6693/documents/4201/document",
             "PUBLICATION_DATE": "02/12/2015",
-            "DOCUMENT_SIZE": 362022,
+            "DOCUMENT_SIZE": 270876,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -3794,7 +3794,7 @@
         },
         {
             "CSL_REF": 29609,
-            "EPPO_CODE": "BLMAV0",
+            "EPPO_CODE": "BLMAV00",
             "LATIN_NAME": "Ophiovirus vaccinii",
             "DOCUMENT_TITLE": "blueberry_factsheet_final.pdf",
             "DOCUMENT_TYPE": "Factsheet",
