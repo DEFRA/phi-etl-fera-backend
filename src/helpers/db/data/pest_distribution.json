@@ -95906,14 +95906,26 @@
         },
         {
             "CSL_REF": 18315,
+            "COUNTRY_CODE": "IT",
+            "COUNTRY_NAME": "Italy",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 18315,
             "COUNTRY_CODE": "NL",
             "COUNTRY_NAME": "Netherlands",
-            "STATUS": "Absent"
+            "STATUS": "Present"
         },
         {
             "CSL_REF": 18315,
             "COUNTRY_CODE": "PT",
             "COUNTRY_NAME": "Portugal",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 18315,
+            "COUNTRY_CODE": "AU",
+            "COUNTRY_NAME": "Australia",
             "STATUS": "Present"
         },
         {
@@ -95924,8 +95936,8 @@
         },
         {
             "CSL_REF": 18315,
-            "COUNTRY_CODE": "CV",
-            "COUNTRY_NAME": "Cabo Verde",
+            "COUNTRY_CODE": "CI",
+            "COUNTRY_NAME": "Cote d'Ivoire",
             "STATUS": "Present"
         },
         {
@@ -122186,6 +122198,18 @@
         },
         {
             "CSL_REF": 24314,
+            "COUNTRY_CODE": "AT",
+            "COUNTRY_NAME": "Austria",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 24314,
+            "COUNTRY_CODE": "BA",
+            "COUNTRY_NAME": "Bosnia-Herzegovina",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 24314,
             "COUNTRY_CODE": "CH",
             "COUNTRY_NAME": "Switzerland",
             "STATUS": "Present"
@@ -122252,8 +122276,20 @@
         },
         {
             "CSL_REF": 24314,
+            "COUNTRY_CODE": "MT",
+            "COUNTRY_NAME": "Malta",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 24314,
             "COUNTRY_CODE": "PL",
             "COUNTRY_NAME": "Poland",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 24314,
+            "COUNTRY_CODE": "RO",
+            "COUNTRY_NAME": "Romania",
             "STATUS": "Present"
         },
         {
@@ -122291,6 +122327,18 @@
             "COUNTRY_CODE": "UA",
             "COUNTRY_NAME": "Ukraine",
             "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 24314,
+            "COUNTRY_CODE": "CA",
+            "COUNTRY_NAME": "Canada",
+            "STATUS": "Present (Limited)"
+        },
+        {
+            "CSL_REF": 24314,
+            "COUNTRY_CODE": "US",
+            "COUNTRY_NAME": "United States",
+            "STATUS": "Present (Limited)"
         },
         {
             "CSL_REF": 24314,
@@ -129356,6 +129404,12 @@
         },
         {
             "CSL_REF": 26904,
+            "COUNTRY_CODE": "RO",
+            "COUNTRY_NAME": "Romania",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 26904,
             "COUNTRY_CODE": "RS",
             "COUNTRY_NAME": "Serbia",
             "STATUS": "Present"
@@ -136180,6 +136234,12 @@
             "CSL_REF": 27399,
             "COUNTRY_CODE": "IT",
             "COUNTRY_NAME": "Italy",
+            "STATUS": "Present"
+        },
+        {
+            "CSL_REF": 27399,
+            "COUNTRY_CODE": "RO",
+            "COUNTRY_NAME": "Romania",
             "STATUS": "Present"
         },
         {

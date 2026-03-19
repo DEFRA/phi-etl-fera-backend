@@ -20956,14 +20956,16 @@
                     8896
                 ],
                 "COMMON_NAME": [
-                    "Wireworm, sugarbeet"
+                    "sugarbeet wireworm"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    3628
+                    3628,
+                    65192
                 ],
                 "SYNONYM_NAME": [
+                    "Cardiophorus californicus",
                     "Pheletes californicus"
                 ]
             }
