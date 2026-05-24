@@ -151,7 +151,7 @@ const populateDbHandler = async (request, h) => {
       })
       .code(200)
   } catch (error) {
-    // logger.error(error)
+    // logger?.error(error)
     return h.response({ status: 'error', message: error.message }).code(500)
   } finally {
     isLocked = false
@@ -166,7 +166,7 @@ NOTE: Before introduction of the concept PHIDP-462 (Sub-Family) , 3 levels of hi
   of reading the JSON files manually using loadCombinedDataForPestLink(), buildPlantPestLinkCollection() has been introduce.
 */
 async function buildPlantPestLinkCollection(mongoUri, db) {
-  logger.info('Start the processing of Plant-Pest links')
+  logger?.info('Start the processing of Plant-Pest links')
   try {
     const plantNameCollection = db.collection(collectionNamePlantName + temp)
     const plantPestLinkCollection = db.collection(
@@ -234,14 +234,14 @@ async function buildPlantPestLinkCollection(mongoUri, db) {
       }
     }
 
-    logger.info(`Plant-Pest links processed successfully`)
+    logger?.info(`Plant-Pest links processed successfully`)
   } catch (error) {
-    logger.info(`Error processing plant-pest links: ${error}`)
+    logger?.info(`Error processing plant-pest links: ${error}`)
   }
 }
 
 async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
-  logger.info('loading Annex6')
+  logger?.info('loading Annex6')
   const fileContents = await fs.readFile(filePath, 'utf-8')
   const jsonData = await JSON.parse(fileContents)
 
@@ -276,9 +276,9 @@ async function loadDataForAnnex6(filePath, mongoUri, db, collectionName) {
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName, client)
     await collection.insertMany(jsonData)
-    logger.info('Annex6 loading completed')
+    logger?.info('Annex6 loading completed')
   } catch (error) {
-    logger.info('Annex6 loading failed:', error)
+    logger?.info('Annex6 loading failed:', error)
   }
 }
 
@@ -287,7 +287,7 @@ async function loadCombinedDataForPlantAndBuildParents(
   db,
   collectionName
 ) {
-  logger.info('loading Plant_Name data')
+  logger?.info('loading Plant_Name data')
   const filePathServicePlantName = path.join(
     __dirname,
     'data',
@@ -368,12 +368,12 @@ async function loadCombinedDataForPlantAndBuildParents(
     await collection.bulkWrite(bulkOps)
   }
 
-  logger.info('loading of Plant_Name completed')
+  logger?.info('loading of Plant_Name completed')
 }
 
 async function readJsonFile(filePath) {
   const timeout = 10000 // await config.get('readTimeout')
-  // logger.info('Timeout value is: ', timeout)
+  // logger?.info('Timeout value is: ', timeout)
 
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
@@ -397,7 +397,7 @@ async function loadData(filePath, mongoUri, db, collectionName, indicator) {
   const jsonData = await JSON.parse(fileContents)
 
   try {
-    logger.info(`loading the data from JSON for collection: ${collectionName}`)
+    logger?.info(`loading the data from JSON for collection: ${collectionName}`)
     const collection = db.collection(collectionName)
     await dropCollections(db, collectionName)
     if (indicator === 1) {
@@ -406,21 +406,21 @@ async function loadData(filePath, mongoUri, db, collectionName, indicator) {
       await collection.insertMany(jsonData)
     }
   } catch (error) {
-    logger.info('loading the data from JSON for collection failed: ', error)
+    logger?.info('loading the data from JSON for collection failed: ', error)
   }
 }
 
 async function dropCollections(db, collection) {
   const collections = await db.listCollections({ name: collection }).toArray()
-  if (collections.length > 0) {
+  if (collections?.length > 0) {
     await db.dropCollection(collection, function (err, result) {
       if (err) {
         // eslint-disable-next-line no-console
-        logger.error('Error occurred while dropping the collection', err)
+        logger?.error('Error occurred while dropping the collection', err)
         return
       }
       // eslint-disable-next-line no-console
-      logger.info('Collection dropped successfully')
+      logger?.info('Collection dropped successfully')
     })
   }
 }

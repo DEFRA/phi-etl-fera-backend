@@ -1,4 +1,4 @@
-class workflowEngine {
+class WorkflowEngine {
   constructor(
     plantDocument,
     plantNameDoc,
@@ -22,4 +22,4 @@ class workflowEngine {
   }
 }
 
-export { workflowEngine }
+export { WorkflowEngine }

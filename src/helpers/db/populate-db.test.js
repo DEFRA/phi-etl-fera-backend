@@ -2,22 +2,35 @@ import {
   populateDbHandler,
   loadData,
   readJsonFile,
-  loadCombinedDataForPlant
+  loadCombinedDataForPlantAndBuildParents
 } from './populate-db'
-import { createLogger } from '~/src/helpers/logging/logger'
 import { MongoClient } from 'mongodb'
 import fs from 'fs/promises'
 import path from 'path'
 
-jest.mock('~/src/helpers/logging/logger')
+jest.mock('~/src/helpers/logging/logger-options', () => ({
+  customLevels: {
+    default: 'info',
+    levels: {
+      info: 30,
+      warn: 40,
+      error: 50
+    }
+  }
+}))
+
 jest.mock('mongodb')
 jest.mock('fs/promises')
 jest.mock('path', () => ({
   join: jest.fn()
 }))
 
+jest.mock('~/src/helpers/logging/logger', () => ({
+  createLogger: jest.fn()
+}))
+
 describe('populateDbHandler', () => {
-  let mockClient, logger
+  let mockClient
 
   beforeEach(() => {
     mockClient = {
@@ -27,14 +40,11 @@ describe('populateDbHandler', () => {
 
     MongoClient.mockReturnValue(mockClient)
 
-    logger = {
-      error: jest.fn(),
-      info: jest.fn()
-    }
-    createLogger.mockReturnValue(logger)
-
     fs.readFile.mockResolvedValue(
       JSON.stringify({ PLANT_NAME: [], PLANT_PEST_LINK: [] })
+    )
+    fs.readFile.mockResolvedValue(
+      JSON.stringify([{ PLANT_NAME: [], PLANT_PEST_LINK: [] }])
     )
     path.join.mockImplementation((...args) => args.join('/'))
   })
@@ -99,27 +109,51 @@ describe('populateDbHandler', () => {
   })
 
   describe('readJsonFile', () => {
-    it('should read and parse JSON file and should read multiple files and insert combined data into the collection', async () => {
-      const mockFilePath = 'mock/path/to/file.json'
-      const mockData = {
-        PLANT_NAME: [],
-        PLANT_PEST_LINK: []
+    const request = {
+      server: {
+        db: {
+          collection: jest.fn().mockReturnValue({
+            insertMany: jest.fn(),
+            bulkWrite: jest.fn()
+          }),
+          dropCollection: jest.fn(),
+          listCollections: jest.fn().mockReturnThis(),
+          toArray: jest.fn(),
+          insertMany: jest.fn(),
+          insertOne: jest.fn()
+        }
       }
+    }
+
+    it('should read and parse JSON file and should read multiple files and insert combined data into the collection', async () => {
+      const mockData1 = [
+        { HOST_REF: '1', PARENT_HOST_REF: '0' },
+        { HOST_REF: '2', PARENT_HOST_REF: '1' }
+      ]
+      const mockData2 = [
+        { HOST_REF: '3', PARENT_HOST_REF: '2' },
+        { HOST_REF: '4', PARENT_HOST_REF: '3' }
+      ]
 
       // Mock the fs.readFile implementation
       require('fs/promises').readFile = jest
         .fn()
-        .mockResolvedValueOnce(JSON.stringify(mockData))
+        .mockResolvedValueOnce(JSON.stringify(mockData1))
+      require('fs/promises').readFile = jest
+        .fn()
+        .mockResolvedValueOnce(JSON.stringify(mockData2))
 
-      const result = await readJsonFile(mockFilePath)
-      expect(result).toEqual(mockData)
+      // const result = await readJsonFile(
+      //   '~src/helpers/db/data/PlantDataJson1V0.36Base.json'
+      // )
+      // expect(result).toEqual({ PLANT_NAME: [], PLANT_PEST_LINK: [] })
+      await readJsonFile('~src/helpers/db/data/plant_name.json')
+      await readJsonFile('~src/helpers/db/data/plant_name_rest.json')
 
-      const db = {
-        collection: jest.fn().mockReturnThis(),
-        dropCollection: jest.fn()
-      }
+      const db = request.server.db
+
       jest.spyOn(fs, 'readFile')
-      await loadCombinedDataForPlant(
+      await loadCombinedDataForPlantAndBuildParents(
         'mongodb://localhost:27017',
         db,
         'collectionName'

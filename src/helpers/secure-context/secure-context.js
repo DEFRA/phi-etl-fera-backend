@@ -22,7 +22,7 @@ function createSecureContext(logger) {
     const trustStoreCerts = getTrustStoreCerts(process.env)
 
     if (!trustStoreCerts.length) {
-      logger.info('Could not find any TRUSTSTORE_ certificates')
+      logger?.info('Could not find any TRUSTSTORE_ certificates')
     }
 
     const secureContext = originalCreateSecureContext(options)

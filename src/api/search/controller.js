@@ -12,7 +12,7 @@ const searchController = {
       )
       return h.response({ plant_detail: result }).code(200)
     } catch (error) {
-      request.logger.error(
+      request.logger?.error(
         `Plant search did not yeild results: ${error.message}`
       )
       return h
