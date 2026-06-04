@@ -1,7 +1,7 @@
 import { WorkflowStrategyFactory } from '~/src/factories/workflowStrategyFactory'
 
 const processHandler = async (request, h) => {
-  request.logger.info(`plant request: ${request.payload}`)
+  request.logger.info(`plant request: ${JSON.stringify(request.payload)}`)
   const data = request.payload
   request.logger.info(`triggering the workflow...`)
   const wfStrategy = new WorkflowStrategyFactory(request.logger)
