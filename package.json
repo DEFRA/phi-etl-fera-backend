@@ -7,10 +7,10 @@
     "node": ">=20.3.0"
   },
   "scripts": {
-    "build": "npm run build:server  --max-old-space-size=4096",
+    "build": "npm run build:server",
     "build:server": "babel --delete-dir-on-start --ignore \"**/*.test.js\" --ignore \"src/__fixtures__\" --copy-files --no-copy-ignored --out-dir ./.server ./src",
-    "docker:dev": "NODE_ENV=development npm run server:watch  --max-old-space-size=4096",
-    "dev": "npm run server:watch --max-old-space-size=4096",
+    "docker:dev": "NODE_ENV=development npm run server:watch",
+    "dev": "npm run server:watch",
     "dev:debug": "npm run server:debug",
     "format": "prettier --write \"src/**/*.js\" \"**/*.{js,md,config.js,test.js,graphql.js}\"",
     "format:check": "prettier --check \"src/**/*.js\" \"**/*.{js,md,config.js,test.js,graphql.js}\"",
@@ -23,8 +23,8 @@
     "test:watch": "jest --watch",
     "server:watch": "nodemon --exec babel-node ./src",
     "server:debug": "nodemon --exec babel-node --inspect ./src",
-    "prestart": "npm run build  --max-old-space-size=4096",
-    "start": "NODE_ENV=production node --use-strict --max-old-space-size=4096 ./.server",
+    "prestart": "npm run build",
+    "start": "NODE_ENV=production node --use-strict ./.server",
     "setup:husky": "node -e \"try { (await import('husky')).default() } catch (e) { if (e.code !== 'ERR_MODULE_NOT_FOUND') throw e }\" --input-type module"
   },
   "author": "Defra DDTS",
