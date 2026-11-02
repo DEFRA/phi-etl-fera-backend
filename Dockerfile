@@ -1,4 +1,4 @@
-ARG PARENT_VERSION=latest-24
+ARG PARENT_VERSION=3.2.4-node24.22.1
 ARG PORT=3000
 ARG PORT_DEBUG=9229
 
@@ -8,7 +8,7 @@ LABEL uk.gov.defra.ffc.parent-image=defradigital/node-development:${PARENT_VERSI
 
 ARG PORT
 ARG PORT_DEBUG
-ENV PORT ${PORT}
+ENV PORT=${PORT}
 EXPOSE ${PORT} ${PORT_DEBUG}
 
 COPY --chown=node:node package*.json ./
@@ -35,7 +35,7 @@ COPY --from=development /home/node/.server ./.server/
 RUN npm ci --omit=dev
 
 ARG PORT
-ENV PORT ${PORT}
+ENV PORT=${PORT}
 EXPOSE ${PORT}
 
 CMD [ "node", "./.server" ]
