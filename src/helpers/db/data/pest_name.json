@@ -1500,7 +1500,7 @@
         {
             "CSL_REF": 590,
             "EPPO_CODE": "ACLSV0",
-            "LATIN_NAME": "Apple chlorotic leaf spot virus",
+            "LATIN_NAME": "Trichovirus mali",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     36,
@@ -1554,9 +1554,11 @@
                     12236,
                     12277,
                     12278,
+                    70664,
                     12279,
                     12284,
                     39890,
+                    70699,
                     15565,
                     39891,
                     13193,
@@ -1570,9 +1572,11 @@
                     "ACLSV",
                     "Apple chlorotic leaf spot closterovirus",
                     "Apple chlorotic leaf spot trichovirus",
+                    "Apple chlorotic leaf spot virus",
                     "Apple chlorotic leafspot virus plum bark split strain",
                     "Apple latent virus 1",
                     "Apple latent virus type 1",
+                    "Apple leaf pucker agent",
                     "Bark split virus",
                     "Peach green mottle virus",
                     "Pear ring mosaic virus",
@@ -1676,7 +1680,7 @@
         {
             "CSL_REF": 609,
             "EPPO_CODE": "CERAVI",
-            "LATIN_NAME": "Ceratocystis virescens",
+            "LATIN_NAME": "Davidsoniella virescens",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -1688,11 +1692,13 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     9776,
+                    68336,
                     11790,
                     10641
                 ],
                 "SYNONYM_NAME": [
                     "Ceratocystis coerulescens",
+                    "Ceratocystis virescens",
                     "Chalara ungeri",
                     "Endoconidiophora virescens"
                 ]
@@ -2220,14 +2226,14 @@
         },
         {
             "CSL_REF": 794,
-            "EPPO_CODE": "CILV00",
-            "LATIN_NAME": "Citrus leprosis virus",
+            "EPPO_CODE": "CILVC0",
+            "LATIN_NAME": "Cilevirus leprosis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    1423
+                    ""
                 ],
                 "COMMON_NAME": [
-                    "Leprosis of citrus"
+                    ""
                 ]
             },
             "SYNONYM_NAME": {
@@ -2235,15 +2241,15 @@
                     12534,
                     15575,
                     12545,
-                    15243,
-                    15244
+                    15244,
+                    15243
                 ],
                 "SYNONYM_NAME": [
-                    "CiLV",
+                    "CiLV-C",
                     "Citrus leprosis disease",
                     "Citrus leprosis rhabdovirus",
-                    "Leprosis",
-                    "Leprosis virus (Citrus)"
+                    "Citrus leprosis virus",
+                    "Leprosis"
                 ]
             }
         },
@@ -3471,10 +3477,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    70705,
+                    70704
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Psylla (Aphalara) targionii",
+                    "Rhinocola targionii"
                 ]
             }
         },
@@ -3978,29 +3986,55 @@
                 ],
                 "COMMON_NAME": [
                     "Mango longhorn beetle",
-                    "Rubber root, borer"
+                    "Rubber root  borer"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
+                    72892,
                     4101,
                     29016,
                     29017,
+                    72889,
                     29015,
+                    72894,
+                    72893,
+                    72895,
+                    72896,
+                    72891,
+                    72890,
+                    72885,
                     29013,
                     29012,
                     29018,
-                    29014
+                    72887,
+                    72886,
+                    72888,
+                    29014,
+                    72884
                 ],
                 "SYNONYM_NAME": [
+                    "Batocera (Batocera) albofasciata subsp. formosana",
                     "Batocera albomaculatus",
                     "Batocera bipunctata",
                     "Batocera coreana",
+                    "Batocera mniszechii",
                     "Batocera octomaculata",
+                    "Batocera rubus m. immaculipennis",
+                    "Batocera rubus rasse palawanica",
+                    "Batocera rubus ssp. lombokensis",
+                    "Batocera rubus var. dividopunctata",
+                    "Batocera sabina",
+                    "Batocera sarawackensis",
+                    "Cerambyx albo-fasciatus",
                     "Cerambyx albomaculatus",
                     "Cerambyx rubus",
                     "Cerambyx stigma",
-                    "Lamia octomaculata"
+                    "Lamia 8maculata",
+                    "Lamia downesii",
+                    "Lamia downesii",
+                    "Lamia octomaculata",
+                    "Lamia rubus"
                 ]
             }
         },
@@ -4645,6 +4679,7 @@
                     27564,
                     27566,
                     27568,
+                    71412,
                     27569,
                     27565,
                     27567
@@ -4653,6 +4688,7 @@
                     "Cimex cribraria",
                     "Coptosoma cribraria",
                     "Coptosoma cribrarium",
+                    "Coptosoma punctatissimum",
                     "Coptosoma xanthochlora",
                     "Tetyra cribraria",
                     "Thyreocoris cribarius"
@@ -6132,10 +6168,26 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    3551
+                    68370,
+                    68371,
+                    68372,
+                    68373,
+                    68374,
+                    68375,
+                    3551,
+                    68376,
+                    68377
                 ],
                 "SYNONYM_NAME": [
-                    "Hylobitelus abietis"
+                    "Curculio abietis",
+                    "Curculio excavatus",
+                    "Curculio juniperi",
+                    "Curculio tigrinus",
+                    "Curculio tigris",
+                    "Curculio tigris",
+                    "Hylobitelus abietis",
+                    "Rhynchaenus abietis",
+                    "Rhynchaenus tigrinus"
                 ]
             }
         },
@@ -6659,10 +6711,24 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    28892
+                    72234,
+                    72233,
+                    72236,
+                    72235,
+                    28892,
+                    72238,
+                    72237,
+                    72239
                 ],
                 "SYNONYM_NAME": [
-                    "Lygaeus hospes"
+                    " Stalagmostethus hospes",
+                    "Cimex hospes",
+                    "Lygaeus affinis",
+                    "Lygaeus celebensis",
+                    "Lygaeus hospes",
+                    "Lygaeus lanio",
+                    "Lygaeus squalidus",
+                    "Spilostethus hospes hospes"
                 ]
             }
         },
@@ -6771,6 +6837,33 @@
                     "Margarodes vitium",
                     "Margarodes vitium orientalis",
                     "Sphaeraspis vitis"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 4981,
+            "EPPO_CODE": "MATSRE",
+            "LATIN_NAME": "Matsucoccus matsumurae",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    15713,
+                    904
+                ],
+                "COMMON_NAME": [
+                    "Japanese pine bast scale",
+                    "red pine scale"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    33185,
+                    33186,
+                    33184
+                ],
+                "SYNONYM_NAME": [
+                    "Matsucoccus resinosae",
+                    "Matsucoccus thunbergianae",
+                    "Xylococcus matsumurae"
                 ]
             }
         },
@@ -7094,10 +7187,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    72399
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Nysius (Nysius) huttoni"
                 ]
             }
         },
@@ -7343,8 +7436,8 @@
                     15032
                 ],
                 "COMMON_NAME": [
-                    "Beetle, fuller rose",
-                    "Fuller's rose beetle"
+                    "Fuller rose beetle",
+                    "Fuller's rose weevil"
                 ]
             },
             "SYNONYM_NAME": {
@@ -7356,7 +7449,8 @@
                     27633,
                     27630,
                     390,
-                    27632
+                    27632,
+                    67478
                 ],
                 "SYNONYM_NAME": [
                     "Aramigus fulleri",
@@ -7366,7 +7460,8 @@
                     "Naupactus simplex",
                     "Pantomorus cervinus",
                     "Pantomorus fulleri",
-                    "Pantomorus olindae"
+                    "Pantomorus olindae",
+                    "Strophomorphus canariensis"
                 ]
             }
         },
@@ -9762,7 +9857,7 @@
                 ],
                 "SYNONYM_NAME": [
                     "Calocoris (Megacoelum) lustratus",
-                    "Megacoelum (Creontiades mimicum",
+                    "Megacoelum (Creontiades) mimicum",
                     "Phytocoris pallidus",
                     "Phytocoris punctum",
                     "Phytocoris punctum var. reuteriana"
@@ -9783,10 +9878,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    71452
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Tingis ciliata"
                 ]
             }
         },
@@ -10231,11 +10326,9 @@
             "LATIN_NAME": "Eurygaster integriceps",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    7841,
                     7840
                 ],
                 "COMMON_NAME": [
-                    "Senn pest",
                     "Sunn pest"
                 ]
             },
@@ -10302,37 +10395,6 @@
                     "Frankliniella tritici moultoni",
                     "Frankliniella umbrosa",
                     "Frankliniella venusta"
-                ]
-            }
-        },
-        {
-            "CSL_REF": 9032,
-            "EPPO_CODE": "GONPSC",
-            "LATIN_NAME": "Gonipterus scutellatus",
-            "COMMON_NAME": {
-                "COMMON_NAME_ID": [
-                    12426,
-                    12427,
-                    12428,
-                    8091,
-                    8092,
-                    8093
-                ],
-                "COMMON_NAME": [
-                    "Eucalyptus snout beetle",
-                    "Eucalyptus weevil",
-                    "Gumtree weevil",
-                    "Snout-beetle, eucalyptus",
-                    "Weevil, eucalyptus",
-                    "Weevil, gum-tree"
-                ]
-            },
-            "SYNONYM_NAME": {
-                "SYNONYM_NAME_ID": [
-                    29470
-                ],
-                "SYNONYM_NAME": [
-                    "Gonipterus platensis"
                 ]
             }
         },
@@ -10692,12 +10754,14 @@
                     3081,
                     2892,
                     35851,
+                    73270,
                     4690,
                     3826
                 ],
                 "SYNONYM_NAME": [
                     "Bostrichus cembrae",
                     "Ips  engadinensis",
+                    "Ips fallax",
                     "Ips fallax",
                     "Ips shinanoensis",
                     "Tomicus subelongatus"
@@ -10928,7 +10992,7 @@
                     9198
                 ],
                 "COMMON_NAME": [
-                    "Vine, margarodes"
+                    "Vine margarodes"
                 ]
             },
             "SYNONYM_NAME": {
@@ -11225,23 +11289,35 @@
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     10198,
-                    10199
+                    10199,
+                    17917,
+                    17915,
+                    17916
                 ],
                 "COMMON_NAME": [
-                    "Pine leaf, scale",
-                    "Pine needle, scale"
+                    "Pine leaf scale",
+                    "Pine needle scale",
+                    "pine-tree scale",
+                    "white pine needle scale",
+                    "white pine scale"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     32135,
                     7430,
-                    31583
+                    72618,
+                    72619,
+                    31583,
+                    72620
                 ],
                 "SYNONYM_NAME": [
                     "Aspidiotus pinifoliae",
                     "Chionaspis pinifoliae",
-                    "Phenacaspis pinifoliae"
+                    "Chionaspis pinifoliae semiaurea",
+                    "Leucaspis pinifoliae",
+                    "Phenacaspis pinifoliae",
+                    "Trichomytilus pinifoliae"
                 ]
             }
         },
@@ -11251,12 +11327,16 @@
             "LATIN_NAME": "Maconellicoccus hirsutus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
+                    17842,
                     10213,
+                    17843,
                     10214,
                     1096
                 ],
                 "COMMON_NAME": [
+                    "Grape mealybug",
                     "Hibiscus mealybug",
+                    "Hirsutus mealybug",
                     "Pink hibiscus mealybug",
                     "Pink mealybug"
                 ]
@@ -11422,6 +11502,41 @@
                     "Pseudococcus lilacinus",
                     "Pseudococcus tayabanus",
                     "Tylococcus mauritiensis"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 10091,
+            "EPPO_CODE": "PODSSS",
+            "LATIN_NAME": "Podosesia syringae",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    16581,
+                    1147
+                ],
+                "COMMON_NAME": [
+                    "Ash borer",
+                    "Lilac borer"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    284,
+                    44958,
+                    45191,
+                    45193,
+                    45192,
+                    44959,
+                    45190
+                ],
+                "SYNONYM_NAME": [
+                    "Aegeria syringae",
+                    "Grotea longipes",
+                    "Podosesia fraxini",
+                    "Podosesia syringae r. fraxini",
+                    "Podosesia syringae syringae",
+                    "Trochilium denudatum",
+                    "Trochilium fraxini"
                 ]
             }
         },
@@ -11734,10 +11849,14 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     30159,
+                    73809,
+                    73810,
                     30160
                 ],
                 "SYNONYM_NAME": [
                     "Chaitophorus flavus",
+                    "Cipha carreral",
+                    "Sipha (Chaitophorus) flava",
                     "Sipha carrerai"
                 ]
             }
@@ -11800,10 +11919,14 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    73832,
+                    73834,
+                    73833
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Stephanitis (Stephanitis) takeyai",
+                    "Stephanitis globulifera",
+                    "Tingis globulifera"
                 ]
             }
         },
@@ -12514,7 +12637,7 @@
         {
             "CSL_REF": 11047,
             "EPPO_CODE": "PHYP07",
-            "LATIN_NAME": "Mexican periwinkle virescence phytoplasma",
+            "LATIN_NAME": "'Candidatus Phytoplasma hispanicum'",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -12525,10 +12648,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    68105,
+                    68106
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Mexican periwinkle virescence phytoplasma",
+                    "Phytoplasma hispanicum"
                 ]
             }
         },
@@ -12778,6 +12903,7 @@
                     12307,
                     12276,
                     12289,
+                    71226,
                     12281,
                     12282,
                     13691
@@ -12788,6 +12914,7 @@
                     "ASGV",
                     "Brown line virus disease",
                     "Capillovirus Apple stem grooving virus",
+                    "Citrus tatter leaf virus",
                     "Dark green epinasty virus",
                     "E36-virus",
                     "Virginia Crab stem grooving virus"
@@ -14336,6 +14463,7 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
+                    70700,
                     12288,
                     12290,
                     56969,
@@ -14345,6 +14473,7 @@
                     13196
                 ],
                 "SYNONYM_NAME": [
+                    "Apple green crinkle agent",
                     "Apple spy 227 epinasty & decline virus",
                     "Apple stem pitting foveavirus",
                     "Apple stem pitting virus",
@@ -15322,7 +15451,7 @@
         {
             "CSL_REF": 11987,
             "EPPO_CODE": "PUCCPS",
-            "LATIN_NAME": "Puccinia psidii",
+            "LATIN_NAME": "Austropuccinia psidii",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     12563,
@@ -16703,22 +16832,26 @@
         },
         {
             "CSL_REF": 12460,
-            "EPPO_CODE": "PHYP70",
-            "LATIN_NAME": "Jujube witches' broom phytoplasma",
+            "EPPO_CODE": "PHYPZI",
+            "LATIN_NAME": "'Candidatus Phytoplasma ziziphi'",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    ""
+                    17535,
+                    17534
                 ],
                 "COMMON_NAME": [
-                    ""
+                    "JWB",
+                    "witches' broom of jujube"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    68103,
+                    68104
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Jujube witches' broom phytoplasma",
+                    "Phytoplasma ziziphi"
                 ]
             }
         },
@@ -18456,11 +18589,19 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     3314,
-                    15082
+                    15082,
+                    71062,
+                    71063,
+                    71064,
+                    71061
                 ],
                 "SYNONYM_NAME": [
                     "Bagrada cruciferarum",
-                    "Bagrada picta"
+                    "Bagrada picta",
+                    "Bagrada picta var. connectens",
+                    "Bagrada picta var. modesta",
+                    "Cimex hebraicus",
+                    "Cimex hilaris"
                 ]
             }
         },
@@ -18586,15 +18727,15 @@
                     6020
                 ],
                 "COMMON_NAME": [
-                    "Chinch bug, southern"
+                    "southern chinch bug"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    71231
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Blissus leucopterus insularis"
                 ]
             }
         },
@@ -18996,6 +19137,35 @@
             }
         },
         {
+            "CSL_REF": 14368,
+            "EPPO_CODE": "CNIDFL",
+            "LATIN_NAME": "Monema flavescens",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    6663
+                ],
+                "COMMON_NAME": [
+                    "Oriental moth"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    5562,
+                    54691,
+                    5561,
+                    54692,
+                    54693
+                ],
+                "SYNONYM_NAME": [
+                    "Cnidocampa flavescens",
+                    "Cnidocampa johani-bergmani",
+                    "Knidocampa flavescens",
+                    "Monema melli",
+                    "Monema nigrans"
+                ]
+            }
+        },
+        {
             "CSL_REF": 14415,
             "EPPO_CODE": "COLACH",
             "LATIN_NAME": "Colaspis chlorites",
@@ -19057,6 +19227,59 @@
                 ],
                 "SYNONYM_NAME": [
                     "Monocrepidius exsul"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 14483,
+            "EPPO_CODE": "COPITU",
+            "LATIN_NAME": "Copitarsia decolora",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    ""
+                ],
+                "COMMON_NAME": [
+                    ""
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    25997,
+                    26006,
+                    25999,
+                    26007,
+                    26003,
+                    26012,
+                    26010,
+                    26005,
+                    26001,
+                    26008,
+                    39231,
+                    26009,
+                    26011,
+                    25998,
+                    26002,
+                    26000,
+                    26004
+                ],
+                "SYNONYM_NAME": [
+                    "Agrotis heydenreichii",
+                    "Agrotis hostilis",
+                    "Copitarsia decolora",
+                    "Copitarsia hostilis",
+                    "Copitarsia inducta",
+                    "Copitarsia margaritella",
+                    "Copitarsia sobria",
+                    "Copitarsia subsignata",
+                    "Copitarsia turbata",
+                    "Copitarsia turbata",
+                    "Copitarsia unciliata",
+                    "Graphiphora sobria",
+                    "Lycophotia margaritella",
+                    "Mamestra decolora",
+                    "Mamestra inducta",
+                    "Polia turbata",
+                    "Spaelotis subsignata"
                 ]
             }
         },
@@ -19148,7 +19371,7 @@
                     13809
                 ],
                 "SYNONYM_NAME": [
-                    "Corythuca arcuata"
+                    "Tingis arcuata"
                 ]
             }
         },
@@ -19872,7 +20095,7 @@
         {
             "CSL_REF": 15001,
             "EPPO_CODE": "DROSSU",
-            "LATIN_NAME": "Drosophila suzukii",
+            "LATIN_NAME": "Drosophila (Sophophora)",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     7478
@@ -19883,10 +20106,16 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    72911,
+                    72912,
+                    72909,
+                    72910
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Drosophila indicus",
+                    "Drosophila suzukii indicus",
+                    "Leucophenga suzukii",
+                    "Leucophouga suzukii"
                 ]
             }
         },
@@ -20375,10 +20604,12 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     3634,
+                    71125,
                     15759
                 ],
                 "SYNONYM_NAME": [
                     "Dacnirotatus bruchi",
+                    "Gonipterus humeralis",
                     "Gonipterus scutellatus"
                 ]
             }
@@ -20386,13 +20617,15 @@
         {
             "CSL_REF": 15601,
             "EPPO_CODE": "GRASLI",
-            "LATIN_NAME": "Graphosoma lineatum",
+            "LATIN_NAME": "Graphosoma lineatum lineatum",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    ""
+                    17845,
+                    17846
                 ],
                 "COMMON_NAME": [
-                    ""
+                    "North African Striped Shieldbug",
+                    "Sicilian striped shield bug"
                 ]
             },
             "SYNONYM_NAME": {
@@ -20532,10 +20765,20 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    72161,
+                    72160,
+                    72163,
+                    72162,
+                    72164,
+                    72165
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    " Liorhinus albolimbatus",
+                    "Cixius obsoletus",
+                    "Hyalestes obsoletus",
+                    "Hyalesthes absoletus",
+                    "Hyalesthes obsoletus",
+                    "Hyalesths obsoletus"
                 ]
             }
         },
@@ -20798,6 +21041,27 @@
             }
         },
         {
+            "CSL_REF": 16102,
+            "EPPO_CODE": "LAGRVL",
+            "LATIN_NAME": "Lagria villosa",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    ""
+                ],
+                "COMMON_NAME": [
+                    ""
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    ""
+                ],
+                "SYNONYM_NAME": [
+                    ""
+                ]
+            }
+        },
+        {
             "CSL_REF": 16114,
             "EPPO_CODE": "LAPHFR",
             "LATIN_NAME": "Spodoptera frugiperda",
@@ -20845,16 +21109,14 @@
         {
             "CSL_REF": 16136,
             "EPPO_CODE": "LASPMO",
-            "LATIN_NAME": "Grapholita molesta",
+            "LATIN_NAME": "Aspila molesta",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     12707,
-                    8764,
                     8765
                 ],
                 "COMMON_NAME": [
                     "Oriental fruit moth",
-                    "Peach moth, oriental",
                     "Peach tip moth"
                 ]
             },
@@ -20876,7 +21138,7 @@
         {
             "CSL_REF": 16137,
             "EPPO_CODE": "LASPPA",
-            "LATIN_NAME": "Grapholita packardi",
+            "LATIN_NAME": "Aspila packardi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     804
@@ -20888,23 +21150,33 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     27215,
+                    66417,
                     1981,
                     15699,
+                    66418,
+                    66416,
                     42662,
                     42666,
                     4699,
                     1980,
+                    66419,
                     15697,
+                    66420,
                     15698
                 ],
                 "SYNONYM_NAME": [
                     "Cydia packardi",
+                    "Cydia packardi",
                     "Enarmonia packardi",
                     "Enarmonia pyricolana",
+                    "Enarmonia pyricolana",
+                    "Grapholita packardi",
                     "Grapholita pyricolana",
                     "Grapholitha packardi",
                     "Grapholitha packardi",
                     "Laspeyresia packardi",
+                    "Laspeyresia packardi",
+                    "Laspeyresia pyricolana",
                     "Laspeyresia pyricolana",
                     "Steganoptycha pyricolana"
                 ]
@@ -20913,7 +21185,7 @@
         {
             "CSL_REF": 16138,
             "EPPO_CODE": "LASPPR",
-            "LATIN_NAME": "Grapholita prunivora",
+            "LATIN_NAME": "Aspila prunivora",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     15285,
@@ -20929,6 +21201,7 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     27209,
+                    66503,
                     4605,
                     6618,
                     4602,
@@ -20937,6 +21210,7 @@
                     4604
                 ],
                 "SYNONYM_NAME": [
+                    "Cydia prunivora",
                     "Cydia prunivora",
                     "Enarmonia prunivora",
                     "Epinotia prunivora",
@@ -21423,11 +21697,9 @@
             "LATIN_NAME": "Microtheca ochroloma",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    9377,
                     13215
                 ],
                 "COMMON_NAME": [
-                    "Leaf beetle, yellowmargined",
                     "Yellow margined leaf beetle"
                 ]
             },
@@ -21738,10 +22010,24 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    73375,
+                    73374,
+                    73373,
+                    73376,
+                    73372,
+                    73371,
+                    73377,
+                    73378
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Antelmia spp.",
+                    "Athetes spp.",
+                    "Pantamorus spp.",
+                    "Pantomerus spp.",
+                    "Pantomoris spp.",
+                    "Pantomorphilus spp.",
+                    "Pantopactus spp.",
+                    "Pantoplanes spp."
                 ]
             }
         },
@@ -24619,11 +24905,9 @@
             "LATIN_NAME": "Lygus lineolaris",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
-                    9095,
                     12789
                 ],
                 "COMMON_NAME": [
-                    "Plant bug, tarnished",
                     "Tarnished plant bug"
                 ]
             },
@@ -29296,17 +29580,17 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    70105
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Clivina tasmaniensis"
                 ]
             }
         },
         {
             "CSL_REF": 24325,
-            "EPPO_CODE": "",
-            "LATIN_NAME": "Epicauta (Epicauta) pilme",
+            "EPPO_CODE": "EPIAPI",
+            "LATIN_NAME": "Epicauta (Epicauta) pilma",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     1556,
@@ -29361,7 +29645,7 @@
         },
         {
             "CSL_REF": 24327,
-            "EPPO_CODE": "",
+            "EPPO_CODE": "EPIAMO",
             "LATIN_NAME": "Epicauta (Epicauta) monachica",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -29427,7 +29711,7 @@
         {
             "CSL_REF": 24330,
             "EPPO_CODE": "",
-            "LATIN_NAME": "Pantomorus viridis",
+            "LATIN_NAME": "Phacepholis viridis",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -29438,10 +29722,16 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    67481,
+                    67482,
+                    67480,
+                    67483
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Pantomorus eximius",
+                    "Pantomorus pallidulus",
+                    "Pantomorus viridis",
+                    "Phacepholis pallida"
                 ]
             }
         },
@@ -29753,7 +30043,7 @@
         {
             "CSL_REF": 24590,
             "EPPO_CODE": "ARSEPH",
-            "LATIN_NAME": "Syndrome des Basses Richesses",
+            "LATIN_NAME": "'Candidatus Arsenophonus phytopathogenicus'",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -29764,10 +30054,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    27280
+                    27280,
+                    69608
                 ],
                 "SYNONYM_NAME": [
-                    "Candidatus Arsenophonus phytopathogenicus"
+                    "Candidatus Arsenophonus phytopathogenicus",
+                    "Syndrome des Basses Richesses"
                 ]
             }
         },
@@ -30557,27 +30849,6 @@
             }
         },
         {
-            "CSL_REF": 25825,
-            "EPPO_CODE": "CPTHBI",
-            "LATIN_NAME": "Chrysophtharta bimaculata",
-            "COMMON_NAME": {
-                "COMMON_NAME_ID": [
-                    13240
-                ],
-                "COMMON_NAME": [
-                    "Tasmanian eucalyptus leaf-beetle"
-                ]
-            },
-            "SYNONYM_NAME": {
-                "SYNONYM_NAME_ID": [
-                    ""
-                ],
-                "SYNONYM_NAME": [
-                    ""
-                ]
-            }
-        },
-        {
             "CSL_REF": 26022,
             "EPPO_CODE": "ETPLPA",
             "LATIN_NAME": "Eutypella parasitica",
@@ -30626,7 +30897,7 @@
         {
             "CSL_REF": 26060,
             "EPPO_CODE": "RAFFQU",
-            "LATIN_NAME": "Raffaelea quercivora",
+            "LATIN_NAME": "Dryadomyces quercivorus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     15510,
@@ -30639,10 +30910,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    70525
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Raffaelea quercivora"
                 ]
             }
         },
@@ -32297,21 +32568,27 @@
         {
             "CSL_REF": 27258,
             "EPPO_CODE": "DEUDDI",
-            "LATIN_NAME": "Deudorix dinochares",
+            "LATIN_NAME": "Capys dinochares",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     14933
                 ],
                 "COMMON_NAME": [
-                    "Apricot playboy"
+                    "Apricot Playboy"
                 ]
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
+                    65419,
+                    65421,
+                    65420,
                     27190,
                     27189
                 ],
                 "SYNONYM_NAME": [
+                    "Capys (Afrix) dinochares",
+                    "Deudorix (Virachola) dinochares",
+                    "Deudorix dinochares",
                     "Deudorix dinochares rhodesiensis",
                     "Virachola dinochares"
                 ]
@@ -32789,7 +33066,7 @@
         {
             "CSL_REF": 27293,
             "EPPO_CODE": "RAFFLA",
-            "LATIN_NAME": "Raffaelea lauricola",
+            "LATIN_NAME": "Harringtonia lauricola",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     14963
@@ -32800,10 +33077,10 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    ""
+                    70524
                 ],
                 "SYNONYM_NAME": [
-                    ""
+                    "Raffaelea lauricola"
                 ]
             }
         },
@@ -33108,9 +33385,11 @@
             "LATIN_NAME": "Paracoccus marginatus",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
+                    17841,
                     14979
                 ],
                 "COMMON_NAME": [
+                    "Marginal mealybug",
                     "Papaya mealybug"
                 ]
             },
@@ -33168,18 +33447,22 @@
                     43284,
                     43286,
                     30325,
+                    72465,
                     30326,
                     27563,
-                    43285
+                    43285,
+                    72463
                 ],
                 "SYNONYM_NAME": [
                     "Aphaena delicatula",
                     "Aphana delicatula",
                     "Lycorma (Aphaena) delicatula",
                     "Lycorma delicatula jole",
+                    "Lycorma delicatula jole",
                     "Lycorma delicatula operosa",
                     "Lycorma delicatulum",
-                    "Lycorma delicatulum"
+                    "Lycorma delicatulum",
+                    "Lycorma jole"
                 ]
             }
         },
@@ -33679,7 +33962,7 @@
         },
         {
             "CSL_REF": 27381,
-            "EPPO_CODE": "",
+            "EPPO_CODE": "COLSPC",
             "LATIN_NAME": "Coleosporium plectranthi",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
@@ -33826,12 +34109,20 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     30129,
+                    67794,
                     30130,
+                    67795,
+                    67796,
+                    67797,
                     27629
                 ],
                 "SYNONYM_NAME": [
                     "Curculio hirticornis",
+                    "Curculio simo",
                     "Homorhythmus hirticornis",
+                    "Otiorhynchus depubes",
+                    "Otiorhynchus hirticornis",
+                    "Otiorhynchus setulifer",
                     "Peritelus hirticornis"
                 ]
             }
@@ -35479,7 +35770,7 @@
         {
             "CSL_REF": 27757,
             "EPPO_CODE": "",
-            "LATIN_NAME": "Paropsisterna variicollis",
+            "LATIN_NAME": "Paropsisterna cloelia",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -35491,11 +35782,15 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     29259,
-                    29258
+                    71137,
+                    29258,
+                    71136
                 ],
                 "SYNONYM_NAME": [
                     "Chrysophtharta variicollis",
-                    "Paropsis variicollis"
+                    "Paropsis cloelia",
+                    "Paropsis variicollis",
+                    "Paropsisterna variicollis"
                 ]
             }
         },
@@ -38998,7 +39293,7 @@
         {
             "CSL_REF": 30184,
             "EPPO_CODE": "APNMV0",
-            "LATIN_NAME": "Apple necrotic mosaic virus",
+            "LATIN_NAME": "Ilarvirus ApNMV",
             "COMMON_NAME": {
                 "COMMON_NAME_ID": [
                     ""
@@ -39009,10 +39304,12 @@
             },
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
-                    41810
+                    41810,
+                    70665
                 ],
                 "SYNONYM_NAME": [
-                    "ApNMV"
+                    "ApNMV",
+                    "Apple necrotic mosaic virus"
                 ]
             }
         },
@@ -39123,11 +39420,13 @@
             "SYNONYM_NAME": {
                 "SYNONYM_NAME_ID": [
                     42152,
-                    55655
+                    55655,
+                    71227
                 ],
                 "SYNONYM_NAME": [
                     "SNSV",
-                    "Strawberry necrotic shock virus"
+                    "Strawberry necrotic shock virus",
+                    "Tobacco streak virus black raspberry latent strain"
                 ]
             }
         },
@@ -40778,6 +41077,35 @@
             }
         },
         {
+            "CSL_REF": 35063,
+            "EPPO_CODE": "RICASC",
+            "LATIN_NAME": "Ricania speculum",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    17005,
+                    17003,
+                    17004
+                ],
+                "COMMON_NAME": [
+                    "Asian planthopper",
+                    "Black planthopper",
+                    "Ricaniid Planthopper"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    55298,
+                    55299,
+                    55300
+                ],
+                "SYNONYM_NAME": [
+                    "Flatoides perforatus",
+                    "Flatoides speculum",
+                    "Ricania malaya"
+                ]
+            }
+        },
+        {
             "CSL_REF": 37155,
             "EPPO_CODE": "AGRLDU",
             "LATIN_NAME": "Agrilus dureli",
@@ -40787,6 +41115,129 @@
                 ],
                 "COMMON_NAME": [
                     ""
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    ""
+                ],
+                "SYNONYM_NAME": [
+                    ""
+                ]
+            }
+        },
+        {
+            "CSL_REF": 39781,
+            "EPPO_CODE": "",
+            "LATIN_NAME": "Diplodia fraxini",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    ""
+                ],
+                "COMMON_NAME": [
+                    ""
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    68418,
+                    68419
+                ],
+                "SYNONYM_NAME": [
+                    "Botryodiplodia fraxini",
+                    "Sphaeria fraxini"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 40251,
+            "EPPO_CODE": "NCERAS",
+            "LATIN_NAME": "Neoceratitis asiatica",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    17563,
+                    17564,
+                    17565
+                ],
+                "COMMON_NAME": [
+                    "goji fruit fly",
+                    "lycium fruit fly",
+                    "wolfberry fruit fly"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    69859
+                ],
+                "SYNONYM_NAME": [
+                    "Ceratitis asiatica"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 40252,
+            "EPPO_CODE": "NTPRFI",
+            "LATIN_NAME": "Neotephritis finalis",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    17566
+                ],
+                "COMMON_NAME": [
+                    "sunflower seed maggot"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    69861,
+                    69862,
+                    69878,
+                    69860
+                ],
+                "SYNONYM_NAME": [
+                    "Neotephritis inornata",
+                    "Tephritis affinis",
+                    "Tephritis inornata",
+                    "Trypeta finalis"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 40347,
+            "EPPO_CODE": "CPTHBI",
+            "LATIN_NAME": "Paropsisterna bimaculata",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    17659
+                ],
+                "COMMON_NAME": [
+                    "Tasmanian Eucalyptus Leaf Beetle"
+                ]
+            },
+            "SYNONYM_NAME": {
+                "SYNONYM_NAME_ID": [
+                    71122,
+                    71123
+                ],
+                "SYNONYM_NAME": [
+                    "Chrysophtharta bimaculata",
+                    "Paropsis bimaculata"
+                ]
+            }
+        },
+        {
+            "CSL_REF": 40451,
+            "EPPO_CODE": "(GONPSC)",
+            "LATIN_NAME": "Gonipterus scutellatus Gyllenhal, 1833 species complex",
+            "COMMON_NAME": {
+                "COMMON_NAME_ID": [
+                    17821,
+                    17822,
+                    17823
+                ],
+                "COMMON_NAME": [
+                    "eucalyptus snout beetle",
+                    "eucalyptus weevil",
+                    "gum-tree weevil"
                 ]
             },
             "SYNONYM_NAME": {

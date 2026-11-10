@@ -1,391 +1,5 @@
 [
     {
-        "HOST_REF": 14079,
-        "PARENT_HOST_REF": 14078,
-        "EPPO_CODE": "LAKBA",
-        "LATIN_NAME": "Lannea barteri",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Malvids",
-        "ORDER_NAME": "Sapindales",
-        "FAMILY_NAME": "Anacardiaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lannea",
-        "SPECIES_NAME": "barteri",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                6542
-            ],
-            "NAME": [
-                "Lannea kerstingi"
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14080,
-        "PARENT_HOST_REF": 14078,
-        "EPPO_CODE": "LAKHU",
-        "LATIN_NAME": "Lannea humilis",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Malvids",
-        "ORDER_NAME": "Sapindales",
-        "FAMILY_NAME": "Anacardiaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lannea",
-        "SPECIES_NAME": "humilis",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14081,
-        "PARENT_HOST_REF": 14078,
-        "EPPO_CODE": "LAKSC",
-        "LATIN_NAME": "Lannea schimperi",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Malvids",
-        "ORDER_NAME": "Sapindales",
-        "FAMILY_NAME": "Anacardiaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lannea",
-        "SPECIES_NAME": "schimperi",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14083,
-        "PARENT_HOST_REF": 14078,
-        "EPPO_CODE": "LAKTR",
-        "LATIN_NAME": "Lannea triphylla",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Malvids",
-        "ORDER_NAME": "Sapindales",
-        "FAMILY_NAME": "Anacardiaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lannea",
-        "SPECIES_NAME": "triphylla",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14084,
-        "PARENT_HOST_REF": null,
-        "EPPO_CODE": "1LNIG",
-        "LATIN_NAME": "Lansium",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Malvids",
-        "ORDER_NAME": "Sapindales",
-        "FAMILY_NAME": "Meliaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lansium",
-        "SPECIES_NAME": "",
-        "LEVEL_OF_TAXONOMY": "G",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14085,
-        "PARENT_HOST_REF": 14084,
-        "EPPO_CODE": "LNIDO",
-        "LATIN_NAME": "Lansium domesticum",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Malvids",
-        "ORDER_NAME": "Sapindales",
-        "FAMILY_NAME": "Meliaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lansium",
-        "SPECIES_NAME": "domesticum",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                9472
-            ],
-            "NAME": [
-                "Langsat"
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14086,
-        "PARENT_HOST_REF": 27528,
-        "EPPO_CODE": "1LANG",
-        "LATIN_NAME": "Lantana",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Lamiids",
-        "ORDER_NAME": "Lamiales",
-        "FAMILY_NAME": "Verbenaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lantana",
-        "SPECIES_NAME": "",
-        "LEVEL_OF_TAXONOMY": "G",
-        "COMMON_NAME": {
-            "ID": [
-                9113
-            ],
-            "NAME": [
-                "Lantana"
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14087,
-        "PARENT_HOST_REF": 14086,
-        "EPPO_CODE": "LANBR",
-        "LATIN_NAME": "Lantana brasiliensis",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Lamiids",
-        "ORDER_NAME": "Lamiales",
-        "FAMILY_NAME": "Verbenaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lantana",
-        "SPECIES_NAME": "brasiliensis",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14088,
-        "PARENT_HOST_REF": 14086,
-        "EPPO_CODE": "LANCA",
-        "LATIN_NAME": "Lantana camara",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Lamiids",
-        "ORDER_NAME": "Lamiales",
-        "FAMILY_NAME": "Verbenaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lantana",
-        "SPECIES_NAME": "camara",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                9108,
-                9109
-            ],
-            "NAME": [
-                "Tickberry",
-                "Lantana, largeleaf"
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                6544
-            ],
-            "NAME": [
-                "Lantana aculeata"
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14090,
-        "PARENT_HOST_REF": 14086,
-        "EPPO_CODE": "LANCN",
-        "LATIN_NAME": "Lantana canescens",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Lamiids",
-        "ORDER_NAME": "Lamiales",
-        "FAMILY_NAME": "Verbenaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lantana",
-        "SPECIES_NAME": "canescens",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14091,
-        "PARENT_HOST_REF": 14086,
-        "EPPO_CODE": "LANCU",
-        "LATIN_NAME": "Lantana cujabensis",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Lamiids",
-        "ORDER_NAME": "Lamiales",
-        "FAMILY_NAME": "Verbenaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lantana",
-        "SPECIES_NAME": "cujabensis",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
-        "HOST_REF": 14092,
-        "PARENT_HOST_REF": 14086,
-        "EPPO_CODE": "LANHI",
-        "LATIN_NAME": "Lantana hispida",
-        "KINGDOM_NAME": "Plantae",
-        "PHYLUM_NAME": "Magnoliophyta",
-        "CLASS_NAME": "Angiospermae",
-        "CATEGORY_NAME": "Lamiids",
-        "ORDER_NAME": "Lamiales",
-        "FAMILY_NAME": "Verbenaceae",
-        "SUBFAMILY_NAME": "",
-        "GENUS_NAME": "Lantana",
-        "SPECIES_NAME": "hispida",
-        "LEVEL_OF_TAXONOMY": "S",
-        "COMMON_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        },
-        "SYNONYM_NAME": {
-            "ID": [
-                ""
-            ],
-            "NAME": [
-                ""
-            ]
-        }
-    },
-    {
         "HOST_REF": 14093,
         "PARENT_HOST_REF": 14086,
         "EPPO_CODE": "LANID",
@@ -372814,7 +372428,7 @@
         "FAMILY_NAME": "Ulmaceae",
         "SUBFAMILY_NAME": "",
         "GENUS_NAME": "Ulmus",
-        "SPECIES_NAME": "Ulmus x hollandica",
+        "SPECIES_NAME": "hollandica",
         "LEVEL_OF_TAXONOMY": "S",
         "COMMON_NAME": {
             "ID": [
@@ -421172,7 +420786,7 @@
         "FAMILY_NAME": "Lamiaceae",
         "SUBFAMILY_NAME": "",
         "GENUS_NAME": "Lavandula",
-        "SPECIES_NAME": " x heterophylla",
+        "SPECIES_NAME": "heterophylla",
         "LEVEL_OF_TAXONOMY": "S",
         "COMMON_NAME": {
             "ID": [
@@ -434406,6 +434020,768 @@
             ],
             "NAME": [
                 "Cattleya skinneri"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28181,
+        "PARENT_HOST_REF": 8640,
+        "EPPO_CODE": "DJOSS",
+        "LATIN_NAME": "Dionaea sp.",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Dionaea",
+        "SPECIES_NAME": "sp.",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28182,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSAD",
+        "LATIN_NAME": "Drosera adelae",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "adelae",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16187
+            ],
+            "NAME": [
+                "lance-leaved sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28183,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSAL",
+        "LATIN_NAME": "Drosera aliciae",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "aliciae",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28184,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSAN",
+        "LATIN_NAME": "Drosera anglica",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "anglica",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16188,
+                16189
+            ],
+            "NAME": [
+                "great sundew",
+                "narrow-leaf sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20411
+            ],
+            "NAME": [
+                "Drosera longifolia"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28185,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSBI",
+        "LATIN_NAME": "Drosera binata",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "binata",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16190
+            ],
+            "NAME": [
+                "fork-leaved sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28186,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSCA",
+        "LATIN_NAME": "Drosera capensis",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "capensis",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16191
+            ],
+            "NAME": [
+                "Cape sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28187,
+        "PARENT_HOST_REF": null,
+        "EPPO_CODE": "1DROF",
+        "LATIN_NAME": "Droseraceae (family)",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "",
+        "SPECIES_NAME": "",
+        "LEVEL_OF_TAXONOMY": "F",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28188,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSCI",
+        "LATIN_NAME": "Drosera cistiflora",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "cistiflora",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16192
+            ],
+            "NAME": [
+                "poppy-flowered sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28189,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSFI",
+        "LATIN_NAME": "Drosera filiformis",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "filiformis",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16193
+            ],
+            "NAME": [
+                "thread-leaved sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28190,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSMA",
+        "LATIN_NAME": "Drosera macrantha",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "macrantha",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16194
+            ],
+            "NAME": [
+                "bridal rainbow"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20412
+            ],
+            "NAME": [
+                "Sondera macrantha"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28191,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSMD",
+        "LATIN_NAME": "Drosera madagascariensis",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "madagascariensis",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28192,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSPA",
+        "LATIN_NAME": "Drosera paradoxa",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "paradoxa",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28193,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSPN",
+        "LATIN_NAME": "Drosera peltata",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "peltata",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16195,
+                16196
+            ],
+            "NAME": [
+                "pale sundew",
+                "shield sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20413,
+                20414
+            ],
+            "NAME": [
+                "Drosera lunata",
+                "Drosera peltata var. nipponica"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28194,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSRO",
+        "LATIN_NAME": "Drosera rotundifolia",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "rotundifolia",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16197,
+                16198,
+                16199
+            ],
+            "NAME": [
+                "common sundew",
+                "round-leaved sundew",
+                "sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20415
+            ],
+            "NAME": [
+                "Drosera corsica"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28195,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSSS",
+        "LATIN_NAME": "Drosera sp.",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "sp.",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28196,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSTE",
+        "LATIN_NAME": "Drosera tentaculata",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "tentaculata",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28197,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSTR",
+        "LATIN_NAME": "Drosera trinervia",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "trinervia",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16200
+            ],
+            "NAME": [
+                "small sundew"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28198,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSBE",
+        "LATIN_NAME": "Drosera x beleziana",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "beleziana",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20416,
+                20417
+            ],
+            "NAME": [
+                "Drosera beleziana",
+                "Drosera intermedia x D. rotundifolia"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28199,
+        "PARENT_HOST_REF": 8920,
+        "EPPO_CODE": "DRSOB",
+        "LATIN_NAME": "Drosera x obovata",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Droseraceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Drosera",
+        "SPECIES_NAME": "obovata",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20418,
+                20419
+            ],
+            "NAME": [
+                "Drosera anglica x D. rotundifolia",
+                "Drosera obovata"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28200,
+        "PARENT_HOST_REF": null,
+        "EPPO_CODE": "1DARG",
+        "LATIN_NAME": "Darlingtonia",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Basal asterids",
+        "ORDER_NAME": "Ericales",
+        "FAMILY_NAME": "Sarraceniaceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Darlingtonia",
+        "SPECIES_NAME": "",
+        "LEVEL_OF_TAXONOMY": "G",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28201,
+        "PARENT_HOST_REF": 28200,
+        "EPPO_CODE": "DARCA",
+        "LATIN_NAME": "Darlingtonia californica",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Basal asterids",
+        "ORDER_NAME": "Ericales",
+        "FAMILY_NAME": "Sarraceniaceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Darlingtonia",
+        "SPECIES_NAME": "californica",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16202,
+                16203
+            ],
+            "NAME": [
+                "California pitcher plant",
+                "cobra plant"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20420
+            ],
+            "NAME": [
+                "Chrysamphora californica"
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28202,
+        "PARENT_HOST_REF": 28200,
+        "EPPO_CODE": "DARSS",
+        "LATIN_NAME": "Darlingtonia sp.",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Basal asterids",
+        "ORDER_NAME": "Ericales",
+        "FAMILY_NAME": "Sarraceniaceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Darlingtonia",
+        "SPECIES_NAME": "sp.",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                ""
+            ],
+            "NAME": [
+                ""
+            ]
+        }
+    },
+    {
+        "HOST_REF": 28203,
+        "PARENT_HOST_REF": 22637,
+        "EPPO_CODE": "SANMI",
+        "LATIN_NAME": "Sanguisorba minor",
+        "KINGDOM_NAME": "Plantae",
+        "PHYLUM_NAME": "Magnoliophyta",
+        "CLASS_NAME": "Angiospermae",
+        "CATEGORY_NAME": "Fabids",
+        "ORDER_NAME": "Rosales",
+        "FAMILY_NAME": "Rosaceae",
+        "SUBFAMILY_NAME": "",
+        "GENUS_NAME": "Sanguisorba",
+        "SPECIES_NAME": "minor",
+        "LEVEL_OF_TAXONOMY": "S",
+        "COMMON_NAME": {
+            "ID": [
+                16204
+            ],
+            "NAME": [
+                "salad burnet"
+            ]
+        },
+        "SYNONYM_NAME": {
+            "ID": [
+                20421,
+                20422,
+                20423,
+                20424,
+                20425,
+                20426
+            ],
+            "NAME": [
+                "Poterium dictyocarpum",
+                "Poterium guestphalicum",
+                "Poterium sanguisorba",
+                "Sanguisorba dictyoneura",
+                "Sanguisorba minor subsp. dictyocarpa",
+                "Sanguisorba minor subsp. minor"
             ]
         }
     }

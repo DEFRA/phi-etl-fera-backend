@@ -36,7 +36,7 @@
         {
             "CSL_REF": 609,
             "EPPO_CODE": "CERAVI",
-            "LATIN_NAME": "Ceratocystis virescens",
+            "LATIN_NAME": "Davidsoniella virescens",
             "DOCUMENT_TITLE": "",
             "DOCUMENT_TYPE": "PRA",
             "VISIBLE_ON_PHI_INDICATOR": 1,
@@ -243,6 +243,17 @@
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
+            "CSL_REF": 5577,
+            "EPPO_CODE": "ORCHSP",
+            "LATIN_NAME": "Orchidophilus spp.",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "15/09/2026",
+            "DOCUMENT_SIZE": 695494,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
             "CSL_REF": 5654,
             "EPPO_CODE": "OTIOME",
             "LATIN_NAME": "Otiorhynchus meridionalis",
@@ -328,6 +339,17 @@
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "28/09/2010",
             "DOCUMENT_SIZE": 172890,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 6771,
+            "EPPO_CODE": "SCAPLI",
+            "LATIN_NAME": "Scaphoideus (Scaphoideus) titanus",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "15/09/2026",
+            "DOCUMENT_SIZE": 899356,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
@@ -1351,6 +1373,17 @@
             "VISIBLE_ON_PHI_INDICATOR": 1,
             "PUBLICATION_DATE": "11/04/2013",
             "DOCUMENT_SIZE": 353506,
+            "DOCUMENT_FORMAT": "application/pdf"
+        },
+        {
+            "CSL_REF": 22882,
+            "EPPO_CODE": "CERAFP",
+            "LATIN_NAME": "Ceratocystis platani",
+            "DOCUMENT_TITLE": "",
+            "DOCUMENT_TYPE": "PRA",
+            "VISIBLE_ON_PHI_INDICATOR": 1,
+            "PUBLICATION_DATE": "15/10/2020",
+            "DOCUMENT_SIZE": 425846,
             "DOCUMENT_FORMAT": "application/pdf"
         },
         {
